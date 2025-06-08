@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "1bdfd4e5d2eb0e3f",
+    "type": "split",
+    "children": [
+      {
+        "id": "d46f7301e6718a66",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a63c9c66152bc00",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新規タブ"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1a99627c54d1b121",
+    "type": "split",
+    "children": [
+      {
+        "id": "ce956072a2aec72d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a3991294303e66e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "ファイルエクスプローラ"
+            }
+          },
+          {
+            "id": "232fca0af77a7791",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#TOEIC",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "検索"
+            }
+          },
+          {
+            "id": "a92f3af53ebd89f7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "ブックマーク"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "7a68dedd1c2febe1",
+    "type": "split",
+    "children": [
+      {
+        "id": "41bbd520d2b6a044",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3736e15dab7fd6de",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "慣用句.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "慣用句へのバックリンク"
+            }
+          },
+          {
+            "id": "d1fd149f004a7046",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "慣用句.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "慣用句からのアウトゴーイングリンク"
+            }
+          },
+          {
+            "id": "8e54e4aad14ba1a8",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "タグ"
+            }
+          },
+          {
+            "id": "4005703d7208ab02",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "慣用句.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "慣用句のアウトライン"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:クイックスイッチャーを開く": false,
+      "graph:グラフビューを開く": false,
+      "canvas:新規キャンバスを作成": false,
+      "daily-notes:今日のデイリーノートを開く": false,
+      "templates:テンプレートを挿入": false,
+      "command-palette:コマンドパレットを開く": false
+    }
+  },
+  "active": "1a63c9c66152bc00",
+  "lastOpenFiles": [
+    "慣用句.md",
+    "句動詞.md",
+    "ビジネス表現.md",
+    "接続表現.md",
+    "TOEIC頻出表現.md",
+    "日常表現.md",
+    "全体インデックス.md",
+    "README.md",
+    "Anki設定.md",
+    "TOEIC学習ガイド.md",
+    "Part別攻略法.md",
+    "頻出度別学習.md",
+    "スコア帯別学習.md",
+    "学習進捗管理.md",
+    "表現収集ログ.md",
+    "カード作成ログ.md",
+    "学習統計.md",
+    "弱点分析.md",
+    "復習スケジュール.md",
+    "目標設定.md",
+    "学習計画.md",
+    "参考資料.md",
+    "用語集.md",
+    "FAQ.md",
+    "トラブルシューティング.md",
+    "バックアップ.md",
+    "設定.md"
+  ]
+}
