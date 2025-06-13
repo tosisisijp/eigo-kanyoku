@@ -11,10 +11,14 @@
             "id": "1a63c9c66152bc00",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "back.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "back"
             }
           }
         ]
@@ -166,32 +170,33 @@
   },
   "active": "1a63c9c66152bc00",
   "lastOpenFiles": [
-    "慣用句.md",
-    "句動詞.md",
-    "ビジネス表現.md",
-    "接続表現.md",
-    "TOEIC頻出表現.md",
-    "日常表現.md",
-    "全体インデックス.md",
-    "README.md",
-    "Anki設定.md",
-    "TOEIC学習ガイド.md",
-    "Part別攻略法.md",
-    "頻出度別学習.md",
-    "スコア帯別学習.md",
-    "学習進捗管理.md",
-    "表現収集ログ.md",
-    "カード作成ログ.md",
-    "学習統計.md",
-    "弱点分析.md",
-    "復習スケジュール.md",
-    "目標設定.md",
-    "学習計画.md",
-    "参考資料.md",
-    "用語集.md",
-    "FAQ.md",
-    "トラブルシューティング.md",
-    "バックアップ.md",
-    "設定.md"
+    "back.md",
+    "back",
+    "hinshi/同一性・識別形容詞.md",
+    "hinshi/名詞と修飾語.md",
+    "hinshi/名詞.md",
+    "hinshi/名詞と数量表現.md",
+    "hinshi/名詞と文の要素.md",
+    "hinshi/名詞句.md",
+    "hinshi/名詞節.md",
+    "hinshi/命令文.md",
+    "hinshi/基数詞.md",
+    "hinshi/場所に関わる品詞.md",
+    "hinshi/品詞.md",
+    "hinshi/固有名詞.md",
+    "hinshi/場所の前置詞.md",
+    "hinshi/場所の副詞.md",
+    "hinshi/場所の名詞.md",
+    "hinshi/場所の形容詞.md",
+    "hinshi/完了動詞.md",
+    "hinshi/場所前置詞.md",
+    "hinshi/場所副詞.md",
+    "hinshi/平叙文.md",
+    "hinshi/序数詞.md",
+    "hinshi/従位接続詞.md",
+    "hinshi/形容詞.md",
+    "hinshi/形容詞節.md",
+    "hinshi/形容詞句.md",
+    "hinshi"
   ]
 }
