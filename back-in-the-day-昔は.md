@@ -54,4 +54,4 @@ Ankiラベル:慣用句
 Speech: Back in the day, all meetings were held in person.
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part4:企業変遷説明
 <!--ID: 1750467303604-->
-END 
+END

@@ -54,4 +54,5 @@ Part4:プロジェクト進捗報告
 Ankiラベル:分離句動詞副詞
 Speech: The rain set back our construction schedule by two weeks.
 Tags: TOEIC優先度:85 Ankiラベル:分離句動詞副詞 Part4:プロジェクト進捗報告
-END 
+<!--ID: 1750496452349-->
+END

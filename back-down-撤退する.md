@@ -54,4 +54,5 @@ Part4:企業戦略発表
 Ankiラベル:固定句動詞副詞
 Speech: The company decided to back down from the aggressive pricing strategy.
 Tags: TOEIC優先度:100 Ankiラベル:固定句動詞副詞 Part4:企業戦略発表
-END 
+<!--ID: 1750493444473-->
+END

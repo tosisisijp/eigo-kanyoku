@@ -55,4 +55,4 @@ Ankiラベル:分離句動詞副詞
 Speech: He backed out of the deal at the last minute.
 Tags: TOEIC優先度:90 Ankiラベル:分離句動詞副詞 Part3:ビジネス交渉
 <!--ID: 1750467234749-->
-END 
+END

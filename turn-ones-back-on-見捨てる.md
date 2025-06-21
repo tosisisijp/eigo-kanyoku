@@ -53,4 +53,6 @@ Part7:人間関係記事
 Ankiラベル:慣用句
 Speech: He turned his back on his old friends after becoming successful.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part7:人間関係記事
-END 
+<!--ID: 1750496452344-->
+END
+

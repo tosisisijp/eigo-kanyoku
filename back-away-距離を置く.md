@@ -55,4 +55,4 @@ Ankiラベル:固定句動詞副詞
 Speech: She backed away from the controversial topic.
 Tags: TOEIC優先度:85 Ankiラベル:固定句動詞副詞 Part3:会議での回避
 <!--ID: 1750466418255-->
-END 
+END

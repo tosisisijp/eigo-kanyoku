@@ -53,4 +53,5 @@ Part7:企業沿革記事
 Ankiラベル:慣用句
 Speech: This building dates back to the company's founding in 1950.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part7:企業沿革記事
-END 
+<!--ID: 1750512963013-->
+END

@@ -1,0 +1,19 @@
+# 改行コード制御設定
+# mdファイル: LF改行で統一
+*.md text eol=lf
+
+# mdcファイル: システム標準（自動判定）
+*.mdc text eol=auto
+
+# その他テキストファイル
+*.txt text eol=auto
+*.json text eol=auto
+*.ps1 text eol=crlf
+
+# バイナリファイル
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary 

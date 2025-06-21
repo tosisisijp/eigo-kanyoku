@@ -39,15 +39,122 @@ alwaysApply: false
 - **貢献方法**: 表現改善提案の方法
 - **ライセンス**: 利用条件（必要に応じて）
 
+## 改行コード管理
+
+### mdファイルの改行コード統一
+**全ての*.mdファイル（README.md含む）はLF改行コードで統一します。**
+
+#### 改行コード管理の原則
+- **mdファイル**: LF改行を維持（Git設定による自動変換を回避）
+- **mdcファイル**: システム標準（通常CRLF）
+- **設定ファイル**: ファイル種別に応じた適切な改行コード
+
+#### Git設定による改行コード制御
+```powershell
+# .gitattributesファイルで改行コード制御
+"*.md text eol=lf"
+"*.mdc text eol=auto"
+```
+
+#### PowerShell実行時の改行コード確保
+[[110-PowerShell操作管理.mdc]] の改行コード統一処理を使用：
+```powershell
+# LF統一処理（110番ルール活用）
+$content = Get-Content $FilePath -Raw
+$content = $content -replace "`r`n", "`n"  # CRLFをLFに変換
+$content = $content -replace "`r", "`n"    # 単独CRもLFに変換
+Set-Content $FilePath -Value $content -NoNewline -Encoding UTF8
+```
+
+#### Git操作時の注意事項
+- **コミット前**: mdファイルの改行コードがLFであることを確認
+- **警告対応**: "LF will be replaced by CRLF" 警告が出た場合は.gitattributes設定を確認
+- **[[110-PowerShell操作管理.mdc]]** の改行コード統一処理を活用
+
+## Git差分統合システム
+
+### Git差分による変更検出
+README更新時は**必ずGit差分を確認**してから更新を行います。
+
+**Git差分の詳細なコマンドと分析関数は [[006-Git差分分析管理.mdc]] を参照してください。**
+
+#### 基本的な使用手順
+1. **[[006-Git差分分析管理.mdc]]** の `Get-GitChangesSummary` 関数を実行
+2. 変更ファイル一覧と統計を確認
+3. `Test-DocumentUpdateNeeded` でREADME更新の必要性を判定
+4. **コンテンツ変更の自動検出**（以下の関数）を実行
+5. 以下の更新プロセスに進む
+
+#### コンテンツ変更の自動検出機能
+慣用句カードファイル（*.md、ルールファイル以外）の変更を自動検出・分類
+
+```powershell
+function Get-ContentChanges {
+    param([int]$CommitRange = 1)
+    
+    # PSReadLine無効化 (004ルール参照)
+    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
+    
+    Write-Host "=== コンテンツ変更検出 ===" -ForegroundColor Cyan
+    
+    # 慣用句カードファイルの変更を抽出
+    $contentFiles = git diff --name-only HEAD~$CommitRange HEAD | 
+        Where-Object { $_ -match "\.md$" -and $_ -notmatch "^\.cursor/rules/" -and $_ -ne "README.md" }
+    
+    if ($contentFiles.Count -eq 0) {
+        Write-Host "コンテンツ変更なし" -ForegroundColor Gray
+        return
+    }
+    
+    Write-Host "変更されたコンテンツファイル: $($contentFiles.Count)件" -ForegroundColor Green
+    
+    foreach ($file in $contentFiles) {
+        Write-Host "`n【$file】" -ForegroundColor Yellow
+        
+        # 変更種別の推定
+        $changes = git diff HEAD~$CommitRange HEAD -- $file
+        
+        if ($changes -match '\+.*例文|例:|\+.*Example') {
+            Write-Host "  - 表現追加: 例文追加の可能性" -ForegroundColor Cyan
+        }
+        if ($changes -match '\+.*Part \d|\+.*頻出度') {
+            Write-Host "  - TOEIC情報更新: Part分類・頻出度変更の可能性" -ForegroundColor Cyan
+        }
+        if ($changes -match '\+.*START\[|\+.*END\[') {
+            Write-Host "  - Anki対応: カード形式調整の可能性" -ForegroundColor Cyan
+        }
+        if ($changes -match '\+.*意味:|定義:|\+.*Definition') {
+            Write-Host "  - 意味修正: 定義・説明変更の可能性" -ForegroundColor Cyan
+        }
+        
+        # 変更行数の表示
+        $stats = git diff --stat HEAD~$CommitRange HEAD -- $file
+        Write-Host "  - 変更統計: $stats" -ForegroundColor Gray
+    }
+}
+```
+
+#### コンテンツ変更記録の半自動化
+上記関数の結果を参考にして、README更新履歴のコンテンツ変更セクションを作成
+
 ## 更新プロセス
 
-### 1. 変更内容の記録
-- **変更した表現ファイル名**: 具体的なファイル名
+### 1. 変更内容の記録（Git差分ベース）
+
+#### 必須Git差分確認
+README更新前に**必ずGit差分を確認**：
+1. **[[006-Git差分分析管理.mdc]]** の `Get-GitChangesSummary` 関数を実行
+2. 変更ファイル一覧を確認
+3. 変更統計で影響範囲を把握
+4. README更新の必要性を判定
+
+#### 手動記録項目
+- **変更した表現ファイル名**: Git差分で確認した具体的なファイル名
 - **変更の種類**: PATCH/MINOR/MAJOR
 - **TOEIC影響**: Part別・頻出度への影響
 - **Anki影響**: カード作成・学習効率への影響
 - **変更の概要**: 簡潔な説明
-- **更新日付**: YYYY-MM-DD形式
+- **更新日付**: YYYY-MM-DD形式（[[005-日付取得管理.mdc]]に従って取得）
 
 ### 2. README.mdの更新
 - **更新履歴セクション**: 新しいエントリを追加
@@ -55,11 +162,12 @@ alwaysApply: false
 - **TOEIC学習効果セクション**: 学習成果の更新
 - **Anki統計セクション**: カード数・学習効率統計の更新
 - **バージョン情報**: 主要表現ファイルのバージョン反映
+- **最終更新日**: [[005-日付取得管理.mdc]]の動的日付取得を使用
 
 ### 3. 整合性確認
 - **記載内容の一致**: 実際の表現ファイル構成との整合性
 - **リンクの動作**: 内部リンクの正常性
-- **日付の正確性**: 更新日付の確認
+- **日付の正確性**: [[005-日付取得管理.mdc]]の標準フォーマットで確認
 - **TOEIC情報の正確性**: Part別情報・頻出度の最新性
 - **Anki連携の確認**: プラグイン動作・カード生成の正常性
 
@@ -70,22 +178,54 @@ alwaysApply: false
 ## 更新履歴
 
 ### YYYY-MM-DD
+#### システム・ルール変更
 - **MINOR**: 慣用句.md v1.1.0 - ビジネス慣用句の分類を詳細化（Part 7対応強化）
 - **PATCH**: 句動詞.md v1.0.1 - 高頻出句動詞の例文を追加（Anki基本カード対応）
 - **Anki**: Obsidian_to_ankiプラグイン設定を最適化
 
+#### コンテンツ変更
+- **表現追加**: back-and-forth.md - 例文3件追加（Part 3対応）
+- **意味修正**: behind-someones-back.md - TOEIC頻出度を中→高に変更
+- **例文改善**: get-back.md - ビジネス場面の例文を2件追加
+- **Anki対応**: cut-back.md - 穴埋めカード用例文を追加
+
 ### YYYY-MM-DD
+#### システム・ルール変更
 - **MAJOR**: TOEIC頻出表現.md v2.0.0 - Part別分類体系を全面的に再構築
 - **新規**: ビジネス表現.md - 新カテゴリ追加（Part 7特化）
+
+#### コンテンツ変更
+- **表現追加**: 15個の新規慣用句を追加（Part 5,6重点）
+- **分類見直し**: 既存表現20件のTOEIC Part分類を最新傾向に基づき調整
 ```
 
 ### 記録ルール
+
+#### 基本原則
 - **日付順**: 新しいものを上に配置
-- **分類明記**: PATCH/MINOR/MAJOR/Anki/新規を明記
-- **TOEIC関連明記**: Part番号・頻出度変更を記載
-- **Anki関連明記**: カードタイプ・学習効率への影響を記載
+- **2段階分類**: システム・ルール変更 / コンテンツ変更で明確に区分
 - **簡潔性**: 1行で要点を説明
 - **一貫性**: 同じ形式で統一
+
+#### システム・ルール変更の記録
+- **分類明記**: PATCH/MINOR/MAJOR/Anki/新規を明記
+- **影響範囲**: 全体システムへの影響を記載
+- **技術的変更**: ルールファイル・プラグイン・構造変更
+
+#### コンテンツ変更の記録
+- **変更種別**: 表現追加/意味修正/例文改善/Anki対応/分類見直し
+- **対象ファイル**: 変更された慣用句カードファイル名を明記
+- **TOEIC関連**: Part番号・頻出度変更を記載
+- **Anki関連**: カードタイプ・学習効率への影響を記載
+- **学習効果**: TOEIC学習者への具体的な効果を記載
+
+#### コンテンツ変更の詳細分類
+- **表現追加**: 新しい例文・用法・場面の追加
+- **意味修正**: 定義・説明・ニュアンスの修正・改善
+- **例文改善**: より適切・実用的な例文への変更
+- **TOEIC情報更新**: Part分類・頻出度・出題傾向の更新
+- **Anki対応**: カード作成・学習効率向上のための調整
+- **分類見直し**: カテゴリー・タグ・構造の調整
 
 ## README作成時の基本構造
 
@@ -290,7 +430,12 @@ README.mdの主要表現ファイル一覧は、実際のファイルのバー�
 ## チェックリスト
 
 ### README更新時の確認項目
-- [ ] **更新履歴**: 新しい変更内容が追加されている
+- [ ] **Git差分確認**: [[006-Git差分分析管理.mdc]]の`Get-GitChangesSummary`で変更ファイルを確認済み
+- [ ] **コンテンツ変更検出**: `Get-ContentChanges`関数で慣用句カード変更を確認済み
+- [ ] **システム変更記録**: ルールファイル・プラグイン・構造変更をシステム・ルール変更セクションに記録
+- [ ] **コンテンツ変更記録**: 慣用句カード変更をコンテンツ変更セクションに詳細記録
+- [ ] **変更根拠**: Git差分に基づいて更新内容を決定済み
+- [ ] **2段階分類**: システム・ルール変更とコンテンツ変更を明確に区分して記録
 - [ ] **バージョン情報**: 主要表現ファイルのバージョンが最新
 - [ ] **TOEIC情報**: Part別対応・頻出度情報が正確
 - [ ] **Anki情報**: プラグイン連携・カード統計が最新
@@ -312,6 +457,8 @@ README.mdの主要表現ファイル一覧は、実際のファイルのバー�
 - [ ] **連携手順**: 設定・使用方法が明確
 
 ### コミット前の確認
+- [ ] **Git差分との整合性**: README.mdの更新内容がGit差分と一致している
+- [ ] **変更ファイル網羅**: Git差分で確認したすべての重要な変更がREADMEに反映されている
 - [ ] README.mdが最新の変更内容を反映している
 - [ ] 更新履歴の記録形式が正しい
 - [ ] TOEIC・Anki関連情報が正確

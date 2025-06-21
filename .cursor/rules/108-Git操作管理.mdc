@@ -47,6 +47,8 @@ alwaysApply: false
 ## Git操作の実行手順
 
 ### 1. 状況確認フェーズ
+
+#### 基本状況確認
 ```bash
 # 現在の状況確認
 git status
@@ -60,6 +62,38 @@ git log --oneline -5
 - 最近のコミット履歴
 - TOEIC表現ファイルの変更状況
 - Anki関連設定ファイルの状態
+
+#### Git差分による詳細分析
+
+**Git差分の詳細な分析機能は [[006-Git差分分析管理.mdc]] を参照してください。**
+
+##### TOEIC・Anki特化のGit差分活用
+```powershell
+# TOEIC表現ファイルの変更確認
+Get-GitChangesByFileType -Extensions @("md") | Where-Object { 
+    $_ -match "(慣用句|句動詞|TOEIC|表現|ビジネス)" 
+}
+
+# Anki関連設定ファイルの変更確認
+Get-GitChangesByFileType -Extensions @("json") | Where-Object { 
+    $_ -match "(anki|obsidian)" 
+}
+
+# README更新判定（TOEIC特化）
+function Test-TOEICReadmeUpdateNeeded {
+    $result = Test-DocumentUpdateNeeded -DocumentFiles @("README.md") -SourceExtensions @("md")
+    
+    if ($result.NeedsUpdate) {
+        Write-Host "`n🎯 TOEIC学習システム関連の更新が検出されました" -ForegroundColor Magenta
+        Write-Host "📚 以下の表現ファイルが変更されています:" -ForegroundColor Magenta
+        $result.ChangedSources | Where-Object { 
+            $_ -match "(慣用句|句動詞|TOEIC|表現|ビジネス|接続)" 
+        } | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+    }
+    
+    return $result
+}
+```
 
 ### 2. ステージングフェーズ
 ```bash
@@ -287,6 +321,7 @@ git reset --hard HEAD~1
 - **復旧テスト**: 定期的なバックアップ復旧テストの実施
 
 ## 関連ファイル
+- [[006-Git差分分析管理.mdc]] - Git差分の汎用的な分析機能
 - [[103-変更規模別ルール.mdc]] - コミット前チェックリスト
 - [[001-AI実装ガイドライン.mdc]] - AI操作の基本制約
 - [[105-検証・品質管理.mdc]] - 品質管理プロセス

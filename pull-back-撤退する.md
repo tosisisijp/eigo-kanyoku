@@ -54,4 +54,5 @@ Part4:企業戦略発表
 Ankiラベル:分離句動詞副詞
 Speech: The company pulled back from the overseas expansion plan.
 Tags: TOEIC優先度:85 Ankiラベル:分離句動詞副詞 Part4:企業戦略発表
-END 
+<!--ID: 1750507106749-->
+END

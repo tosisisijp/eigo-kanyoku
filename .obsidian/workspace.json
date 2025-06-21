@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "behind-someones-back-陰で.md",
+                "file": "back-背中.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "behind-someones-back-陰で"
+              "title": "back-背中"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "behind-someones-back-陰で.md",
+                "file": "back-背中.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "behind-someones-back-陰でのアウトライン"
+              "title": "back-背中のアウトライン"
             }
           }
         ],
@@ -171,33 +171,37 @@
   },
   "active": "1a63c9c66152bc00",
   "lastOpenFiles": [
+    "script/Obsidian_to_Anki_202_Validator.ps1",
+    "behind-someones-back-陰で.md",
+    "cut-back-削減する.md",
+    "date-back-to-さかのぼる.md",
+    "get-back-連絡する.md",
+    "get-someone-back-復讐する.md",
+    "go-back-戻る.md",
+    "have-someones-back-支援する.md",
+    "hold-back-抑制する.md",
+    "pull-back-撤退する.md",
+    "README.md",
+    "scale-back-縮小する.md",
+    "set-back-遅らせる.md",
+    "sit-back-くつろぐ.md",
+    "turn-ones-back-on-見捨てる.md",
+    "ルール体系整理完了報告.md",
+    "ObsidianToAnkiValidator.ps1",
+    "script/ObsidianToAnkiValidator.ps1",
+    "script",
+    "back-down-撤退する.md",
+    "back-away-距離を置く.md",
+    "back-and-forth-行ったり来たり.md",
+    "cut-back-削減する.md.bak",
     "back-背中.md",
     "back-up-バックアップする.md",
     "back-to-back-連続して.md",
     "back-out-撤退する.md",
     "back-off-手を引く.md",
     "back-in-the-day-昔は.md",
-    "back-away-距離を置く.md",
-    "back-and-forth-行ったり来たり.md",
-    "date-back-to-さかのぼる.md",
-    "scale-back-縮小する.md",
-    "get-someone-back-復讐する.md",
-    "turn-ones-back-on-見捨てる.md",
-    "set-back-遅らせる.md",
-    "behind-someones-back-陰で.md",
-    "pull-back-撤退する.md",
-    "sit-back-くつろぐ.md",
-    "hold-back-抑制する.md",
-    "cut-back-削減する.md",
-    "go-back-戻る.md",
-    "get-back-連絡する.md",
-    "back-down-撤退する.md",
-    "have-someones-back-支援する.md",
     "back.md",
     "back",
-    "hinshi/同一性・識別形容詞.md",
-    "hinshi/名詞と修飾語.md",
-    "hinshi/名詞.md",
     "hinshi"
   ]
 }

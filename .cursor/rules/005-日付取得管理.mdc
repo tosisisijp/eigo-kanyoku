@@ -1,0 +1,277 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# 日付取得管理 [Conditional]
+
+このルールは日付情報の動的取得と標準化に関する専門ルールです。
+
+## 基本方針
+
+### 日付取得の目的
+- **動的日付更新**: 手動入力によるミスの防止
+- **標準フォーマット統一**: プロジェクト全体での日付形式の一貫性
+- **自動化促進**: バージョン管理・README更新での効率化
+- **国際化対応**: 年月日表記の明確化
+
+### 適用条件
+- README.md最終更新日の更新時（**実際の内容変更があった場合のみ**）
+- 主要表現ファイルのlastUpdatedフィールド更新時（**実際の内容変更があった場合のみ**）
+- バージョン管理での日付記録時
+- 更新履歴の記録時
+- Git コミットメッセージでの日付記載時
+
+### 重要な制約
+- **差分なし更新の禁止**: 内容に変更がない場合は日付更新を行わない
+- **変更履歴の正確性**: 日付更新は実際の変更内容と対応させる
+- **一括更新の慎重な使用**: 全ファイル一括更新は避け、変更があったファイルのみ対象とする
+
+## 標準日付取得コマンド
+
+### PowerShell環境での標準コマンド
+```powershell
+# 基本的な日付取得（YYYY-MM-DD形式）
+$today = Get-Date -Format "yyyy-MM-dd"
+Write-Host "今日の日付: $today"
+
+# 日本語形式（YYYY年MM月DD日）
+$todayJP = Get-Date -Format "yyyy年MM月dd日"
+Write-Host "日本語日付: $todayJP"
+
+# ISO 8601形式（国際標準）
+$todayISO = Get-Date -Format "yyyy-MM-ddTHH:mm:ssK"
+Write-Host "ISO形式: $todayISO"
+
+# タイムスタンプ形式（ファイル名用）
+$timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+Write-Host "タイムスタンプ: $timestamp"
+```
+
+### 用途別標準フォーマット
+
+#### README.md更新用
+```powershell
+# README.mdの最終更新日用
+$readmeDate = Get-Date -Format "yyyy年MM月dd日"
+Write-Host "README用日付: $readmeDate"
+```
+
+#### フロントマター用（mdファイル）
+```powershell
+# lastUpdatedフィールド用
+$frontmatterDate = Get-Date -Format "yyyy-MM-dd"
+Write-Host "フロントマター用: $frontmatterDate"
+```
+
+#### 更新履歴用
+```powershell
+# 更新履歴セクション用
+$historyDate = Get-Date -Format "yyyy-MM-dd"
+Write-Host "更新履歴用: $historyDate"
+```
+
+#### Gitコミット用
+```powershell
+# コミットメッセージ用
+$commitDate = Get-Date -Format "yyyy/MM/dd"
+Write-Host "コミット用: $commitDate"
+```
+
+## 自動更新スクリプト
+
+### README.md最終更新日の自動更新
+```powershell
+function Update-ReadmeDate {
+    $readmeFile = "README.md"
+    $newDate = Get-Date -Format "yyyy年MM月dd日"
+    
+    if (Test-Path $readmeFile) {
+        # 最終更新日の行を検索・更新
+        $content = Get-Content $readmeFile
+        $updatedContent = $content -replace '\*\*最終更新\*\*: .*年.*月.*日', "**最終更新**: $newDate"
+        $updatedContent | Set-Content $readmeFile
+        Write-Host "✅ README.md最終更新日を更新: $newDate" -ForegroundColor Green
+    } else {
+        Write-Host "❌ README.mdが見つかりません" -ForegroundColor Red
+    }
+}
+```
+
+### フロントマター日付の一括更新
+```powershell
+function Update-FrontmatterDates {
+    param([string[]]$Files)
+    
+    $today = Get-Date -Format "yyyy-MM-dd"
+    
+    foreach ($file in $Files) {
+        if (Test-Path $file) {
+            $content = Get-Content $file -Raw
+            $updatedContent = $content -replace 'lastUpdated: ".*"', "lastUpdated: `"$today`""
+            $updatedContent | Set-Content $file
+            Write-Host "✅ $file のlastUpdatedを更新: $today" -ForegroundColor Green
+        } else {
+            Write-Host "❌ $file が見つかりません" -ForegroundColor Red
+        }
+    }
+}
+```
+
+### 更新履歴エントリの自動生成
+```powershell
+function Add-UpdateHistoryEntry {
+    param(
+        [string]$Type,
+        [string]$Description
+    )
+    
+    $today = Get-Date -Format "yyyy-MM-dd"
+    $entry = "### $today`n- **$Type**: $Description`n"
+    
+    Write-Host "更新履歴エントリ生成:" -ForegroundColor Cyan
+    Write-Host $entry -ForegroundColor Yellow
+    
+    return $entry
+}
+```
+
+## 実用的な使用例
+
+### 日常的な更新作業での使用（変更ファイルのみ）
+```powershell
+# 1. 現在日付の確認
+$today = Get-Date -Format "yyyy-MM-dd"
+$todayJP = Get-Date -Format "yyyy年MM月dd日"
+Write-Host "作業日: $today ($todayJP)"
+
+# 2. 実際に変更したファイルのみ指定
+$changedFiles = @("README.md", "back-down-撤退する.md")  # 実際に変更したファイルのみ
+Update-SelectiveDates -ChangedFiles $changedFiles
+
+# 3. 更新履歴エントリ作成（変更があった場合のみ）
+$historyEntry = Add-UpdateHistoryEntry -Type "PATCH" -Description "例文の追加・改善"
+```
+
+### 選択的な日付更新（推奨）
+```powershell
+function Update-SelectiveDates {
+    param([string[]]$ChangedFiles)
+    
+    Write-Host "=== 変更ファイルのみ日付更新開始 ===" -ForegroundColor Cyan
+    
+    if ($ChangedFiles.Count -eq 0) {
+        Write-Host "⚠️ 変更ファイルが指定されていません" -ForegroundColor Yellow
+        return
+    }
+    
+    # 変更があったファイルのみ更新
+    foreach ($file in $ChangedFiles) {
+        if ($file -eq "README.md") {
+            Update-ReadmeDate
+        } else {
+            Update-FrontmatterDates -Files @($file)
+        }
+    }
+    
+    $today = Get-Date -Format "yyyy年MM月dd日"
+    Write-Host "✅ 選択的日付更新完了: $today" -ForegroundColor Green
+}
+
+# 使用例
+# Update-SelectiveDates -ChangedFiles @("README.md", "back-down-撤退する.md")
+```
+
+## 日付フォーマット標準
+
+### プロジェクト内標準フォーマット
+| 用途 | フォーマット | 例 | PowerShellコマンド |
+|------|-------------|----|--------------------|
+| README最終更新 | yyyy年MM月dd日 | 2025年01月21日 | `Get-Date -Format "yyyy年MM月dd日"` |
+| フロントマター | yyyy-MM-dd | 2025-01-21 | `Get-Date -Format "yyyy-MM-dd"` |
+| 更新履歴 | yyyy-MM-dd | 2025-01-21 | `Get-Date -Format "yyyy-MM-dd"` |
+| Gitコミット | yyyy/MM/dd | 2025/01/21 | `Get-Date -Format "yyyy/MM/dd"` |
+| ファイル名 | yyyyMMdd_HHmmss | 20250121_143052 | `Get-Date -Format "yyyyMMdd_HHmmss"` |
+
+### 国際化対応
+- **ISO 8601**: `yyyy-MM-ddTHH:mm:ssK` (国際標準)
+- **RFC 3339**: `yyyy-MM-dd'T'HH:mm:ss.fffK` (Web API用)
+- **Unix Timestamp**: `[DateTimeOffset]::Now.ToUnixTimeSeconds()` (システム間連携用)
+
+## エラー処理
+
+### 日付取得失敗時の対処
+```powershell
+function Get-SafeDate {
+    param([string]$Format = "yyyy-MM-dd")
+    
+    try {
+        $date = Get-Date -Format $Format
+        return $date
+    }
+    catch {
+        Write-Host "❌ 日付取得エラー: $($_.Exception.Message)" -ForegroundColor Red
+        # フォールバック: 手動入力を促す
+        $manualDate = Read-Host "手動で日付を入力してください ($Format 形式)"
+        return $manualDate
+    }
+}
+```
+
+### タイムゾーン考慮
+```powershell
+# 日本時間での確実な取得
+function Get-JSTDate {
+    param([string]$Format = "yyyy-MM-dd")
+    
+    $jst = [System.TimeZoneInfo]::FindSystemTimeZoneById("Tokyo Standard Time")
+    $jstTime = [System.TimeZoneInfo]::ConvertTime([DateTime]::Now, $jst)
+    return $jstTime.ToString($Format)
+}
+```
+
+## チェックリスト
+
+### 日付更新時の確認項目
+- [ ] **実際の変更確認**: ファイルに実際の内容変更があることを確認
+- [ ] **変更差分の存在**: 日付更新に値する変更内容があることを確認
+- [ ] **PowerShell環境**: Get-Dateコマンドが利用可能
+- [ ] **フォーマット確認**: 用途に応じた適切なフォーマット使用
+- [ ] **ファイル存在確認**: 更新対象ファイルの存在確認
+- [ ] **バックアップ**: 重要ファイルの事前バックアップ
+- [ ] **権限確認**: ファイル書き込み権限の確認
+
+### 自動化スクリプト実行時
+- [ ] **エラーハンドリング**: try-catch文での例外処理
+- [ ] **実行結果確認**: 更新成功・失敗の明確な表示
+- [ ] **ログ記録**: 実行履歴の記録（必要に応じて）
+- [ ] **ロールバック準備**: 問題発生時の復元手順
+
+### プロジェクト統合時
+- [ ] **一貫性確認**: 全ファイルでの日付フォーマット統一
+- [ ] **参照整合性**: README.mdと個別ファイルの日付整合性
+- [ ] **Git管理**: 日付更新のコミット管理
+- [ ] **ドキュメント更新**: 日付更新に伴う関連ドキュメントの更新
+
+## 他ルールとの連携
+
+### 107-README管理.mdcとの連携
+- **参照方法**: `[[005-日付取得管理.mdc]]`を参照
+- **適用場面**: README.md最終更新日の動的更新
+- **標準コマンド**: `Update-ReadmeDate`関数の利用
+
+### 109-バージョン管理ルール.mdcとの連携
+- **参照方法**: `[[005-日付取得管理.mdc]]`を参照
+- **適用場面**: lastUpdatedフィールドの自動更新
+- **標準コマンド**: `Update-FrontmatterDates`関数の利用
+
+### 108-Git操作管理.mdcとの連携
+- **参照方法**: `[[005-日付取得管理.mdc]]`を参照
+- **適用場面**: コミットメッセージでの日付記載
+- **標準フォーマット**: `yyyy/MM/dd`形式の使用
+
+## 関連ファイル
+- [[107-README管理.mdc]] - README.md更新での日付管理
+- [[109-バージョン管理ルール.mdc]] - バージョン管理での日付更新
+- [[108-Git操作管理.mdc]] - Git操作での日付記載
+- [[004-PowerShell操作ガイド.mdc]] - PowerShell基本操作

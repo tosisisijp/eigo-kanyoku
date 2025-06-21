@@ -54,4 +54,4 @@ Ankiラベル:慣用句
 Speech: They discussed the proposal behind my back.
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part3:職場でのゴシップ
 <!--ID: 1750469465183-->
-END 
+END

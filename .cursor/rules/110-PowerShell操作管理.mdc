@@ -1,0 +1,277 @@
+---
+description: "PowerShellコマンド実行時の安全性確保とエラー予防に関する専門ルール - 構文チェック・段階的実行・デバッグ手法・トラブルシューティングを含む包括的PowerShell操作ガイド"
+globs: ["*.md", "*.mdc"]
+alwaysApply: false
+---
+# PowerShell操作管理
+
+このルールはPowerShellコマンド実行時の安全性とエラー予防、およびeigo-kanyokuプロジェクト固有のPowerShell操作を統合管理します。
+
+## 統合範囲
+- **安全性確保**: PowerShellコマンド実行時のエラー予防・デバッグ手法
+- **プロジェクト固有操作**: eigo-kanyoku特化のPowerShell操作標準化
+- **一括処理**: mdファイル操作・文字コード統一・検証フレームワーク
+
+## 基本原則
+
+### 段階的実行の推奨
+**複雑なコマンドは必ず段階的に実行**
+- 一度に長いコマンドを実行しない
+- 各段階で結果を確認
+- エラー発生時の影響範囲を最小化
+
+### 事前構文チェックの実施
+**実行前に必ず構文確認**
+- 基本的な構文エラーの事前発見
+- 特に日本語キーを含む処理では慎重に
+
+## 構文エラーの予防
+
+### よくある構文エラー
+**頻出パターン**:
+- `for`ループの構文ミス: `or` → `for`
+- 括弧の不一致: `(` と `)` の対応確認
+- 引用符の不一致: `"` と `'` の対応確認
+- セミコロンの位置ミス
+- 変数名のタイポ
+
+### 事前チェック項目
+- [ ] `for ($i = 1; $i -le N; $i++)` の構文が正しいか
+- [ ] 括弧の開始・終了が対応しているか
+- [ ] 引用符の開始・終了が対応しているか
+- [ ] 変数名に誤字がないか
+- [ ] 日本語キー名のハッシュテーブル操作が含まれる場合は段階的実行
+
+## 複雑なコマンドの実行方針
+
+### 段階的実行の手順
+1. **基本構文の確認**: 単純なテストコマンドで構文検証
+2. **部分実行**: ループや条件分岐を含む場合は分割実行
+3. **エラー時の対応**: 構文エラーは即座に修正、PSReadLineエラーは段階分割
+
+### 実行例
+```powershell
+# 1. 基本構文テスト
+$test = @{}; $test["テスト"] = @()
+
+# 2. ループ構文テスト  
+for ($i = 1; $i -le 3; $i++) { $test["テスト"] += "file$i.md" }
+
+# 3. 実際の処理実行
+# (段階的に実行)
+```
+
+## エラーパターンと対処法
+
+### 構文エラー (ParserError)
+**症状**: `Missing closing ')' in expression` 等
+**原因**: 括弧・引用符の不一致、キーワードのタイポ
+**対処**: 構文を一行ずつ確認、基本構文テストから開始
+
+### PSReadLineエラー
+**症状**: コマンド実行中の予期しない停止
+**原因**: 複雑な処理、日本語処理との組み合わせ
+**対処**: コマンドを段階的に分割、単純な処理から開始
+
+### 日本語キー関連エラー
+**症状**: ハッシュテーブル操作でのエラー
+**原因**: 日本語キー名とループ処理の組み合わせ
+**対処**: 段階的実行、英語キーでのテスト実行
+
+## デバッグ手法
+
+### 段階的デバッグ
+```powershell
+# Step 1: 変数作成テスト
+$test = @{}
+
+# Step 2: キー追加テスト
+$test["テストキー"] = @()
+
+# Step 3: 値追加テスト
+$test["テストキー"] += "test1"
+
+# Step 4: ループテスト
+for ($i = 1; $i -le 3; $i++) { 
+    Write-Host "Loop $i" 
+}
+
+# Step 5: 組み合わせテスト
+for ($i = 1; $i -le 3; $i++) { 
+    $test["テストキー"] += "file$i.md" 
+}
+```
+
+### エラー情報の活用
+- エラーメッセージの詳細確認
+- 行番号・文字位置の特定
+- 類似する正常動作コマンドとの比較
+
+## 実践的なガイドライン
+
+### ファイル操作時
+```powershell
+# 安全な一括処理の例
+$files = Get-ChildItem -Filter "*.md"
+Write-Host "Found $($files.Count) files"
+
+foreach ($file in $files) {
+    Write-Host "Processing: $($file.Name)"
+    # 実際の処理
+}
+```
+
+### ハッシュテーブル操作時
+```powershell
+# 段階的なハッシュテーブル構築
+$results = @{}
+$results["成功"] = @()
+$results["エラー"] = @()
+
+# テスト追加
+$results["成功"] += "test.md"
+Write-Host "Success count: $($results["成功"].Count)"
+```
+
+### 複雑な処理の分割例
+```powershell
+# 悪い例（一度に全て実行）
+# $files = Get-ChildItem -Filter "*.md"; $results = @{}; $results["正常"] = @(); foreach ($file in $files) { $results["正常"] += $file.Name }
+
+# 良い例（段階的実行）
+$files = Get-ChildItem -Filter "*.md"
+$results = @{}
+$results["正常"] = @()
+foreach ($file in $files) { 
+    $results["正常"] += $file.Name 
+}
+```
+
+## トラブルシューティング
+
+### よくある問題と解決策
+
+**問題**: `for`ループが動作しない
+**解決**: `for`のスペルミス（`or`になっていないか）を確認
+
+**問題**: 日本語キーでエラー
+**解決**: 英語キーでテスト→日本語キーに変更→段階的実行
+
+**問題**: 長いコマンドでエラー
+**解決**: コマンドを分割→各部分をテスト→段階的に結合
+
+### 緊急時の対応
+1. エラー発生時は即座に実行停止
+2. エラーメッセージを正確に記録
+3. 最後に成功した段階まで戻る
+4. 問題箇所を特定して修正
+5. 段階的に再実行
+
+## eigo-kanyokuプロジェクト固有操作（旧103統合）
+
+### 対象範囲
+- ルートディレクトリの全mdファイル（README.md除く）
+- 文字コード統一（UTF-8、BOMなし）
+- 改行コード統一（LF）
+- プロジェクト固有の品質基準に基づく検証
+
+### mdファイル一括取得
+```powershell
+# プロジェクト標準: README.mdを除く全mdファイル
+$mdFiles = Get-ChildItem -Path "." -Filter "*.md" | Where-Object { $_.Name -notlike "README.md" }
+Write-Host "対象ファイル数: $($mdFiles.Count)" -ForegroundColor Cyan
+```
+
+### 文字コード統一処理
+```powershell
+# UTF-8（BOMなし）での統一処理
+function Set-ProjectFileEncoding {
+    param([string]$FilePath)
+    
+    $content = Get-Content $FilePath -Raw -Encoding UTF8
+    $content | Out-File -FilePath $FilePath -Encoding UTF8 -NoNewline
+    Write-Host "✅ エンコーディング統一: $FilePath" -ForegroundColor Green
+}
+
+# 一括処理
+$mdFiles | ForEach-Object { Set-ProjectFileEncoding $_.FullName }
+```
+
+### 改行コード統一処理
+```powershell
+# LF統一
+$content = Get-Content $FilePath -Raw
+$content = $content -replace "`r`n", "`n"  # CRLFをLFに変換
+$content = $content -replace "`r", "`n"    # 単独CRもLFに変換
+$content = $content -replace "`n", "`n"    # LFに統一
+Set-Content $FilePath -Value $content -NoNewline -Encoding UTF8
+Write-Host "✅ 改行コード統一 (LF): $FilePath" -ForegroundColor Green
+```
+
+### 検証フレームワーク
+```powershell
+# プロジェクト共通の検証結果構造
+$ValidationResults = @{
+    "正常" = @()
+    "要修正" = @()
+    "警告" = @()
+    "エラー" = @()
+}
+
+# 検証結果の表示
+function Show-ValidationResults {
+    param($Results)
+    
+    Write-Host "=== 検証結果サマリー ===" -ForegroundColor Magenta
+    foreach ($category in $Results.Keys) {
+        $count = $Results[$category].Count
+        if ($count -gt 0) {
+            $color = switch ($category) {
+                "正常" { "Green" }
+                "警告" { "Yellow" }
+                default { "Red" }
+            }
+            Write-Host "$category ($count 件):" -ForegroundColor $color
+            $Results[$category] | ForEach-Object { Write-Host "  - $_" }
+            Write-Host ""
+        }
+    }
+}
+```
+
+### 一括処理テンプレート
+```powershell
+# 標準的な一括処理フロー
+$mdFiles = Get-ChildItem -Path "." -Filter "*.md" | Where-Object { $_.Name -notlike "README.md" }
+Write-Host "処理対象: $($mdFiles.Count) ファイル" -ForegroundColor Magenta
+
+$results = @{ "成功" = @(); "失敗" = @() }
+
+foreach ($file in $mdFiles) {
+    try {
+        Write-Host "処理中: $($file.Name)" -ForegroundColor Yellow
+        
+        # ここに具体的な処理を記述
+        
+        $results["成功"] += $file.Name
+        Write-Host "✅ 完了: $($file.Name)" -ForegroundColor Green
+        
+    } catch {
+        $results["失敗"] += $file.Name
+        Write-Host "❌ エラー: $($file.Name) - $($_.Exception.Message)" -ForegroundColor Red
+    }
+}
+
+# 結果表示
+Write-Host "=== 処理結果 ===" -ForegroundColor Magenta
+Write-Host "成功: $($results['成功'].Count) ファイル" -ForegroundColor Green
+Write-Host "失敗: $($results['失敗'].Count) ファイル" -ForegroundColor Red
+```
+
+## 関連ファイル
+- [[103-変更規模別ルール.mdc]] - 変更プロセス管理
+- [[109-バージョン管理ルール.mdc]] - バージョン管理コマンド
+- [[108-Git操作管理.mdc]] - Git操作の安全な実行
+- [[001-AI実装ガイドライン.mdc]] - AI実装時の制約
+- [[202-Obsidian_to_Anki独自形式管理.mdc]] - Anki形式検証での活用
+- [[203-Obsidian_to_Anki専用PowerShell操作.mdc]] - Anki特化PowerShell操作

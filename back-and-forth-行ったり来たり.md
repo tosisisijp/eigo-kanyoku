@@ -54,4 +54,4 @@ Ankiラベル:慣用句
 Speech: They went back and forth on the contract terms for hours.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part3:ビジネス交渉
 <!--ID: 1750466394777-->
-END 
+END

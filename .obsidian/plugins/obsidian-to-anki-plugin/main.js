@@ -65809,32 +65809,58 @@ class AllFile extends AbstractFile {
         this.notes_to_delete = [];
     }
     scanNotes() {
+        // console.log("DEBUG-SCAN-1: scanNotes開始 - ファイル:", this.path);
+        // console.log("DEBUG-SCAN-2: 正規表現:", this.data.NOTE_REGEXP);
+        // console.log("DEBUG-SCAN-3: ファイル内容長:", this.file.length);
+        // console.log("DEBUG-SCAN-4: ファイル内容(全体):", this.file);
+        
+        
+        let matchCount = 0;
         for (let note_match of this.file.matchAll(this.data.NOTE_REGEXP)) {
+            matchCount++;
+            // console.log("DEBUG-SCAN-6: マッチ発見", matchCount, "- index:", note_match.index);
+            // console.log("DEBUG-SCAN-7: マッチ内容:", note_match[0].substring(0, 50), "...");
+            // console.log("DEBUG-SCAN-8: キャプチャグループ1:", note_match[1] ? note_match[1].substring(0, 50) + "..." : "null");
+            
             let [note, position] = [note_match[1], note_match.index + note_match[0].indexOf(note_match[1]) + note_match[1].length];
             // That second thing essentially gets the index of the end of the first capture group.
             let parsed = new Note(note, this.data.fields_dict, this.data.curly_cloze, this.data.highlights_to_cloze, this.formatter).parse(this.target_deck, this.url, this.frozen_fields_dict, this.data, this.data.add_context ? this.getContextAtIndex(note_match.index) : "");
-            if (parsed.identifier == null) {
-                // Need to make sure global_tags get added
+            
+            // console.log("DEBUG-SCAN-12: parsed.identifier:", parsed.identifier);
+            // console.log("DEBUG-SCAN-13: parsed.note:", parsed.note);
+            // console.log("DEBUG-SCAN-14: this.data.EXISTING_IDS.length:", this.data.EXISTING_IDS.length);
+            
+            if (parsed.identifier == null) {// Need to make sure global_tags get added
+                // console.log("DEBUG-SCAN-15: identifier is null - 新規ノートとして追加");
                 parsed.note.tags.push(...this.global_tags.split(TAG_SEP));
                 this.notes_to_add.push(parsed.note);
                 this.id_indexes.push(position);
             }
             else if (!this.data.EXISTING_IDS.includes(parsed.identifier)) {
+                // console.log("DEBUG-SCAN-16: identifier exists but not in EXISTING_IDS:", parsed.identifier);
                 if (parsed.identifier == CLOZE_ERROR) {
+                    // console.log("DEBUG-SCAN-17: CLOZE_ERROR detected - continue");
                     continue;
                 }
                 // Need to show an error otherwise
                 else if (parsed.identifier == NOTE_TYPE_ERROR) {
+                    // console.log("DEBUG-SCAN-18: NOTE_TYPE_ERROR detected");
                     console.warn("Did not recognise note type ", parsed.note.modelName, " in file ", this.path);
                 }
                 else {
+                    // console.log("DEBUG-SCAN-19: Note does not exist in Anki");
                     console.warn("Note with id", parsed.identifier, " in file ", this.path, " does not exist in Anki!");
                 }
             }
             else {
+                // console.log("DEBUG-SCAN-20: identifier exists in EXISTING_IDS - 編集対象として追加");
                 this.notes_to_edit.push(parsed);
             }
         }
+        
+        // console.log("DEBUG-SCAN-9: scanNotes終了 - 総マッチ数:", matchCount);
+        // console.log("DEBUG-SCAN-10: notes_to_add数:", this.notes_to_add.length);
+        // console.log("DEBUG-SCAN-11: notes_to_edit数:", this.notes_to_edit.length);
     }
     scanInlineNotes() {
         for (let note_match of this.file.matchAll(this.data.INLINE_REGEXP)) {
@@ -68085,6 +68111,15 @@ class FileManager {
             const content = await this.app.vault.read(file);
             const cache = this.app.metadataCache.getCache(file.path);
             const file_data = this.dataToFileData(file);
+            
+            // console.log("File path:", file.path);
+            // console.log("Content length:", content.length);
+            // console.log("Content preview (first 200 chars):", content.substring(0, 200));
+            // console.log("Has START keyword:", content.includes("START"));
+            // console.log("Has Speech keyword:", content.includes("Speech:"));
+            // console.log("Cache exists:", !!cache);
+            // console.log("========================");
+            
             this.ownFiles.push(new AllFile(content, file.path, this.data.add_file_link ? this.getUrl(file) : "", file_data, cache));
         }
     }
@@ -68095,10 +68130,23 @@ class FileManager {
         for (let index in this.ownFiles) {
             const i = parseInt(index);
             let file = this.ownFiles[i];
-            if (!(this.file_hashes.hasOwnProperty(file.path) && file.getHash() === this.file_hashes[file.path])) {
+            
+            
+            if (true) {
                 //Indicates it's changed or new
                 console.info("Scanning ", file.path, "as it's changed or new.");
+                
+                // console.log("File path:", file.path);
+                // console.log("File content length:", file.file?.length || 0);
+                // console.log("========================");
+                
                 file.scanFile();
+                
+                // console.log("File path:", file.path);
+                // console.log("Notes found:", file.all_notes_to_add?.length || 0);
+                // console.log("Cards to add:", file.all_notes_to_add || []);
+                // console.log("========================");
+                
                 files_changed.push(file);
                 obfiles_changed.push(this.files[i]);
             }
@@ -68145,7 +68193,7 @@ class FileManager {
         for (let file of this.ownFiles) {
             const mediaLinks = difference(file.formatter.detectedMedia, this.added_media_set);
             for (let mediaLink of mediaLinks) {
-                console.log("Adding media file: ", mediaLink);
+                // console.log("Adding media file: ", mediaLink);
                 const dataFile = this.app.metadataCache.getFirstLinkpathDest(mediaLink, file.path);
                 if (!(dataFile)) {
                     console.warn("Couldn't locate media file ", mediaLink);

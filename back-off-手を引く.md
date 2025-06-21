@@ -55,4 +55,4 @@ Ankiラベル:分離句動詞副詞
 Speech: The police backed off when the situation became dangerous.
 Tags: TOEIC優先度:95 Ankiラベル:分離句動詞副詞 Part4:安全管理報告
 <!--ID: 1750466663845-->
-END 
+END

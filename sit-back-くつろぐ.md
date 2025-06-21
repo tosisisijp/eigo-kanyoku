@@ -53,4 +53,5 @@ Part1:オフィス描写
 Ankiラベル:慣用句
 Speech: Just sit back and let the team handle the presentation.
 Tags: TOEIC優先度:90 Ankiラベル:慣用句 Part1:オフィス描写
-END 
+<!--ID: 1750496452347-->
+END

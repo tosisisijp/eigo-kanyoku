@@ -54,4 +54,6 @@ Part4:プロジェクト管理
 Ankiラベル:分離句動詞副詞
 Speech: We had to scale back the project due to funding issues.
 Tags: TOEIC優先度:80 Ankiラベル:分離句動詞副詞 Part4:プロジェクト管理
-END 
+<!--ID: 1750507106746-->
+END
+

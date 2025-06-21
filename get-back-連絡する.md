@@ -54,4 +54,5 @@ Part4:ビジネス報告
 Ankiラベル:固定句動詞副詞
 Speech: I'll get back to you with the quarterly results by Friday.
 Tags: TOEIC優先度:100 Ankiラベル:固定句動詞副詞 Part4:ビジネス報告
-END 
+<!--ID: 1750512963011-->
+END
