@@ -95,9 +95,86 @@ function Test-TOEICReadmeUpdateNeeded {
 }
 ```
 
-### 2. ステージングフェーズ
+### 2. README確認・更新フェーズ（必須）
+
+#### README更新判定（自動）
+```powershell
+# 107番ルール準拠のREADME更新確認
+$readmeCheck = Test-TOEICReadmeUpdateNeeded
+if ($readmeCheck.NeedsUpdate) {
+    Write-Host "⚠️  README更新が必要です" -ForegroundColor Yellow
+    Write-Host "📋 107-README管理.mdcに従ってREADME.mdを更新してください" -ForegroundColor Cyan
+    
+    # Git差分に基づくREADME更新の実行
+    Write-Host "🔄 Git差分ベースのREADME更新を実行しますか？ (Y/N)" -ForegroundColor Magenta
+    # 手動確認後、107番ルールの更新プロセスを実行
+}
+```
+
+#### コミット前README確認チェックリスト
+- [ ] **Git差分確認**: [[006-Git差分分析管理.mdc]]でGit差分を確認済み
+- [ ] **README更新判定**: 変更内容に応じたREADME更新の必要性を判定済み
+- [ ] **107番ルール適用**: README更新が必要な場合、[[107-README管理.mdc]]に従って更新済み
+- [ ] **最新成果反映**: 今回セッションの技術的成果・ルール変更をREADMEに反映済み
+- [ ] **日付更新**: [[005-日付取得管理.mdc]]に従って最終更新日を更新済み
+- [ ] **Git差分整合性**: README記載内容とGit差分の整合性を確認済み
+
+#### README更新忘れ防止機能
+```powershell
+# コミット前README確認の自動実行
+function Invoke-PreCommitReadmeCheck {
+    Write-Host "=== コミット前README確認 ===" -ForegroundColor Cyan
+    
+    # 1. Git差分の確認
+    $changes = git diff --name-only HEAD
+    if ($changes) {
+        Write-Host "📊 変更ファイル検出:" -ForegroundColor Green
+        $changes | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+        
+        # 2. README更新判定
+        $needsReadmeUpdate = $false
+        
+        # ルールファイル変更の場合
+        if ($changes -match "\.mdc$") {
+            Write-Host "🔧 ルールファイル変更検出 → README更新推奨" -ForegroundColor Magenta
+            $needsReadmeUpdate = $true
+        }
+        
+        # 表現ファイル大量変更の場合
+        $mdChanges = $changes | Where-Object { $_ -match "\.md$" -and $_ -notmatch "README\.md" }
+        if ($mdChanges.Count -ge 5) {
+            Write-Host "📚 表現ファイル大量変更検出 ($($mdChanges.Count)件) → README更新推奨" -ForegroundColor Magenta
+            $needsReadmeUpdate = $true
+        }
+        
+        # 3. README更新確認
+        if ($needsReadmeUpdate) {
+            Write-Host "`n❗ README更新が推奨されます" -ForegroundColor Red
+            Write-Host "📋 107-README管理.mdcに従ってREADME.mdを更新してください" -ForegroundColor Cyan
+            Write-Host "🛑 README更新後にコミットを再実行してください" -ForegroundColor Red
+            return $false
+        } else {
+            Write-Host "✅ README更新は不要と判定されました" -ForegroundColor Green
+            return $true
+        }
+    } else {
+        Write-Host "✅ 変更なし - README確認スキップ" -ForegroundColor Green
+        return $true
+    }
+}
+
+# 使用例
+# if (Invoke-PreCommitReadmeCheck) { git add . } else { Write-Host "README更新してください" }
+```
+
+#### README更新プロセス連携
+- **107番ルール参照**: [[107-README管理.mdc]]の「Git差分統合システム」を活用
+- **006番ルール活用**: [[006-Git差分分析管理.mdc]]でGit差分の詳細分析
+- **005番ルール準拠**: [[005-日付取得管理.mdc]]で最終更新日の動的取得
+
+### 3. ステージングフェーズ
 ```bash
-# 全ファイルをステージング
+# README確認完了後のステージング
 git add .
 
 # または特定ファイルのみ
@@ -109,9 +186,9 @@ git add [ファイル名]
 - 必要に応じて個別ファイル指定を推奨
 - .ankiファイル等の除外確認
 
-### 3. コミットフェーズ
+### 4. コミットフェーズ
 ```bash
-# コミット実行
+# README確認完了後のコミット実行
 git commit -m "[適切なコミットメッセージ]"
 ```
 
@@ -121,8 +198,9 @@ git commit -m "[適切なコミットメッセージ]"
 - **一貫性**: プロジェクト内で統一された形式
 - **TOEIC関連**: Part・頻出度への影響を記載
 - **Anki関連**: カード作成・学習効率への影響を記載
+- **README整合性**: README更新との整合性を確保
 
-### 4. プッシュフェーズ
+### 5. プッシュフェーズ
 ```bash
 # リモートリポジトリにプッシュ
 git push
