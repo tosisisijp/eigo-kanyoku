@@ -37,6 +37,7 @@ hold back
 
 Don't hold back your opinions during the brainstorming session.
 Back: 
+Ankiラベル:慣用句
 hold back
 抑制する・控える・躊躇する
 
@@ -50,7 +51,6 @@ suppress-抑える - 抑える・抑圧する
 
 TOEIC優先度:90
 Part3:会議での議論
-Ankiラベル:慣用句
 Speech: Don't hold back your opinions during the brainstorming session.
 Tags: TOEIC優先度:90 Ankiラベル:慣用句 Part3:会議での議論
 <!--ID: 1750507305740-->

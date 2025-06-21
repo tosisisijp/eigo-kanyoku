@@ -32,6 +32,7 @@ back to back
 
 We have two meetings back to back this afternoon.
 Back: 
+Ankiラベル:慣用句
 back to back
 連続して・立て続けに
 
@@ -44,7 +45,6 @@ one-after-another-連続して - 次々と
 
 TOEIC優先度:85
 Part4:スケジュール調整
-Ankiラベル:慣用句
 Speech: We have two meetings back to back this afternoon.
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part4:スケジュール調整
 <!--ID: 1750448492768-->

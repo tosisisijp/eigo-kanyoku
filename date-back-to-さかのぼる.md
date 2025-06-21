@@ -37,6 +37,7 @@ date back to
 
 This building dates back to the company's founding in 1950.
 Back: 
+Ankiラベル:慣用句
 date back to
 さかのぼる・起源を持つ・由来する
 
@@ -50,7 +51,6 @@ stem-from-由来する - 由来する・起因する
 
 TOEIC優先度:80
 Part7:企業沿革記事
-Ankiラベル:慣用句
 Speech: This building dates back to the company's founding in 1950.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part7:企業沿革記事
 <!--ID: 1750512963013-->

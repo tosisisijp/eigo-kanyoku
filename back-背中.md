@@ -37,6 +37,7 @@ back
 
 Employees with back problems can request ergonomic chairs.
 Back:
+Ankiラベル:身体部位名詞
 back
 背中
 
@@ -49,7 +50,6 @@ back-裏 - 物の裏側
 
 TOEIC優先度:95
 Part4:職場の健康・安全
-Ankiラベル:身体部位名詞
 Speech: Employees with back problems can request ergonomic chairs.
 Tags: TOEIC優先度:95 Ankiラベル:身体部位名詞 Part4:職場の健康・安全
 <!--ID: 1750495295829-->

@@ -38,6 +38,7 @@ go back
 
 Let's go back to the original proposal and review it again.
 Back: 
+Ankiラベル:固定句動詞副詞
 go back
 戻る・元に戻る・さかのぼる
 
@@ -51,7 +52,6 @@ revisit-再検討する - 再検討する・再訪する
 
 TOEIC優先度:100
 Part3:会議での議論
-Ankiラベル:固定句動詞副詞
 Speech: Let's go back to the original proposal and review it again.
 Tags: TOEIC優先度:100 Ankiラベル:固定句動詞副詞 Part3:会議での議論
 <!--ID: 1750512963006-->

@@ -37,6 +37,7 @@ turn one's back on
 
 He turned his back on his old friends after becoming successful.
 Back: 
+Ankiラベル:慣用句
 turn one's back on
 見捨てる・無視する・背を向ける
 
@@ -50,7 +51,6 @@ reject-拒絶する - 拒絶する・却下する
 
 TOEIC優先度:80
 Part7:人間関係記事
-Ankiラベル:慣用句
 Speech: He turned his back on his old friends after becoming successful.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part7:人間関係記事
 <!--ID: 1750496452344-->

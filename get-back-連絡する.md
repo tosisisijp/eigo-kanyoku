@@ -38,6 +38,7 @@ get back
 
 I'll get back to you with the quarterly results by Friday.
 Back: 
+Ankiラベル:固定句動詞副詞
 get back
 連絡する・復帰する・戻る
 
@@ -51,7 +52,6 @@ contact-連絡する - 連絡する
 
 TOEIC優先度:100
 Part4:ビジネス報告
-Ankiラベル:固定句動詞副詞
 Speech: I'll get back to you with the quarterly results by Friday.
 Tags: TOEIC優先度:100 Ankiラベル:固定句動詞副詞 Part4:ビジネス報告
 <!--ID: 1750512963011-->

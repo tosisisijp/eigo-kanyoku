@@ -37,6 +37,7 @@ get someone back
 
 He decided to get his colleague back for the unfair treatment.
 Back: 
+Ankiラベル:慣用句
 get someone back
 復讐する・仕返しする・報復する
 
@@ -50,7 +51,6 @@ pay-back-返済する - 返済する・復讐する
 
 TOEIC優先度:80
 Part3:職場での人間関係
-Ankiラベル:慣用句
 Speech: He decided to get his colleague back for the unfair treatment.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part3:職場での人間関係
 <!--ID: 1750512963008-->

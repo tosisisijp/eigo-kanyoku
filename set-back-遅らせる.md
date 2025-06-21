@@ -38,6 +38,7 @@ set back
 
 The rain set back our construction schedule by two weeks.
 Back: 
+Ankiラベル:分離句動詞副詞
 set back
 遅らせる・妨げる・後退させる
 
@@ -51,7 +52,6 @@ hinder-妨げる - 妨げる・阻害する
 
 TOEIC優先度:85
 Part4:プロジェクト進捗報告
-Ankiラベル:分離句動詞副詞
 Speech: The rain set back our construction schedule by two weeks.
 Tags: TOEIC優先度:85 Ankiラベル:分離句動詞副詞 Part4:プロジェクト進捗報告
 <!--ID: 1750496452349-->

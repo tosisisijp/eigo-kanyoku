@@ -37,6 +37,7 @@ behind someone's back
 
 They discussed the proposal behind my back.
 Back: 
+Ankiラベル:慣用句
 behind someone's back
 陰で・内緒で・本人のいないところで
 
@@ -50,7 +51,6 @@ in-private-内密に - 内密に・私的に
 
 TOEIC優先度:85
 Part3:職場でのゴシップ
-Ankiラベル:慣用句
 Speech: They discussed the proposal behind my back.
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part3:職場でのゴシップ
 <!--ID: 1750469465183-->

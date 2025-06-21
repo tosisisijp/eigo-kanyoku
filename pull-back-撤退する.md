@@ -38,6 +38,7 @@ pull back
 
 The company pulled back from the overseas expansion plan.
 Back: 
+Ankiラベル:分離句動詞副詞
 pull back
 撤退する・控える・引き下がる
 
@@ -51,7 +52,6 @@ withdraw-撤退する - 撤退する・引き下がる
 
 TOEIC優先度:85
 Part4:企業戦略発表
-Ankiラベル:分離句動詞副詞
 Speech: The company pulled back from the overseas expansion plan.
 Tags: TOEIC優先度:85 Ankiラベル:分離句動詞副詞 Part4:企業戦略発表
 <!--ID: 1750507106749-->

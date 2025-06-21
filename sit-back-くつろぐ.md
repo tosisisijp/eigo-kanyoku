@@ -37,6 +37,7 @@ sit back
 
 Just sit back and let the team handle the presentation.
 Back: 
+Ankiラベル:慣用句
 sit back
 くつろぐ・傍観する・リラックスする
 
@@ -50,7 +51,6 @@ take-it-easy-気楽にする - 気楽にする・のんびりする
 
 TOEIC優先度:90
 Part1:オフィス描写
-Ankiラベル:慣用句
 Speech: Just sit back and let the team handle the presentation.
 Tags: TOEIC優先度:90 Ankiラベル:慣用句 Part1:オフィス描写
 <!--ID: 1750496452347-->

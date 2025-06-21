@@ -38,6 +38,7 @@ back out
 
 He backed out of the deal at the last minute.
 Back: 
+Ankiラベル:分離句動詞副詞
 back out
 約束を破る・撤退する・取り消す
 
@@ -51,7 +52,6 @@ cancel-キャンセルする - キャンセルする・取り消す
 
 TOEIC優先度:90
 Part3:ビジネス交渉
-Ankiラベル:分離句動詞副詞
 Speech: He backed out of the deal at the last minute.
 Tags: TOEIC優先度:90 Ankiラベル:分離句動詞副詞 Part3:ビジネス交渉
 <!--ID: 1750467234749-->

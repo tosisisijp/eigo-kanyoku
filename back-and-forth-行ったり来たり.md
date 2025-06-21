@@ -1,4 +1,4 @@
----
+﻿---
 title: "back and forth - 行ったり来たり"
 tags:
   - TOEIC
@@ -37,6 +37,7 @@ back and forth
 
 They went back and forth on the contract terms for hours.
 Back: 
+Ankiラベル:慣用句
 back and forth
 行ったり来たり・議論を重ねて・往復して
 
@@ -50,7 +51,6 @@ debate-討論する - 討論する・議論する
 
 TOEIC優先度:80
 Part3:ビジネス交渉
-Ankiラベル:慣用句
 Speech: They went back and forth on the contract terms for hours.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part3:ビジネス交渉
 <!--ID: 1750466394777-->

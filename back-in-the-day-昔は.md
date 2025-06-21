@@ -37,6 +37,7 @@ back in the day
 
 Back in the day, all meetings were held in person.
 Back: 
+Ankiラベル:慣用句
 back in the day
 昔は・その当時は・以前は
 
@@ -50,7 +51,6 @@ previously-以前に - 以前に・前もって
 
 TOEIC優先度:85
 Part4:企業変遷説明
-Ankiラベル:慣用句
 Speech: Back in the day, all meetings were held in person.
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part4:企業変遷説明
 <!--ID: 1750467303604-->

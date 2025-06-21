@@ -38,6 +38,7 @@ back down
 
 The company decided to back down from the aggressive pricing strategy.
 Back: 
+Ankiラベル:固定句動詞副詞
 back down
 撤退する・譲歩する・引き下がる
 
@@ -51,7 +52,6 @@ pull-back-撤退する - 撤退する・控える
 
 TOEIC優先度:100
 Part4:企業戦略発表
-Ankiラベル:固定句動詞副詞
 Speech: The company decided to back down from the aggressive pricing strategy.
 Tags: TOEIC優先度:100 Ankiラベル:固定句動詞副詞 Part4:企業戦略発表
 <!--ID: 1750493444473-->

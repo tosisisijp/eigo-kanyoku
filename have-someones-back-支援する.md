@@ -36,6 +36,7 @@ have someone's back
 
 Don't worry, I have your back during the negotiation.
 Back:
+Ankiラベル:慣用句
 have someone's back
 守る・支援する
 
@@ -48,7 +49,6 @@ back-someone-支援する - 後援する・支持する
 
 TOEIC優先度:95
 Part3:職場での支援
-Ankiラベル:慣用句
 Speech: Don't worry, I have your back during the negotiation.
 Tags: TOEIC優先度:95 Ankiラベル:慣用句 Part3:職場での支援
 <!--ID: 1750495295824-->

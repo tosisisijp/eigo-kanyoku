@@ -38,6 +38,7 @@ scale back
 
 We had to scale back the project due to funding issues.
 Back: 
+Ankiラベル:分離句動詞副詞
 scale back
 規模を縮小する・削減する・縮小する
 
@@ -51,7 +52,6 @@ downsize-縮小する - 縮小する・人員削減する
 
 TOEIC優先度:80
 Part4:プロジェクト管理
-Ankiラベル:分離句動詞副詞
 Speech: We had to scale back the project due to funding issues.
 Tags: TOEIC優先度:80 Ankiラベル:分離句動詞副詞 Part4:プロジェクト管理
 <!--ID: 1750507106746-->

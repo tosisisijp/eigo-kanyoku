@@ -37,6 +37,7 @@ cut back
 
 Due to budget constraints, we need to cut back on office expenses.
 Back: 
+Ankiラベル:慣用句
 cut back
 削減する・縮小する・減らす
 
@@ -50,7 +51,6 @@ downsize-縮小する - 規模を縮小する・人員削減する
 
 TOEIC優先度:95
 Part4:予算管理発表
-Ankiラベル:慣用句
 Speech: Due to budget constraints, we need to cut back on office expenses.
 Tags: TOEIC優先度:95 Ankiラベル:慣用句 Part4:予算管理発表
 <!--ID: 1750490949194-->

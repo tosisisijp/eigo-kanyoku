@@ -22,6 +22,7 @@ WithSpeech
 
 [英語例文]
 Back: 
+Ankiラベル:[ラベル名]
 [表現]
 [日本語意味]
 
@@ -34,7 +35,6 @@ Back:
 
 TOEIC優先度:[数値]
 Part[番号]:[出題文脈]
-Ankiラベル:[ラベル名]
 Speech: [英語例文]
 Tags: TOEIC優先度:[数値] Ankiラベル:[ラベル名] Part[番号]:[出題文脈]
 END
@@ -53,6 +53,7 @@ END
 - **英語例文**: 実用的な例文（TOEIC形式推奨）
 
 ### 3. カード裏面（Back:以降）
+- **Ankiラベル**: カード分類用ラベル（Back:直後に配置）
 - **表現**: 表面と同じ英語表現
 - **日本語意味**: 簡潔な意味説明
 - **英語例文**: 表面と同じ例文
@@ -62,7 +63,6 @@ END
 - **関連表現**: 類似・関連する表現とその説明
 - **TOEIC優先度**: 数値（0-100）
 - **Part情報**: 出題パートと文脈
-- **Ankiラベル**: カード分類用ラベル
 
 ### 5. メタデータ
 - **Speech**: 音声読み上げ対象の英文
@@ -244,6 +244,7 @@ back to back
 
 We have two meetings back to back this afternoon.
 Back: 
+Ankiラベル:慣用句
 back to back
 連続して・立て続けに
 
@@ -256,7 +257,6 @@ one-after-another-連続して - 次々と
 
 TOEIC優先度:85
 Part4:スケジュール調整
-Ankiラベル:慣用句
 Speech: We have two meetings back to back this afternoon.
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part4:スケジュール調整
 END
@@ -273,6 +273,7 @@ back up
 
 Please back up all important files before the update.
 Back: 
+Ankiラベル:分離句動詞副詞
 back up
 バックアップする
 
@@ -285,7 +286,6 @@ store-蓄える - 情報を蓄える
 
 TOEIC優先度:100
 Part4:IT関連業務指示
-Ankiラベル:分離句動詞副詞
 Speech: Please back up all important files before the update.
 Tags: TOEIC優先度:100 Ankiラベル:分離句動詞副詞 Part4:IT関連業務指示
 END

@@ -38,6 +38,7 @@ back off
 
 The police backed off when the situation became dangerous.
 Back: 
+Ankiラベル:分離句動詞副詞
 back off
 手を引く・関与をやめる・距離を置く
 
@@ -51,7 +52,6 @@ step-back-後退する - 後退する・距離を置く
 
 TOEIC優先度:95
 Part4:安全管理報告
-Ankiラベル:分離句動詞副詞
 Speech: The police backed off when the situation became dangerous.
 Tags: TOEIC優先度:95 Ankiラベル:分離句動詞副詞 Part4:安全管理報告
 <!--ID: 1750466663845-->

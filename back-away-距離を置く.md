@@ -38,6 +38,7 @@ back away
 
 She backed away from the controversial topic.
 Back: 
+Ankiラベル:固定句動詞副詞
 back away
 距離を置く・避ける・後退する
 
@@ -51,7 +52,6 @@ avoid-避ける - 避ける・回避する
 
 TOEIC優先度:85
 Part3:会議での回避
-Ankiラベル:固定句動詞副詞
 Speech: She backed away from the controversial topic.
 Tags: TOEIC優先度:85 Ankiラベル:固定句動詞副詞 Part3:会議での回避
 <!--ID: 1750466418255-->
