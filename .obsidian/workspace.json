@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "back.md",
+                "file": "behind-someones-back-陰で.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "back"
+              "title": "behind-someones-back-陰で"
             }
           }
         ]
@@ -142,17 +142,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "慣用句.md",
+                "file": "behind-someones-back-陰で.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "慣用句のアウトライン"
+              "title": "behind-someones-back-陰でのアウトライン"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -165,38 +165,39 @@
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
-      "command-palette:コマンドパレットを開く": false
+      "command-palette:コマンドパレットを開く": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
   "active": "1a63c9c66152bc00",
   "lastOpenFiles": [
+    "back-背中.md",
+    "back-up-バックアップする.md",
+    "back-to-back-連続して.md",
+    "back-out-撤退する.md",
+    "back-off-手を引く.md",
+    "back-in-the-day-昔は.md",
+    "back-away-距離を置く.md",
+    "back-and-forth-行ったり来たり.md",
+    "date-back-to-さかのぼる.md",
+    "scale-back-縮小する.md",
+    "get-someone-back-復讐する.md",
+    "turn-ones-back-on-見捨てる.md",
+    "set-back-遅らせる.md",
+    "behind-someones-back-陰で.md",
+    "pull-back-撤退する.md",
+    "sit-back-くつろぐ.md",
+    "hold-back-抑制する.md",
+    "cut-back-削減する.md",
+    "go-back-戻る.md",
+    "get-back-連絡する.md",
+    "back-down-撤退する.md",
+    "have-someones-back-支援する.md",
     "back.md",
     "back",
     "hinshi/同一性・識別形容詞.md",
     "hinshi/名詞と修飾語.md",
     "hinshi/名詞.md",
-    "hinshi/名詞と数量表現.md",
-    "hinshi/名詞と文の要素.md",
-    "hinshi/名詞句.md",
-    "hinshi/名詞節.md",
-    "hinshi/命令文.md",
-    "hinshi/基数詞.md",
-    "hinshi/場所に関わる品詞.md",
-    "hinshi/品詞.md",
-    "hinshi/固有名詞.md",
-    "hinshi/場所の前置詞.md",
-    "hinshi/場所の副詞.md",
-    "hinshi/場所の名詞.md",
-    "hinshi/場所の形容詞.md",
-    "hinshi/完了動詞.md",
-    "hinshi/場所前置詞.md",
-    "hinshi/場所副詞.md",
-    "hinshi/平叙文.md",
-    "hinshi/序数詞.md",
-    "hinshi/従位接続詞.md",
-    "hinshi/形容詞.md",
-    "hinshi/形容詞節.md",
-    "hinshi/形容詞句.md",
     "hinshi"
   ]
 }
