@@ -15,18 +15,54 @@ alwaysApply: false
 - **透明性**: 操作内容の明確な説明
 - **段階性**: 一度に一つの操作を実行
 - **学習継続性**: TOEIC学習・Anki連携の継続性確保
+- **README制御**: コミット前のREADME更新確認・制御
 
 ### 適用条件
 - ユーザーからの明示的な許可がある場合
 - 変更内容が明確に定義されている場合
 - 安全性チェックをすべて通過した場合
 - TOEIC表現・Anki設定への影響が評価済みの場合
+- **README更新が適切に完了している場合**
+
+## 🚨 Git操作制御の4パターンフロー
+
+### パターン1: README更新必要時（コミット指示なし）
+```
+作業完了 → README更新必要性検出 → 「README更新が必要です」報告 → 作業完了
+※ README更新は実行しない、報告のみ
+※ コミット操作は一切実行しない
+```
+
+### パターン2: README更新済み + コミット指示あり
+```
+コミット指示受信 → README状態確認（更新済み） → コミット操作実施
+```
+
+### パターン3: コミット指示あり + README更新必要
+```
+コミット指示受信 → 差分確認実施 → README更新必要性判定 → 「README更新してください」報告 → 作業停止
+※ ユーザーのREADME更新完了を待つ
+※ コミット指示があってもREADME更新が必要な場合は停止
+```
+
+### パターン4: コミット指示あり + README適切更新済み
+```
+コミット指示受信 → 差分確認実施 → README状態確認（適切更新済み） → コミット指示継続実施
+```
+
+### 重要な制約事項
+- **README更新主体**: ユーザー（AIは検出・報告・停止のみ）
+- **更新タイミング**: コミット直前のみ（その他の作業完了時は更新しない）
+- **コミット制御**: README更新が必要な状況では絶対にコミット実行しない
+- **差分確認**: コミット指示時は必ず差分をチェック
 
 ## 操作前チェックリスト
 
 ### 必須確認事項
 - [ ] **ユーザー許可**: Git操作の明示的な許可を得ている
+- [ ] **コミット指示確認**: 「コミットして」「プッシュして」の明示的指示があるか
 - [ ] **変更内容確認**: `git status`で変更内容を確認済み
+- [ ] **README更新状態**: README更新の必要性と完了状況を確認済み
 - [ ] **コミット前チェック**: [[103-変更規模別ルール.mdc]]のコミット前チェックリスト完了
 - [ ] **作業ディレクトリ**: 正しいディレクトリで作業している
 - [ ] **ブランチ確認**: 適切なブランチ（通常はmain）にいる
@@ -97,29 +133,7 @@ function Test-TOEICReadmeUpdateNeeded {
 
 ### 2. README確認・更新フェーズ（必須）
 
-#### README更新判定（自動）
-```powershell
-# 107番ルール準拠のREADME更新確認
-$readmeCheck = Test-TOEICReadmeUpdateNeeded
-if ($readmeCheck.NeedsUpdate) {
-    Write-Host "⚠️  README更新が必要です" -ForegroundColor Yellow
-    Write-Host "📋 107-README管理.mdcに従ってREADME.mdを更新してください" -ForegroundColor Cyan
-    
-    # Git差分に基づくREADME更新の実行
-    Write-Host "🔄 Git差分ベースのREADME更新を実行しますか？ (Y/N)" -ForegroundColor Magenta
-    # 手動確認後、107番ルールの更新プロセスを実行
-}
-```
-
-#### コミット前README確認チェックリスト
-- [ ] **Git差分確認**: [[006-Git差分分析管理.mdc]]でGit差分を確認済み
-- [ ] **README更新判定**: 変更内容に応じたREADME更新の必要性を判定済み
-- [ ] **107番ルール適用**: README更新が必要な場合、[[107-README管理.mdc]]に従って更新済み
-- [ ] **最新成果反映**: 今回セッションの技術的成果・ルール変更をREADMEに反映済み
-- [ ] **日付更新**: [[005-日付取得管理.mdc]]に従って最終更新日を更新済み
-- [ ] **Git差分整合性**: README記載内容とGit差分の整合性を確認済み
-
-#### README更新忘れ防止機能
+#### README更新必要性判定（自動実行）
 ```powershell
 # コミット前README確認の自動実行
 function Invoke-PreCommitReadmeCheck {
@@ -136,20 +150,20 @@ function Invoke-PreCommitReadmeCheck {
         
         # ルールファイル変更の場合
         if ($changes -match "\.mdc$") {
-            Write-Host "🔧 ルールファイル変更検出 → README更新推奨" -ForegroundColor Magenta
+            Write-Host "🔧 ルールファイル変更検出 → README更新必要" -ForegroundColor Magenta
             $needsReadmeUpdate = $true
         }
         
         # 表現ファイル大量変更の場合
         $mdChanges = $changes | Where-Object { $_ -match "\.md$" -and $_ -notmatch "README\.md" }
         if ($mdChanges.Count -ge 5) {
-            Write-Host "📚 表現ファイル大量変更検出 ($($mdChanges.Count)件) → README更新推奨" -ForegroundColor Magenta
+            Write-Host "📚 表現ファイル大量変更検出 ($($mdChanges.Count)件) → README更新必要" -ForegroundColor Magenta
             $needsReadmeUpdate = $true
         }
         
-        # 3. README更新確認
+        # 3. README更新確認結果
         if ($needsReadmeUpdate) {
-            Write-Host "`n❗ README更新が推奨されます" -ForegroundColor Red
+            Write-Host "`n❗ README更新が必要です" -ForegroundColor Red
             Write-Host "📋 107-README管理.mdcに従ってREADME.mdを更新してください" -ForegroundColor Cyan
             Write-Host "🛑 README更新後にコミットを再実行してください" -ForegroundColor Red
             return $false
@@ -162,10 +176,53 @@ function Invoke-PreCommitReadmeCheck {
         return $true
     }
 }
-
-# 使用例
-# if (Invoke-PreCommitReadmeCheck) { git add . } else { Write-Host "README更新してください" }
 ```
+
+#### 4パターンフロー制御機能
+```powershell
+# Git操作フロー制御
+function Invoke-GitOperationControl {
+    param(
+        [bool]$HasCommitInstruction = $false,
+        [string]$Operation = "status"
+    )
+    
+    Write-Host "=== Git操作フロー制御 ===" -ForegroundColor Cyan
+    
+    # README更新必要性チェック
+    $readmeCheckResult = Invoke-PreCommitReadmeCheck
+    
+    if (-not $HasCommitInstruction) {
+        # パターン1: コミット指示なし
+        if (-not $readmeCheckResult) {
+            Write-Host "`n📋 パターン1: README更新が必要です" -ForegroundColor Yellow
+            Write-Host "作業完了 - README更新をお願いします" -ForegroundColor Cyan
+            return "pattern1_readme_needed"
+        } else {
+            Write-Host "`n✅ パターン1: 作業完了" -ForegroundColor Green
+            return "pattern1_complete"
+        }
+    } else {
+        # パターン2-4: コミット指示あり
+        if (-not $readmeCheckResult) {
+            Write-Host "`n🛑 パターン3: README更新が必要 - コミット停止" -ForegroundColor Red
+            Write-Host "README更新後にコミットを再実行してください" -ForegroundColor Cyan
+            return "pattern3_readme_needed"
+        } else {
+            Write-Host "`n✅ パターン2/4: README確認完了 - コミット継続" -ForegroundColor Green
+            return "pattern2_4_continue"
+        }
+    }
+}
+```
+
+#### コミット前README確認チェックリスト
+- [ ] **Git差分確認**: [[006-Git差分分析管理.mdc]]でGit差分を確認済み
+- [ ] **README更新判定**: 変更内容に応じたREADME更新の必要性を判定済み
+- [ ] **107番ルール適用**: README更新が必要な場合、[[107-README管理.mdc]]に従って更新済み
+- [ ] **最新成果反映**: 今回セッションの技術的成果・ルール変更をREADMEに反映済み
+- [ ] **日付更新**: [[005-日付取得管理.mdc]]に従って最終更新日を更新済み
+- [ ] **Git差分整合性**: README記載内容とGit差分の整合性を確認済み
 
 #### README更新プロセス連携
 - **107番ルール参照**: [[107-README管理.mdc]]の「Git差分統合システム」を活用
@@ -185,12 +242,18 @@ git add [ファイル名]
 - `git add .`は慎重に使用
 - 必要に応じて個別ファイル指定を推奨
 - .ankiファイル等の除外確認
+- **README更新が完了していることを確認**
 
 ### 4. コミットフェーズ
 ```bash
 # README確認完了後のコミット実行
 git commit -m "[適切なコミットメッセージ]"
 ```
+
+**コミット実行の前提条件**:
+- **明示的なコミット指示**: ユーザーが「コミットして」と明示的に指示
+- **README更新完了**: 必要に応じてREADME更新が完了済み
+- **差分確認完了**: Git差分の確認と整合性チェック完了
 
 **コミットメッセージの基準**:
 - **簡潔性**: 50文字以内の要約
@@ -205,6 +268,11 @@ git commit -m "[適切なコミットメッセージ]"
 # リモートリポジトリにプッシュ
 git push
 ```
+
+**プッシュ実行の前提条件**:
+- **明示的なプッシュ指示**: ユーザーが「プッシュして」と明示的に指示
+- **コミット完了**: 正常なコミットが完了済み
+- **最終確認**: 全ての変更内容とREADME更新の整合性確認完了
 
 **プッシュ前確認**:
 - コミットが正常に完了している
