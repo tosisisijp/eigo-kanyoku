@@ -82,7 +82,7 @@ tags:
 | 3 | **back** | 裏 | 一般物体名詞 | "Please check the back of the invoice for payment instructions." | 支払い指示については請求書の裏をご確認ください。 | Part 4: 経理手続き案内 | **75** |
 | 4 | **back** | 裏側 | 場所名詞 | "The parking area is located at the back of the shopping center." | 駐車場はショッピングセンターの裏側にあります。 | Part 1: 施設案内 | **80** |
 | 5 | **back** | 奥 | 場所名詞 | "Storage facilities are kept in the back for inventory management." | 在庫管理のため保管設備は奥に置かれています。 | Part 4: 倉庫管理説明 | **80** |
-| 6 | **back up** | バックアップする | 分離句動詞副詞 | "Please back up all important files before the system update." | システム更新前に重要なファイルをすべてバックアップしてください。 | Part 4: IT関連業務指示 | **100** |
+| 6 | **back up** | バックアップする | 分離句動詞副詞 | "Please back all important files up before the system update." | システム更新前に重要なファイルをすべてバックアップしてください。 | Part 4: IT関連業務指示 | **100** |
 | 7 | **back up** | 支援する | 分離句動詞副詞 | "The manager will back you up during the presentation." | マネージャーがプレゼン中にあなたをサポートします。 | Part 3: 職場での会話 | **100** |
 | 8 | **send back** | 返送する | 分離句動詞副詞 | "Could you send this document back to the client?" | この書類をクライアントに返送していただけますか？ | Part 2: 業務依頼 | **100** |
 | 9 | **back down** | 撤退する | 固定句動詞副詞 | "The company decided to back down from the aggressive pricing strategy." | 会社は積極的な価格戦略から撤退することを決めました。 | Part 4: 企業戦略発表 | **100** |

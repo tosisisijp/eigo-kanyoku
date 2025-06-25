@@ -43,33 +43,25 @@ alwaysApply: false
 
 ## 改行コード管理
 
-### mdファイルの改行コード統一
-**全ての*.mdファイル（README.md含む）はLF改行コードで統一します。**
+### README.mdの改行コード統一
+**README.mdファイルはLF改行コードで統一します。**
 
 #### 改行コード管理の原則
-- **mdファイル**: LF改行を維持（Git設定による自動変換を回避）
-- **mdcファイル**: LF改行で統一（テンプレート整合性のため）
-- **設定ファイル**: ファイル種別に応じた適切な改行コード
-
-#### Git設定による改行コード制御
-```powershell
-# .gitattributesファイルで改行コード制御
-"*.md text eol=lf"
-"*.mdc text eol=lf"  # テンプレート整合性のためLF統一
-```
+- **README.md**: LF改行を維持（Git設定による自動変換を回避）
+- **その他のmd/mdcファイル**: [[202-Obsidian_to_Anki独自形式管理.mdc]]の改行コード統一ルールを参照
 
 #### PowerShell実行時の改行コード確保
 [[110-PowerShell操作管理.mdc]] の改行コード統一処理を使用：
 ```powershell
-# LF統一処理（110番ルール活用）
-$content = Get-Content $FilePath -Raw
+# README.md用LF統一処理（110番ルール活用）
+$content = Get-Content "README.md" -Raw
 $content = $content -replace "`r`n", "`n"  # CRLFをLFに変換
 $content = $content -replace "`r", "`n"    # 単独CRもLFに変換
-Set-Content $FilePath -Value $content -NoNewline -Encoding UTF8
+Set-Content "README.md" -Value $content -NoNewline -Encoding UTF8
 ```
 
 #### Git操作時の注意事項
-- **コミット前**: mdファイルの改行コードがLFであることを確認
+- **コミット前**: README.mdの改行コードがLFであることを確認
 - **警告対応**: "LF will be replaced by CRLF" 警告が出た場合は.gitattributes設定を確認
 - **[[110-PowerShell操作管理.mdc]]** の改行コード統一処理を活用
 

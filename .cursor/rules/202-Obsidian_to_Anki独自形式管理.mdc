@@ -203,6 +203,40 @@ ENDマーカー不存在: Obsidian_to_Ankiセクションが存在しない
 
 ### ID管理の重要事項
 - **プラグイン権限**: IDの生成・管理はObsidian_to_Ankiプラグインの専権事項
+
+## 改行コード管理
+
+### Anki統合ファイルの改行コード統一
+**Ankiカード作成に関わる全ファイル（md/mdcファイル）はLF改行コードで統一します。**
+
+#### 改行コード管理の原則
+- **mdファイル**: LF改行を維持（Ankiカード生成時の一貫性確保）
+- **mdcファイル**: LF改行で統一（テンプレート整合性のため）
+- **設定ファイル**: ファイル種別に応じた適切な改行コード
+
+#### Git設定による改行コード制御
+```powershell
+# .gitattributesファイルで改行コード制御
+"*.md text eol=lf"
+"*.mdc text eol=lf"  # テンプレート整合性のためLF統一
+```
+
+#### PowerShell実行時の改行コード確保
+[[110-PowerShell操作管理.mdc]] の改行コード統一処理を使用：
+```powershell
+# LF統一処理（110番ルール活用）
+$content = Get-Content $FilePath -Raw
+$content = $content -replace "`r`n", "`n"  # CRLFをLFに変換
+$content = $content -replace "`r", "`n"    # 単独CRもLFに変換
+Set-Content $FilePath -Value $content -NoNewline -Encoding UTF8
+```
+
+#### Anki統合時の注意事項
+- **カード作成前**: mdファイルの改行コードがLFであることを確認
+- **ENDマーカー**: ENDの後は必ずLF改行コード（スペースなし）
+- **プラグイン互換性**: Obsidian_to_Ankiプラグインとの改行コード互換性確保
+- **Git操作時**: "LF will be replaced by CRLF" 警告が出た場合は.gitattributes設定を確認
+- **[[110-PowerShell操作管理.mdc]]** の改行コード統一処理を活用
 - **手動操作禁止**: プロジェクト側でのID作成・編集・削除は禁止
 - **同期依存**: 初回同期後にIDが自動付与されることを前提とした運用
 

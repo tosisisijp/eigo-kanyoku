@@ -21,6 +21,8 @@ alwaysApply: false
 - 変更内容が明確に定義されている場合
 - 安全性チェックをすべて通過した場合
 - TOEIC表現・Anki設定への影響が評価済みの場合
+- PowerShell操作の安定化が必要な場合（[[004-PowerShell操作ガイド.mdc]]との連携）
+- Git差分分析での詳細確認が必要な場合（[[006-Git差分分析管理.mdc]]との連携）
 
 ## 操作前チェックリスト
 
@@ -47,11 +49,19 @@ alwaysApply: false
 ## Git操作の実行手順
 
 ### 1. 状況確認フェーズ
+**重要**: PowerShell実行前に [[004-PowerShell操作ガイド.mdc]] のPSReadLine無効化を実行してください。
+
 ```bash
+# PSReadLine無効化（詳細は [[004-PowerShell操作ガイド.mdc]] 参照）
+Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
+
 # 現在の状況確認
 git status
 git branch
 git log --oneline -5
+
+# 詳細な差分分析が必要な場合（[[006-Git差分分析管理.mdc]] 参照）
+# Get-GitChangesSummary -CommitRange 1
 ```
 
 **確認項目**:

@@ -1,0 +1,331 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Git差分分析管理 [Conditional]
+
+このルールはGit差分の取得・分析・活用に関する汎用的なルールです。
+
+## 基本方針
+
+### Git差分分析の目的
+- **変更内容の可視化**: コミット間の差分を明確に把握
+- **影響範囲の特定**: 変更されたファイル・行数の正確な把握
+- **品質管理支援**: 変更内容の妥当性確認
+- **ドキュメント更新支援**: 変更に基づく関連文書の更新判定
+
+### 適用条件
+- コミット前の変更内容確認時
+- ドキュメント更新の判定時
+- プロジェクト状況の分析時
+- 品質管理プロセスでの変更確認時
+
+## PowerShell実行時の前提条件
+
+### PSReadLine無効化の必須実行
+**重要**: このルールでPowerShellコマンドを実行する前に、**[[004-PowerShell操作ガイド.mdc]]** の「AIエージェント専用設定」を参照してPSReadLine無効化を実行してください。
+
+```powershell
+# 必須: PowerShell実行前の安定化処理
+# 詳細は [[004-PowerShell操作ガイド.mdc]] を参照
+Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
+```
+
+### 安定化の理由
+- **PSReadLineエラー回避**: AIエージェント操作時のBufferHeightエラーを防止
+- **コマンド実行安定化**: 複雑なGit差分コマンドの確実な実行
+- **出力完全性**: 差分結果の完全な取得・表示
+
+## 基本Git差分コマンド
+
+### 変更ファイル一覧の取得
+```powershell
+# 最終コミットからの変更ファイル一覧
+$changedFiles = git diff --name-only HEAD~1 HEAD
+Write-Host "=== 変更ファイル一覧 ===" -ForegroundColor Cyan
+$changedFiles | ForEach-Object { Write-Host "- $_" -ForegroundColor Yellow }
+
+# ワーキングディレクトリの未コミット変更
+git diff --name-only
+
+# ステージング済み変更
+git diff --name-only --staged
+```
+
+### 変更統計の取得
+```powershell
+# 詳細統計（ファイル別行数）
+git diff --stat HEAD~1 HEAD
+
+# 数値統計のみ
+git diff --numstat HEAD~1 HEAD
+
+# 簡潔な統計
+git diff --shortstat HEAD~1 HEAD
+```
+
+### 期間指定の差分取得
+```powershell
+# 過去N コミット分の変更
+git diff --name-only HEAD~3 HEAD  # 過去3コミット分
+git diff --name-only HEAD~5 HEAD  # 過去5コミット分
+
+# 特定コミット間の差分
+git diff --name-only [コミットハッシュ1] [コミットハッシュ2]
+
+# 特定日付以降の変更
+git diff --name-only --since="2024-01-01" HEAD
+```
+
+## 汎用Git差分分析関数
+
+### 基本変更サマリー関数
+```powershell
+function Get-GitChangesSummary {
+    param(
+        [int]$CommitRange = 1,
+        [string]$FilePattern = "*"
+    )
+    
+    # PSReadLine無効化 (詳細は [[004-PowerShell操作ガイド.mdc]] 参照)
+    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
+    
+    Write-Host "=== Git変更内容サマリー ===" -ForegroundColor Cyan
+    Write-Host "対象範囲: HEAD~$CommitRange から HEAD" -ForegroundColor Gray
+    
+    # 1. 変更ファイル一覧
+    $changedFiles = git diff --name-only HEAD~$CommitRange HEAD
+    if ($FilePattern -ne "*") {
+        $changedFiles = $changedFiles | Where-Object { $_ -like $FilePattern }
+    }
+    
+    Write-Host "`n変更ファイル数: $($changedFiles.Count)" -ForegroundColor Green
+    $changedFiles | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+    
+    # 2. 変更統計
+    Write-Host "`n変更統計:" -ForegroundColor Green
+    git diff --stat HEAD~$CommitRange HEAD
+    
+    return $changedFiles
+}
+```
+
+### ファイル種別別分析関数
+```powershell
+function Get-GitChangesByFileType {
+    param(
+        [int]$CommitRange = 1,
+        [string[]]$Extensions = @("md", "txt", "json", "yml", "yaml")
+    )
+    
+    # PSReadLine無効化 (詳細は [[004-PowerShell操作ガイド.mdc]] 参照)
+    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
+    
+    Write-Host "=== ファイル種別別変更分析 ===" -ForegroundColor Cyan
+    
+    $allChanges = git diff --name-only HEAD~$CommitRange HEAD
+    
+    foreach ($ext in $Extensions) {
+        $filesOfType = $allChanges | Where-Object { $_ -match "\.$ext$" }
+        if ($filesOfType.Count -gt 0) {
+            Write-Host "`n.$ext ファイル ($($filesOfType.Count)件):" -ForegroundColor Green
+            $filesOfType | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+        }
+    }
+    
+    # その他のファイル
+    $otherFiles = $allChanges | Where-Object { 
+        $file = $_
+        -not ($Extensions | Where-Object { $file -match "\.$_$" })
+    }
+    if ($otherFiles.Count -gt 0) {
+        Write-Host "`nその他のファイル ($($otherFiles.Count)件):" -ForegroundColor Green
+        $otherFiles | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+    }
+}
+```
+
+### 変更規模分析関数
+```powershell
+function Get-GitChangesScale {
+    param([int]$CommitRange = 1)
+    
+    # PSReadLine無効化 (詳細は [[004-PowerShell操作ガイド.mdc]] 参照)
+    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
+    
+    Write-Host "=== 変更規模分析 ===" -ForegroundColor Cyan
+    
+    # 統計情報取得
+    $stats = git diff --numstat HEAD~$CommitRange HEAD
+    $totalAdded = 0
+    $totalDeleted = 0
+    $fileCount = 0
+    
+    foreach ($line in $stats) {
+        if ($line -match "^(\d+)\s+(\d+)\s+(.+)$") {
+            $totalAdded += [int]$matches[1]
+            $totalDeleted += [int]$matches[2]
+            $fileCount++
+        }
+    }
+    
+    Write-Host "`n変更規模:" -ForegroundColor Green
+    Write-Host "  ファイル数: $fileCount" -ForegroundColor White
+    Write-Host "  追加行数: $totalAdded" -ForegroundColor Green
+    Write-Host "  削除行数: $totalDeleted" -ForegroundColor Red
+    Write-Host "  正味変更: $($totalAdded - $totalDeleted)" -ForegroundColor Yellow
+    
+    # 規模判定
+    $scale = if ($fileCount -le 2 -and ($totalAdded + $totalDeleted) -le 50) { "軽微" }
+             elseif ($fileCount -le 10 -and ($totalAdded + $totalDeleted) -le 200) { "中規模" }
+             else { "大規模" }
+    
+    Write-Host "  変更規模: $scale" -ForegroundColor Magenta
+    
+    return @{
+        FileCount = $fileCount
+        Added = $totalAdded
+        Deleted = $totalDeleted
+        Scale = $scale
+    }
+}
+```
+
+## 特殊用途向け分析関数
+
+### ドキュメント更新判定関数
+```powershell
+function Test-DocumentUpdateNeeded {
+    param(
+        [int]$CommitRange = 1,
+        [string[]]$DocumentFiles = @("README.md", "CHANGELOG.md", "docs/*.md"),
+        [string[]]$SourceExtensions = @("md", "txt", "json", "yml", "yaml")
+    )
+    
+    # PSReadLine無効化 (詳細は [[004-PowerShell操作ガイド.mdc]] 参照)
+    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
+    
+    Write-Host "=== ドキュメント更新判定 ===" -ForegroundColor Cyan
+    
+    # 変更されたソースファイル
+    $changedFiles = git diff --name-only HEAD~$CommitRange HEAD
+    $changedSources = $changedFiles | Where-Object { 
+        $file = $_
+        $SourceExtensions | Where-Object { $file -match "\.$_$" }
+    }
+    
+    # ドキュメントファイルの変更確認
+    $changedDocs = $changedFiles | Where-Object {
+        $file = $_
+        $DocumentFiles | Where-Object { $file -like $_ }
+    }
+    
+    Write-Host "`n変更されたソースファイル ($($changedSources.Count)件):" -ForegroundColor Green
+    $changedSources | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+    
+    Write-Host "`n変更されたドキュメント ($($changedDocs.Count)件):" -ForegroundColor Green
+    $changedDocs | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+    
+    # 判定結果
+    $needsUpdate = ($changedSources.Count -gt 0) -and ($changedDocs.Count -eq 0)
+    
+    if ($needsUpdate) {
+        Write-Host "`n📝 ドキュメント更新が必要です" -ForegroundColor Magenta
+        Write-Host "理由: ソースファイルが変更されましたが、ドキュメントが更新されていません" -ForegroundColor Magenta
+    } else {
+        Write-Host "`n✅ ドキュメント更新は適切です" -ForegroundColor Green
+    }
+    
+    return @{
+        NeedsUpdate = $needsUpdate
+        ChangedSources = $changedSources
+        ChangedDocs = $changedDocs
+    }
+}
+```
+
+## 高度なGit差分分析
+
+### 詳細な変更内容確認
+```powershell
+# 特定ファイルの変更内容
+git diff HEAD~1 HEAD [ファイル名]
+
+# 単語レベルでの差分表示
+git diff --word-diff HEAD~1 HEAD [ファイル名]
+
+# 空白変更を無視
+git diff --ignore-space-change HEAD~1 HEAD
+
+# 行移動を検出
+git diff --color-moved HEAD~1 HEAD
+```
+
+### ブランチ間差分
+```powershell
+# ブランチ間の差分
+git diff main feature-branch
+
+# マージベースからの差分
+git diff $(git merge-base main feature-branch) feature-branch
+
+# 特定ブランチの独自変更
+git diff main...feature-branch
+```
+
+## 実用的な使用例
+
+### 日常的な変更確認
+```powershell
+# 1. 基本的な変更確認
+Get-GitChangesSummary
+
+# 2. ファイル種別別確認
+Get-GitChangesByFileType
+
+# 3. 変更規模の確認
+Get-GitChangesScale
+
+# 4. ドキュメント更新判定
+Test-DocumentUpdateNeeded
+```
+
+### 特定用途での使用
+```powershell
+# 過去3コミット分の変更確認
+Get-GitChangesSummary -CommitRange 3
+
+# .mdファイルのみの変更確認
+Get-GitChangesSummary -FilePattern "*.md"
+
+# 特定拡張子の変更分析
+Get-GitChangesByFileType -Extensions @("md", "mdc", "json")
+```
+
+## チェックリスト
+
+### Git差分分析時の確認項目
+- [ ] **コミット範囲**: 適切なコミット範囲を指定している
+- [ ] **ファイル種別**: 対象ファイル種別が適切に設定されている
+- [ ] **変更規模**: 変更規模が期待される範囲内である
+- [ ] **影響範囲**: 変更の影響範囲が適切に把握されている
+
+### ドキュメント更新判定時の確認項目
+- [ ] **ソース変更確認**: ソースファイルの変更内容を確認済み
+- [ ] **ドキュメント対応**: 対応するドキュメントの更新要否を判定済み
+- [ ] **更新範囲**: 必要な更新範囲を特定済み
+- [ ] **整合性**: ソースとドキュメントの整合性を確認済み
+
+## 関連ファイル
+- [[004-PowerShell操作ガイド.mdc]] - PSReadLine無効化を含むPowerShell操作の基本ガイド
+- [[108-Git操作管理.mdc]] - プロジェクト固有のGit操作管理
+- [[107-README管理.mdc]] - README更新でのGit差分活用
+- [[105-検証・品質管理.mdc]] - 品質管理プロセスでの活用
+
+## 適用条件
+- Git差分の分析が必要な場合
+- 変更内容の可視化が必要な場合
+- ドキュメント更新の判定が必要な場合
+- プロジェクト状況の分析が必要な場合
+- 品質管理プロセスでの変更確認時
