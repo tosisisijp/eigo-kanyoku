@@ -69,7 +69,8 @@ tags:
 | **句動詞** | 代名詞分離句動詞 | 不要補語代名詞分離句動詞 | "back up", "turn back", "bring back" | 100 | TOEIC頻出・代名詞必須分離 |
 | **句動詞** | 汎用分離句動詞 | 不要補語汎用分離句動詞 | "send back", "scale back", "set back" | 100 | TOEIC頻出・分離ルール重要 |
 | **句動詞** | 固定句動詞 | 不要補語固定句動詞 | "back down", "back off", "bounce back" | 100 | TOEIC頻出・語順固定 |
-| **句動詞** | 前置詞句動詞 | 必須補語前置詞句動詞 | "get back", "go back", "back into" | 100 | TOEIC頻出・前置詞固定 |
+| **句動詞** | 副詞句動詞 | 不要補語副詞句動詞 | "get back", "go back", "come back" | 100 | TOEIC頻出・副詞必須 |
+| **句動詞** | 前置詞句動詞 | 必須補語前置詞句動詞 | "back into", "back out of", "back away from" | 100 | TOEIC頻出・前置詞固定 |
 | **慣用句** | 固定表現 | 慣用句 | "back to back", "behind one's back" | 85 | 意味が慣用的・比喩的 |
 | **前置詞句** | 場所表現 | 前置詞句 | "at the back of", "on one's back" | 80 | 位置・場所を表す前置詞句 |
 
@@ -88,8 +89,8 @@ tags:
 | 7 | **back you up** | 支援する | 不要補語代名詞分離句動詞 | "The manager will back you up during the presentation." | マネージャーがプレゼン中にあなたをサポートします。 | Part 3: 職場での会話 | **100** |
 | 8 | **send back** | 返送する | 不要補語汎用分離句動詞 | "Could you send this document back to the client?" | この書類をクライアントに返送していただけますか？ | Part 2: 業務依頼 | **100** |
 | 9 | **back down** | 撤退する | 不要補語固定句動詞 | "The company decided to back down from the aggressive pricing strategy." | 会社は積極的な価格戦略から撤退することを決めました。 | Part 4: 企業戦略発表 | **100** |
-| 10 | **get back** | 連絡する | 必須補語前置詞句動詞 | "I'll get back to you with the quarterly results by Friday." | 金曜日までに四半期の結果をご報告します。 | Part 4: ビジネス報告 | **100** |
-| 11 | **go back** | 戻る | 必須補語前置詞句動詞 | "Let's go back to the original proposal and review it again." | 元の提案に戻って再検討しましょう。 | Part 3: 会議での議論 | **100** |
+| 10 | **get back** | 連絡する | 不要補語副詞句動詞 | "I'll get back to you with the quarterly results by Friday." | 金曜日までに四半期の結果をご報告します。 | Part 4: ビジネス報告 | **100** |
+| 11 | **go back** | 戻る | 不要補語副詞句動詞 | "Let's go back to the original proposal and review it again." | 元の提案に戻って再検討しましょう。 | Part 3: 会議での議論 | **100** |
 | 12 | **point back** | 指差して | 方向後置動詞修飾副詞 | "The manager pointed back to the original proposal." | マネージャーは元の提案を指差しました。 | Part 3: 会議での参照 | **80** |
 | 13 | **turn back** | 振り向いて | 方向後置動詞修飾副詞 | "She turned back to address the question." | 彼女は質問に答えるために振り向きました。 | Part 3: プレゼンテーション | **80** |
 | 14 | **cut back** | 削減する | 慣用句 | "Due to budget constraints, we need to cut back on office expenses." | 予算制約のため、オフィス経費を削減する必要があります。 | Part 4: 予算管理発表 | **95** |
@@ -110,7 +111,7 @@ tags:
 | 29 | **step back** | 移動して | 移動後置動詞修飾副詞 | "The team stepped back from the negotiation table temporarily." | チームは一時的に交渉テーブルから離れました。 | Part 4: 交渉状況報告 | **85** |
 | 30 | **walk back** | 戻って | 移動後置動詞修飾副詞 | "She walked back to her desk after the brief meeting." | 短い会議の後、彼女は自分のデスクに戻りました。 | Part 3: オフィス内の移動 | **85** |
 | 31 | **back into** | 操作する | 必須補語前置詞句動詞 | "The driver carefully backed the truck into position." | 運転手は慎重にトラックを所定位置に操作しました。 | Part 1: 物流作業描写 | **85** |
-| 32 | **back out** | 後退させる | 必須補語前置詞句動詞 | "Please back your vehicle out of the loading zone." | 荷積みゾーンから車両を後退させてください。 | Part 4: 駐車場案内 | **85** |
+| 32 | **back out of** | 後退させる | 必須補語前置詞句動詞 | "Please back your vehicle out of the loading zone." | 荷積みゾーンから車両を後退させてください。 | Part 4: 駐車場案内 | **85** |
 | 33 | **at the back** | 最後に | 前置詞句 | "The conference materials are at the back of the handout package." | 会議資料は配布資料パッケージの最後にあります。 | Part 4: 会議進行案内 | **80** |
 | 34 | **on the back** | 裏に | 前置詞句 | "The company logo should be printed on the back of business cards." | 会社のロゴは名刺の裏に印刷すべきです。 | Part 3: 印刷業務指示 | **80** |
 | 35 | **back** | 証明する | 精神動作動詞 | "Historical evidence backs the museum's claim about the artifact." | 歴史的証拠が博物館の遺物に関する主張を証明しています。 | Part 7: 学術記事 | **75** |
@@ -138,20 +139,20 @@ tags:
 |-----|------|-----------|------|----------|----------|---------------|-------------|
 | 1 | **back you up** | 支援する・援護する | 不要補語代名詞分離句動詞 | "The manager will back you up during the presentation." | マネージャーがプレゼン中にあなたを援護します。 | Part 3: 職場での支援 | **100** |
 | 2 | **back down** | 譲歩する・引き下がる | 不要補語固定句動詞 | "The company decided to back down from the aggressive pricing strategy." | 会社は積極的な価格戦略から引き下がることを決めました。 | Part 4: 企業戦略発表 | **100** |
-| 3 | **get back** | 連絡する・復帰する | 必須補語前置詞句動詞 | "I'll get back to you with the quarterly results by Friday." | 金曜日までに四半期の結果をご報告します。 | Part 4: ビジネス報告 | **100** |
-| 4 | **go back** | 元に戻る・さかのぼる | 必須補語前置詞句動詞 | "Let's go back to the original proposal and review it again." | 元の提案に戻って再検討しましょう。 | Part 3: 会議での議論 | **100** |
+| 3 | **get back** | 連絡する・復帰する | 不要補語副詞句動詞 | "I'll get back to you with the quarterly results by Friday." | 金曜日までに四半期の結果をご報告します。 | Part 4: ビジネス報告 | **100** |
+| 4 | **go back** | 元に戻る・さかのぼる | 不要補語副詞句動詞 | "Let's go back to the original proposal and review it again." | 元の提案に戻って再検討しましょう。 | Part 3: 会議での議論 | **100** |
 | 5 | **have someone's back** | 守る・支援する | 慣用句 | "Don't worry, I have your back during the negotiation." | 心配しないで、交渉中はあなたを守ります。 | Part 3: 職場での支援 | **95** |
 | 6 | **back off** | 手を引く・関与をやめる | 不要補語固定句動詞 | "The police backed off when the situation became dangerous." | 状況が危険になったとき警察は手を引きました。 | Part 4: 安全管理報告 | **95** |
 | 7 | **cut back** | 削減する・縮小する | 慣用句 | "Due to budget constraints, we need to cut back on office expenses." | 予算制約のため、オフィス経費を削減する必要があります。 | Part 4: 予算管理発表 | **95** |
 | 8 | **back someone/something** | 支援する・後援する | 動詞単体 | "The board will back the new CEO's restructuring plan." | 取締役会は新CEOの再編計画を支援します。 | Part 4: 企業経営発表 | **90** |
-| 9 | **back out** | 約束を破る・撤退する | 必須補語前置詞句動詞 | "He backed out of the deal at the last minute." | 彼は土壇場で取引から撤退しました。 | Part 3: ビジネス交渉 | **90** |
+| 9 | **back out of** | 約束を破る・撤退する | 必須補語前置詞句動詞 | "He backed out of the deal at the last minute." | 彼は土壇場で取引から撤退しました。 | Part 3: ビジネス交渉 | **90** |
 | 10 | **bring back** | 復活させる・思い出させる | 不要補語汎用分離句動詞 | "This song brings back memories of my childhood." | この歌は子供時代の記憶を呼び起こします。 | Part 1: 日常場面描写 | **90** |
 | 11 | **hold back** | 抑制する・控える | 慣用句 | "Don't hold back your opinions during the brainstorming session." | ブレインストーミングでは意見を控えないでください。 | Part 3: 会議での議論 | **90** |
 | 12 | **sit back** | くつろぐ・傍観する | 慣用句 | "Just sit back and let the team handle the presentation." | リラックスしてチームにプレゼンテーションを任せましょう。 | Part 1: オフィス描写 | **90** |
-| 13 | **back away** | 距離を置く・避ける | 必須補語前置詞句動詞 | "She backed away from the controversial topic." | 彼女は論争の的となる話題から距離を置きました。 | Part 3: 会議での回避 | **85** |
+| 13 | **back away from** | 距離を置く・避ける | 必須補語前置詞句動詞 | "She backed away from the controversial topic." | 彼女は論争の的となる話題から距離を置きました。 | Part 3: 会議での回避 | **85** |
 | 14 | **pay back** | 返済する・復讐する | 不要補語汎用分離句動詞 | "I'll pay you back for this insult someday." | いつかこの侮辱に対して復讐します。 | Part 7: 小説・物語 | **85** |
 | 15 | **scratch someone's back** | 相互に助け合う | 慣用句 | "You scratch my back, I'll scratch yours." | 持ちつ持たれつです。 | Part 3: ビジネス交渉 | **85** |
-| 16 | **pull back** | 撤退する・控える | 必須補語前置詞句動詞 | "The company pulled back from the overseas expansion plan." | 会社は海外展開計画から撤退しました。 | Part 4: 企業戦略発表 | **85** |
+| 16 | **pull back from** | 撤退する・控える | 必須補語前置詞句動詞 | "The company pulled back from the overseas expansion plan." | 会社は海外展開計画から撤退しました。 | Part 4: 企業戦略発表 | **85** |
 | 17 | **behind someone's back** | 陰で・内緒で | 慣用句 | "They discussed the proposal behind my back." | 彼らは私の知らないところで提案について話し合いました。 | Part 3: 職場でのゴシップ | **85** |
 | 18 | **back to back** | 連続して・立て続けに | 慣用句 | "We have two meetings back to back this afternoon." | 今日の午後、会議が2つ連続して入っています。 | Part 4: スケジュール調整 | **85** |
 | 19 | **back in the day** | 昔は・その当時は | 慣用句 | "Back in the day, all meetings were held in person." | 昔は、すべての会議が対面で行われていました。 | Part 4: 企業変遷説明 | **85** |
@@ -176,7 +177,7 @@ tags:
 | 38 | **keep back** | 抑える・隠す | 不要補語汎用分離句動詞 | "She tried to keep back her tears during the meeting." | 彼女は会議中に涙を抑えようとしました。 | Part 3: 感情的場面 | **75** |
 | 39 | **bounce back** | 立ち直る・回復する | 不要補語固定句動詞 | "The economy is expected to bounce back next year." | 経済は来年回復すると予想されています。 | Part 4: 経済予測報告 | **70** |
 | 40 | **go behind someone's back** | 内緒で行動する | 慣用句 | "She went behind her boss's back to complain to HR." | 彼女は上司に内緒で人事部に苦情を言いに行きました。 | Part 3: 職場での問題 | **70** |
-| 41 | **think back** | 思い返す・回想する | 必須補語前置詞句動詞 | "Think back to our discussion last month about budget allocation." | 先月の予算配分についての議論を思い出してください。 | Part 3: 予算会議 | **70** |
+| 41 | **think back to** | 思い返す・回想する | 必須補語前置詞句動詞 | "Think back to our discussion last month about budget allocation." | 先月の予算配分についての議論を思い出してください。 | Part 3: 予算会議 | **70** |
 | 42 | **look back on** | 振り返る・回顧する | 必須補語前置詞句動詞 | "Looking back on the project, we achieved all our objectives." | プロジェクトを振り返ると、すべての目標を達成しました。 | Part 4: プロジェクト総括 | **70** |
 | 43 | **lean back** | もたれかかる・リラックスする | 不要補語固定句動詞 | "He leaned back in his chair and considered the proposal." | 彼は椅子にもたれかかって提案を検討しました。 | Part 1: オフィス描写 | **70** |
 | 44 | **back to the drawing board** | 最初からやり直し | 慣用句 | "The proposal was rejected, so it's back to the drawing board." | 提案は却下されたので、最初からやり直しです。 | Part 3: プロジェクト会議 | **70** |

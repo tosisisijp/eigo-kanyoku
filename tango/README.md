@@ -65,7 +65,10 @@ eigo-tango/
 - Ankiラベル別の体系的学習
 
 ## Step 3: 慣用表現習得
-- 句動詞: back up, back down, get back
+- 副詞句動詞: get back, go back, come back
+- 分離句動詞: back up, send back, turn back
+- 固定句動詞: back down, back off
+- 前置詞句動詞: back into, back out of, back away from
 - 慣用句: have someone's back, back to back
 ```
 
@@ -117,8 +120,10 @@ eigo-tango/
 ### 品詞別ラベル例
 - **身体部位名詞**: back（背中）、back（腰）
 - **位置副詞**: back（戻って）、back（奥に）
-- **分離句動詞副詞**: back up、send back
-- **固定句動詞副詞**: get back、go back
+- **副詞句動詞**: get back（連絡する）、go back（戻る）
+- **分離句動詞**: back up（支援する）、send back（返送する）
+- **固定句動詞**: back down（撤退する）、back off（手を引く）
+- **前置詞句動詞**: back into（操作する）、back out of（後退する）
 - **慣用句**: back to back、have someone's back
 
 ### 学習効率化
@@ -162,8 +167,9 @@ eigo-tango/
 - 企業情報: date back to（さかのぼる）
 
 ### Part 5-6: 文法・語彙問題
-- 句動詞の語順: 分離可能・固定の区別（分離形優先学習）
-- 前置詞選択: back to、back from
+- 句動詞分類: 副詞句動詞・分離句動詞・固定句動詞・前置詞句動詞の区別
+- 語順ルール: 分離可能（代名詞必須分離）・固定の判断
+- 前置詞選択: back to、back from、back into
 
 ### Part 7: 読解問題
 - ビジネス文書: 慣用表現の理解
@@ -219,6 +225,7 @@ eigo-tango/
 **効率的なTOEIC学習を応援します！** 🚀 
 
 ## 更新履歴（内部管理用）
+- 2025-06-27: back.md句動詞分類修正・get back/go backを前置詞句動詞から副詞句動詞に変更・README.md連動更新
 - 2025-06-27: 004-PowerShell操作ガイド.mdcルール整理・PSReadLine設定重複削除・フォーカス最適化
 - 2025-06-27: 000-mdc-best-practices.mdcフロントマター標準形式追加・JavaScript配列形式要件明確化
 - 2025-06-27: back.md包括的品質向上・代名詞分離句動詞例文最適化・Ankiラベル体系刷新
