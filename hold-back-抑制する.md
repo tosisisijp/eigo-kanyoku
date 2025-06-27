@@ -32,7 +32,7 @@ Part 3: 会議での議論
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 hold back
 
 Don't hold back your opinions during the brainstorming session.
@@ -52,6 +52,10 @@ suppress-抑える - 抑える・抑圧する
 TOEIC優先度:90
 Part3:会議での議論
 Speech: Don't hold back your opinions during the brainstorming session.
+Yaku: ブレインストーミングでは意見を控えめにしないでください。
+Hyogen: hold back
+AnkiLabel: 慣用句
+Imi: 抑制する・控える・躊躇する
 Tags: TOEIC優先度:90 Ankiラベル:慣用句 Part3:会議での議論
-<!--ID: 1750507305740-->
+<!--ID: 1751043183003-->
 END

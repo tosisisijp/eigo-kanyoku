@@ -33,7 +33,7 @@ Part 4: プロジェクト進捗報告
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 set back
 
 The rain set back our construction schedule by two weeks.
@@ -54,5 +54,5 @@ TOEIC優先度:85
 Part4:プロジェクト進捗報告
 Speech: The rain set back our construction schedule by two weeks.
 Tags: TOEIC優先度:85 Ankiラベル:分離句動詞副詞 Part4:プロジェクト進捗報告
-<!--ID: 1750496452349-->
+<!--ID: 1751045633907-->
 END

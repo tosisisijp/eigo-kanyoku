@@ -33,7 +33,7 @@ Part 4: 企業戦略発表
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 pull back
 
 The company pulled back from the overseas expansion plan.
@@ -54,5 +54,5 @@ TOEIC優先度:85
 Part4:企業戦略発表
 Speech: The company pulled back from the overseas expansion plan.
 Tags: TOEIC優先度:85 Ankiラベル:分離句動詞副詞 Part4:企業戦略発表
-<!--ID: 1750507106749-->
+<!--ID: 1751045633912-->
 END

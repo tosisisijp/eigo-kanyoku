@@ -1,6 +1,9 @@
 ---
-description:
-globs:
+description: "PowerShell操作時の問題対処・AI最適化・文字コード検証・関数永続性・エラーハンドリングの包括的ガイド"
+globs: ["*.ps1", "*.md", ".cursor/rules/*.mdc", "script/*.ps1"]
+tags: ["powershell", "ai-optimization", "error-handling", "encoding", "validation", "troubleshooting", "function-persistence"]
+priority: 2
+version: "2.2.0"
 alwaysApply: false
 ---
 # PowerShell操作ガイド
@@ -14,52 +17,10 @@ alwaysApply: false
 
 ## 🚨 重要な運用上の制約
 
-### AIエージェント専用: PSReadLine完全無効化設定
-
-#### 根本的解決策（推奨）
-**AIエージェントからのPowerShell操作時に最も効果的**：
-
-```powershell
-# 🎯 AIエージェント専用: PSReadLine完全無効化
-Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
-$env:PSReadLineOptions = ""
-
-# 確認
-if (Get-Module PSReadLine) {
-    Write-Host "❌ PSReadLine まだ有効" -ForegroundColor Red
-} else {
-    Write-Host "✅ PSReadLine 無効化成功" -ForegroundColor Green
-}
-
-# 作業ディレクトリ確認
-Get-Location
-```
-
-**無効化の効果**：
-- ✅ **PSReadLineエラー完全消失**: `System.ArgumentOutOfRangeException` の根絶
-- ✅ **コマンド表示安定化**: 日本語ファイル名での表示崩れ解消
-- ✅ **長いコマンド対応**: バッファサイズ制約の影響を受けない
-- ✅ **AIエージェント最適化**: インタラクティブ機能不要でパフォーマンス向上
-
-#### PowerShell起動オプションでの無効化
-**AIエージェント操作時に最初から無効化する方法**：
-
-```powershell
-# PowerShell起動時にPSReadLineを読み込まない
-powershell.exe -NoProfile -Command "Remove-Module PSReadLine -Force; <実際のコマンド>"
-
-# または環境変数での制御
-$env:PSReadLine_DisableModule = $true
-```
-
-#### 従来のバッファサイズ拡張（補助的手段）
-**PSReadLineを無効化できない場合の代替手段**：
-
-```powershell
-# 従来の方法（補助的に使用）
-$host.UI.RawUI.BufferSize = New-Object Management.Automation.Host.Size (120, 3000)
-$host.UI.RawUI.BufferSize  # 確認
-```
+### PowerShell環境設定の前提
+- **PSReadLine設定**: $PROFILEで無効化設定済み（このルールでは扱わない）
+- **基本環境**: PowerShell 7.x環境での動作を前提
+- **作業ディレクトリ**: プロジェクトルートからの相対パス実行
 
 ### PowerShellセッション開始時の標準設定
 
@@ -68,16 +29,13 @@ $host.UI.RawUI.BufferSize  # 確認
 
 ```powershell
 # === AIエージェント専用初期化 ===
-# 1. PSReadLine完全無効化（最優先）
-Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
-
-# 2. 作業ディレクトリ確認
+# 1. 作業ディレクトリ確認
 Get-Location
 
-# 3. 基本変数初期化
+# 2. 基本変数初期化
 $ErrorActionPreference = "Stop"  # エラー時即座停止
 
-# 4. 初期化完了確認
+# 3. 初期化完了確認
 Write-Host "✅ AIエージェント用PowerShell初期化完了" -ForegroundColor Green
 ```
 

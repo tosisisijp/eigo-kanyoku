@@ -32,7 +32,7 @@ Part 4: 予算管理発表
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 cut back
 
 Due to budget constraints, we need to cut back on office expenses.
@@ -52,6 +52,10 @@ downsize-縮小する - 規模を縮小する・人員削減する
 TOEIC優先度:95
 Part4:予算管理発表
 Speech: Due to budget constraints, we need to cut back on office expenses.
+Yaku: 予算制約のため、オフィス経費を削減する必要があります。
+Hyogen: cut back
+AnkiLabel: 慣用句
+Imi: 削減する・縮小する・減らす
 Tags: TOEIC優先度:95 Ankiラベル:慣用句 Part4:予算管理発表
-<!--ID: 1750490949194-->
+<!--ID: 1751043183016-->
 END

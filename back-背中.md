@@ -32,11 +32,11 @@ Part 4: 職場の健康・安全
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back
 
 Employees with back problems can request ergonomic chairs.
-Back:
+Back: 
 Ankiラベル:身体部位名詞
 back
 背中
@@ -52,6 +52,6 @@ TOEIC優先度:95
 Part4:職場の健康・安全
 Speech: Employees with back problems can request ergonomic chairs.
 Tags: TOEIC優先度:95 Ankiラベル:身体部位名詞 Part4:職場の健康・安全
-<!--ID: 1750495295829-->
+<!--ID: 1751045633922-->
 END
 

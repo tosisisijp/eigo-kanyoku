@@ -15,9 +15,9 @@ tags:
 ## 基本情報
 - **表現**: back out
 - **意味**: 約束を破る・撤退する・取り消す
-- **分類**: 分離可能句動詞
+- **分類**: 前置詞句動詞
 - **TOEIC優先度**: 90
-- **Ankiラベル**: 分離句動詞副詞
+- **Ankiラベル**: 必須補語前置詞句動詞
 
 ## 例文
 He backed out of the deal at the last minute.
@@ -33,12 +33,12 @@ Part 3: ビジネス交渉
  
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back out
 
 He backed out of the deal at the last minute.
 Back: 
-Ankiラベル:分離句動詞副詞
+Ankiラベル:必須補語前置詞句動詞
 back out
 約束を破る・撤退する・取り消す
 
@@ -53,6 +53,10 @@ cancel-キャンセルする - キャンセルする・取り消す
 TOEIC優先度:90
 Part3:ビジネス交渉
 Speech: He backed out of the deal at the last minute.
-Tags: TOEIC優先度:90 Ankiラベル:分離句動詞副詞 Part3:ビジネス交渉
-<!--ID: 1750467234749-->
+Yaku: 彼は土壇場で取引から撤退しました。
+Hyogen: back out
+AnkiLabel: 必須補語前置詞句動詞
+Imi: 約束を破る・撤退する・取り消す
+Tags: TOEIC優先度:90 Ankiラベル:必須補語前置詞句動詞 Part3:ビジネス交渉
+<!--ID: 1751043183024-->
 END

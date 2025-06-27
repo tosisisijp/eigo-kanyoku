@@ -8,7 +8,7 @@ alwaysApply: false
 ## 目的
 - TOEIC学習用mdファイルに、統一された独自形式のObsidian_to_Ankiカード定義を作成する
 - START/END形式によるカード境界の明確化
-- WithSpeech機能による音声学習対応
+- eigo-kanyoku指定による音声学習対応
 - Tags統合による効率的な分類管理
 
 ## 基本形式
@@ -17,7 +17,7 @@ alwaysApply: false
 ```
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 [表現]
 
 [英語例文]
@@ -36,6 +36,10 @@ Ankiラベル:[ラベル名]
 TOEIC優先度:[数値]
 Part[番号]:[出題文脈]
 Speech: [英語例文]
+Yaku: [日本語訳]
+Hyogen: [表現]
+AnkiLabel: [ラベル名]
+Imi: [日本語意味]
 Tags: TOEIC優先度:[数値] Ankiラベル:[ラベル名] Part[番号]:[出題文脈]
 END
 
@@ -46,7 +50,7 @@ END
 ### 1. セクション開始
 - `# Obsidian_to_Anki`: セクション見出し
 - `START`: カード定義開始マーカー
-- `WithSpeech`: 音声機能有効化
+- `eigo-kanyoku`: 音声機能有効化（プロジェクト固有設定）
 
 ### 2. カード表面
 - **表現**: 学習対象の英語表現
@@ -64,8 +68,12 @@ END
 - **TOEIC優先度**: 数値（0-100）
 - **Part情報**: 出題パートと文脈
 
-### 5. メタデータ
+### 5. メタデータ（END前必須要素）
 - **Speech**: 音声読み上げ対象の英文
+- **Yaku**: 日本語訳（Speechと対応）
+- **Hyogen**: 英語表現（学習対象表現）
+- **AnkiLabel**: Ankiラベル（分類情報）
+- **Imi**: 日本語意味（表現の意味説明）
 - **Tags**: 検索・分類用タグの統合
 - **ID**: 自動生成される一意識別子
 - `END`: カード定義終了マーカー（**重要**: ENDの後にスペースを入れず、必ずLF改行コードで終了する）
@@ -110,7 +118,7 @@ END
 - [ ] ENDマーカーの直後にスペースがないか（203番ルールの検証方法で確認）
 - [ ] ENDマーカーの後にLF改行コードがあるか（ENDでファイル末尾は不可）
 - [ ] 改行コードが統一されているか（LF統一）
-- [ ] WithSpeech指定が含まれているか
+- [ ] eigo-kanyoku指定が含まれているか
 - [ ] Back:セクションが適切に分離されているか
 - [ ] Speech行が英語例文と一致しているか
 - [ ] Tags行に必要な情報が統合されているか
@@ -139,6 +147,11 @@ END
 - [ ] 関連表現が適切に選択されているか
 - [ ] TOEIC優先度が妥当な範囲内か（0-100）
 - [ ] Part情報が正確か
+- [ ] Yaku/Hyogen/AnkiLabel/Imi行が適切に設定されているか
+- [ ] Speech行とYaku行が対応しているか
+- [ ] Hyogen行が学習対象表現と一致しているか
+- [ ] AnkiLabel行がAnkiラベル:行と一致しているか
+- [ ] Imi行が日本語意味と一致しているか
 
 ### ENDマーカー検証手順
 ENDマーカーの位置特定・文字コード確認・Obsidian_to_Ankiセクション存在確認については **[[004-PowerShell操作ガイド.mdc]]** の「ENDマーカー位置特定と検証」を参照してください。
@@ -273,7 +286,7 @@ Set-Content $FilePath -Value $content -NoNewline -Encoding UTF8
 ```
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back to back
 
 We have two meetings back to back this afternoon.
@@ -292,6 +305,10 @@ one-after-another-連続して - 次々と
 TOEIC優先度:85
 Part4:スケジュール調整
 Speech: We have two meetings back to back this afternoon.
+Yaku: 今日の午後、会議が2つ連続して入っています。
+Hyogen: back to back
+AnkiLabel: 慣用句
+Imi: 連続して・立て続けに
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part4:スケジュール調整
 END
 
@@ -302,7 +319,7 @@ END
 ```
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back up
 
 Please back up all important files before the update.
@@ -321,6 +338,10 @@ store-蓄える - 情報を蓄える
 TOEIC優先度:100
 Part4:IT関連業務指示
 Speech: Please back up all important files before the update.
+Yaku: 更新前に重要なファイルをすべてバックアップしてください。
+Hyogen: back up
+AnkiLabel: 分離句動詞副詞
+Imi: バックアップする
 Tags: TOEIC優先度:100 Ankiラベル:分離句動詞副詞 Part4:IT関連業務指示
 END
 

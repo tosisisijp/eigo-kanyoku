@@ -14,7 +14,7 @@ tags:
 
 ## 基本情報
 - **表現**: have someone's back
-- **意味**: 守る・支援する
+- **意味**: 支援する・守る
 - **分類**: 慣用句
 - **TOEIC優先度**: 95
 - **Ankiラベル**: 慣用句
@@ -31,14 +31,14 @@ Part 3: 職場での支援
 - [[back-someone-支援する]] - 後援する・支持する 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 have someone's back
 
 Don't worry, I have your back during the negotiation.
 Back:
 Ankiラベル:慣用句
 have someone's back
-守る・支援する
+支援する・守る
 
 Don't worry, I have your back during the negotiation.
 心配しないで、交渉中はあなたを守ります。
@@ -50,6 +50,10 @@ back-someone-支援する - 後援する・支持する
 TOEIC優先度:95
 Part3:職場での支援
 Speech: Don't worry, I have your back during the negotiation.
+Yaku: 心配しないで、交渉中はあなたを守ります。
+Hyogen: have someone's back
+AnkiLabel: 慣用句
+Imi: 支援する・守る
 Tags: TOEIC優先度:95 Ankiラベル:慣用句 Part3:職場での支援
-<!--ID: 1750495295824-->
+<!--ID: 1751043183005-->
 END

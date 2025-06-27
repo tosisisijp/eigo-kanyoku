@@ -27,7 +27,7 @@ We have two meetings back to back this afternoon.
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back to back
 
 We have two meetings back to back this afternoon.
@@ -46,6 +46,10 @@ one-after-another-連続して - 次々と
 TOEIC優先度:85
 Part4:スケジュール調整
 Speech: We have two meetings back to back this afternoon.
+Yaku: 今日の午後、会議が2つ連続して入っています。
+Hyogen: back to back
+AnkiLabel: 慣用句
+Imi: 連続して・立て続けに
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part4:スケジュール調整
-<!--ID: 1750448492768-->
+<!--ID: 1751043183021-->
 END

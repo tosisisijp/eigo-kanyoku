@@ -15,9 +15,9 @@ tags:
 ## 基本情報
 - **表現**: get back
 - **意味**: 連絡する・復帰する・戻る
-- **分類**: 固定句動詞
+- **分類**: 前置詞句動詞
 - **TOEIC優先度**: 100
-- **Ankiラベル**: 固定句動詞副詞
+- **Ankiラベル**: 必須補語前置詞句動詞
 
 ## 例文
 I'll get back to you with the quarterly results by Friday.
@@ -33,12 +33,12 @@ Part 4: ビジネス報告
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 get back
 
 I'll get back to you with the quarterly results by Friday.
 Back: 
-Ankiラベル:固定句動詞副詞
+Ankiラベル:必須補語前置詞句動詞
 get back
 連絡する・復帰する・戻る
 
@@ -53,6 +53,10 @@ contact-連絡する - 連絡する
 TOEIC優先度:100
 Part4:ビジネス報告
 Speech: I'll get back to you with the quarterly results by Friday.
-Tags: TOEIC優先度:100 Ankiラベル:固定句動詞副詞 Part4:ビジネス報告
-<!--ID: 1750512963011-->
+Yaku: 金曜日までに四半期の結果をご報告します。
+Hyogen: get back
+AnkiLabel: 必須補語前置詞句動詞
+Imi: 連絡する・復帰する・戻る
+Tags: TOEIC優先度:100 Ankiラベル:必須補語前置詞句動詞 Part4:ビジネス報告
+<!--ID: 1751043183010-->
 END

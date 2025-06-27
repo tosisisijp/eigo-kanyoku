@@ -20,8 +20,8 @@ tags:
 - **Ankiラベル**: 分離句動詞副詞
 
 ## 例文
-Please back up all important files before the system update.
-システム更新前に重要なファイルをすべてバックアップしてください。
+Please back up all important files before the update.
+更新前に重要なファイルをすべてバックアップしてください。
 
 ## TOEIC出題文脈
 Part 4: IT関連業務指示
@@ -32,17 +32,17 @@ Part 4: IT関連業務指示
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back up
 
-Please back up all important files before the system update.
+Please back up all important files before the update.
 Back: 
 Ankiラベル:分離句動詞副詞
 back up
 バックアップする
 
-Please back up all important files before the system update.
-システム更新前に重要なファイルをすべてバックアップしてください。
+Please back up all important files before the update.
+更新前に重要なファイルをすべてバックアップしてください。
 
 関連表現
 back-up-支援する - 支援する・援護する
@@ -50,7 +50,11 @@ send-back-返送する - 返送する
 
 TOEIC優先度:100
 Part4:IT関連業務指示
-Speech: Please back up all important files before the system update.
+Speech: Please back up all important files before the update.
+Yaku: 更新前に重要なファイルをすべてバックアップしてください。
+Hyogen: back up
+AnkiLabel: 分離句動詞副詞
+Imi: バックアップする
 Tags: TOEIC優先度:100 Ankiラベル:分離句動詞副詞 Part4:IT関連業務指示
-<!--ID: 1750449417031-->
+<!--ID: 1751043183019-->
 END

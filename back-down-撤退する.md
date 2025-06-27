@@ -33,7 +33,7 @@ Part 4: 企業戦略発表
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back down
 
 The company decided to back down from the aggressive pricing strategy.
@@ -53,6 +53,10 @@ pull-back-撤退する - 撤退する・控える
 TOEIC優先度:100
 Part4:企業戦略発表
 Speech: The company decided to back down from the aggressive pricing strategy.
+Yaku: 会社は積極的な価格戦略から撤退することを決めました。
+Hyogen: back down
+AnkiLabel: 固定句動詞副詞
+Imi: 撤退する・譲歩する・引き下がる
 Tags: TOEIC優先度:100 Ankiラベル:固定句動詞副詞 Part4:企業戦略発表
-<!--ID: 1750493444473-->
+<!--ID: 1751043183028-->
 END

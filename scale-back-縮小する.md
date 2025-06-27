@@ -33,7 +33,7 @@ Part 4: プロジェクト管理
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 scale back
 
 We had to scale back the project due to funding issues.
@@ -54,6 +54,6 @@ TOEIC優先度:80
 Part4:プロジェクト管理
 Speech: We had to scale back the project due to funding issues.
 Tags: TOEIC優先度:80 Ankiラベル:分離句動詞副詞 Part4:プロジェクト管理
-<!--ID: 1750507106746-->
+<!--ID: 1751045633904-->
 END
 

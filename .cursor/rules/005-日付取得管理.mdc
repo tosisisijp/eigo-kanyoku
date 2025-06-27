@@ -1,6 +1,9 @@
 ---
-description:
-globs:
+description: "日付情報の動的取得と標準化に関する専門ルール - PowerShell環境での日付管理・更新履歴・バージョン管理の自動化"
+globs: ["README.md", "*.md", ".cursor/rules/*.mdc"]
+tags: ["date-management", "powershell", "automation", "versioning", "readme", "conditional"]
+priority: 3
+version: "1.2.0"
 alwaysApply: false
 ---
 # 日付取得管理 [Conditional]

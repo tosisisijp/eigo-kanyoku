@@ -32,7 +32,7 @@ Part 4: 企業変遷説明
  
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back in the day
 
 Back in the day, all meetings were held in person.
@@ -53,5 +53,5 @@ TOEIC優先度:85
 Part4:企業変遷説明
 Speech: Back in the day, all meetings were held in person.
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part4:企業変遷説明
-<!--ID: 1750467303604-->
+<!--ID: 1751045633924-->
 END

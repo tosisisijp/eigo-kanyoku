@@ -32,7 +32,7 @@ Part 1: オフィス描写
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 sit back
 
 Just sit back and let the team handle the presentation.
@@ -52,6 +52,10 @@ take-it-easy-気楽にする - 気楽にする・のんびりする
 TOEIC優先度:90
 Part1:オフィス描写
 Speech: Just sit back and let the team handle the presentation.
+Yaku: リラックスしてチームにプレゼンテーションを任せましょう。
+Hyogen: sit back
+AnkiLabel: 慣用句
+Imi: くつろぐ・傍観する・リラックスする
 Tags: TOEIC優先度:90 Ankiラベル:慣用句 Part1:オフィス描写
-<!--ID: 1750496452347-->
+<!--ID: 1751043182996-->
 END

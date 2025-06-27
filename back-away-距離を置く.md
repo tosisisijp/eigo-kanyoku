@@ -17,7 +17,7 @@ tags:
 - **意味**: 距離を置く・避ける・後退する
 - **分類**: 固定句動詞
 - **TOEIC優先度**: 85
-- **Ankiラベル**: 固定句動詞副詞
+- **Ankiラベル**: 必須補語前置詞句動詞
 
 ## 例文
 She backed away from the controversial topic.
@@ -33,12 +33,12 @@ Part 3: 会議での回避
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back away
 
 She backed away from the controversial topic.
 Back: 
-Ankiラベル:固定句動詞副詞
+Ankiラベル:必須補語前置詞句動詞
 back away
 距離を置く・避ける・後退する
 
@@ -53,6 +53,6 @@ avoid-避ける - 避ける・回避する
 TOEIC優先度:85
 Part3:会議での回避
 Speech: She backed away from the controversial topic.
-Tags: TOEIC優先度:85 Ankiラベル:固定句動詞副詞 Part3:会議での回避
-<!--ID: 1750466418255-->
+Tags: TOEIC優先度:85 Ankiラベル:必須補語前置詞句動詞 Part3:会議での回避
+<!--ID: 1751045361876-->
 END

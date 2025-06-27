@@ -32,7 +32,7 @@ Part 7: 人間関係記事
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 turn one's back on
 
 He turned his back on his old friends after becoming successful.
@@ -53,6 +53,6 @@ TOEIC優先度:80
 Part7:人間関係記事
 Speech: He turned his back on his old friends after becoming successful.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part7:人間関係記事
-<!--ID: 1750496452344-->
+<!--ID: 1751045633847-->
 END
 

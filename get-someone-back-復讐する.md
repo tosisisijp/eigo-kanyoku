@@ -32,7 +32,7 @@ Part 3: 職場での人間関係
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 get someone back
 
 He decided to get his colleague back for the unfair treatment.
@@ -53,5 +53,5 @@ TOEIC優先度:80
 Part3:職場での人間関係
 Speech: He decided to get his colleague back for the unfair treatment.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part3:職場での人間関係
-<!--ID: 1750512963008-->
+<!--ID: 1751045633915-->
 END

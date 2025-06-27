@@ -1,4 +1,4 @@
-﻿---
+---
 title: "back and forth - 行ったり来たり"
 tags:
   - TOEIC
@@ -32,7 +32,7 @@ Part 3: ビジネス交渉
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 back and forth
 
 They went back and forth on the contract terms for hours.
@@ -52,6 +52,10 @@ debate-討論する - 討論する・議論する
 TOEIC優先度:80
 Part3:ビジネス交渉
 Speech: They went back and forth on the contract terms for hours.
+Yaku: 彼らは契約条件について何時間も議論を重ねました。
+Hyogen: back and forth
+AnkiLabel: 慣用句
+Imi: 行ったり来たり・議論を重ねて・往復して
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part3:ビジネス交渉
-<!--ID: 1750466394777-->
+<!--ID: 1751043183031-->
 END

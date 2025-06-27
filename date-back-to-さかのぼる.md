@@ -32,7 +32,7 @@ Part 7: 企業沿革記事
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 date back to
 
 This building dates back to the company's founding in 1950.
@@ -53,5 +53,5 @@ TOEIC優先度:80
 Part7:企業沿革記事
 Speech: This building dates back to the company's founding in 1950.
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part7:企業沿革記事
-<!--ID: 1750512963013-->
+<!--ID: 1751045633917-->
 END

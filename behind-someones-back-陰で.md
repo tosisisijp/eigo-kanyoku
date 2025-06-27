@@ -32,7 +32,7 @@ Part 3: 職場でのゴシップ
 
 # Obsidian_to_Anki
 START
-WithSpeech
+eigo-kanyoku
 behind someone's back
 
 They discussed the proposal behind my back.
@@ -53,5 +53,5 @@ TOEIC優先度:85
 Part3:職場でのゴシップ
 Speech: They discussed the proposal behind my back.
 Tags: TOEIC優先度:85 Ankiラベル:慣用句 Part3:職場でのゴシップ
-<!--ID: 1750469465183-->
+<!--ID: 1751045633919-->
 END
