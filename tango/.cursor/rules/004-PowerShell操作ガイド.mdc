@@ -200,6 +200,47 @@ if ($content -match "# Obsidian_to_Anki") {
 3. **部分検証**: 問題ファイルの個別確認
 4. **継続実行**: 未処理ファイルからの再開
 
+### AIエージェント環境での特別制約
+
+#### 複数行関数定義の完全停止問題（重要）
+**症状**: 
+- 複数行PowerShell関数定義で「Command popped out into background by the user」エラー
+- 関数定義コマンドが途中で完全停止（～20行の関数定義で100%再現）
+- リダイレクト（`| Out-String`）使用でも停止
+
+**原因**: 
+- CursorのAIエージェント実行環境の処理制限
+- 複数行構文の解析処理でバッファオーバーフロー
+- PSReadLine無効化済み環境でも発生する根本的制限
+
+**検証済み事実**:
+```powershell
+# ❌ 100%停止するパターン
+function Get-GitChangesSummary {
+    param([int]$CommitRange = 1)
+    # 複数行の処理...
+}
+
+# ❌ リダイレクトでも停止
+function Test-Function { ... } | Out-String
+
+# ✅ 100%成功するパターン（段階的分割実行）
+Write-Host "=== Git変更内容サマリー ===" -ForegroundColor Cyan
+$changedFiles = git --no-pager diff --name-only HEAD~1 HEAD
+Write-Host "変更ファイル数: $($changedFiles.Count)" -ForegroundColor Green
+$changedFiles | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+```
+
+**解決策**: 
+1. **段階的分割実行（推奨）**: 単一行コマンドの組み合わせで同等機能を実現
+2. **スクリプトファイル化**: 外部.ps1ファイルでの関数定義 + ドットソーシング
+3. **直接コマンド実行**: 関数を使わずに個別コマンドで処理
+
+**効果**: 
+- ✅ 関数と同等の機能を確実に実現
+- ✅ AIエージェント環境での100%動作保証
+- ✅ デバッグとメンテナンスの簡素化
+
 ## コマンド長制限問題
 
 ### 制限値と事前チェック

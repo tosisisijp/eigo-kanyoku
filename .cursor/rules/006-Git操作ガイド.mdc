@@ -48,7 +48,7 @@ globs: [
 #### ページャー問題の対策
 **問題**: AIエージェント実行時に `git diff`, `git log`, `git show` でページャー（less）が起動し、コマンドが停止する
 
-**解決策**: `| cat` を付加してページャーを無効化
+**PowerShell対応解決策**: `--no-pager` オプションまたは `| Out-String` を使用
 
 ```powershell
 # ❌ ページャーが起動して停止するパターン
@@ -56,64 +56,69 @@ git diff
 git log
 git show
 
-# ✅ ページャー無効化で完全出力
-git diff | cat
-git log | cat  
-git show | cat
-git log --oneline -10 | cat
-git diff --stat | cat
+# ✅ PowerShell環境でのページャー無効化（推奨）
+git --no-pager diff
+git --no-pager log
+git --no-pager show
+git --no-pager log --oneline -10
+git --no-pager diff --stat
+
+# ✅ 代替方法：パイプライン使用
+git diff | Out-String
+git log | Out-String
+git show | Out-String
 ```
 
 #### 適用対象の Git コマンド
-以下のコマンドはAIエージェント実行時に **必ず `| cat` を付加**：
+以下のコマンドはAIエージェント実行時に **必ず `--no-pager` オプションまたは `| Out-String` を使用**：
 
-- **差分表示系**: `git diff`, `git diff --stat`, `git diff --word-diff`
-- **ログ表示系**: `git log`, `git log --oneline`, `git show`
-- **ブランチ比較系**: `git diff branch1 branch2`
+- **差分表示系**: `git --no-pager diff`, `git --no-pager diff --stat`, `git --no-pager diff --word-diff`
+- **ログ表示系**: `git --no-pager log`, `git --no-pager log --oneline`, `git --no-pager show`
+- **ブランチ比較系**: `git --no-pager diff branch1 branch2`
 - **その他**: ページャーを使用する全てのGitコマンド
 
 #### 実装時の注意点
 - **必須適用**: このルールのすべてのgitコマンド例に適用
-- **一貫性**: 関数内のgitコマンドでも `| cat` を使用
+- **PowerShell最適化**: `--no-pager` オプション優先、`| Out-String` は代替手段
 - **004番ルール連携**: PowerShell環境最適化との相乗効果
 
 ### 変更ファイル一覧の取得
 ```powershell
 # 最終コミットからの変更ファイル一覧
-$changedFiles = git diff --name-only HEAD~1 HEAD
+$changedFiles = git --no-pager diff --name-only HEAD~1 HEAD
 Write-Host "=== 変更ファイル一覧 ===" -ForegroundColor Cyan
 $changedFiles | ForEach-Object { Write-Host "- $_" -ForegroundColor Yellow }
 
 # ワーキングディレクトリの未コミット変更
-git diff --name-only
+git --no-pager diff --name-only
 
 # ステージング済み変更
-git diff --name-only --staged
+git --no-pager diff --name-only --staged
 ```
 
 ### 変更統計の取得
 ```powershell
 # 詳細統計（ファイル別行数）
-git diff --stat HEAD~1 HEAD
+git --no-pager diff --stat HEAD~1 HEAD
 
 # 数値統計のみ
-git diff --numstat HEAD~1 HEAD
+git --no-pager diff --numstat HEAD~1 HEAD
 
 # 簡潔な統計
-git diff --shortstat HEAD~1 HEAD
+git --no-pager diff --shortstat HEAD~1 HEAD
 ```
 
 ### 期間指定の差分取得
 ```powershell
 # 過去N コミット分の変更
-git diff --name-only HEAD~3 HEAD  # 過去3コミット分
-git diff --name-only HEAD~5 HEAD  # 過去5コミット分
+git --no-pager diff --name-only HEAD~3 HEAD  # 過去3コミット分
+git --no-pager diff --name-only HEAD~5 HEAD  # 過去5コミット分
 
 # 特定コミット間の差分
-git diff --name-only [コミットハッシュ1] [コミットハッシュ2]
+git --no-pager diff --name-only [コミットハッシュ1] [コミットハッシュ2]
 
 # 特定日付以降の変更
-git diff --name-only --since="2024-01-01" HEAD
+git --no-pager diff --name-only --since="2024-01-01" HEAD
 ```
 
 ## 汎用Git差分分析関数
@@ -130,7 +135,7 @@ function Get-GitChangesSummary {
     Write-Host "対象範囲: HEAD~$CommitRange から HEAD" -ForegroundColor Gray
     
     # 1. 変更ファイル一覧
-    $changedFiles = git diff --name-only HEAD~$CommitRange HEAD
+    $changedFiles = git --no-pager diff --name-only HEAD~$CommitRange HEAD
     if ($FilePattern -ne "*") {
         $changedFiles = $changedFiles | Where-Object { $_ -like $FilePattern }
     }
@@ -140,7 +145,7 @@ function Get-GitChangesSummary {
     
     # 2. 変更統計
     Write-Host "`n変更統計:" -ForegroundColor Green
-    git diff --stat HEAD~$CommitRange HEAD
+    git --no-pager diff --stat HEAD~$CommitRange HEAD
     
     return $changedFiles
 }
@@ -156,7 +161,7 @@ function Get-GitChangesByFileType {
     
     Write-Host "=== ファイル種別別変更分析 ===" -ForegroundColor Cyan
     
-    $allChanges = git diff --name-only HEAD~$CommitRange HEAD
+    $allChanges = git --no-pager diff --name-only HEAD~$CommitRange HEAD
     
     foreach ($ext in $Extensions) {
         $filesOfType = $allChanges | Where-Object { $_ -match "\.$ext$" }
@@ -186,7 +191,7 @@ function Get-GitChangesScale {
     Write-Host "=== 変更規模分析 ===" -ForegroundColor Cyan
     
     # 統計情報取得
-    $stats = git diff --numstat HEAD~$CommitRange HEAD
+    $stats = git --no-pager diff --numstat HEAD~$CommitRange HEAD
     $totalAdded = 0
     $totalDeleted = 0
     $fileCount = 0
@@ -235,7 +240,7 @@ function Test-DocumentUpdateNeeded {
     Write-Host "=== ドキュメント更新判定 ===" -ForegroundColor Cyan
     
     # 変更されたソースファイル
-    $changedFiles = git diff --name-only HEAD~$CommitRange HEAD
+    $changedFiles = git --no-pager diff --name-only HEAD~$CommitRange HEAD
     $changedSources = $changedFiles | Where-Object { 
         $file = $_
         $SourceExtensions | Where-Object { $file -match "\.$_$" }
@@ -389,28 +394,28 @@ git commit -m "[検証済み50文字以内メッセージ]"
 ### 詳細な変更内容確認
 ```powershell
 # 特定ファイルの変更内容
-git diff HEAD~1 HEAD [ファイル名]
+git --no-pager diff HEAD~1 HEAD [ファイル名]
 
 # 単語レベルでの差分表示
-git diff --word-diff HEAD~1 HEAD [ファイル名]
+git --no-pager diff --word-diff HEAD~1 HEAD [ファイル名]
 
 # 空白変更を無視
-git diff --ignore-space-change HEAD~1 HEAD
+git --no-pager diff --ignore-space-change HEAD~1 HEAD
 
 # 行移動を検出
-git diff --color-moved HEAD~1 HEAD
+git --no-pager diff --color-moved HEAD~1 HEAD
 ```
 
 ### ブランチ間差分
 ```powershell
 # ブランチ間の差分
-git diff main feature-branch
+git --no-pager diff main feature-branch
 
 # マージベースからの差分
-git diff $(git merge-base main feature-branch) feature-branch
+git --no-pager diff $(git merge-base main feature-branch) feature-branch
 
 # 特定ブランチの独自変更
-git diff main...feature-branch
+git --no-pager diff main...feature-branch
 ```
 
 ## 実用的な使用例

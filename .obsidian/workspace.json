@@ -171,6 +171,10 @@
   },
   "active": "1a63c9c66152bc00",
   "lastOpenFiles": [
+    "tango/script/AllTypes.ps1",
+    "tango/script/DotSourceTest.ps1",
+    "tango/script/Test.ps1",
+    "tango/script",
     "back-off-手を引く.md",
     "back-and-forth-行ったり来たり.md",
     "back-away-距離を置く.md",
