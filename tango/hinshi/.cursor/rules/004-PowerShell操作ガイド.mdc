@@ -1,0 +1,911 @@
+---
+description: "PowerShell操作時の問題対処・AI最適化・文字コード検証・関数永続性・エラーハンドリングの包括的ガイド"
+globs: ["*.ps1", "*.md", ".cursor/rules/*.mdc", "script/*.ps1"]
+tags: ["powershell", "ai-optimization", "error-handling", "encoding", "validation", "troubleshooting", "function-persistence"]
+priority: 2
+version: "2.2.0"
+alwaysApply: false
+---
+# PowerShell操作ガイド
+
+## 目的
+- PowerShell使用時の典型的な問題とその対処法を提供
+- 文字コード・改行コード確認の標準手順を確立
+- コマンド実行時のエラー対処とベストプラクティスを標準化
+- **検証プロセス中断時の復旧手順を確立**
+- **関数定義問題とスクリプトファイル化のベストプラクティスを提供**
+
+## 🚨 重要な運用上の制約
+
+### PowerShell環境設定の前提
+- **PSReadLine設定**: $PROFILEで無効化設定済み（このルールでは扱わない）
+- **基本環境**: PowerShell 7.x環境での動作を前提
+- **作業ディレクトリ**: プロジェクトルートからの相対パス実行
+
+### PowerShellセッション開始時の標準設定
+
+#### AI実装時の推奨初期化手順
+**AIエージェントがPowerShellセッション開始時に実行すべき標準手順**：
+
+```powershell
+# === AIエージェント専用初期化 ===
+# 1. 作業ディレクトリ確認
+Get-Location
+
+# 2. 基本変数初期化
+$ErrorActionPreference = "Stop"  # エラー時即座停止
+
+# 3. 初期化完了確認
+Write-Host "✅ AIエージェント用PowerShell初期化完了" -ForegroundColor Green
+```
+
+#### バッファサイズ問題の根本的解決
+**従来の問題と新しい解決策**：
+
+```
+従来のアプローチ:
+❌ バッファサイズ拡張 → 部分的改善（根本解決せず）
+❌ 段階的分割実行 → 作業効率低下
+
+新しいアプローチ:
+✅ PSReadLine無効化 → 根本的解決
+✅ AIエージェント最適化 → パフォーマンス向上
+✅ シンプルな操作 → 複雑な回避策不要
+```
+
+### AI実装ガイドライン専用設定
+
+#### AIエージェント判定と自動設定
+**AIエージェントからの実行を自動判定して設定を適用**：
+
+```powershell
+# AIエージェント実行環境の判定
+function Test-AIAgentEnvironment {
+    # Cursorからの実行やスクリプト実行の場合
+    if ($MyInvocation.Line -match "run_terminal_cmd|invoke|agent") {
+        return $true
+    }
+    # 非インタラクティブ実行の場合
+    if (-not [Environment]::UserInteractive) {
+        return $true
+    }
+    return $false
+}
+
+# 自動設定適用
+if (Test-AIAgentEnvironment) {
+    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
+    Write-Host "🤖 AIエージェント環境を検出、PSReadLine無効化適用" -ForegroundColor Cyan
+}
+```
+
+#### 実装時の優先順位
+**AI実装時の設定適用優先順位**：
+
+```
+Priority 1: PSReadLine無効化（根本解決）
+Priority 2: エラーハンドリング設定
+Priority 3: 作業効率化設定（段階的実行等）
+```
+
+### 実証済み効果
+
+#### 問題解決の実証
+**実際に解決される問題**：
+- ✅ **PSReadLine 2.3.6エラー**: `System.ArgumentOutOfRangeException` 完全解消
+- ✅ **BufferHeight: 1問題**: カーソル位置計算エラー消失
+- ✅ **日本語ファイル名問題**: 文字化け・表示崩れ解消
+- ✅ **長いコマンド問題**: コマンド長制限の影響軽減
+
+#### パフォーマンス向上
+**AI操作における性能改善**：
+- ⚡ **実行速度向上**: PSReadLineのオーバーヘッド除去
+- ⚡ **メモリ使用量削減**: 不要なモジュール除去
+- ⚡ **エラー処理簡素化**: 複雑な回避策不要
+
+### PowerShell関数の永続性問題と対処法
+
+#### 問題の特定
+**症状**: 
+- 定義した関数が「コマンド '関数名' が認識されません」エラーで実行できない
+- 複数コマンド実行時に途中で関数が消失する
+- セッション間で関数定義が維持されない
+
+**原因**: 
+- PowerShellセッション終了時に関数定義が消失
+- 長いコマンド実行中のメモリ問題
+- スコープ設定の不適切さ
+
+#### 根本的解決策：スクリプトファイル化
+**最も安定した対処法**: `.ps1ファイル作成 + ドットソーシング実行`
+
+```powershell
+# ❌ 不安定な方法：インラインでの関数定義
+function Test-Function { ... }  # セッション終了で消失
+
+# ✅ 推奨方法：スクリプトファイル化
+# 1. スクリプトファイル作成（例：ValidationScript.ps1）
+# 2. ドットソーシングで読み込み
+. .\script\ValidationScript.ps1
+# 3. 関数実行
+Test-Function
+```
+
+#### スクリプトファイル管理のベストプラクティス
+
+**ファイル配置ルール**:
+- **場所**: `./script/` フォルダ以下に配置
+- **命名**: 機能を表す明確な名前（例：`ObsidianToAnkiValidator.ps1`）
+- **権限**: 実行ポリシーの確認（必要に応じて `Set-ExecutionPolicy RemoteSigned`）
+
+**スクリプトファイル作成手順**:
+```powershell
+# 1. scriptフォルダ作成（存在しない場合）
+if (-not (Test-Path "script")) { mkdir script }
+
+# 2. スクリプトファイル作成
+@'
+function Test-ObsidianToAnkiFile {
+    param([string]$FilePath)
+    # 関数の内容...
+}
+
+function Test-AllObsidianToAnkiFiles {
+    # 関数の内容...
+}
+
+Write-Host "✅ Obsidian_to_Anki検証関数を読み込みました" -ForegroundColor Green
+'@ | Out-File -FilePath "script\ObsidianToAnkiValidator.ps1" -Encoding UTF8
+
+# 3. スクリプト読み込み
+. .\script\ObsidianToAnkiValidator.ps1
+
+# 4. 関数実行
+Test-AllObsidianToAnkiFiles
+```
+
+**スクリプトファイル化の利点**:
+- ✅ **永続性**: セッション終了後も関数定義が保持
+- ✅ **再利用性**: 他のセッションでも同じ関数を使用可能
+- ✅ **保守性**: 関数の修正・拡張が容易
+- ✅ **共有性**: チーム内での関数共有が可能
+- ✅ **バージョン管理**: Gitでの変更履歴管理
+
+#### 緊急時の代替手順
+スクリプトファイル化ができない場合の一時的対処法：
+
+```powershell
+# 代替手順1: Global スコープでの関数定義
+function Global:Test-Function {
+    param([string]$Parameter)
+    # 処理内容
+}
+
+# 代替手順2: 関数を使わない直接コマンド実行
+# 個別ファイル確認の例
+$file = "target.md"
+$content = Get-Content $file -Raw
+if ($content -match "# Obsidian_to_Anki") {
+    Write-Host "✅ セクション存在: $file"
+} else {
+    Write-Host "❌ セクション不存在: $file"
+}
+```
+
+### 検証プロセス中断時の対応
+**問題**: 一括検証→詳細確認→修正→再検証の流れが中断される
+**対処**:
+1. **現状把握**: 中断時点での問題ファイル特定
+2. **スクリプト再読み込み**: `. .\script\スクリプト名.ps1`
+3. **部分検証**: 問題ファイルの個別確認
+4. **継続実行**: 未処理ファイルからの再開
+
+## コマンド長制限問題
+
+### 制限値と事前チェック
+**PowerShellコマンドライン制限**: 約8192文字（8KB）
+**推奨上限**: 6000文字（安全マージン考慮）
+**危険領域**: 5000文字以上で分割検討
+
+**事前チェック方法**:
+```powershell
+# コマンド長チェック関数
+function Test-CommandLength {
+    param([string]$Command)
+    $length = $Command.Length
+    if ($length -gt 6000) {
+        Write-Warning "コマンド長 $length 文字: 分割実行を推奨"
+        return $false
+    } elseif ($length -gt 5000) {
+        Write-Warning "コマンド長 $length 文字: 注意が必要"
+        return $true
+    } else {
+        Write-Host "コマンド長 $length 文字: 問題なし" -ForegroundColor Green
+        return $true
+    }
+}
+```
+
+### 問題の特定
+**症状**: 長いコマンドラインが実行できない、コマンドが途中で切れる
+**原因**: PowerShellコマンドライン長制限、複雑な構文による解析エラー
+
+### AI実装時の自動選択基準
+**コマンド生成時の判定フロー（必須）**:
+1. **コマンド長測定**: 生成したコマンドの文字数をカウント
+2. **制限チェック**: 6000文字を超える場合は自動的に分割方式を選択
+3. **代替手法選択**: 以下の優先順位で代替案を実装
+   - 段階的分割実行（変数使用）
+   - here-string回避（文字列連結使用）
+   - 簡略版コマンド使用
+   - ファイル出力経由の処理
+
+**AI実装時の必須チェック項目**:
+```
+☑️ PowerShellセッション開始時にバッファサイズ拡張を実行
+☑️ コマンド長が6000文字以下か確認
+☑️ 超過時は上記代替手法を自動適用
+☑️ 関数定義が必要な場合はスクリプトファイル化を最優先
+☑️ 段階的分割実行、関数定義、ファイル経由の優先順位で選択
+```
+
+**PowerShell関数定義問題の対処（AI実装時必須）**:
+- 関数定義が必要な場合は **スクリプトファイル化を最優先** で実装
+- 関数が認識されない場合は即座にスクリプトファイル（`.ps1`）作成を提案
+- スクリプトファイルは `./script/` フォルダ以下に配置
+- 詳細な手順は下記「PowerShell関数の永続性問題と対処法」セクションを参照
+
+### 対処法：段階的分割実行
+```powershell
+# ❌ 長すぎるコマンド（実行失敗）
+$content = [System.IO.File]::ReadAllBytes("ファイル名.md"); $endIndex = $content.Length - 10; for ($i = $endIndex; $i -lt $content.Length; $i++) { $char = $content[$i]; $hex = "{0:X2}" -f $char; $ascii = if ($char -ge 32 -and $char -le 126) { [char]$char } else { "." }; Write-Host "$i : $hex ($ascii)" }
+
+# ✅ 分割実行（推奨）
+# Step 1: ファイル読み込み
+$content = [System.IO.File]::ReadAllBytes("ファイル名.md")
+
+# Step 2: 範囲設定
+$endIndex = $content.Length - 10
+
+# Step 3: ループ実行
+for ($i = $endIndex; $i -lt $content.Length; $i++) {
+    $char = $content[$i]
+    $hex = "{0:X2}" -f $char
+    $ascii = if ($char -ge 32 -and $char -le 126) { [char]$char } else { "." }
+    Write-Host "$i : $hex ($ascii)"
+}
+```
+
+## コンソールエラー対処法
+
+### PSReadLineエラー
+**問題**: here-string (@'...'@) 使用時のコンソール表示崩れ
+**症状**: `System.ArgumentOutOfRangeException` でコンソールバッファエラー
+**根本原因**: バッファサイズ不足（特に `BufferHeight: 1` 状態）
+
+#### 基本対処法：バッファサイズ拡張（推奨）
+```powershell
+# ✅ 最も効果的な解決策：セッション開始時に実行
+$host.UI.RawUI.BufferSize = New-Object Management.Automation.Host.Size (120, 3000)
+
+# 設定確認
+$host.UI.RawUI.BufferSize  # Width: 120, Height: 3000 が表示されれば成功
+
+# この設定により以下が解決：
+# - here-string使用時のエラー
+# - 複雑なコマンド実行時のエラー
+# - 日本語キーのハッシュテーブル操作エラー
+```
+
+#### 代替対処法：エラー発生時の継続処理
+**重要な対処法**: **エラーが出てもファイル出力は通常成功している**
+
+```powershell
+# エラー発生例
+@'
+大量のテキスト...
+'@ | Out-File -FilePath "ファイル名.md" -Encoding UTF8
+
+# エラーが発生してもファイル確認を継続
+$bytes = [System.IO.File]::ReadAllBytes("ファイル名.md")
+$bytes[-5..-1] | ForEach-Object { "{0:X2} ({1})" -f $_, [char]$_ }
+```
+
+#### エラーパターン別対処
+**パターン1**: `System.ArgumentOutOfRangeException: BufferHeight: 1`
+- **対処**: バッファサイズ拡張（上記の基本対処法）
+
+**パターン2**: here-string使用時の表示崩れ
+- **対処**: バッファサイズ拡張 + ファイル出力確認継続
+
+**パターン3**: 複雑なコマンド実行時のエラー
+- **対処**: バッファサイズ拡張 + 段階的分割実行
+
+### コンソール表示問題の回避策
+1. **短いコマンドに分割**: 複雑な処理を段階的に実行
+2. **ファイル出力確認**: エラー後も結果ファイルの確認を実施
+3. **バイナリ確認**: テキスト表示でなくバイナリレベルでの確認
+
+## 文字コード確認の標準手順
+
+### 基本的な文字コード確認
+```powershell
+# ファイル全体のバイナリ読み込み
+$content = [System.IO.File]::ReadAllBytes("ファイル名.md")
+
+# 末尾10バイトの確認
+$endIndex = $content.Length - 10
+for ($i = $endIndex; $i -lt $content.Length; $i++) {
+    $char = $content[$i]
+    $hex = "{0:X2}" -f $char
+    $ascii = if ($char -ge 32 -and $char -le 126) { [char]$char } else { "." }
+    Write-Host "$i : $hex ($ascii)"
+}
+```
+
+### 簡略版（末尾確認）
+```powershell
+# 末尾5バイトのみ確認
+$bytes = [System.IO.File]::ReadAllBytes("ファイル名.md")
+$bytes[-5..-1] | ForEach-Object { "{0:X2} ({1})" -f $_, [char]$_ }
+```
+
+### 改行コード混在確認
+```powershell
+# ファイル全体の改行コード確認
+$content = Get-Content "ファイル名.md" -Raw
+$lf = ($content | Select-String -Pattern "`n" -AllMatches).Matches.Count
+Write-Host "LF: $lf, CRLF: $crlf"
+```
+
+### ENDマーカー位置特定と検証
+```powershell
+# ENDマーカーの位置を特定し、その後の文字コードを確認
+$content = Get-Content "ファイル名.md" -Raw
+$endPattern = "END"
+$endIndex = $content.LastIndexOf($endPattern)
+
+if ($endIndex -ge 0) {
+    Write-Host "ENDマーカー位置: $endIndex"
+    $afterEndStart = $endIndex + $endPattern.Length
+    $afterEnd = $content.Substring($afterEndStart, [Math]::Min(10, $content.Length - $afterEndStart))
+    
+    # ENDの後の文字を16進数で確認
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($afterEnd)
+    for ($i = 0; $i -lt $bytes.Length; $i++) {
+        $char = $bytes[$i]
+        $hex = "{0:X2}" -f $char
+        $ascii = if ($char -ge 32 -and $char -le 126) { [char]$char } else { "." }
+        Write-Host "END+$($i+1): $hex ($ascii)"
+    }
+} else {
+    Write-Host "ENDマーカーが見つかりません"
+}
+```
+
+### 汎用的な文字コード確認
+```powershell
+# 特定位置の文字コード確認（16進数表示）
+function Get-ByteAnalysis {
+    param(
+        [string]$FilePath,
+        [int]$StartIndex = 0,
+        [int]$Length = 10
+    )
+    
+    if (-not (Test-Path $FilePath)) {
+        Write-Host "❌ ファイルが存在しません: $FilePath" -ForegroundColor Red
+        return
+    }
+    
+    $content = Get-Content $FilePath -Raw
+    $endIndex = [Math]::Min($StartIndex + $Length, $content.Length)
+    
+    Write-Host "=== バイト分析: $FilePath ===" -ForegroundColor Cyan
+    Write-Host "位置 $StartIndex - $($endIndex-1):" -ForegroundColor Cyan
+    
+    for ($i = $StartIndex; $i -lt $endIndex; $i++) {
+        if ($i -lt $content.Length) {
+            $char = $content[$i]
+            $byte = [System.Text.Encoding]::UTF8.GetBytes($char)[0]
+            $hex = "{0:X2}" -f $byte
+            $display = if ($byte -ge 32 -and $byte -le 126) { $char } else { "." }
+            
+            $status = switch ($hex) {
+                "0D" { "CR" }
+                "0A" { "LF" }
+                "20" { "SP" }
+                default { $display }
+            }
+            
+            Write-Host "$i : $hex ($status)"
+        }
+    }
+}
+
+# 使用例: ファイル末尾10文字を確認
+# $content = Get-Content "example.txt" -Raw
+# Get-ByteAnalysis "example.txt" -StartIndex ($content.Length - 10) -Length 10
+```
+
+## 汎用的な検証フレームワーク
+
+### ファイル末尾の改行コード確認
+```powershell
+# ファイル末尾の文字コード状況を確認
+function Test-FileEnding {
+    param([string]$FilePath)
+    
+    if (-not (Test-Path $FilePath)) {
+        Write-Host "❌ ファイルが存在しません: $FilePath" -ForegroundColor Red
+        return
+    }
+    
+    $content = Get-Content $FilePath -Raw
+    $length = $content.Length
+    
+    Write-Host "=== ファイル末尾確認: $FilePath ===" -ForegroundColor Cyan
+    Write-Host "ファイル長: $length 文字" -ForegroundColor Cyan
+    
+    if ($length -eq 0) {
+        Write-Host "⚠️ 空ファイル" -ForegroundColor Yellow
+        return
+    }
+    
+    # 末尾5文字を確認
+    $endStart = [Math]::Max(0, $length - 5)
+    $endContent = $content.Substring($endStart)
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($endContent)
+    
+    Write-Host "末尾5文字の文字コード:" -ForegroundColor Cyan
+    for ($i = 0; $i -lt $bytes.Length; $i++) {
+        $char = $bytes[$i]
+        $hex = "{0:X2}" -f $char
+        $ascii = if ($char -ge 32 -and $char -le 126) { [char]$char } else { "." }
+        
+        $status = switch ($hex) {
+            "0D" { "CR" }
+            "0A" { "LF" }
+            "20" { "SP" }
+            default { $ascii }
+        }
+        
+        Write-Host "  $($endStart + $i): $hex ($status)"
+    }
+    
+    # 改行コードパターンの判定
+    $endBytes = $bytes[-2..-1]  # 末尾2バイト
+    if ($endBytes.Length -ge 2 -and $endBytes[-2] -eq 0x0D -and $endBytes[-1] -eq 0x0A) {
+        Write-Host "✅ LF で終了" -ForegroundColor Green
+    } elseif ($endBytes.Length -ge 1 -and $endBytes[-1] -eq 0x0A) {
+        Write-Host "⚠️ LF のみで終了" -ForegroundColor Yellow
+    } elseif ($endBytes.Length -ge 1 -and $endBytes[-1] -eq 0x0D) {
+        Write-Host "⚠️ CR のみで終了" -ForegroundColor Yellow
+    } else {
+        Write-Host "⚠️ 改行なしで終了" -ForegroundColor Yellow
+    }
+}
+
+# 使用例
+# Test-FileEnding "example.txt"
+```
+
+### プロジェクト固有の検証
+```powershell
+# プロジェクト固有の検証が必要な場合は、
+# 適切な専用ルールを参照してください：
+# - [[110-PowerShell操作管理.mdc]] - プロジェクト共通操作（旧103統合）
+# - [[203-Obsidian_to_Anki専用PowerShell操作.mdc]] - Obsidian_to_Anki専用操作
+```
+
+## ファイル操作のベストプラクティス
+
+### エンコーディング統一
+```powershell
+# UTF-8（BOMなし）での出力
+$content | Out-File -FilePath "ファイル名.md" -Encoding UTF8
+
+# UTF-8での読み込み
+$content = Get-Content "ファイル名.md" -Encoding UTF8 -Raw
+```
+
+### 改行コード統一
+```powershell
+# LF統一
+$content = Get-Content $FilePath -Raw
+$content = $content -replace "`r`n", "`n"  # LFに統一
+Set-Content $FilePath -Value $content -NoNewline -Encoding UTF8
+```
+
+## エラーパターンと対処法
+
+### パターン1: コマンド長制限
+**症状**: コマンドが途中で切れる
+**対処**: 段階的分割実行
+
+### パターン2: PSReadLineエラー
+**症状**: コンソール表示崩れ、ArgumentOutOfRangeException
+**対処**: エラー無視してファイル確認継続
+
+### パターン3: エンコーディング問題
+**症状**: 文字化け、BOM付きファイル
+**対処**: UTF-8統一、BOM除去
+
+### パターン4: 改行コード混在
+**症状**: 正規表現マッチング失敗
+**対処**: LF統一処理
+
+## 予防策
+
+### コマンド作成時の注意点
+1. **長いコマンドの回避**: 複雑な処理は分割して記述
+2. **エンコーディング明示**: 常に `-Encoding UTF8` を指定
+3. **改行コード統一**: LF を基本とする
+
+### デバッグ時の確認手順
+1. **エラー内容の確認**: PSReadLineエラーかコマンドエラーかを判別
+2. **ファイル出力確認**: エラー発生時もファイル生成状況を確認
+3. **バイナリレベル確認**: 文字コード問題は16進数で確認
+
+## 関連ツール・コマンド
+
+### 基本コマンド
+- `[System.IO.File]::ReadAllBytes()`: バイナリレベルでの文字確認
+- `Get-Content -Raw`: ファイル全体の一括読み込み
+- `Out-File -Encoding UTF8`: UTF-8での出力
+- `Select-String -Pattern`: 正規表現による検索
+
+### Git連携
+- `git config core.autocrlf`: 改行コード自動変換設定
+- `git ls-files --eol`: ファイル別改行コード確認
+
+## 🚨 重要な修正内容
+
+### 修正1: 見出しレベルの統一
+**修正前**: `$content -match "## Obsidian_to_Anki"`
+**修正後**: `$content -match "# Obsidian_to_Anki"`
+**理由**: 実際のファイルではレベル1見出し（#）を使用
+
+### 修正2: ENDファイル末尾判定の修正
+**修正前**: 
+```powershell
+if ($remainingLength -eq 0) {
+    $results["正常"] += $file.Name  # ❌ 間違った判定
+}
+```
+**修正後**: 
+```powershell
+if ($remainingLength -eq 0) {
+    $results["改行コード問題"] += $file.Name  # ✅ 正しい判定
+    # ENDの後に改行コードが必要
+}
+```
+**理由**: 202番ルールでは「ENDの後にLF改行コード」が必須
+
+### 修正3: 品質基準の明確化
+- **真の正常状態**: `remainingLength -eq 1` かつ `0x0A`（LF）
+- **改行コード問題**: `remainingLength -eq 0`（ENDがファイル末尾）
+- **改行コード問題**: `remainingLength -eq 1` かつ `0x0A`（LFのみ）
+- **ENDスペース問題**: `0x20`（スペース）が最初のバイト
+
+## 成功事例
+
+### 文字コード問題の解決事例
+**問題**: ENDマーカー後のスペース + 改行コード混在
+**対処**: PowerShellでの完全書き直し（LF統一）
+**結果**: プラグインが正常認識、ID自動生成成功
+
+### コマンド長制限問題の解決事例
+**問題**: 長いワンライナーコマンドが実行できない
+**対処**: 3段階に分割実行
+**結果**: 正常実行、期待される結果を取得
+
+### 検証ロジック見逃し事例
+**問題**: turn-ones-back-on-見捨てる.mdで改行コード不足を見逃し
+**原因**: ENDがファイル末尾の場合を「正常」と誤判定
+**教訓**: 202番ルールではENDの後に必ずLF改行コードが必要
+**修正**: remainingLength -eq 0 の場合を「改行コード問題」に分類変更
+
+## 関連ファイル
+- [[003-プラグインデバッグ手法.mdc]] - デバッグ全般の手法
+- [[202-Obsidian_to_Anki独自形式管理.mdc]] - 特定用途での文字コード確認
+- [[001-AI実装ガイドライン.mdc]] - AI実装時の基本制約
+
+## 関数永続性対応策
+
+### セッション開始時の標準手順
+```powershell
+# 必要な関数を一括定義（セッション開始時実行）
+function Initialize-ObsidianToAnkiFunctions {
+    # Test-ObsidianToAnkiFile関数の定義
+    function Global:Test-ObsidianToAnkiFile {
+        param([string]$FilePath)
+        if (!(Test-Path $FilePath)) { 
+            Write-Host "ファイルが見つかりません: $FilePath" -ForegroundColor Red
+            return 
+        }
+        
+        $content = Get-Content $FilePath -Raw -Encoding UTF8
+        Write-Host "`n=== $FilePath 詳細検証 ===" -ForegroundColor Cyan
+        
+            # 基本チェック（修正：# レベル1見出し）
+    if ($content -notmatch "# Obsidian_to_Anki") { 
+        Write-Host "❌ Obsidian_to_Ankiセクションなし" -ForegroundColor Red
+        return 
+    }
+        if ($content -notmatch "START") { 
+            Write-Host "❌ STARTマーカーなし" -ForegroundColor Red
+            return 
+        }
+        if ($content -notmatch "END") { 
+            Write-Host "❌ ENDマーカーなし" -ForegroundColor Red
+            return 
+        }
+        
+        # ENDマーカー詳細確認
+        $endMatches = [regex]::Matches($content, "END.*")
+        foreach ($match in $endMatches) {
+            $endText = $match.Value
+            Write-Host "ENDマーカー発見: '$endText'" -ForegroundColor Yellow
+            if ($endText -match "END ") { 
+                Write-Host "❌ ENDの後にスペースあり" -ForegroundColor Red 
+            } elseif ($endText -eq "END") { 
+                Write-Host "✅ ENDマーカー正常（ファイル末尾）" -ForegroundColor Green 
+            } else { 
+                Write-Host "✅ ENDマーカー正常" -ForegroundColor Green 
+            }
+        }
+        
+        # バイナリレベル確認
+        $bytes = [System.IO.File]::ReadAllBytes($FilePath)
+        $endIndex = -1
+        for ($i = 0; $i -lt $bytes.Length - 2; $i++) {
+            if ($bytes[$i] -eq 69 -and $bytes[$i+1] -eq 78 -and $bytes[$i+2] -eq 68) { 
+                $endIndex = $i + 3
+                break 
+            }
+        }
+        
+        if ($endIndex -gt 0 -and $endIndex -lt $bytes.Length) {
+            $afterEndBytes = $bytes[$endIndex..($bytes.Length-1)]
+            Write-Host "END後のバイト: " -NoNewline
+            $afterEndBytes | ForEach-Object { Write-Host ("{0:X2} " -f $_) -NoNewline }
+            Write-Host ""
+            
+            $lfCount = 0
+            $crlfOnlyCount = 0
+            for ($i = 0; $i -lt $afterEndBytes.Length - 1; $i++) {
+                if ($afterEndBytes[$i] -eq 10) { 
+                    $lfCount++ 
+                } elseif ($afterEndBytes[$i] -eq 13) { 
+                    $crlfOnlyCount++ 
+                }
+            }
+            
+            if ($crlfOnlyCount -gt 0) { 
+                Write-Host "❌ 改行コード混在問題: LF($lfCount) + CRLF単体($crlfOnlyCount)" -ForegroundColor Red 
+            } else { 
+                Write-Host "✅ 改行コード正常: LF統一" -ForegroundColor Green 
+            }
+        }
+    }
+    
+    # Test-AllObsidianToAnkiFiles関数の定義
+    function Global:Test-AllObsidianToAnkiFiles {
+        $mdFiles = Get-ChildItem -Path "." -Filter "*.md" | Where-Object { $_.Name -notlike "README.md" }
+        Write-Host "=== 全mdファイル検証開始 ===" -ForegroundColor Magenta
+        Write-Host "対象ファイル数: $($mdFiles.Count)" -ForegroundColor Magenta
+        Write-Host ""
+        
+        $results = @{ 
+            "正常" = @()
+            "ENDスペース問題" = @()
+            "改行コード問題" = @()
+            "セクション不存在" = @()
+            "マーカー不存在" = @()
+            "その他問題" = @() 
+        }
+        
+        foreach ($file in $mdFiles) {
+            $content = Get-Content $file.FullName -Raw
+            if ($content -match "## Obsidian_to_Anki") {
+                if ($content -match "END") {
+                    $endIndex = $content.LastIndexOf("END")
+                    $afterEndStart = $endIndex + 3
+                    $remainingLength = $content.Length - $afterEndStart
+                    
+                    if ($remainingLength -eq 0) {
+                        $results["正常"] += $file.Name
+                    } else {
+                        $afterEnd = $content.Substring($afterEndStart, [Math]::Min(5, $remainingLength))
+                        $bytes = [System.Text.Encoding]::UTF8.GetBytes($afterEnd)
+                        
+                        if ($bytes.Length -ge 1 -and $bytes[0] -eq 0x20) {
+                            $results["ENDスペース問題"] += $file.Name
+                        } elseif ($bytes.Length -eq 1 -and $bytes[0] -eq 0x0A) {
+                            $results["改行コード問題"] += $file.Name
+                        } elseif ($bytes.Length -ge 2 -and $bytes[0] -eq 0x0D -and $bytes[1] -eq 0x0A) {
+                            $results["正常"] += $file.Name
+                        } else {
+                            $results["その他問題"] += $file.Name
+                        }
+                    }
+                } else {
+                    $results["マーカー不存在"] += $file.Name
+                }
+            } else {
+                $results["セクション不存在"] += $file.Name
+            }
+        }
+        
+        # 結果表示
+        Write-Host "=== 検証結果サマリー ===" -ForegroundColor Magenta
+        foreach ($category in $results.Keys) {
+            $count = $results[$category].Count
+            if ($count -gt 0) {
+                $color = switch ($category) {
+                    "正常" { "Green" }
+                    "セクション不存在" { "Yellow" }
+                    default { "Red" }
+                }
+                Write-Host "$category ($count 件):" -ForegroundColor $color
+                $results[$category] | ForEach-Object { Write-Host "  - $_" }
+                Write-Host ""
+            }
+        }
+    }
+    
+    Write-Host "✅ Obsidian_to_Anki検証関数を定義しました" -ForegroundColor Green
+}
+
+# 使用方法:
+# 1. セッション開始時に Initialize-ObsidianToAnkiFunctions を実行
+# 2. Test-AllObsidianToAnkiFiles で一括検証
+# 3. Test-ObsidianToAnkiFile -FilePath "ファイル名" で個別検証
+```
+
+### 関数定義失敗時の代替手順
+```powershell
+# 関数が利用できない場合の直接コマンド実行
+# 個別ファイル確認の代替コマンド
+$filePath = "ファイル名.md"
+$bytes = [System.IO.File]::ReadAllBytes($filePath)
+$endIndex = -1
+for ($i = 0; $i -lt $bytes.Length - 2; $i++) {
+    if ($bytes[$i] -eq 69 -and $bytes[$i+1] -eq 78 -and $bytes[$i+2] -eq 68) { 
+        $endIndex = $i + 3
+        break 
+    }
+}
+if ($endIndex -gt 0) {
+    $afterEndBytes = $bytes[$endIndex..($bytes.Length-1)]
+    Write-Host "END後のバイト: "
+    $afterEndBytes | ForEach-Object { Write-Host ("{0:X2} " -f $_) -NoNewline }
+    Write-Host ""
+}
+```
+
+## 検証プロセス中断時の復旧手順
+
+### 中断パターンと対処法
+
+#### パターン1: 一括検証中のエラー中断
+**症状**: Test-AllObsidianToAnkiFiles実行中にPSReadLineエラー
+**対処**:
+1. **結果の部分確認**: エラー前の出力内容を確認
+2. **問題ファイル特定**: エラー直前に処理されたファイルを特定
+3. **個別検証継続**: 残りファイルを個別に確認
+
+```powershell
+# 中断時の復旧用コマンド
+$remainingFiles = @("file1.md", "file2.md", "file3.md")  # 未検証ファイルリスト
+foreach ($file in $remainingFiles) {
+    Write-Host "=== $file 検証 ===" -ForegroundColor Yellow
+    $content = Get-Content $file -Raw
+    if ($content -match "## Obsidian_to_Anki") {
+        if ($content -match "END ") { 
+            Write-Host "❌ ENDスペース問題: $file" -ForegroundColor Red 
+        } else { 
+            Write-Host "✅ 正常: $file" -ForegroundColor Green 
+        }
+    } else {
+        Write-Host "⚠️ セクション不存在: $file" -ForegroundColor Yellow
+    }
+}
+```
+
+#### パターン2: 個別検証中の関数認識エラー
+**症状**: Test-ObsidianToAnkiFile関数が認識されない
+**対処**:
+1. **直接コマンド実行**: 関数を使わない検証方法
+2. **簡略版チェック**: 最低限の確認項目のみ実行
+
+```powershell
+# 関数なしでの個別ファイル確認
+$file = "問題ファイル.md"
+$content = Get-Content $file -Raw
+Write-Host "=== $file 簡略検証 ===" -ForegroundColor Cyan
+
+# 基本チェック（修正：# レベル1見出し）
+$hasSection = $content -match "# Obsidian_to_Anki"
+$hasEnd = $content -match "END"
+$hasEndSpace = $content -match "END "
+
+Write-Host "Obsidian_to_Ankiセクション: $(if($hasSection){'✅'}else{'❌'})"
+Write-Host "ENDマーカー: $(if($hasEnd){'✅'}else{'❌'})"
+Write-Host "ENDスペース問題: $(if($hasEndSpace){'❌ あり'}else{'✅ なし'})"
+
+# 改行コード確認
+if ($hasEnd -and -not $hasEndSpace) {
+    $bytes = [System.IO.File]::ReadAllBytes($file)
+    $lastBytes = $bytes[-5..-1]
+    Write-Host "末尾バイト: "
+    $lastBytes | ForEach-Object { Write-Host ("{0:X2} " -f $_) -NoNewline }
+    Write-Host ""
+}
+```
+
+#### パターン3: 修正後の再検証失敗
+**症状**: ファイル修正後の確認でエラー発生
+**対処**:
+1. **修正結果の直接確認**: バイナリレベルでの確認
+2. **部分検証**: 修正箇所のみの確認
+
+```powershell
+# 修正後の確認用簡略コマンド
+$modifiedFile = "修正済みファイル.md"
+Write-Host "=== $modifiedFile 修正結果確認 ===" -ForegroundColor Green
+
+# END後のバイト確認のみ
+$bytes = [System.IO.File]::ReadAllBytes($modifiedFile)
+$endIndex = -1
+for ($i = 0; $i -lt $bytes.Length - 2; $i++) {
+    if ($bytes[$i] -eq 69 -and $bytes[$i+1] -eq 78 -and $bytes[$i+2] -eq 68) { 
+        $endIndex = $i + 3
+        break 
+    }
+}
+
+if ($endIndex -gt 0) {
+    $afterEndBytes = $bytes[$endIndex..($bytes.Length-1)]
+    if ($afterEndBytes.Length -eq 1 -and $afterEndBytes[0] -eq 0x0A) {
+        Write-Host "✅ 修正成功: LF正常" -ForegroundColor Green
+    } else {
+        Write-Host "❌ 修正不完全: " -NoNewline -ForegroundColor Red
+        $afterEndBytes | ForEach-Object { Write-Host ("{0:X2} " -f $_) -NoNewline }
+        Write-Host ""
+    }
+}
+```
+
+## エラーパターンと対処法の拡充
+
+### 新しいエラーパターン
+
+#### パターン5: 関数永続性問題
+**症状**: 定義した関数が次のコマンドで認識されない
+**対処**: 
+1. **Global スコープ指定**: `function Global:FunctionName` で定義
+2. **セッション継続**: 同一セッション内での連続実行
+3. **代替コマンド**: 関数なしでの直接実行
+
+#### パターン6: 検証プロセス中断
+**症状**: 一括処理中にユーザーによる中断や予期しないエラー
+**対処**:
+1. **部分結果の保存**: 中断前の結果を記録
+2. **再開ポイント特定**: 未処理ファイルの特定
+3. **段階的復旧**: 個別処理での継続
+
+## 予防策の強化
+
+### 検証作業開始時のチェックリスト
+- [ ] **関数定義確認**: `Initialize-ObsidianToAnkiFunctions` 実行済み
+- [ ] **作業ディレクトリ確認**: 正しいディレクトリにいる
+- [ ] **ファイル数確認**: 対象ファイル数の事前把握
+- [ ] **バックアップ確認**: 重要な変更前のバックアップ
+
+### 中断時の情報記録
+- **処理済みファイル**: 正常確認済みのファイルリスト
+- **問題ファイル**: 修正が必要なファイルリスト  
+- **未処理ファイル**: まだ確認していないファイルリスト
+- **エラー内容**: 発生したエラーの詳細

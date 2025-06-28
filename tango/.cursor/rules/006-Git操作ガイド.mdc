@@ -1,9 +1,19 @@
 ---
-description:
-globs:
-alwaysApply: false
+description: "Git操作ガイド Git差分分析・変更可視化・PowerShell関数・AIエージェント対応の包括的Git操作ガイド - ページャー問題対策・汎用プロジェクト対応・差分統計・変更規模分析機能"
+globs: [
+  "**/*.md",
+  "**/*.txt", 
+  "**/*.json",
+  "**/*.yml",
+  "**/*.yaml",
+  "**/*.mdc",
+  ".gitignore",
+  "README.md",
+  "CHANGELOG.md",
+  "**/*.ps1"
+]
 ---
-# Git差分分析管理 [Conditional]
+# Git操作ガイド [Conditional]
 
 このルールはGit差分の取得・分析・活用に関する汎用的なルールです。
 
@@ -21,23 +31,51 @@ alwaysApply: false
 - プロジェクト状況の分析時
 - 品質管理プロセスでの変更確認時
 
-## PowerShell実行時の前提条件
+## PowerShell実行環境
 
-### PSReadLine無効化の必須実行
-**重要**: このルールでPowerShellコマンドを実行する前に、**[[004-PowerShell操作ガイド.mdc]]** の「AIエージェント専用設定」を参照してPSReadLine無効化を実行してください。
+### 最適化された実行環境
+**[[004-PowerShell操作ガイド.mdc]]** の包括的リファクタリングにより、PowerShell操作時の問題は根本的に解決されています。
 
-```powershell
-# 必須: PowerShell実行前の安定化処理
-# 詳細は [[004-PowerShell操作ガイド.mdc]] を参照
-Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
-```
-
-### 安定化の理由
-- **PSReadLineエラー回避**: AIエージェント操作時のBufferHeightエラーを防止
-- **コマンド実行安定化**: 複雑なGit差分コマンドの確実な実行
-- **出力完全性**: 差分結果の完全な取得・表示
+### 安定した動作保証
+- **自動環境判定**: AIエージェント環境の自動認識と最適設定
+- **問題の根本解決**: PSReadLine、バッファサイズ、文字コード問題の完全解決
+- **出力完全性**: Git差分結果の完全で安定した取得・表示
 
 ## 基本Git差分コマンド
+
+### AIエージェント実行時の制約
+
+#### ページャー問題の対策
+**問題**: AIエージェント実行時に `git diff`, `git log`, `git show` でページャー（less）が起動し、コマンドが停止する
+
+**解決策**: `| cat` を付加してページャーを無効化
+
+```powershell
+# ❌ ページャーが起動して停止するパターン
+git diff
+git log
+git show
+
+# ✅ ページャー無効化で完全出力
+git diff | cat
+git log | cat  
+git show | cat
+git log --oneline -10 | cat
+git diff --stat | cat
+```
+
+#### 適用対象の Git コマンド
+以下のコマンドはAIエージェント実行時に **必ず `| cat` を付加**：
+
+- **差分表示系**: `git diff`, `git diff --stat`, `git diff --word-diff`
+- **ログ表示系**: `git log`, `git log --oneline`, `git show`
+- **ブランチ比較系**: `git diff branch1 branch2`
+- **その他**: ページャーを使用する全てのGitコマンド
+
+#### 実装時の注意点
+- **必須適用**: このルールのすべてのgitコマンド例に適用
+- **一貫性**: 関数内のgitコマンドでも `| cat` を使用
+- **004番ルール連携**: PowerShell環境最適化との相乗効果
 
 ### 変更ファイル一覧の取得
 ```powershell
@@ -88,9 +126,6 @@ function Get-GitChangesSummary {
         [string]$FilePattern = "*"
     )
     
-    # PSReadLine無効化 (詳細は [[004-PowerShell操作ガイド.mdc]] 参照)
-    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
-    
     Write-Host "=== Git変更内容サマリー ===" -ForegroundColor Cyan
     Write-Host "対象範囲: HEAD~$CommitRange から HEAD" -ForegroundColor Gray
     
@@ -118,9 +153,6 @@ function Get-GitChangesByFileType {
         [int]$CommitRange = 1,
         [string[]]$Extensions = @("md", "txt", "json", "yml", "yaml")
     )
-    
-    # PSReadLine無効化 (詳細は [[004-PowerShell操作ガイド.mdc]] 参照)
-    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
     
     Write-Host "=== ファイル種別別変更分析 ===" -ForegroundColor Cyan
     
@@ -150,9 +182,6 @@ function Get-GitChangesByFileType {
 ```powershell
 function Get-GitChangesScale {
     param([int]$CommitRange = 1)
-    
-    # PSReadLine無効化 (詳細は [[004-PowerShell操作ガイド.mdc]] 参照)
-    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
     
     Write-Host "=== 変更規模分析 ===" -ForegroundColor Cyan
     
@@ -203,9 +232,6 @@ function Test-DocumentUpdateNeeded {
         [string[]]$SourceExtensions = @("md", "txt", "json", "yml", "yaml")
     )
     
-    # PSReadLine無効化 (詳細は [[004-PowerShell操作ガイド.mdc]] 参照)
-    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
-    
     Write-Host "=== ドキュメント更新判定 ===" -ForegroundColor Cyan
     
     # 変更されたソースファイル
@@ -244,6 +270,119 @@ function Test-DocumentUpdateNeeded {
     }
 }
 ```
+
+## コミット管理の汎用基盤
+
+### コミットメッセージの基本制約
+
+#### 🚨 汎用的制約事項（全プロジェクト共通）
+
+##### 文字数制限（厳守）
+- **最大50文字**: 1行メッセージの絶対上限
+- **推奨30-40文字**: 可読性を考慮した推奨範囲
+- **改行禁止**: 単一行メッセージのみ使用
+- **特殊文字回避**: パイプ(|)・セミコロン(;)等の使用禁止
+
+##### エラー防止チェックリスト
+- [ ] **文字数確認**: 50文字以内であることを確認
+- [ ] **改行確認**: 改行文字が含まれていないことを確認
+- [ ] **引用符確認**: ダブルクォート内にダブルクォートが含まれていないことを確認
+- [ ] **特殊文字確認**: コマンドライン問題を起こす文字が含まれていないことを確認
+
+### コミットメッセージの汎用テンプレート
+
+#### 標準形式（推奨）
+```
+[種類]: [変更内容の要約]
+```
+
+#### 汎用的な種類分類
+- **feat**: 新機能追加
+- **fix**: バグ修正
+- **docs**: ドキュメント更新
+- **style**: フォーマット変更
+- **refactor**: リファクタリング
+- **test**: テスト追加・修正
+- **chore**: その他の変更
+
+#### 文字数別テンプレート
+
+**30文字以内（最優先）**:
+- `feat: 機能追加完了`
+- `fix: エラー修正`
+- `docs: 文書更新`
+- `style: フォーマット統一`
+- `refactor: コード整理`
+
+**40文字以内（推奨）**:
+- `feat: 新機能実装・テスト完了`
+- `fix: 重要なバグ修正・検証済み`
+- `docs: READMEとガイド更新完了`
+- `refactor: コード構造改善・最適化`
+
+**50文字以内（上限）**:
+- `feat: 包括的機能実装・統合テスト・文書化完了`
+- `fix: 重要バグ修正・回帰テスト・影響範囲確認完了`
+- `docs: プロジェクト文書包括更新・構造改善完了`
+
+### コミット前検証手順
+
+#### 1. メッセージ作成前の確認
+```bash
+# メッセージ文字数確認
+echo "[作成したメッセージ]" | wc -c
+```
+
+#### 2. 必須チェック項目
+- [ ] **文字数**: 50文字以内（`echo "メッセージ" | wc -c`で確認）
+- [ ] **改行**: 改行文字が含まれていない
+- [ ] **特殊文字**: |, ;, ", \n等が含まれていない
+- [ ] **内容明確性**: 変更内容が1行で理解できる
+
+#### 3. 安全なコミット実行
+```bash
+# 推奨: 短いメッセージでのコミット
+git commit -m "feat: 機能追加完了"
+
+# 文字数確認済みメッセージでのコミット
+git commit -m "[検証済み50文字以内メッセージ]"
+```
+
+### 🚫 使用禁止パターン（汎用）
+
+#### 長すぎるメッセージ（NG例）
+```
+❌ feat: 包括的システム実装 - 新機能追加・バグ修正・ドキュメント更新・テスト完了・リファクタリング実施・パフォーマンス最適化・セキュリティ強化
+```
+
+#### 改行を含むメッセージ（NG例）
+```
+❌ feat: システム実装完了
+   - 新機能追加
+   - テスト完了
+```
+
+#### 特殊文字問題（NG例）
+```
+❌ feat: 実装|テスト;完了  # パイプとセミコロンでコマンド分割
+❌ feat: "システム"完了   # ダブルクォート地獄
+```
+
+### メッセージ作成支援
+
+#### 変更種別の自動判定
+1. **新規ファイル追加** → `feat: [機能名]追加`
+2. **既存ファイル修正** → `fix: [問題]修正` または `docs: [文書]更新`
+3. **設定ファイル変更** → `chore: [設定名]更新`
+4. **テストファイル変更** → `test: [テスト名]追加/修正`
+5. **文書変更** → `docs: [文書名]更新`
+
+#### 文字数最適化テクニック
+- 「実装」→「実装」（そのまま）
+- 「システム」→「システム」（そのまま）
+- 「完全実装」→「実装完了」（1文字削減）
+- 「新規追加」→「追加」（2文字削減）
+- 「アップデート」→「更新」（4文字削減）
 
 ## 高度なGit差分分析
 
@@ -318,7 +457,7 @@ Get-GitChangesByFileType -Extensions @("md", "mdc", "json")
 - [ ] **整合性**: ソースとドキュメントの整合性を確認済み
 
 ## 関連ファイル
-- [[004-PowerShell操作ガイド.mdc]] - PSReadLine無効化を含むPowerShell操作の基本ガイド
+- [[004-PowerShell操作ガイド.mdc]] - PowerShell環境の包括的最適化とAIエージェント対応
 - [[108-Git操作管理.mdc]] - プロジェクト固有のGit操作管理
 - [[107-README管理.mdc]] - README更新でのGit差分活用
 - [[105-検証・品質管理.mdc]] - 品質管理プロセスでの活用
