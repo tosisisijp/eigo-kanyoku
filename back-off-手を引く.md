@@ -3,10 +3,10 @@ title: "back off - 手を引く"
 tags:
   - TOEIC
   - 句動詞
-  - 分離可能
-  - "TOEIC/頻出度/95"
-  - "TOEIC/Part4"
-  - "表現/撤退"
+  - 副詞句動詞
+  - "TOEIC/頻出度/70"
+  - "TOEIC/Part3"
+  - "表現/対立"
   - anki/deck/TOEIC句動詞
 ---
 
@@ -14,45 +14,49 @@ tags:
 
 ## 基本情報
 - **表現**: back off
-- **意味**: 手を引く・関与をやめる・距離を置く
-- **分類**: 固定句動詞
-- **TOEIC優先度**: 95
-- **Ankiラベル**: 不要補語固定句動詞
+- **意味**: 手を引く・身を引く
+- **分類**: 副詞句動詞
+- **TOEIC優先度**: 70
+- **Ankiラベル**: 副詞句動詞 > 自動詞的句動詞
 
 ## 例文
-The police backed off when the situation became dangerous.
-状況が危険になったとき警察は手を引きました。
+The manager told him to back off and let the team handle it.
+マネージャーは彼に手を引いて、チームに任せるように言いました。
 
 ## TOEIC出題文脈
-Part 4: 安全管理報告
+Part 3: 職場での対立
 
 ## 関連表現
-- [[back-down-撤退する]] - 撤退する・譲歩する
-- [[withdraw-撤退する]] - 撤退する・引き下がる
-- [[step-back-後退する]] - 後退する・距離を置く
+- [[withdraw-撤退する]] - 撤退する
+- [[step-aside-身を引く]] - 身を引く
+- [[yield-屈する]] - 譲る
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 back off
 
-The police backed off when the situation became dangerous.
+The manager told him to back off and let the team handle it.
 Back: 
-Ankiラベル:不要補語固定句動詞
+Ankiラベル:副詞句動詞 > 自動詞的句動詞
 back off
-手を引く・関与をやめる・距離を置く
+手を引く・身を引く
 
-The police backed off when the situation became dangerous.
-状況が危険になったとき警察は手を引きました。
+The manager told him to back off and let the team handle it.
+マネージャーは彼に手を引いて、チームに任せるように言いました。
 
 関連表現
-back-down-撤退する - 撤退する・譲歩する
-withdraw-撤退する - 撤退する・引き下がる
-step-back-後退する - 後退する・距離を置く
+withdraw-撤退する - 撤退する
+step-aside-身を引く - 身を引く
+yield-屈する - 譲る
 
-TOEIC優先度:95
-Part4:安全管理報告
-Speech: The police backed off when the situation became dangerous.
-Tags: TOEIC優先度:95 Ankiラベル:不要補語固定句動詞 Part4:安全管理報告
-<!--ID: 1751045633927-->
+TOEIC優先度:70
+Part3:職場での対立
+Speech: The manager told him to back off and let the team handle it.
+Yaku: マネージャーは彼に手を引いて、チームに任せるように言いました。
+Hyogen: back off
+AnkiLabel: 副詞句動詞 > 自動詞的句動詞
+Imi: 手を引く・身を引く
+Tags: TOEIC優先度:70 Ankiラベル:副詞句動詞 > 自動詞的句動詞 Part3:職場での対立
+<!--ID: 1751043183015-->
 END

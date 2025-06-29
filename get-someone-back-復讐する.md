@@ -3,9 +3,9 @@ title: "get someone back - 復讐する"
 tags:
   - TOEIC
   - 慣用句
-  - "TOEIC/頻出度/80"
+  - "TOEIC/頻出度/55"
   - "TOEIC/Part3"
-  - "表現/復讐"
+  - "表現/人間関係"
   - anki/deck/TOEIC慣用句
 ---
 
@@ -13,45 +13,47 @@ tags:
 
 ## 基本情報
 - **表現**: get someone back
-- **意味**: 復讐する・仕返しする・報復する
+- **意味**: 復讐する・仕返しする
 - **分類**: 慣用句
-- **TOEIC優先度**: 80
+- **TOEIC優先度**: 55
 - **Ankiラベル**: 慣用句
 
 ## 例文
-He decided to get his colleague back for the unfair treatment.
-彼は不当な扱いに対して同僚に仕返しすることにしました。
+He decided to get his colleague back.
+彼は同僚に仕返しすることにしました。
 
 ## TOEIC出題文脈
-Part 3: 職場での人間関係
+Part 3: 職場人間関係
 
 ## 関連表現
-- [[revenge-復讐]] - 復讐・報復
-- [[retaliate-報復する]] - 報復する・仕返しする
-- [[pay-back-返済する]] - 返済する・復讐する
+- [[revenge-復讐]]
+- [[retaliate-報復する]]
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 get someone back
 
-He decided to get his colleague back for the unfair treatment.
+He decided to get his colleague back.
 Back: 
 Ankiラベル:慣用句
 get someone back
-復讐する・仕返しする・報復する
+復讐する・仕返しする
 
-He decided to get his colleague back for the unfair treatment.
-彼は不当な扱いに対して同僚に仕返しすることにしました。
+He decided to get his colleague back.
+彼は同僚に仕返しすることにしました。
 
 関連表現
-revenge-復讐 - 復讐・報復
-retaliate-報復する - 報復する・仕返しする
-pay-back-返済する - 返済する・復讐する
+revenge-復讐
+retaliate-報復する
 
-TOEIC優先度:80
-Part3:職場での人間関係
-Speech: He decided to get his colleague back for the unfair treatment.
-Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part3:職場での人間関係
-<!--ID: 1751045633915-->
+TOEIC優先度:55
+Part3:職場人間関係
+Speech: He decided to get his colleague back.
+Yaku: 彼は同僚に仕返しすることにしました。
+Hyogen: get someone back
+AnkiLabel: 慣用句
+Imi: 復讐する・仕返しする
+Tags: TOEIC優先度:55 Ankiラベル:慣用句 Part3:職場人間関係
+<!--ID: 1751043216898-->
 END

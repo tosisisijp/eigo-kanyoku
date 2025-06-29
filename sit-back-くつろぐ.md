@@ -3,9 +3,9 @@ title: "sit back - くつろぐ"
 tags:
   - TOEIC
   - 慣用句
-  - "TOEIC/頻出度/90"
+  - "TOEIC/頻出度/80"
   - "TOEIC/Part1"
-  - "表現/くつろぐ"
+  - "表現/行動"
   - anki/deck/TOEIC慣用句
 ---
 
@@ -13,9 +13,9 @@ tags:
 
 ## 基本情報
 - **表現**: sit back
-- **意味**: くつろぐ・傍観する・リラックスする
+- **意味**: くつろぐ
 - **分類**: 慣用句
-- **TOEIC優先度**: 90
+- **TOEIC優先度**: 80
 - **Ankiラベル**: 慣用句
 
 ## 例文
@@ -26,9 +26,8 @@ Just sit back and let the team handle the presentation.
 Part 1: オフィス描写
 
 ## 関連表現
-- [[relax-リラックスする]] - リラックスする・くつろぐ
-- [[unwind-くつろぐ]] - くつろぐ・リラックスする
-- [[take-it-easy-気楽にする]] - 気楽にする・のんびりする
+- [[relax-くつろぐ]]
+- [[take-it-easy-気楽にする]]
 
 # Obsidian_to_Anki
 START
@@ -39,23 +38,22 @@ Just sit back and let the team handle the presentation.
 Back: 
 Ankiラベル:慣用句
 sit back
-くつろぐ・傍観する・リラックスする
+くつろぐ
 
 Just sit back and let the team handle the presentation.
 リラックスしてチームにプレゼンテーションを任せましょう。
 
 関連表現
-relax-リラックスする - リラックスする・くつろぐ
-unwind-くつろぐ - くつろぐ・リラックスする
-take-it-easy-気楽にする - 気楽にする・のんびりする
+relax-くつろぐ
+take-it-easy-気楽にする
 
-TOEIC優先度:90
+TOEIC優先度:80
 Part1:オフィス描写
 Speech: Just sit back and let the team handle the presentation.
 Yaku: リラックスしてチームにプレゼンテーションを任せましょう。
 Hyogen: sit back
 AnkiLabel: 慣用句
-Imi: くつろぐ・傍観する・リラックスする
-Tags: TOEIC優先度:90 Ankiラベル:慣用句 Part1:オフィス描写
+Imi: くつろぐ
+Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part1:オフィス描写
 <!--ID: 1751043182996-->
 END

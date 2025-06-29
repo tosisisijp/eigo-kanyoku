@@ -1,6 +1,9 @@
 ---
-description: "Obsidian_to_Anki独自形式でのAnkiカード作成・管理に関する専門ルール - START/END形式・WithSpeech対応・Tags統合を含む包括的カード生成ガイド"
-globs: ["*.md"]
+description: "202-Obsidian_to_Anki独自形式でのAnkiカード作成・管理に関する専門ルール - START/END形式・WithSpeech対応・Tags統合・Anki ID保護を含む包括的カード生成ガイド"
+globs: ["*.md", "tango/**/*.md", "back*.md", "get-*.md", "go-*.md"]
+tags: ["anki", "obsidian", "card-format", "id-management", "plugin-integration", "content-generation"]
+priority: 2
+version: "1.1.0"
 alwaysApply: false
 ---
 # Obsidian_to_Anki独自形式管理
@@ -216,6 +219,15 @@ ENDマーカー不存在: Obsidian_to_Ankiセクションが存在しない
 
 ### ID管理の重要事項
 - **プラグイン権限**: IDの生成・管理はObsidian_to_Ankiプラグインの専権事項
+- **ファイル操作時のID保護**: ファイル名変更・移動時はリネーム操作を使用してID保持
+- **学習履歴継続**: 既存IDの保持により、Ankiでの学習進捗・復習間隔・習熟度が継続
+- **201ルール連携**: ファイルの命名規則や構造、ファイル操作手順の詳細は[[201-Ankiデッキ構造管理.mdc]]を参照
+
+#### ファイル操作におけるID保護
+- **推奨操作**: PowerShellの`Move-Item`コマンドによるリネーム
+- **禁止操作**: コピー&削除、新規作成&内容移行（IDが失われる）
+- **確認方法**: 操作後に`<!--ID: xxxxx-->`行が保持されていることを確認
+- **復旧不可**: 一度失われたIDは復元できないため、事前の操作選択が重要
 
 ## 改行コード管理
 
@@ -344,6 +356,9 @@ AnkiLabel: 分離句動詞副詞
 Imi: バックアップする
 Tags: TOEIC優先度:100 Ankiラベル:分離句動詞副詞 Part4:IT関連業務指示
 END
+
+```
+※ ID行は初回同期時にObsidian_to_Ankiプラグインが自動追加
 
 ```
 ※ ID行は初回同期時にObsidian_to_Ankiプラグインが自動追加

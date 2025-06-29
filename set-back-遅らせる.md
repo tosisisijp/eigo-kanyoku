@@ -3,10 +3,10 @@ title: "set back - 遅らせる"
 tags:
   - TOEIC
   - 句動詞
-  - 分離可能
-  - "TOEIC/頻出度/85"
+  - 副詞句動詞
+  - "TOEIC/頻出度/60"
   - "TOEIC/Part4"
-  - "表現/遅延"
+  - "表現/時間"
   - anki/deck/TOEIC句動詞
 ---
 
@@ -14,45 +14,47 @@ tags:
 
 ## 基本情報
 - **表現**: set back
-- **意味**: 遅らせる・妨げる・後退させる
-- **分類**: 分離可能句動詞
-- **TOEIC優先度**: 85
-- **Ankiラベル**: 分離句動詞副詞
+- **意味**: 遅らせる
+- **分類**: 副詞句動詞 > 他動詞的分離可能
+- **TOEIC優先度**: 60
+- **Ankiラベル**: 副詞句動詞 > 他動詞的分離可能
 
 ## 例文
-The rain set back our construction schedule by two weeks.
-雨で建設スケジュールが2週間遅れました。
+The rain set back our construction schedule.
+雨で建設スケジュールが遅れました。
 
 ## TOEIC出題文脈
 Part 4: プロジェクト進捗報告
 
 ## 関連表現
-- [[delay-遅らせる]] - 遅らせる・延期する
-- [[postpone-延期する]] - 延期する・先延ばしする
-- [[hinder-妨げる]] - 妨げる・阻害する
+- [[delay-遅らせる]]
+- [[postpone-延期する]]
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 set back
 
-The rain set back our construction schedule by two weeks.
+The rain set back our construction schedule.
 Back: 
-Ankiラベル:分離句動詞副詞
+Ankiラベル:副詞句動詞 > 他動詞的分離可能
 set back
-遅らせる・妨げる・後退させる
+遅らせる
 
-The rain set back our construction schedule by two weeks.
-雨で建設スケジュールが2週間遅れました。
+The rain set back our construction schedule.
+雨で建設スケジュールが遅れました。
 
 関連表現
-delay-遅らせる - 遅らせる・延期する
-postpone-延期する - 延期する・先延ばしする
-hinder-妨げる - 妨げる・阻害する
+delay-遅らせる
+postpone-延期する
 
-TOEIC優先度:85
+TOEIC優先度:60
 Part4:プロジェクト進捗報告
-Speech: The rain set back our construction schedule by two weeks.
-Tags: TOEIC優先度:85 Ankiラベル:分離句動詞副詞 Part4:プロジェクト進捗報告
-<!--ID: 1751045633907-->
+Speech: The rain set back our construction schedule.
+Yaku: 雨で建設スケジュールが遅れました。
+Hyogen: set back
+AnkiLabel: 副詞句動詞 > 他動詞的分離可能
+Imi: 遅らせる
+Tags: TOEIC優先度:60 Ankiラベル:副詞句動詞 > 他動詞的分離可能 Part4:プロジェクト進捗報告
+<!--ID: 1751043216902-->
 END

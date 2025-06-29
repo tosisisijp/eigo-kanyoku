@@ -2,58 +2,59 @@
 title: "scale back - 縮小する"
 tags:
   - TOEIC
-  - 句動詞
-  - 分離可能
+  - 慣用句
   - "TOEIC/頻出度/80"
   - "TOEIC/Part4"
-  - "表現/縮小"
-  - anki/deck/TOEIC句動詞
+  - "表現/ビジネス"
+  - anki/deck/TOEIC慣用句
 ---
 
 # scale back (縮小する)
 
 ## 基本情報
 - **表現**: scale back
-- **意味**: 規模を縮小する・削減する・縮小する
-- **分類**: 分離可能句動詞
+- **意味**: 縮小する
+- **分類**: 慣用句
 - **TOEIC優先度**: 80
-- **Ankiラベル**: 分離句動詞副詞
+- **Ankiラベル**: 慣用句
 
 ## 例文
-We had to scale back the project due to funding issues.
-資金問題のためプロジェクトの規模を縮小せざるを得ませんでした。
+We need to scale back the project scope.
+プロジェクトの規模を縮小する必要があります。
 
 ## TOEIC出題文脈
-Part 4: プロジェクト管理
+Part 4: プロジェクト報告
 
 ## 関連表現
-- [[cut-back-削減する]] - 削減する・縮小する
-- [[reduce-削減する]] - 削減する・減らす
-- [[downsize-縮小する]] - 縮小する・人員削減する
+- [[downsize-縮小する]]
+- [[reduce-削減する]]
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 scale back
 
-We had to scale back the project due to funding issues.
+We need to scale back the project scope.
 Back: 
-Ankiラベル:分離句動詞副詞
+Ankiラベル:慣用句
 scale back
-規模を縮小する・削減する・縮小する
+縮小する
 
-We had to scale back the project due to funding issues.
-資金問題のためプロジェクトの規模を縮小せざるを得ませんでした。
+We need to scale back the project scope.
+プロジェクトの規模を縮小する必要があります。
 
 関連表現
-cut-back-削減する - 削減する・縮小する
-reduce-削減する - 削減する・減らす
-downsize-縮小する - 縮小する・人員削減する
+downsize-縮小する
+reduce-削減する
 
 TOEIC優先度:80
-Part4:プロジェクト管理
-Speech: We had to scale back the project due to funding issues.
-Tags: TOEIC優先度:80 Ankiラベル:分離句動詞副詞 Part4:プロジェクト管理
-<!--ID: 1751045633904-->
+Part4:プロジェクト報告
+Speech: We need to scale back the project scope.
+Yaku: プロジェクトの規模を縮小する必要があります。
+Hyogen: scale back
+AnkiLabel: 慣用句
+Imi: 縮小する
+Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part4:プロジェクト報告
+<!--ID: 1751043216901-->
 END
 
