@@ -1,9 +1,6 @@
 ---
 description: "変更規模別編集プロセス管理とリンク整合性管理ルール"
 globs: ["**/*.md", "**/*.mdc"]
-tags: ["process-management", "scale-based", "link-management"]
-priority: 2
-version: "1.0.0"
 alwaysApply: false
 ---
 # 変更規模別ルール

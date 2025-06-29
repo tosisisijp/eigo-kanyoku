@@ -1,18 +1,9 @@
 ---
 description: "Git操作ガイド Git差分分析・変更可視化・PowerShell関数・AIエージェント対応の包括的Git操作ガイド - ページャー問題対策・汎用プロジェクト対応・差分統計・変更規模分析機能"
-globs: [
-  "**/*.md",
-  "**/*.txt", 
-  "**/*.json",
-  "**/*.yml",
-  "**/*.yaml",
-  "**/*.mdc",
-  ".gitignore",
-  "README.md",
-  "CHANGELOG.md",
-  "**/*.ps1"
-]
+globs: ["**/*.md",  "**/*.txt",   "**/*.json",  "**/*.yml",  "**/*.yaml",  "**/*.mdc",  ".gitignore",  "README.md",  "CHANGELOG.md",  "**/*.ps1"]
+alwaysApply: false
 ---
+
 # Git操作ガイド [Conditional]
 
 このルールはGit差分の取得・分析・活用に関する汎用的なルールです。

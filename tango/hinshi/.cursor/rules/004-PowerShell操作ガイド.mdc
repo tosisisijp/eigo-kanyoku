@@ -1,9 +1,6 @@
 ---
 description: "PowerShell操作時の問題対処・AI最適化・文字コード検証・関数永続性・エラーハンドリングの包括的ガイド"
 globs: ["*.ps1", "*.md", ".cursor/rules/*.mdc", "script/*.ps1"]
-tags: ["powershell", "ai-optimization", "error-handling", "encoding", "validation", "troubleshooting", "function-persistence"]
-priority: 2
-version: "2.2.0"
 alwaysApply: false
 ---
 # PowerShell操作ガイド

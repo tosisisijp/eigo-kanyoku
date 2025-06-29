@@ -1,9 +1,6 @@
 ---
 description: "品詞分類に特化した専門管理ルール"
 globs: ["**/*.md"]
-tags: ["parts-of-speech", "classification", "specialized"]
-priority: 2
-version: "1.0.0"
 alwaysApply: false
 ---
 # 表現分類管理

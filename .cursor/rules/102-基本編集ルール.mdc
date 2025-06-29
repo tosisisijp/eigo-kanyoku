@@ -1,9 +1,6 @@
 ---
 description: "基本編集ルール（常時適用）"
 globs: ["**/*.md", "**/*.mdc"]
-tags: ["basic-editing", "always-apply", "priority-system"]
-priority: 1
-version: "1.0.0"
 alwaysApply: true
 ---
 # 基本編集ルール [Always]

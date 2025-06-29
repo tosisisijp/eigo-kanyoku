@@ -11,49 +11,33 @@ tags:
 
 # sit back (くつろぐ)
 
-## 基本情報
-- **表現**: sit back
-- **意味**: くつろぐ
-- **分類**: 慣用句
-- **TOEIC優先度**: 80
-- **Ankiラベル**: 慣用句
-
-## 例文
-Just sit back and let the team handle the presentation.
-リラックスしてチームにプレゼンテーションを任せましょう。
-
-## TOEIC出題文脈
-Part 1: オフィス描写
-
-## 関連表現
-- [[relax-くつろぐ]]
-- [[take-it-easy-気楽にする]]
-
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 sit back
 
-Just sit back and let the team handle the presentation.
-Back: 
+Sit back, relax, and enjoy the show.
+Back:
+座って、リラックスして、ショーを楽しんでください。
 Ankiラベル:慣用句
 sit back
 くつろぐ
 
-Just sit back and let the team handle the presentation.
-リラックスしてチームにプレゼンテーションを任せましょう。
-
 関連表現
-relax-くつろぐ
-take-it-easy-気楽にする
+- relax-くつろぐ
+- take-it-easy-気楽にする
 
 TOEIC優先度:80
 Part1:オフィス描写
-Speech: Just sit back and let the team handle the presentation.
-Yaku: リラックスしてチームにプレゼンテーションを任せましょう。
+Speech: Sit back, relax, and enjoy the show.
+Yaku: 座って、リラックスして、ショーを楽しんでください。
 Hyogen: sit back
 AnkiLabel: 慣用句
 Imi: くつろぐ
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part1:オフィス描写
-<!--ID: 1751043182996-->
+<!--ID: 1751043183034-->
 END
+
+# 関連表現
+- [[relax-くつろぐ]]
+- [[take-it-easy-気楽にする]]

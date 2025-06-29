@@ -1,9 +1,6 @@
 ---
 description: "日付情報の動的取得と標準化に関する専門ルール - PowerShell環境での日付管理・更新履歴・バージョン管理の自動化"
 globs: ["README.md", "*.md", ".cursor/rules/*.mdc"]
-tags: ["date-management", "powershell", "automation", "versioning", "readme", "conditional"]
-priority: 3
-version: "1.2.0"
 alwaysApply: false
 ---
 # 日付取得管理 [Conditional]
@@ -13,7 +10,7 @@ alwaysApply: false
 ## 基本方針
 
 ### 日付取得の目的
-- **動的日付更新**: 手動入力によるミスの防止
+- **動的日付更新**: 必ずPowershellを使って動的に日付を取得すること。AIエージェント内部では過去の学習記録を参照してるらしく、必ず過去日を設定する挙動があるため。
 - **標準フォーマット統一**: プロジェクト全体での日付形式の一貫性
 - **自動化促進**: バージョン管理・README更新での効率化
 - **国際化対応**: 年月日表記の明確化

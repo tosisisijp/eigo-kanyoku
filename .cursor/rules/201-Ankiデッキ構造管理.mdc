@@ -1,9 +1,6 @@
 ---
 description: "201―Ankiデッキ構造管理 単語別表現ファイルの基本構造・分類基準・統合ルール・TOEIC品質基準を定義 - ファイル命名規則・表形式・古典文法品詞分類・統合作業を包括管理"
 globs: ["*.md", "tango/**/*.md", "back*.md", "get-*.md", "go-*.md"]
-tags: ["structure", "classification", "integration", "toeic-quality", "file-naming"]
-priority: 2
-version: "1.0.0"
 alwaysApply: false
 ---
 # Ankiデッキ構造管理

@@ -1,9 +1,6 @@
 ---
 description: "202-Obsidian_to_Anki独自形式でのAnkiカード作成・管理に関する専門ルール - START/END形式・WithSpeech対応・Tags統合・Anki ID保護を含む包括的カード生成ガイド"
 globs: ["*.md", "tango/**/*.md", "back*.md", "get-*.md", "go-*.md"]
-tags: ["anki", "obsidian", "card-format", "id-management", "plugin-integration", "content-generation"]
-priority: 2
-version: "1.1.0"
 alwaysApply: false
 ---
 # Obsidian_to_Anki独自形式管理
@@ -16,6 +13,32 @@ alwaysApply: false
 
 ## 基本形式
 
+### ファイル全体の構造
+Ankiカードとなるmdファイルは、以下の4つのセクションで構成されなければなりません。この順序は厳守してください。
+
+1.  **フロントマター**: `---`で囲まれたYAML形式のメタデータ
+2.  **H1見出し**: `<h1>` 表現のタイトル
+3.  **Ankiカード定義**: `# Obsidian_to_Anki` で始まるカード本体
+4.  **関連表現**: `# 関連表現` で始まる他の表現へのリンク
+
+```markdown:例：正しい構造
+---
+title: "back and forth - 行ったり来たり"
+tags:
+  - TOEIC
+  - 副詞
+---
+# back and forth (行ったり来たり)
+
+# Obsidian_to_Anki
+START
+...
+END
+
+# 関連表現
+- [[to-and-fro-行ったり来たり]]
+```
+
 ### カード定義の構造
 ```
 # Obsidian_to_Anki
@@ -25,16 +48,14 @@ eigo-kanyoku
 
 [英語例文]
 Back: 
+[日本語訳]
 Ankiラベル:[ラベル名]
 [表現]
 [日本語意味]
 
-[英語例文]
-[日本語訳]
-
 関連表現
-[関連表現1] - [説明1]
-[関連表現2] - [説明2]
+[関連表現1]
+[関連表現2]
 
 TOEIC優先度:[数値]
 Part[番号]:[出題文脈]
@@ -60,14 +81,13 @@ END
 - **英語例文**: 実用的な例文（TOEIC形式推奨）
 
 ### 3. カード裏面（Back:以降）
-- **Ankiラベル**: カード分類用ラベル（Back:直後に配置）
+- **日本語訳**: 例文の自然な日本語訳（Back:直後に配置）
+- **Ankiラベル**: カード分類用ラベル
 - **表現**: 表面と同じ英語表現
 - **日本語意味**: 簡潔な意味説明
-- **英語例文**: 表面と同じ例文
-- **日本語訳**: 例文の自然な日本語訳
 
 ### 4. 補足情報
-- **関連表現**: 類似・関連する表現とその説明
+- **関連表現**: 類似・関連する表現
 - **TOEIC優先度**: 数値（0-100）
 - **Part情報**: 出題パートと文脈
 
@@ -303,16 +323,14 @@ back to back
 
 We have two meetings back to back this afternoon.
 Back: 
+今日の午後、会議が2つ連続して入っています。
 Ankiラベル:慣用句
 back to back
 連続して・立て続けに
 
-We have two meetings back to back this afternoon.
-今日の午後、会議が2つ連続して入っています。
-
 関連表現
-back-and-forth-往復して - 行ったり来たり
-one-after-another-連続して - 次々と
+back-and-forth-往復して
+one-after-another-連続して
 
 TOEIC優先度:85
 Part4:スケジュール調整
@@ -336,16 +354,14 @@ back up
 
 Please back up all important files before the update.
 Back: 
+更新前に重要なファイルをすべてバックアップしてください。
 Ankiラベル:分離句動詞副詞
 back up
 バックアップする
 
-Please back up all important files before the update.
-更新前に重要なファイルをすべてバックアップしてください。
-
 関連表現
-save-保存する - データを保存する
-store-蓄える - 情報を蓄える
+save-保存する
+store-蓄える
 
 TOEIC優先度:100
 Part4:IT関連業務指示

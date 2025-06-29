@@ -1,8 +1,8 @@
 ---
 description: "TOEIC学習・慣用句・句動詞・Anki特化の基本方針 - プロジェクト目標と基準の定義"
-globs:
-  - "*.md"
+globs:["*.md"]
 alwaysApply: false
+---
 # 基本方針
 
 ## 目的

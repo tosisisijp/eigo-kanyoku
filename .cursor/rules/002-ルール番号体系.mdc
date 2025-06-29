@@ -1,7 +1,6 @@
 ---
 description: "ルール番号体系 - Cursorワークスペースでの番号体系設計方針と管理ガイドライン"
-globs:
-  - ".cursor/rules/*.mdc"
+globs: [".cursor/rules/*.mdc"]
 alwaysApply: false
 ---
 # ルール番号体系

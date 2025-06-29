@@ -1,9 +1,6 @@
 ---
 description: "全mdファイル間の包括的な相互参照システムの管理と全体インデックス機能の構築・維持ルール"
 globs: ["**/*.md"]
-tags: ["cross-reference", "system-wide", "index-management"]
-priority: 3
-version: "1.0.0"
 alwaysApply: false
 ---
 # 全体相互参照管理 [Conditional]

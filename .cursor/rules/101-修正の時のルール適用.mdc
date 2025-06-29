@@ -1,9 +1,9 @@
 ---
 description: "英語の品詞整理と相互参照管理のための編集ルール統合ガイド"
 globs: ["**/*.md", "**/*.mdc"]
-tags: ["integration-guide", "navigation", "rule-coordination"]
-priority: 3
+alwaysApply: false
 ---
+
 # ルール統合ガイド
 
 ## 概要

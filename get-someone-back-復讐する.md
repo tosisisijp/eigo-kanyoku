@@ -11,49 +11,33 @@ tags:
 
 # get someone back (復讐する)
 
-## 基本情報
-- **表現**: get someone back
-- **意味**: 復讐する・仕返しする
-- **分類**: 慣用句
-- **TOEIC優先度**: 55
-- **Ankiラベル**: 慣用句
-
-## 例文
-He decided to get his colleague back.
-彼は同僚に仕返しすることにしました。
-
-## TOEIC出題文脈
-Part 3: 職場人間関係
-
-## 関連表現
-- [[revenge-復讐]]
-- [[retaliate-報復する]]
-
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 get someone back
 
-He decided to get his colleague back.
-Back: 
+She swore she would get him back for what he did.
+Back:
+彼女は彼がしたことに対して復讐すると誓いました。
 Ankiラベル:慣用句
 get someone back
 復讐する・仕返しする
 
-He decided to get his colleague back.
-彼は同僚に仕返しすることにしました。
-
 関連表現
-revenge-復讐
-retaliate-報復する
+- revenge-復讐
+- retaliate-報復する
 
 TOEIC優先度:55
 Part3:職場人間関係
-Speech: He decided to get his colleague back.
-Yaku: 彼は同僚に仕返しすることにしました。
+Speech: She swore she would get him back for what he did.
+Yaku: 彼女は彼がしたことに対して復讐すると誓いました。
 Hyogen: get someone back
 AnkiLabel: 慣用句
 Imi: 復讐する・仕返しする
 Tags: TOEIC優先度:55 Ankiラベル:慣用句 Part3:職場人間関係
-<!--ID: 1751043216898-->
+<!--ID: 1751043183028-->
 END
+
+# 関連表現
+- [[revenge-復讐]]
+- [[retaliate-報復する]]

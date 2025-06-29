@@ -66,13 +66,9 @@ tags:
 | **動詞** | 支援・援助 | 社会動作動詞 | "I'll back you", "back this project" | 90 | 人や計画を支援・援助する |
 | **動詞** | 移動・操作 | 物理動作動詞 | "back the car out", "back away slowly" | 85 | 物や自分を後方に移動させる |
 | **動詞** | 裏付け・証明 | 精神動作動詞 | "facts that back the theory", "evidence backs the claim" | 75 | 理論や主張を立証・証明する |
-| **句動詞** | 前置詞句動詞 | コミュニケーション系前置詞句動詞 | "get back to", "call back", "back you up" | 100 | TOEIC頻出・会話文脈 |
-| **句動詞** | 前置詞句動詞 | 認知思考系前置詞句動詞 | "think back", "look back", "pay back" | 90 | TOEIC頻出・思考文脈 |
-| **句動詞** | 前置詞句動詞 | 行動操作系前置詞句動詞 | "back them up", "send back", "bring back" | 100 | TOEIC頻出・行動文脈 |
-| **句動詞** | 前置詞句動詞 | 状態結果系前置詞句動詞 | "go back to", "date back to", "come back" | 90 | TOEIC頻出・変化文脈 |
 | **句動詞** | 前置詞句動詞 | 関係所属系前置詞句動詞 | "back away from", "fall back on" | 80 | TOEIC頻出・関係文脈 |
-| **句動詞** | 副詞句動詞 | 副詞句動詞 > 自動詞的句動詞 | "back down", "back off", "bounce back" | 100 | TOEIC頻出・語順固定 |
-| **句動詞** | 副詞句動詞 | 副詞句動詞 > 他動詞的分離可能 | "hold back", "win back", "set back" | 90 | TOEIC頻出・分離ルール |
+| **句動詞** | 副詞句動詞 | 不要補語自的固定句動詞 | "back down", "back off", "bounce back" | 100 | TOEIC頻出・語順固定 |
+| **句動詞** | 副詞句動詞 | 単一目的語汎用分離句動詞 | "hold back", "win back", "set back" | 90 | TOEIC頻出・分離ルール |
 | **慣用句** | 固定表現 | 慣用句 | "back to back", "behind one's back" | 85 | 意味が慣用的・比喩的 |
 | **前置詞句** | 場所表現 | 前置詞句 | "at the back of", "on one's back" | 80 | 位置・場所を表す前置詞句 |
 
@@ -82,23 +78,23 @@ tags:
 
 | No. | 表現 | 意味 | Ankiラベル | 文例 | 日本語訳 | TOEIC出題文脈 | TOEIC優先度 |
 |-----|------|------|------------|------|---------|---------------|-------------|
-| 1 | **back them up** | バックアップする | 行動操作系前置詞句動詞 | "Please back them up before the system update." | システム更新前にそれらをバックアップしてください。 | Part 4: IT業務指示 | **100** |
-| 2 | **back you up** | 支援する | コミュニケーション系前置詞句動詞 | "The manager will back you up during the presentation." | マネージャーがプレゼン中にあなたを支援します。 | Part 3: 職場支援会話 | **100** |
-| 3 | **get back to** | 連絡する | コミュニケーション系前置詞句動詞 | "I'll get back to you with the results by Friday." | 金曜日までに結果をご報告します。 | Part 2: ビジネス連絡 | **100** |
+| 1 | **back them up** | バックアップする | 単一目的語汎用分離句動詞 | "Please back them up before the system update." | システム更新前にそれらをバックアップしてください。 | Part 4: IT業務指示 | **100** |
+| 2 | **back you up** | 支援する | 単一目的語汎用分離句動詞 | "The manager will back you up during the presentation." | マネージャーがプレゼン中にあなたを支援します。 | Part 3: 職場支援会話 | **100** |
+| 3 | **get back to** | 連絡する | 必須補語自的固定句動詞 | "I'll get back to you with the results by Friday." | 金曜日までに結果をご報告します。 | Part 2: ビジネス連絡 | **100** |
 | 4 | **go back to** | 戻る | 状態結果系前置詞句動詞 | "Let's go back to the original proposal." | 元の提案に戻りましょう。 | Part 3: 会議議論 | **100** |
-| 5 | **send back** | 返送する | 行動操作系前置詞句動詞 | "Could you send this document back to the client?" | この書類をクライアントに返送していただけますか？ | Part 2: 業務依頼 | **100** |
-| 6 | **back down** | 撤退する | 副詞句動詞 > 自動詞的句動詞 | "The company decided to back down from the strategy." | 会社はその戦略から撤退することを決めました。 | Part 4: 企業戦略発表 | **100** |
+| 5 | **send back** | 返送する | 単一目的語汎用分離句動詞 | "Could you send this document back to the client?" | この書類をクライアントに返送していただけますか？ | Part 2: 業務依頼 | **100** |
+| 6 | **back down** | 撤退する | 不要補語自的固定句動詞 | "The company decided to back down from the strategy." | 会社はその戦略から撤退することを決めました。 | Part 4: 企業戦略発表 | **100** |
 | 7 | **back** | 背中 | 身体部位名詞 | "Employees with back problems can request ergonomic chairs." | 背中に問題のある従業員は人間工学椅子を要求できます。 | Part 4: 職場健康案内 | **95** |
 | 8 | **have someone's back** | 支援する | 慣用句 | "Don't worry, I have your back during the negotiation." | 心配しないで、交渉中はあなたを支援します。 | Part 3: 職場支援 | **95** |
 | 9 | **cut back** | 削減する | 慣用句 | "We need to cut back on office expenses." | オフィス経費を削減する必要があります。 | Part 4: 予算管理発表 | **95** |
 | 10 | **back office** | 後方の | 位置形容詞 | "The back office handles all administrative tasks." | バックオフィスがすべての管理業務を担当します。 | Part 3: 職場組織説明 | **90** |
 | 11 | **back** | 奥 | 位置名詞 | "The meeting room is at the back of the building." | 会議室は建物の奥にあります。 | Part 1: 建物描写 | **90** |
 | 12 | **back entrance** | 裏の | 位置形容詞 | "Use the back entrance to avoid construction areas." | 工事エリアを避けるため裏口をご利用ください。 | Part 4: 施設利用案内 | **90** |
-| 13 | **bring back** | 持ち帰る | 行動操作系前置詞句動詞 | "Could you bring back the signed contracts?" | 署名済み契約書を持ち帰っていただけますか？ | Part 2: 業務依頼 | **90** |
-| 14 | **pay back** | 返済する | 認知思考系前置詞句動詞 | "The company will pay back all loans within five years." | 会社は5年以内にすべてのローンを返済します。 | Part 6: 金融報告書 | **90** |
+| 13 | **bring back** | 持ち帰る | 単一目的語汎用分離句動詞 | "Could you bring back the signed contracts?" | 署名済み契約書を持ち帰っていただけますか？ | Part 2: 業務依頼 | **90** |
+| 14 | **pay back** | 返済する | 必須補語自的固定句動詞 | "The company will pay back all loans within five years." | 会社は5年以内にすべてのローンを返済します。 | Part 6: 金融報告書 | **90** |
 | 15 | **come back** | 戻って来る | 状態結果系前置詞句動詞 | "I'll come back to the office after the meeting." | ミーティング後にオフィスに戻ります。 | Part 3: 予定確認会話 | **90** |
-| 16 | **hold back** | 抑制する | 副詞句動詞 > 他動詞的分離可能 | "Don't hold back your suggestions during the review." | レビュー中は提案を遠慮しないでください。 | Part 3: 職場指導 | **85** |
-| 17 | **call back** | 折り返し電話する | コミュニケーション系前置詞句動詞 | "I'll call you back within the hour." | 1時間以内に折り返しお電話します。 | Part 2: 電話対応 | **85** |
+| 16 | **hold back** | 抑制する | 単一目的語汎用分離句動詞 | "Don't hold back your suggestions during the review." | レビュー中は提案を遠慮しないでください。 | Part 3: 職場指導 | **85** |
+| 17 | **call back** | 折り返し電話する | 単一目的語汎用分離句動詞 | "I'll call you back within the hour." | 1時間以内に折り返しお電話します。 | Part 2: 電話対応 | **85** |
 | 18 | **back** | 後ろ | 位置名詞 | "The printer is at the back of the office." | プリンターはオフィスの後ろにあります。 | Part 1: 機器配置説明 | **85** |
 | 19 | **scale back** | 縮小する | 慣用句 | "We need to scale back the project scope." | プロジェクトの規模を縮小する必要があります。 | Part 4: プロジェクト報告 | **80** |
 | 20 | **date back to** | さかのぼる | 状態結果系前置詞句動詞 | "This policy dates back to the company's founding." | この方針は会社設立時にさかのぼります。 | Part 7: 企業歴史記事 | **80** |
@@ -111,17 +107,17 @@ tags:
 | 27 | **step back** | 後ろに下がる | 移動副詞 | "Please step back from the machinery." | 機械から後ろに下がってください。 | Part 4: 安全指示 | **75** |
 | 28 | **move back** | 後退する | 移動副詞 | "The truck will move back to the loading dock." | トラックは荷積み場に後退します。 | Part 1: 物流描写 | **75** |
 | 29 | **back away from** | 距離を置く | 関係所属系前置詞句動詞 | "She backed away from the controversial topic." | 彼女は論争の的となる話題から距離を置きました。 | Part 3: 会議回避 | **70** |
-| 30 | **back off** | 手を引く | 副詞句動詞 > 自動詞的句動詞 | "The police backed off when the situation escalated." | 状況が悪化したとき警察は手を引きました。 | Part 4: 安全管理報告 | **70** |
+| 30 | **back off** | 手を引く | 不要補語自的固定句動詞 | "The police backed off when the situation escalated." | 状況が悪化したとき警察は手を引きました。 | Part 4: 安全管理報告 | **70** |
 | 31 | **back** | 支援する | 動詞 | "The board will back the new CEO's plan." | 取締役会は新CEOの計画を支援します。 | Part 4: 企業経営発表 | **70** |
 | 32 | **back and forth** | 往復して | 移動副詞 | "The shuttle runs back and forth between terminals." | シャトルバスはターミナル間を往復しています。 | Part 4: 交通案内 | **70** |
 | 33 | **turn one's back on** | 見捨てる、無視する、背を向ける | 慣用句 | "He turned his back on his old colleagues." | 彼は古い同僚たちを見捨てました。 | Part 7: 人間関係記事 | **65** |
 | 34 | **fall back on** | 頼る | 関係所属系前置詞句動詞 | "When sales drop, we fall back on our savings." | 売上が落ちると、貯金に頼ります。 | Part 4: 財務管理説明 | **65** |
 | 35 | **look back** | 振り返る | 認知思考系前置詞句動詞 | "Looking back on the project, we achieved our goals." | プロジェクトを振り返ると、目標を達成しました。 | Part 4: プロジェクト総括 | **65** |
 | 36 | **think back** | 思い返す | 認知思考系前置詞句動詞 | "Think back to our discussion last month." | 先月の議論を思い返してください。 | Part 3: 会議参照 | **65** |
-| 37 | **win back** | 取り戻す | 副詞句動詞 > 他動詞的分離可能 | "The company is trying to win back customer trust." | 会社は顧客の信頼を取り戻そうとしています。 | Part 4: 企業改善発表 | **60** |
-| 38 | **set back** | 遅らせる | 副詞句動詞 > 他動詞的分離可能 | "The rain set back our construction schedule." | 雨で建設スケジュールが遅れました。 | Part 4: プロジェクト進捗報告 | **60** |
-| 39 | **pull back** | 撤退する | 副詞句動詞 > 自動詞的句動詞 | "The company pulled back from overseas expansion." | 会社は海外展開から撤退しました。 | Part 4: 企業戦略発表 | **60** |
-| 40 | **bounce back** | 立ち直る | 副詞句動詞 > 自動詞的句動詞 | "The economy is expected to bounce back next year." | 経済は来年回復すると予想されています。 | Part 4: 経済予測報告 | **60** |
+| 37 | **win back** | 取り戻す | 単一目的語汎用分離句動詞 | "The company is trying to win back customer trust." | 会社は顧客の信頼を取り戻そうとしています。 | Part 4: 企業改善発表 | **60** |
+| 38 | **set back** | 遅らせる | 単一目的語汎用分離句動詞 | "The rain set back our construction schedule." | 雨で建設スケジュールが遅れました。 | Part 4: プロジェクト進捗報告 | **60** |
+| 39 | **pull back** | 撤退する | 不要補語自的固定句動詞 | "The company pulled back from overseas expansion." | 会社は海外展開から撤退しました。 | Part 4: 企業戦略発表 | **60** |
+| 40 | **bounce back** | 立ち直る | 不要補語自的固定句動詞 | "The economy is expected to bounce back next year." | 経済は来年回復すると予想されています。 | Part 4: 経済予測報告 | **60** |
 | 41 | **get someone back** | 復讐する | 慣用句 | "He decided to get his colleague back." | 彼は同僚に仕返しすることにしました。 | Part 3: 職場人間関係 | **55** |
 | 42 | **way back when** | ずっと昔 | 慣用句 | "Way back when the company started." | 会社が始まったずっと昔。 | Part 4: 企業歴史説明 | **55** |
 | 43 | **back issues** | 過去の | 形容詞 | "Please refer to the back issues of our report." | 弊社の報告書のバックナンバーをご参照ください。 | Part 7: 文書参照指示 | **50** |

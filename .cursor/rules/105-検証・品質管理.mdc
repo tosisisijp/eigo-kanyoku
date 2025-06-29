@@ -1,9 +1,6 @@
 ---
 description: "検証・品質管理ルール（全変更適用）"
 globs: ["**/*.md", "**/*.mdc"]
-tags: ["verification", "quality-control", "always-apply"]
-priority: 1
-version: "1.0.0"
 alwaysApply: true
 ---
 # 検証・品質管理 [Always]
