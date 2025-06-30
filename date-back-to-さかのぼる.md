@@ -37,7 +37,6 @@ Hyogen: date back to
 AnkiLabel: 状態結果系前置詞句動詞
 Imi: 〜にさかのぼる
 Tags: TOEIC優先度:80 Ankiラベル:状態結果系前置詞句動詞 Part7:企業歴史記事
-<!--ID: 1751043216896-->
 END
 
 # 関連表現

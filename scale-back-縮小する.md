@@ -35,7 +35,6 @@ Hyogen: scale back
 AnkiLabel: 慣用句
 Imi: 縮小する
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part4:プロジェクト報告
-<!--ID: 1751043216901-->
 END
 
 # 関連表現

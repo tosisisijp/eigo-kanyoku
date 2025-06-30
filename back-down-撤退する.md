@@ -36,7 +36,6 @@ Hyogen: back down
 AnkiLabel: 不要補語自的固定句動詞
 Imi: 撤退する・要求を取り下げる
 Tags: TOEIC優先度:100 Ankiラベル:不要補語自的固定句動詞 Part4:企業戦略発表
-<!--ID: 1751043183017-->
 END
 
 # 関連表現

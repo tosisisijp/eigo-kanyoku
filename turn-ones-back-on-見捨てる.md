@@ -36,7 +36,6 @@ Hyogen: turn one's back on
 AnkiLabel: 慣用句
 Imi: 見捨てる、無視する、背を向ける
 Tags: TOEIC優先度:65 Ankiラベル:慣用句 Part7:人間関係記事
-<!--ID: 1751043183035-->
 END
 
 # 関連表現

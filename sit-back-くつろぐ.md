@@ -35,7 +35,7 @@ Hyogen: sit back
 AnkiLabel: 慣用句
 Imi: くつろぐ
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part1:オフィス描写
-<!--ID: 1751043183034-->
+<!--ID: 1751241422006-->
 END
 
 # 関連表現

@@ -35,7 +35,6 @@ Hyogen: back in the day
 AnkiLabel: 慣用句
 Imi: 昔は
 Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part4:企業変遷説明
-<!--ID: 1751043183000-->
 END
 
 # 関連表現

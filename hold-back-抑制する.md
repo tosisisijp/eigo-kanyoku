@@ -36,7 +36,6 @@ Hyogen: hold back
 AnkiLabel: 副詞句動詞 > 他動詞的分離可能
 Imi: 抑制する
 Tags: TOEIC優先度:85 Ankiラベル:副詞句動詞 > 他動詞的分離可能 Part3:職場指導
-<!--ID: 1751043216900-->
 END
 
 # 関連表現

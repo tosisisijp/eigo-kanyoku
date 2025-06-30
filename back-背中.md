@@ -35,7 +35,6 @@ Hyogen: back
 AnkiLabel: 身体部位名詞
 Imi: 背中
 Tags: TOEIC優先度:95 Ankiラベル:身体部位名詞 Part4:職場健康案内
-<!--ID: 1751043183022-->
 END
 
 # 関連表現

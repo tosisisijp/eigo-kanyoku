@@ -1,4 +1,4 @@
-﻿---
+---
 title: "back and forth - 行ったり来たり"
 tags:
   - TOEIC
@@ -34,7 +34,7 @@ Hyogen: back and forth
 AnkiLabel: 移動副詞
 Imi: 行ったり来たり・往復して
 Tags: TOEIC優先度:70 Ankiラベル:移動副詞 Part4:交通案内
-<!--ID: 1751043216892-->
+<!--ID: 1751241459432-->
 END
 
 # 関連表現
