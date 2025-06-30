@@ -37,6 +37,7 @@ Hyogen: back off
 AnkiLabel: 副詞句動詞 > 自動詞的句動詞
 Imi: 手を引く・身を引く
 Tags: TOEIC優先度:70 Ankiラベル:副詞句動詞 > 自動詞的句動詞 Part3:職場での対立
+<!--ID: 1751241922028-->
 END
 
 # 関連表現

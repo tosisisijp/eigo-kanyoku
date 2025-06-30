@@ -37,6 +37,7 @@ Hyogen: back-to-back
 AnkiLabel: ハイフネーション表現
 Imi: 連続して・立て続けに
 Tags: TOEIC優先度:85 Ankiラベル:ハイフネーション表現 Part4:スケジュール調整
+<!--ID: 1751241922022-->
 END
 
 # 関連表現

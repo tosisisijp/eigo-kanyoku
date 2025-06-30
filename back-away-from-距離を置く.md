@@ -37,6 +37,7 @@ Hyogen: back away from
 AnkiLabel: 関係所属系前置詞句動詞
 Imi: 距離を置く・後ずさる
 Tags: TOEIC優先度:70 Ankiラベル:関係所属系前置詞句動詞 Part1:状況描写
+<!--ID: 1751241922030-->
 END
 
 # 関連表現

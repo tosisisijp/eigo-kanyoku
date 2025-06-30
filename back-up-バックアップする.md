@@ -37,6 +37,7 @@ Hyogen: back up
 AnkiLabel: 行動操作系前置詞句動詞
 Imi: バックアップする・支援する
 Tags: TOEIC優先度:100 Ankiラベル:行動操作系前置詞句動詞 Part4:IT関連業務指示
+<!--ID: 1751241922020-->
 END
 
 # 関連表現

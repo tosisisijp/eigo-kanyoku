@@ -36,6 +36,7 @@ Hyogen: set back
 AnkiLabel: 副詞句動詞 > 他動詞の分離可能
 Imi: 遅らせる
 Tags: TOEIC優先度:60 Ankiラベル:副詞句動詞 > 他動詞の分離可能 Part4:プロジェクト進捗報告
+<!--ID: 1751241922000-->
 END
 
 # 関連表現
