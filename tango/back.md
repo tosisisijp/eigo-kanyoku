@@ -67,6 +67,7 @@ tags:
 | **動詞** | 移動・操作 | 物理動作動詞 | "back the car out", "back away slowly" | 85 | 物や自分を後方に移動させる |
 | **動詞** | 裏付け・証明 | 精神動作動詞 | "facts that back the theory", "evidence backs the claim" | 75 | 理論や主張を立証・証明する |
 | **句動詞** | 前置詞句動詞 | 関係所属系前置詞句動詞 | "back away from", "fall back on" | 80 | TOEIC頻出・関係文脈 |
+| **句動詞** | 前置詞句動詞 | コミュニケーション系前置詞句動詞 | "get back to", "talk to" | 90 | 連絡・応答・情報伝達 |
 | **句動詞** | 副詞句動詞 | 不要補語自的固定句動詞 | "back down", "back off", "bounce back" | 100 | TOEIC頻出・語順固定 |
 | **句動詞** | 副詞句動詞 | 単一目的語汎用分離句動詞 | "hold back", "win back", "set back" | 90 | TOEIC頻出・分離ルール |
 | **慣用句** | 固定表現 | 慣用句 | "back to back", "behind one's back" | 85 | 意味が慣用的・比喩的 |
@@ -80,7 +81,7 @@ tags:
 |-----|------|------|------------|------|---------|---------------|-------------|
 | 1 | **back them up** | バックアップする | 単一目的語汎用分離句動詞 | "Please back them up before the system update." | システム更新前にそれらをバックアップしてください。 | Part 4: IT業務指示 | **100** |
 | 2 | **back you up** | 支援する | 単一目的語汎用分離句動詞 | "The manager will back you up during the presentation." | マネージャーがプレゼン中にあなたを支援します。 | Part 3: 職場支援会話 | **100** |
-| 3 | **get back to** | 連絡する | 必須補語自的固定句動詞 | "I'll get back to you with the results by Friday." | 金曜日までに結果をご報告します。 | Part 2: ビジネス連絡 | **100** |
+| 3 | **get back to** | 連絡する | コミュニケーション系前置詞句動詞 | "I'll get back to you with the results by Friday." | 金曜日までに結果をご報告します。 | Part 2: ビジネス連絡 | **100** |
 | 4 | **go back to** | 戻る | 状態結果系前置詞句動詞 | "Let's go back to the original proposal." | 元の提案に戻りましょう。 | Part 3: 会議議論 | **100** |
 | 5 | **send back** | 返送する | 単一目的語汎用分離句動詞 | "Could you send this document back to the client?" | この書類をクライアントに返送していただけますか？ | Part 2: 業務依頼 | **100** |
 | 6 | **back down** | 撤退する | 不要補語自的固定句動詞 | "The company decided to back down from the strategy." | 会社はその戦略から撤退することを決めました。 | Part 4: 企業戦略発表 | **100** |
