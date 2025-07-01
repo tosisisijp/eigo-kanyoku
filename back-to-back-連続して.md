@@ -25,9 +25,9 @@ back-to-back
 連続して・立て続けに
 
 関連表現
-- consecutive-連続した
-- in-a-row-連続で
-- one-after-another-次々と
+・ consecutive-連続した
+・ in-a-row-連続で
+・ one-after-another-次々と
 
 TOEIC優先度:85
 Part4:スケジュール調整
@@ -41,6 +41,6 @@ Tags: TOEIC優先度:85 Ankiラベル:ハイフネーション表現 Part4:ス�
 END
 
 # 関連表現
-- [[consecutive-連続した]]
-- [[in-a-row-連続で]]
-- [[one-after-another-次々と]]
+・[[consecutive-連続した]]
+・[[in-a-row-連続で]]
+・[[one-after-another-次々と]]

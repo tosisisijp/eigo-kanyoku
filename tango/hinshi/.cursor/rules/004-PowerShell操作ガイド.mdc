@@ -233,9 +233,62 @@ $changedFiles | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
 2. **スクリプトファイル化**: 外部.ps1ファイルでの関数定義 + ドットソーシング
 3. **直接コマンド実行**: 関数を使わずに個別コマンドで処理
 
+**❌ 動作しない方法（検証済み）**:
+- Here-String方式（`@' '@`）も同様にフリーズする
+- 複数行関数定義は構文に関わらず全て停止
+
+**今回の実証事例（2025-07-02検証）**:
+- **問題**: Obsidian-to-AnkiプラグインでCRLF改行ファイルが認識されない
+- **原因**: `turn-ones-back-on-見捨てる.md`ファイルにCRLF改行コードが混在
+- **解決**: 段階的分割実行によるCRLF→LF変換で完全解決
+- **検証結果**: Here-String方式も関数定義と同様に100%フリーズすることを確認
+
+#### フリーズ時の自動復旧方法
+
+**症状の見分け方**:
+```powershell
+# フリーズ状態（>> プロンプトが続く）
+PS> function Test-Function {
+>>     param([string]$FilePath)
+>>     # この状態で入力待ち
+>>
+```
+
+**自動復旧手順**:
+```powershell
+# 方法1: 段階的分割実行（推奨）
+# 関数を使わずに直接コマンドで同等機能を実現
+Write-Host "=== 改行コードチェック開始 ===" -ForegroundColor Cyan
+$file = "target.md"
+$bytes = [System.IO.File]::ReadAllBytes($file)
+$hasCRLF = $false; $hasLF = $false
+for ($i = 0; $i -lt $bytes.Length - 1; $i++) {
+    if ($bytes[$i] -eq 0x0D -and $bytes[$i + 1] -eq 0x0A) { $hasCRLF = $true; break }
+    elseif ($bytes[$i] -eq 0x0A) { $hasLF = $true; break }
+}
+if ($hasCRLF) { Write-Host "CRLF検出" -ForegroundColor Red } else { Write-Host "LF確認" -ForegroundColor Green }
+
+# 方法2: CRLF→LF変換（実証済み成功例）
+$content = Get-Content $file -Raw
+$contentLF = $content -replace "`r`n", "`n"
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText($file, $contentLF, $utf8NoBom)
+Write-Host "CRLF→LF変換完了" -ForegroundColor Green
+
+# 方法3: 強制終了 + 新セッション（緊急時）
+# Ctrl+C相当の処理を行い、新しいPowerShellセッションを開始
+```
+
+**フリーズ予防のチェックポイント**:
+- [ ] **複数行構文を一切使用しない**（function定義、Here-String等）
+- [ ] 単一行コマンドの組み合わせで機能を実現
+- [ ] 複雑な処理は段階的分割実行を選択
+- [ ] 関数が必要な場合は外部.ps1ファイル化を最優先
+
 **効果**: 
 - ✅ 関数と同等の機能を確実に実現
 - ✅ AIエージェント環境での100%動作保証
+- ✅ フリーズ状態からの自動復旧機能
 - ✅ デバッグとメンテナンスの簡素化
 
 ## コマンド長制限問題
@@ -548,12 +601,92 @@ $content = Get-Content "ファイル名.md" -Encoding UTF8 -Raw
 ```
 
 ### 改行コード統一
+
+#### 基本的なLF統一（従来方式）
 ```powershell
 # LF統一
 $content = Get-Content $FilePath -Raw
 $content = $content -replace "`r`n", "`n"  # LFに統一
 Set-Content $FilePath -Value $content -NoNewline -Encoding UTF8
 ```
+
+#### PowerShellファイル処理後の標準手順（推奨）
+**PowerShellスクリプトでファイル生成・編集した後は必ず実行**
+
+```powershell
+# === 改行コード修正の標準手順 ===
+# PowerShellでファイル処理後の必須操作
+
+# 単一ファイルの修正
+function Fix-LineEndings {
+    param([string]$FilePath)
+    
+    if (-not (Test-Path $FilePath)) {
+        Write-Host "❌ ファイルが存在しません: $FilePath" -ForegroundColor Red
+        return
+    }
+    
+    $content = (Get-Content $FilePath -Raw) -replace "`r`n", "`n"
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($FilePath, $content, $utf8NoBom)
+    
+    Write-Host "✅ 改行コード修正完了: $FilePath" -ForegroundColor Green
+}
+
+# 複数ファイルの一括修正
+function Fix-AllMarkdownLineEndings {
+    $mdFiles = Get-ChildItem -Path "." -Filter "*.md" | Where-Object { $_.Name -notlike "README.md" }
+    
+    Write-Host "=== Markdownファイル改行コード一括修正 ===" -ForegroundColor Cyan
+    Write-Host "対象ファイル数: $($mdFiles.Count)" -ForegroundColor Cyan
+    
+    foreach ($file in $mdFiles) {
+        $content = (Get-Content $file.FullName -Raw) -replace "`r`n", "`n"
+        $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+        [System.IO.File]::WriteAllText($file.FullName, $content, $utf8NoBom)
+        Write-Host "  ✓ $($file.Name)" -ForegroundColor Green
+    }
+    
+    Write-Host "✅ 全ファイル修正完了" -ForegroundColor Green
+}
+
+# 使用例：
+# Fix-LineEndings -FilePath "ファイル名.md"
+# Fix-AllMarkdownLineEndings
+```
+
+#### 修正が必要になる場面
+**PowerShellで以下の処理を行った後は改行コード修正が必須**：
+
+1. **ファイル出力系コマンド使用時**
+   ```powershell
+   # これらのコマンド使用後は必ず修正
+   Out-File, Set-Content, Add-Content, >, >>
+   ```
+
+2. **Here-String使用時**
+   ```powershell
+   @'
+   コンテンツ
+   '@ | Out-File "file.md" -Encoding UTF8
+   # ↓ 必須
+   Fix-LineEndings -FilePath "file.md"
+   ```
+
+3. **プログラム生成ファイル作成時**
+   ```powershell
+   # スクリプトでMarkdownファイルを生成した場合
+   $content = "# タイトル`n`n内容"
+   $content | Out-File "generated.md" -Encoding UTF8
+   # ↓ 必須
+   Fix-LineEndings -FilePath "generated.md"
+   ```
+
+#### 実行タイミングの原則
+- **作業完了直後**: PowerShellでファイル処理した直後
+- **プラグイン実行前**: Obsidian to Ankiプラグイン実行前
+- **Git操作前**: コミット前の最終確認として
+- **問題発生時**: 正規表現マッチングが失敗した場合
 
 ## エラーパターンと対処法
 
@@ -947,3 +1080,88 @@ if ($endIndex -gt 0) {
 - **問題ファイル**: 修正が必要なファイルリスト  
 - **未処理ファイル**: まだ確認していないファイルリスト
 - **エラー内容**: 発生したエラーの詳細
+
+## 改行コード管理の事後処理（2025-07-02 新規追加）
+
+### 背景と重要性
+**Obsidian-to-Ankiプラグイン対応**: プラグインはLF改行コードのみを認識するため、CRLF混在ファイルは無視される
+
+### 今回の実証事例（2025-07-02）
+**問題発生**: `turn-ones-back-on-見捨てる.md`（CRLF改行）がObsidian-to-Ankiプラグインで認識されない
+**解決成功**: 段階的分割実行によるCRLF→LF変換で完全解決
+**結果**: プラグインが正常にファイル認識、カード生成成功
+
+### 標準対処フロー（段階的分割実行）
+
+#### 単一ファイルの改行コード修正
+```powershell
+# Step 1: 改行コード検出
+$file = "対象ファイル.md"
+$bytes = [System.IO.File]::ReadAllBytes($file)
+$hasCRLF = $false; $hasLF = $false
+for ($i = 0; $i -lt $bytes.Length - 1; $i++) {
+    if ($bytes[$i] -eq 0x0D -and $bytes[$i + 1] -eq 0x0A) { $hasCRLF = $true; break }
+    elseif ($bytes[$i] -eq 0x0A) { $hasLF = $true; break }
+}
+
+# Step 2: CRLF検出時の自動修正
+if ($hasCRLF) {
+    Write-Host "CRLF検出: 修正実施" -ForegroundColor Yellow
+    $content = Get-Content $file -Raw
+    $contentLF = $content -replace "`r`n", "`n"
+    $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+    [System.IO.File]::WriteAllText($file, $contentLF, $utf8NoBom)
+    Write-Host "CRLF→LF変換完了" -ForegroundColor Green
+} else {
+    Write-Host "LF確認: 修正不要" -ForegroundColor Green
+}
+
+# Step 3: 変換後の確認
+$bytesAfter = [System.IO.File]::ReadAllBytes($file)
+$lastBytes = $bytesAfter[-5..-1]
+Write-Host "末尾バイト確認: "
+$lastBytes | ForEach-Object { Write-Host ("{0:X2} " -f $_) -NoNewline }
+Write-Host ""
+```
+
+#### 複数ファイルの一括処理
+```powershell
+# Step 1: 対象ファイル収集
+$files = Get-ChildItem -Filter "*.md" | Select-Object -ExpandProperty Name
+Write-Host "対象ファイル数: $($files.Count)" -ForegroundColor Cyan
+
+# Step 2: 改行コード検出と統計
+$crlfFiles = @()
+$lfFiles = @()
+foreach ($file in $files) {
+    $bytes = [System.IO.File]::ReadAllBytes($file)
+    $hasCRLF = $false
+    for ($i = 0; $i -lt $bytes.Length - 1; $i++) {
+        if ($bytes[$i] -eq 0x0D -and $bytes[$i + 1] -eq 0x0A) { 
+            $hasCRLF = $true; break 
+        }
+    }
+    if ($hasCRLF) { $crlfFiles += $file } else { $lfFiles += $file }
+}
+
+# Step 3: 結果表示
+Write-Host "CRLF検出ファイル: $($crlfFiles.Count) 件" -ForegroundColor Red
+$crlfFiles | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+Write-Host "LF正常ファイル: $($lfFiles.Count) 件" -ForegroundColor Green
+
+# Step 4: 一括修正（オプション）
+if ($crlfFiles.Count -gt 0) {
+    Write-Host "一括CRLF→LF変換を実行しますか? (Y/N)" -ForegroundColor Yellow
+    # 実際の変換処理は手動確認後に実行
+}
+```
+
+### 必須実行タイミング
+1. **Ankiファイル作成・編集後**: 全てのAnki対応ファイルに対して実行
+2. **プラグイン認識問題発生時**: Obsidian-to-Ankiプラグインが反応しない場合
+3. **定期メンテナンス**: 週次・月次での一括チェック
+
+### 予防策
+- **エディタ設定**: LF改行コードをデフォルト設定に
+- **Git設定**: `core.autocrlf=false` で改行コード変換を無効化  
+- **事後確認**: ファイル操作後の必須チェック項目として定例化

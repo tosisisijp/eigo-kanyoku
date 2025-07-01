@@ -24,9 +24,9 @@ turn one's back on
 見捨てる、無視する、背を向ける
 
 関連表現
-- abandon-見捨てる
-- ignore-無視する
-- reject-拒絶する
+・ abandon-見捨てる
+・ ignore-無視する
+・ reject-拒絶する
 
 TOEIC優先度:65
 Part7:人間関係記事
@@ -40,7 +40,7 @@ Tags: TOEIC優先度:65 Ankiラベル:慣用句 Part7:人間関係記事
 END
 
 # 関連表現
-- [[abandon-見捨てる]]
-- [[ignore-無視する]]
-- [[reject-拒絶する]]
+・[[abandon-見捨てる]]
+・[[ignore-無視する]]
+・[[reject-拒絶する]]
 

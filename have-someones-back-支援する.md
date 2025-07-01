@@ -24,9 +24,9 @@ have someone's back
 支援する
 
 関連表現
-- support-支援する
-- assist-支援する
-- back-up-支援する
+・ support-支援する
+・ assist-支援する
+・ back-up-支援する
 
 TOEIC優先度:95
 Part3:職場支援
@@ -40,6 +40,6 @@ Tags: TOEIC優先度:95 Ankiラベル:慣用句 Part3:職場支援
 END
 
 # 関連表現
-- [[support-支援する]]
-- [[assist-支援する]]
-- [[back-up-支援する]]
+・[[support-支援する]]
+・[[assist-支援する]]
+・[[back-up-支援する]]

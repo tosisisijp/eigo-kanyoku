@@ -25,9 +25,9 @@ go back to
 戻る・元に戻る・さかのぼる
 
 関連表現
-- return-戻る
-- revert-戻す
-- revisit-再検討する
+・ return-戻る
+・ revert-戻す
+・ revisit-再検討する
 
 TOEIC優先度:100
 Part3:会議進行
@@ -37,10 +37,10 @@ Hyogen: go back to
 AnkiLabel: 状態結果系前置詞句動詞
 Imi: 戻る・元に戻る・さかのぼる
 Tags: TOEIC優先度:100 Ankiラベル:状態結果系前置詞句動詞 Part3:会議進行
-<!--ID: 1751043183007-->
+<!--ID: 1751379167498-->
 END
 
 # 関連表現
-- [[return-戻る]]
-- [[revert-戻す]]
-- [[revisit-再検討する]]
+・[[return-戻る]]
+・[[revert-戻す]]
+・[[revisit-再検討する]]

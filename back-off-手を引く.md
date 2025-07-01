@@ -20,27 +20,27 @@ back off
 The protesters were told to back off from the police line.
 Back:
 抗議者たちは警察の非常線から退くように言われました。
-Ankiラベル:副詞句動詞 > 自動詞的句動詞
+Ankiラベル:不要補語自的固定句動詞
 back off
 手を引く・身を引く
 
 関連表現
-- withdraw-撤退する
-- step-aside-身を引く
-- yield-屈する
+・ withdraw-撤退する
+・ step-aside-身を引く
+・ yield-屈する
 
 TOEIC優先度:70
 Part3:職場での対立
 Speech: The protesters were told to back off from the police line.
 Yaku: 抗議者たちは警察の非常線から退くように言われました。
 Hyogen: back off
-AnkiLabel: 副詞句動詞 > 自動詞的句動詞
+AnkiLabel: 不要補語自的固定句動詞
 Imi: 手を引く・身を引く
-Tags: TOEIC優先度:70 Ankiラベル:副詞句動詞 > 自動詞的句動詞 Part3:職場での対立
+Tags: TOEIC優先度:70 Ankiラベル:不要補語自的固定句動詞 Part3:職場での対立
 <!--ID: 1751241922028-->
 END
 
 # 関連表現
-- [[withdraw-撤退する]]
-- [[step-aside-身を引く]]
-- [[yield-屈する]]
+・[[withdraw-撤退する]]
+・[[step-aside-身を引く]]
+・[[yield-屈する]]

@@ -65810,6 +65810,7 @@ class AllFile extends AbstractFile {
     }
     scanNotes() {
         console.log("[DEBUG-SN001] scanNotes: Starting for loop iteration");
+        console.log("[DEBUG-SN001-1] this.data.NOTE_REGEX: " + this.data.NOTE_REGEXP);
         for (let note_match of this.file.matchAll(this.data.NOTE_REGEXP)) {
             console.log("[DEBUG-SN002] scanNotes: Inside for loop - processing note_match:", note_match.index);
             let [note, position] = [note_match[1], note_match.index + note_match[0].indexOf(note_match[1]) + note_match[1].length];

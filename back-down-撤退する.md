@@ -24,9 +24,9 @@ back down
 撤退する・要求を取り下げる
 
 関連表現
-- withdraw-撤退する
-- concede-譲歩する
-- yield-屈する
+・ withdraw-撤退する
+・ concede-譲歩する
+・ yield-屈する
 
 TOEIC優先度:100
 Part4:企業戦略発表
@@ -40,6 +40,6 @@ Tags: TOEIC優先度:100 Ankiラベル:不要補語自的固定句動詞 Part4:�
 END
 
 # 関連表現
-- [[withdraw-撤退する]]
-- [[concede-譲歩する]]
-- [[yield-屈する]]
+・[[withdraw-撤退する]]
+・[[concede-譲歩する]]
+・[[yield-屈する]]

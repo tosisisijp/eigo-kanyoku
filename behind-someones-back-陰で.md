@@ -24,8 +24,8 @@ behind someone's back
 陰で・こっそりと
 
 関連表現
-- secretly-秘密に
-- without-someones-knowledge-知らないうちに
+・ secretly-秘密に
+・ without-someones-knowledge-知らないうちに
 
 TOEIC優先度:75
 Part3:職場問題
@@ -39,5 +39,5 @@ Tags: TOEIC優先度:75 Ankiラベル:慣用句 Part3:職場問題
 END
 
 # 関連表現
-- [[secretly-秘密に]]
-- [[without-someones-knowledge-知らないうちに]]
+・[[secretly-秘密に]]
+・[[without-someones-knowledge-知らないうちに]]

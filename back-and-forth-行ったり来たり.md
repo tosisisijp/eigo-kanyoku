@@ -38,5 +38,5 @@ Tags: TOEIC優先度:70 Ankiラベル:移動副詞 Part4:交通案内
 END
 
 # 関連表現
-- [[to-and-fro-行ったり来たり]]
+・[[to-and-fro-行ったり来たり]]
 

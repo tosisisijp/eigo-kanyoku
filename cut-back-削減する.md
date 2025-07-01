@@ -24,9 +24,9 @@ cut back
 削減する
 
 関連表現
-- reduce-削減する
-- decrease-減少させる
-- cut-down-on-減らす
+・ reduce-削減する
+・ decrease-減少させる
+・ cut-down-on-減らす
 
 TOEIC優先度:95
 Part4:予算管理発表
@@ -40,6 +40,6 @@ Tags: TOEIC優先度:95 Ankiラベル:慣用句 Part4:予算管理発表
 END
 
 # 関連表現
-- [[reduce-削減する]]
-- [[decrease-減少させる]]
-- [[cut-down-on-減らす]]
+・[[reduce-削減する]]
+・[[decrease-減少させる]]
+・[[cut-down-on-減らす]]

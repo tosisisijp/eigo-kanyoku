@@ -24,8 +24,8 @@ sit back
 くつろぐ
 
 関連表現
-- relax-くつろぐ
-- take-it-easy-気楽にする
+・ relax-くつろぐ
+・ take-it-easy-気楽にする
 
 TOEIC優先度:80
 Part1:オフィス描写
@@ -39,5 +39,5 @@ Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part1:オフィス描写
 END
 
 # 関連表現
-- [[relax-くつろぐ]]
-- [[take-it-easy-気楽にする]]
+・[[relax-くつろぐ]]
+・[[take-it-easy-気楽にする]]

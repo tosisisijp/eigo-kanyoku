@@ -24,8 +24,8 @@ back in the day
 昔は
 
 関連表現
-- in-the-past-昔は
-- long-ago-昔
+・ in-the-past-昔は
+・ long-ago-昔
 
 TOEIC優先度:80
 Part4:企業変遷説明
@@ -39,5 +39,5 @@ Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part4:企業変遷説明
 END
 
 # 関連表現
-- [[in-the-past-昔は]]
-- [[long-ago-昔]]
+・[[in-the-past-昔は]]
+・[[long-ago-昔]]

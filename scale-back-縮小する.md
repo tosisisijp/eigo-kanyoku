@@ -24,8 +24,8 @@ scale back
 縮小する
 
 関連表現
-- downsize-縮小する
-- reduce-削減する
+・ downsize-縮小する
+・ reduce-削減する
 
 TOEIC優先度:80
 Part4:プロジェクト報告
@@ -39,6 +39,6 @@ Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part4:プロジェクト報告
 END
 
 # 関連表現
-- [[downsize-縮小する]]
-- [[reduce-削減する]]
+・[[downsize-縮小する]]
+・[[reduce-削減する]]
 

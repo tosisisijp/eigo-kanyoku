@@ -25,9 +25,9 @@ date back to
 〜にさかのぼる
 
 関連表現
-- originate-始まる
-- stem-from-由来する
-- trace-back-to-たどる
+・ originate-始まる
+・ stem-from-由来する
+・ trace-back-to-たどる
 
 TOEIC優先度:80
 Part7:企業歴史記事
@@ -41,6 +41,6 @@ Tags: TOEIC優先度:80 Ankiラベル:状態結果系前置詞句動詞 Part7:�
 END
 
 # 関連表現
-- [[originate-始まる]]
-- [[stem-from-由来する]]
-- [[trace-back-to-たどる]]
+・[[originate-始まる]]
+・[[stem-from-由来する]]
+・[[trace-back-to-たどる]]

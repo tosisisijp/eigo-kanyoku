@@ -54,8 +54,8 @@ Ankiラベル:[ラベル名]
 [日本語意味]
 
 関連表現
-[関連表現1]
-[関連表現2]
+・[関連表現1]
+・[関連表現2]
 
 TOEIC優先度:[数値]
 Part[番号]:[出題文脈]
@@ -87,7 +87,7 @@ END
 - **日本語意味**: 簡潔な意味説明
 
 ### 4. 補足情報
-- **関連表現**: 類似・関連する表現
+- **関連表現**: 類似・関連する表現。リスト形式（`・`）で記載。
 - **TOEIC優先度**: 数値（0-100）
 - **Part情報**: 出題パートと文脈
 
@@ -140,12 +140,24 @@ END
 - [ ] START/ENDマーカーが正しく配置されているか
 - [ ] ENDマーカーの直後にスペースがないか（203番ルールの検証方法で確認）
 - [ ] ENDマーカーの後にLF改行コードがあるか（ENDでファイル末尾は不可）
-- [ ] 改行コードが統一されているか（LF統一）
+- [ ] **改行コードが統一されているか（LF統一）** - PowerShell処理後は[[004-PowerShell操作ガイド.mdc]]の標準手順で修正必須
 - [ ] eigo-kanyoku指定が含まれているか
 - [ ] Back:セクションが適切に分離されているか
 - [ ] Speech行が英語例文と一致しているか
 - [ ] Tags行に必要な情報が統合されているか
 - [ ] ID行は新規作成時に含めていないか（プラグイン自動生成のため）
+
+### Ankiファイル作成・編集完了時の必須手順
+**以下の手順をすべて完了してから作業完了とすること：**
+
+1. **内容検証**: 上記必須チェック項目をすべて確認
+2. **改行コード修正**: [[004-PowerShell操作ガイド.mdc]]の標準手順を実行
+   ```powershell
+   # 単一ファイル修正
+   Fix-LineEndings "ファイル名.md"
+   ```
+3. **プラグイン動作確認**: Obsidian_to_Ankiプラグインでファイルが正常認識されることを確認
+4. **最終検証**: ENDマーカー後の改行コードがLFであることを確認
 
 ### 重複検出・対処手順
 #### 重複パターンの特定
@@ -267,14 +279,29 @@ ENDマーカー不存在: Obsidian_to_Ankiセクションが存在しない
 ```
 
 #### PowerShell実行時の改行コード確保
-[[110-PowerShell操作管理.mdc]] の改行コード統一処理を使用：
+**[[004-PowerShell操作ガイド.mdc]]の「PowerShellファイル処理後の標準手順」を必ず実行**
+
 ```powershell
-# LF統一処理（110番ルール活用）
-$content = Get-Content $FilePath -Raw
-$content = $content -replace "`r`n", "`n"  # CRLFをLFに変換
-$content = $content -replace "`r", "`n"    # 単独CRもLFに変換
-Set-Content $FilePath -Value $content -NoNewline -Encoding UTF8
+# === Ankiファイル作成・編集後の必須手順 ===
+# 004番ルールの標準関数を使用（推奨）
+
+# 単一ファイルの修正
+Fix-LineEndings "ファイル名.md"
+
+# 複数ファイル一括修正
+Fix-AllMarkdownLineEndings
+
+# 手動実行の場合
+$content = (Get-Content $FilePath -Raw) -replace "`r`n", "`n"
+$utf8NoBom = New-Object System.Text.UTF8Encoding($false)
+[System.IO.File]::WriteAllText($FilePath, $content, $utf8NoBom)
 ```
+
+**実行タイミング（必須）**:
+- Ankiカード作成・編集完了時
+- PowerShellスクリプトでの一括処理後
+- Obsidian_to_Ankiプラグイン実行前
+- 「プラグインがファイルを認識しない」問題発生時
 
 #### Anki統合時の注意事項
 - **カード作成前**: mdファイルの改行コードがLFであることを確認
