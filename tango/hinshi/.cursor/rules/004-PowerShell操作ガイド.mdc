@@ -416,6 +416,7 @@ $bytes[-5..-1] | ForEach-Object { "{0:X2} ({1})" -f $_, [char]$_ }
 1. **短いコマンドに分割**: 複雑な処理を段階的に実行
 2. **ファイル出力確認**: エラー後も結果ファイルの確認を実施
 3. **バイナリ確認**: テキスト表示でなくバイナリレベルでの確認
+4. **ページャー回避**: `git config --global core.pager cat` で根本解決
 
 ## 文字コード確認の標準手順
 
@@ -729,6 +730,17 @@ function Fix-AllMarkdownLineEndings {
 ### Git連携
 - `git config core.autocrlf`: 改行コード自動変換設定
 - `git ls-files --eol`: ファイル別改行コード確認
+
+### ページャー回避設定（推奨）
+```powershell
+# ✅ 推奨：グローバル設定でページャー問題を根本解決
+git config --global core.pager cat
+
+# 設定後は通常のコマンドがそのまま使用可能
+git log --oneline -5
+git diff
+git show
+```
 
 ## 🚨 重要な修正内容
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "back-out-of-撤退する.md",
+                "file": "scale-back-縮小する.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "back-out-of-撤退する"
+              "title": "scale-back-縮小する"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "back-out-of-撤退する.md",
+                "file": "scale-back-縮小する.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "back-out-of-撤退するのアウトライン"
+              "title": "scale-back-縮小するのアウトライン"
             }
           }
         ],
@@ -171,12 +171,12 @@
   },
   "active": "1a63c9c66152bc00",
   "lastOpenFiles": [
+    "back-out-of-撤退する.md",
     "get-someone-back-復讐する.md",
     "pull-back-撤退する.md",
     "turn-ones-back-on-見捨てる.md",
     "go-back-to-戻る.md",
     "get-back-to-連絡する.md",
-    "back-out-of-撤退する.md",
     "script/AnkiCardCorrector.ps1",
     "script/resultV2.txt",
     "script/AnkiCardValidatorV2.ps1",
