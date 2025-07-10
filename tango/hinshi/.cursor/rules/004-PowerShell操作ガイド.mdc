@@ -15,7 +15,6 @@ alwaysApply: false
 ## 🚨 重要な運用上の制約
 
 ### PowerShell環境設定の前提
-- **PSReadLine設定**: $PROFILEで無効化設定済み（このルールでは扱わない）
 - **基本環境**: PowerShell 7.x環境での動作を前提
 - **作業ディレクトリ**: プロジェクトルートからの相対パス実行
 
@@ -69,18 +68,10 @@ function Test-AIAgentEnvironment {
     return $false
 }
 
-# 自動設定適用
-if (Test-AIAgentEnvironment) {
-    Remove-Module PSReadLine -Force -ErrorAction SilentlyContinue
-    Write-Host "🤖 AIエージェント環境を検出、PSReadLine無効化適用" -ForegroundColor Cyan
-}
-```
-
 #### 実装時の優先順位
 **AI実装時の設定適用優先順位**：
 
 ```
-Priority 1: PSReadLine無効化（根本解決）
 Priority 2: エラーハンドリング設定
 Priority 3: 作業効率化設定（段階的実行等）
 ```
@@ -89,14 +80,12 @@ Priority 3: 作業効率化設定（段階的実行等）
 
 #### 問題解決の実証
 **実際に解決される問題**：
-- ✅ **PSReadLine 2.3.6エラー**: `System.ArgumentOutOfRangeException` 完全解消
 - ✅ **BufferHeight: 1問題**: カーソル位置計算エラー消失
 - ✅ **日本語ファイル名問題**: 文字化け・表示崩れ解消
 - ✅ **長いコマンド問題**: コマンド長制限の影響軽減
 
 #### パフォーマンス向上
 **AI操作における性能改善**：
-- ⚡ **実行速度向上**: PSReadLineのオーバーヘッド除去
 - ⚡ **メモリ使用量削減**: 不要なモジュール除去
 - ⚡ **エラー処理簡素化**: 複雑な回避策不要
 
@@ -208,7 +197,6 @@ if ($content -match "# Obsidian_to_Anki") {
 **原因**: 
 - CursorのAIエージェント実行環境の処理制限
 - 複数行構文の解析処理でバッファオーバーフロー
-- PSReadLine無効化済み環境でも発生する根本的制限
 
 **検証済み事実**:
 ```powershell
@@ -358,44 +346,6 @@ $content = [System.IO.File]::ReadAllBytes("ファイル名.md")
 # Step 2: 範囲設定
 $endIndex = $content.Length - 10
 
-# Step 3: ループ実行
-for ($i = $endIndex; $i -lt $content.Length; $i++) {
-    $char = $content[$i]
-    $hex = "{0:X2}" -f $char
-    $ascii = if ($char -ge 32 -and $char -le 126) { [char]$char } else { "." }
-    Write-Host "$i : $hex ($ascii)"
-}
-```
-
-## コンソールエラー対処法
-
-### PSReadLineエラー
-**問題**: here-string (@'...'@) 使用時のコンソール表示崩れ
-**症状**: `System.ArgumentOutOfRangeException` でコンソールバッファエラー
-**根本原因**: バッファサイズ不足（特に `BufferHeight: 1` 状態）
-
-#### 基本対処法：バッファサイズ拡張（推奨）
-```powershell
-# ✅ 最も効果的な解決策：セッション開始時に実行
-$host.UI.RawUI.BufferSize = New-Object Management.Automation.Host.Size (120, 3000)
-
-# 設定確認
-$host.UI.RawUI.BufferSize  # Width: 120, Height: 3000 が表示されれば成功
-
-# この設定により以下が解決：
-# - here-string使用時のエラー
-# - 複雑なコマンド実行時のエラー
-# - 日本語キーのハッシュテーブル操作エラー
-```
-
-#### 代替対処法：エラー発生時の継続処理
-**重要な対処法**: **エラーが出てもファイル出力は通常成功している**
-
-```powershell
-# エラー発生例
-@'
-大量のテキスト...
-'@ | Out-File -FilePath "ファイル名.md" -Encoding UTF8
 
 # エラーが発生してもファイル確認を継続
 $bytes = [System.IO.File]::ReadAllBytes("ファイル名.md")
@@ -425,21 +375,6 @@ $bytes[-5..-1] | ForEach-Object { "{0:X2} ({1})" -f $_, [char]$_ }
 # ファイル全体のバイナリ読み込み
 $content = [System.IO.File]::ReadAllBytes("ファイル名.md")
 
-# 末尾10バイトの確認
-$endIndex = $content.Length - 10
-for ($i = $endIndex; $i -lt $content.Length; $i++) {
-    $char = $content[$i]
-    $hex = "{0:X2}" -f $char
-    $ascii = if ($char -ge 32 -and $char -le 126) { [char]$char } else { "." }
-    Write-Host "$i : $hex ($ascii)"
-}
-```
-
-### 簡略版（末尾確認）
-```powershell
-# 末尾5バイトのみ確認
-$bytes = [System.IO.File]::ReadAllBytes("ファイル名.md")
-$bytes[-5..-1] | ForEach-Object { "{0:X2} ({1})" -f $_, [char]$_ }
 ```
 
 ### 改行コード混在確認

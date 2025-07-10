@@ -20,7 +20,7 @@ pull back
 The troops were ordered to pull back.
 Back:
 部隊は撤退を命じられました。
-Ankiラベル:不要補語自的固定句動詞
+Ankiラベル:単一目的語分離句動詞
 pull back
 撤退する
 
@@ -33,9 +33,9 @@ Part4:企業戦略発表
 Speech: The troops were ordered to pull back.
 Yaku: 部隊は撤退を命じられました。
 Hyogen: pull back
-AnkiLabel: 不要補語自的固定句動詞
+AnkiLabel: 単一目的語分離句動詞
 Imi: 撤退する
-Tags: TOEIC優先度:60 Ankiラベル:不要補語自的固定句動詞 Part4:企業戦略発表
+Tags: TOEIC優先度:60 Ankiラベル:単一目的語分離句動詞 Part4:企業戦略発表
 <!--ID: 1751386382073-->
 END
 

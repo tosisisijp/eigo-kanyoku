@@ -19,7 +19,7 @@ cut back
 We need to cut back on unnecessary expenses.
 Back:
 私たちは不要な経費を削減する必要があります。
-Ankiラベル:慣用句
+Ankiラベル:単一目的語分離句動詞
 cut back
 削減する
 
@@ -33,10 +33,10 @@ Part4:予算管理発表
 Speech: We need to cut back on unnecessary expenses.
 Yaku: 私たちは不要な経費を削減する必要があります。
 Hyogen: cut back
-AnkiLabel: 慣用句
+AnkiLabel: 単一目的語分離句動詞
 Imi: 削減する
-Tags: TOEIC優先度:95 Ankiラベル:慣用句 Part4:予算管理発表
-<!--ID: 1751241922014-->
+Tags: TOEIC優先度:95 Ankiラベル:単一目的語分離句動詞 Part4:予算管理発表
+<!--ID: 1751927540399-->
 END
 
 # 関連表現

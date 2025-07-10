@@ -19,7 +19,7 @@ sit back
 Sit back, relax, and enjoy the show.
 Back:
 座って、リラックスして、ショーを楽しんでください。
-Ankiラベル:慣用句
+Ankiラベル:自的句動詞
 sit back
 くつろぐ
 
@@ -30,11 +30,11 @@ sit back
 TOEIC優先度:80
 Part1:オフィス描写
 Speech: Sit back, relax, and enjoy the show.
-Yaku: 座って、リラックスして、ショーを楽しんでください。
+Yaku: くつろいで、リラックスして、ショーを楽しんでください。
 Hyogen: sit back
-AnkiLabel: 慣用句
+AnkiLabel: 自的句動詞
 Imi: くつろぐ
-Tags: TOEIC優先度:80 Ankiラベル:慣用句 Part1:オフィス描写
+Tags: TOEIC優先度:80 Ankiラベル:自的句動詞 Part1:オフィス描写
 <!--ID: 1751241422006-->
 END
 

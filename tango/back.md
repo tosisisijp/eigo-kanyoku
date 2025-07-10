@@ -119,7 +119,7 @@ tags:
 | 38 | **set back** | 遅らせる | 単一目的語汎用分離句動詞 | "The rain set back our construction schedule." | 雨で建設スケジュールが遅れました。 | Part 4: プロジェクト進捗報告 | **60** |
 | 39 | **pull back** | 撤退する | 不要補語自的固定句動詞 | "The company pulled back from overseas expansion." | 会社は海外展開から撤退しました。 | Part 4: 企業戦略発表 | **60** |
 | 40 | **bounce back** | 立ち直る | 不要補語自的固定句動詞 | "The economy is expected to bounce back next year." | 経済は来年回復すると予想されています。 | Part 4: 経済予測報告 | **60** |
-| 41 | **get someone back** | 復讐する | 慣用句 | "He decided to get his colleague back." | 彼は同僚に仕返しすることにしました。 | Part 3: 職場人間関係 | **55** |
+| 41 | **get someone back** | 復讐する | 単一目的語汎用分離句動詞 | "He decided to get his colleague back." | 彼は同僚に仕返しすることにしました。 | Part 3: 職場人間関係 | **55** |
 | 42 | **way back when** | ずっと昔 | 慣用句 | "Way back when the company started." | 会社が始まったずっと昔。 | Part 4: 企業歴史説明 | **55** |
 | 43 | **back issues** | 過去の | 形容詞 | "Please refer to the back issues of our report." | 弊社の報告書のバックナンバーをご参照ください。 | Part 7: 文書参照指示 | **50** |
 | 44 | **back to the drawing board** | 最初からやり直し | 慣用句 | "The proposal was rejected, so it's back to the drawing board." | 提案は却下されたので、最初からやり直しです。 | Part 3: プロジェクト会議 | **50** |
@@ -134,7 +134,7 @@ tags:
 | 1 | **feedback** | 意見・反応 | 合成語句 | "We value your feedback on the proposal." | 提案に対するご意見をお聞かせください。 | Part 3: 業務評価 | **95** |
 | 2 | **back out (of)** | 約束を破る・撤退する | 前置詞句動詞 | "He backed out of the deal at the last minute." | 彼は土壇場で取引から撤退しました。 | Part 3: ビジネス交渉 | **90** |
 | 3 | **setback** | 挫折・後退 | 合成語句 | "The project experienced a major setback." | プロジェクトは大きな挫折を経験しました。 | Part 4: プロジェクト報告 | **90** |
-| 4 | **scratch someone's back** | 相互に助け合う | 慣用句 | "You scratch my back, I'll scratch yours." | 持ちつ持たれつです。 | Part 3: ビジネス交渉 | **85** |
+| 4 | **scratch someone's back** | 相互に助け合う | 単一目的語汎用句動詞 | "You scratch my back, I'll scratch yours." | 持ちつ持たれつです。 | Part 3: ビジネス交渉 | **85** |
 | 5 | **back-up** | 予備の・バックアップの | ハイフネーション表現 | "Use the back-up generator during outages." | 停電時は予備発電機を使用してください。 | Part 4: 設備案内 | **85** |
 | 6 | **back-to-back** | 連続した・相次ぐ | ハイフネーション表現 | "We have back-to-back conferences today." | 今日は会議が立て続けにあります。 | Part 4: スケジュール案内 | **85** |
 | 7 | **stab someone in the back** | 裏切る・陰で攻撃する | 慣用句 | "I can't believe he stabbed me in the back after all I did for him." | 私が彼のためにしたことの後で裏切るなんて信じられません。 | Part 7: 人間関係記事 | **80** |
@@ -143,7 +143,7 @@ tags:
 | 10 | **have one's back against the wall** | 追い詰められる・窮地に立つ | 慣用句 | "With declining sales, the company has its back against the wall." | 売上減少で、会社は窮地に立たされています。 | Part 4: 企業危機報告 | **75** |
 | 11 | **talk behind someone's back** | 陰口を言う | 慣用句 | "It's not professional to talk behind your colleague's back." | 同僚の陰口を言うのは職業的ではありません。 | Part 3: 職場マナー | **75** |
 | 12 | **comeback** | 復活・復帰 | 合成語句 | "The company made an impressive comeback." | 会社は見事な復活を遂げました。 | Part 4: 企業業績報告 | **75** |
-| 13 | **go behind someone's back** | 内緒で行動する | 慣用句 | "She went behind her boss's back to complain to HR." | 彼女は上司に内緒で人事部に苦情を言いに行きました。 | Part 3: 職場での問題 | **70** |
+| 13 | **go behind someone's back** | 内緒で行動する | 関係所属系前置詞句動詞 | "She went behind her boss's back to complain to HR." | 彼女は上司に内緒で人事部に苦情を言いに行きました。 | Part 3: 職場での問題 | **70** |
 | 14 | **back to square one** | 振り出しに戻る | 慣用句 | "After the merger failed, we're back to square one." | 合併が失敗した後、我々は振り出しに戻りました。 | Part 4: 企業戦略報告 | **65** |
 | 15 | **back of beyond** | 人里離れた場所・辺鄙な所 | 慣用句 | "The research facility is located in the back of beyond." | 研究施設は人里離れた場所にあります。 | Part 7: 施設紹介記事 | **60** |
 

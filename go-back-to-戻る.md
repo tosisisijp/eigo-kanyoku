@@ -20,7 +20,7 @@ go back to
 Let's go back to the original topic of our discussion.
 Back:
 元の議論のトピックに戻りましょう。
-Ankiラベル:状態結果系前置詞句動詞
+Ankiラベル:自的前置詞句動詞
 go back to
 戻る・元に戻る・さかのぼる
 
@@ -34,9 +34,9 @@ Part3:会議進行
 Speech: Let's go back to the original topic of our discussion.
 Yaku: 元の議論のトピックに戻りましょう。
 Hyogen: go back to
-AnkiLabel: 状態結果系前置詞句動詞
+AnkiLabel: 自的前置詞句動詞
 Imi: 戻る・元に戻る・さかのぼる
-Tags: TOEIC優先度:100 Ankiラベル:状態結果系前置詞句動詞 Part3:会議進行
+Tags: TOEIC優先度:100 Ankiラベル:自的前置詞句動詞 Part3:会議進行
 <!--ID: 1751379167498-->
 END
 

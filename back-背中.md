@@ -16,9 +16,9 @@ START
 eigo-kanyoku
 back
 
-Please lie on your back.
+He hurt his back while lifting heavy boxes.
 Back:
-仰向けに寝てください。
+重い箱を持ち上げていて背中を痛めた。
 Ankiラベル:身体部位名詞
 back
 背中
@@ -29,8 +29,8 @@ back
 
 TOEIC優先度:95
 Part4:職場健康案内
-Speech: Please lie on your back.
-Yaku: 仰向けに寝てください。
+Speech: He hurt his back while lifting heavy boxes.
+Yaku: 重い箱を持ち上げていて背中を痛めた。
 Hyogen: back
 AnkiLabel: 身体部位名詞
 Imi: 背中

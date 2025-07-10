@@ -19,7 +19,7 @@ turn one's back on
 She would never turn her back on a friend in need.
 Back:
 彼女は困っている友人を決して見捨てないだろう。
-Ankiラベル:慣用句
+Ankiラベル:他的前置詞句動詞
 turn one's back on
 見捨てる、無視する、背を向ける
 
@@ -33,9 +33,9 @@ Part7:人間関係記事
 Speech: She would never turn her back on a friend in need.
 Yaku: 彼女は困っている友人を決して見捨てないだろう。
 Hyogen: turn one's back on
-AnkiLabel: 慣用句
+AnkiLabel: 他的前置詞句動詞
 Imi: 見捨てる、無視する、背を向ける
-Tags: TOEIC優先度:65 Ankiラベル:慣用句 Part7:人間関係記事
+Tags: TOEIC優先度:65 Ankiラベル:他的前置詞句動詞 Part7:人間関係記事
 <!--ID: 1751241921946-->
 END
 

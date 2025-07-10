@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scale-back-縮小する.md",
+                "file": "go-over-復習する.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "scale-back-縮小する"
+              "title": "go-over-復習する"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "scale-back-縮小する.md",
+                "file": "go-over-復習する.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "scale-back-縮小するのアウトライン"
+              "title": "go-over-復習するのアウトライン"
             }
           }
         ],
@@ -171,40 +171,41 @@
   },
   "active": "1a63c9c66152bc00",
   "lastOpenFiles": [
-    "back-out-of-撤退する.md",
-    "get-someone-back-復讐する.md",
-    "pull-back-撤退する.md",
-    "turn-ones-back-on-見捨てる.md",
-    "go-back-to-戻る.md",
-    "get-back-to-連絡する.md",
+    "back-off-手を引く.md",
+    "cut-back-削減する.md",
+    "sign-up-for-申し込む.md",
+    "pay-attention-to-注意を払う.md",
+    "make-it-成功する.md",
+    "look-into-調査する.md",
+    "look-for-探す.md",
+    "hand-in-提出する.md",
+    "go-over-復習する.md",
+    "go-over-well-うまくいく.md",
+    "get-in-touch-with-連絡を取る.md",
+    "follow-up-on-フォローアップする.md",
+    "find-out-発見する.md",
+    "figure-out-理解する.md",
+    "check-out-チェックアウトする.md",
+    "behind-schedule-予定より遅れて.md",
+    "be-in-charge-of-を担当している.md",
+    "ahead-of-schedule-予定より早く.md",
+    "Anki_Cards_No11-26.md",
+    "test5.txt",
+    "test4.txt",
+    "test3.txt",
+    "test-japanese.txt",
+    "test2.txt",
+    "test1.txt",
+    "multi-line-test2.md",
+    "multi-line-test.md",
+    "test-here-string.md",
+    "behind-someones-back-陰で.md",
+    "turn-in-提出.md",
+    "set-up-設置.md",
+    "put-off-延期.md",
     "script/AnkiCardCorrector.ps1",
     "script/resultV2.txt",
     "script/AnkiCardValidatorV2.ps1",
-    "script/result.txt",
-    "script/AnkiCardValidator.ps1",
-    "back-away-from-距離を置く.md",
-    "back-down-撤退する.md",
-    "back-off-手を引く.md",
-    "back-in-the-day-昔は.md",
-    "back-to-back-連続して.md",
-    "back-up-バックアップする.md",
-    "back-背中.md",
-    "behind-someones-back-陰で.md",
-    "cut-back-削減する.md",
-    "date-back-to-さかのぼる.md",
-    "hold-back-抑制する.md",
-    "have-someones-back-支援する.md",
-    "scale-back-縮小する.md",
-    "set-back-遅らせる.md",
-    "back-and-forth-行ったり来たり.md",
-    "sit-back-くつろぐ.md",
-    "update_format.ps1",
-    "tango/script/AllTypes.ps1",
-    "tango/script/DotSourceTest.ps1",
-    "tango/script/Test.ps1",
-    "tango/script",
-    "back-away-距離を置く.md",
-    "get-back-連絡する.md",
-    "go-back-戻る.md"
+    "script/result.txt"
   ]
 }
