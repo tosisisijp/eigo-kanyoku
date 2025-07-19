@@ -3,36 +3,41 @@ title: "turn in - 提出"
 tags:
   - TOEIC
   - 句動詞
-  - Anki対応
+  - 物目的用法単一目的語分離句動詞
+  - TOEIC優先度95
 ---
 
-# turn in (提出する)
+# turn in (提出)
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 turn in
 
-Please turn in your expense reports by Monday.
+The manager turned in the team's results to the director.
 Back:
-月曜までに経費報告書を提出してください。
-Ankiラベル:単一目的語分離句動詞
+マネージャーはチームの成果を部長に提出しました。
+Ankiラベル:物目的用法自他両用単一目的語分離句動詞
 turn in
-提出する
+提出
 
 関連表現
-・submit
+・submit - 提出する
+・hand in - 提出する
+・file - 提出する
 
 TOEIC優先度:95
-Part2:業務依頼
-Speech: Please turn in your expense reports by Monday.
-Yaku: 月曜までに経費報告書を提出してください。
+Part3:報告
+Speech: The manager turned in the team's results to the director.
+Yaku: マネージャーはチームの成果を部長に提出しました。
 Hyogen: turn in
-AnkiLabel: 単一目的語分離句動詞
-Imi: 提出する
-Tags: TOEIC優先度:95 Ankiラベル:単一目的語分離句動詞 Part2:業務依頼
-<!--ID: 1751813984653-->
+AnkiLabel: 物目的用法自他両用単一目的語分離句動詞
+Imi: 提出
+Tags: TOEIC優先度:95 Ankiラベル:物目的用法自他両用単一目的語分離句動詞 Part3:報告
+<!--ID: 1752337547886-->
 END
 
 # 関連表現
-- [[submit-提出する]] 
+- [[submit-提出する]]
+- [[hand-in-提出する]]
+- [[file-提出する]] 

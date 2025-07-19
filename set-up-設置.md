@@ -1,38 +1,43 @@
 ---
-title: "set up - 設置"
+title: "set up - 設置・設定・準備"
 tags:
   - TOEIC
   - 句動詞
-  - Anki対応
+  - 物目的用法単一目的語分離句動詞
+  - TOEIC優先度95
 ---
 
-# set up (設置する／準備する)
+# set up (設置・設定・準備)
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 set up
 
-The IT team will set up the new computers tomorrow.
-Back:
-IT チームが明日新しいコンピュータを設置します。
-Ankiラベル:単一目的語分離句動詞
+The team set up the system to handle large volumes of data.
+Back: 
+チームは大量のデータを処理するためにシステムをセットアップしました。
+Ankiラベル:物目的用法単一目的語分離句動詞
 set up
-設置する／準備する
+設置・設定・準備
 
 関連表現
-・arrange
+・install - インストールする
+・configure - 設定する
+・establish - 設立する
 
 TOEIC優先度:95
-Part4:IT通知
-Speech: The IT team will set up the new computers tomorrow.
-Yaku: IT チームが明日新しいコンピュータを設置します。
+Part4:IT運用・業務設計
+Speech: The team set up the system to handle large volumes of data.
+Yaku: チームは大量のデータを処理するためにシステムをセットアップしました。
 Hyogen: set up
-AnkiLabel: 単一目的語分離句動詞
-Imi: 設置する／準備する
-Tags: TOEIC優先度:95 Ankiラベル:単一目的語分離句動詞 Part4:IT通知
-<!--ID: 1751813984657-->
+AnkiLabel: 物目的用法単一目的語分離句動詞
+Imi: 設置・設定・準備
+Tags: TOEIC優先度:95 Ankiラベル:物目的用法単一目的語分離句動詞 Part4:IT運用・業務設計
+<!--ID: 1752329955185-->
 END
 
 # 関連表現
-- [[arrange-整える]] 
+- [[install-インストールする]]
+- [[configure-設定する]]
+- [[establish-設立する]] 

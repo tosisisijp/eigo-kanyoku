@@ -2,12 +2,15 @@
 title: "ahead of schedule - 予定より早く"
 tags:
   - TOEIC
+  - 表現
   - 慣用句
   - 慣用表現
-  - TOEIC優先度90
+  - Anki対応
+  - 頻出度/85
+  - Part/4
 ---
 
-# ahead of schedule (予定より早く)
+# ahead of schedule - 予定より早く
 
 # Obsidian_to_Anki
 START
@@ -19,23 +22,46 @@ Back:
 プロジェクトは予定より早く完了しました。
 Ankiラベル:慣用表現
 ahead of schedule
-予定より早く
+予定より早く・スケジュールより前倒し
 
 関連表現
-・behind schedule - 予定より遅れて
-・on schedule - 予定通りに
+・on schedule
+・behind schedule
+・ahead of time
 
-TOEIC優先度:90
-Part7:進捗報告
+TOEIC優先度:85
+Part4:プロジェクト報告
 Speech: The project was completed ahead of schedule.
 Yaku: プロジェクトは予定より早く完了しました。
 Hyogen: ahead of schedule
 AnkiLabel: 慣用表現
-Imi: 予定より早く
-Tags: TOEIC優先度:90 Ankiラベル:慣用表現 Part7:進捗報告
-<!--ID: 1752099912613-->
+Imi: 予定より早く・スケジュールより前倒し
+Tags: TOEIC優先度:85 Ankiラベル:慣用表現 Part4:プロジェクト報告
 END
 
-# 関連表現
-- [[behind-schedule-予定より遅れて]]
-- [[on-schedule-予定通りに]] 
+## 用法・解説
+
+### 基本意味
+- **予定より早く、スケジュールより前倒し** - 予定された時間より早く完了すること
+
+### 使用場面
+- **プロジェクト**: プロジェクトの早期完了
+- **業務**: 業務の前倒し完了
+- **イベント**: イベントの早期準備完了
+
+### TOEIC対策ポイント
+- **Part 4**: プロジェクト報告や業務報告
+- **ビジネス英語**: スケジュール管理の表現
+- **時間管理**: 予定と実際の進捗の比較
+
+## 関連表現
+
+### 類似表現
+- **on schedule** - 予定通り
+- **ahead of time** - 時間より早く
+- **early** - 早い
+
+### 対比表現
+- **behind schedule** - 予定より遅れて
+- **delayed** - 遅延している
+- **late** - 遅い 

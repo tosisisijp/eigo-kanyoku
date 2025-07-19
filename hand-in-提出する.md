@@ -3,8 +3,8 @@ title: "hand in - 提出する"
 tags:
   - TOEIC
   - 句動詞
-  - 単一目的語分離句動詞
-  - TOEIC優先度90
+  - 物目的用法単一目的語分離句動詞
+  - TOEIC優先度95
 ---
 
 # hand in (提出する)
@@ -14,10 +14,10 @@ START
 eigo-kanyoku
 hand in
 
-Students must hand in their assignments on time.
+Please hand in your report by Friday.
 Back: 
-学生は課題を時間通りに提出しなければなりません。
-Ankiラベル:単一目的語分離句動詞
+金曜日までにレポートを提出してください。
+Ankiラベル:物目的用法単一目的語分離句動詞
 hand in
 提出する
 
@@ -26,14 +26,14 @@ hand in
 ・turn in - 提出する
 ・give in - 提出する
 
-TOEIC優先度:90
-Part4:アナウンス
-Speech: Students must hand in their assignments on time.
-Yaku: 学生は課題を時間通りに提出しなければなりません。
+TOEIC優先度:95
+Part3:業務指示
+Speech: Please hand in your report by Friday.
+Yaku: 金曜日までにレポートを提出してください。
 Hyogen: hand in
-AnkiLabel: 単一目的語分離句動詞
+AnkiLabel: 物目的用法単一目的語分離句動詞
 Imi: 提出する
-Tags: TOEIC優先度:90 Ankiラベル:単一目的語分離句動詞 Part4:アナウンス
+Tags: TOEIC優先度:95 Ankiラベル:物目的用法単一目的語分離句動詞 Part3:業務指示
 <!--ID: 1752099912594-->
 END
 

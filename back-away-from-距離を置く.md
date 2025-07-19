@@ -20,7 +20,7 @@ back away from
 He backed away from the aggressive dog.
 Back:
 彼は攻撃的な犬から後ずさった。
-Ankiラベル:関係所属系前置詞句動詞
+Ankiラベル:自的前置詞句動詞
 back away from
 距離を置く・後ずさる
 
@@ -34,9 +34,9 @@ Part1:状況描写
 Speech: He backed away from the aggressive dog.
 Yaku: 彼は攻撃的な犬から後ずさった。
 Hyogen: back away from
-AnkiLabel: 関係所属系前置詞句動詞
+AnkiLabel: 自的前置詞句動詞
 Imi: 距離を置く・後ずさる
-Tags: TOEIC優先度:70 Ankiラベル:関係所属系前置詞句動詞 Part1:状況描写
+Tags: TOEIC優先度:70 Ankiラベル:自的前置詞句動詞 Part1:状況描写
 <!--ID: 1751241922030-->
 END
 
