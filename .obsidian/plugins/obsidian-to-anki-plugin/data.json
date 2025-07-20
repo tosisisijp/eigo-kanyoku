@@ -193,7 +193,7 @@
     "tango/hinshi/名詞.md": "1174b026d18b4433f01b0d2ecf9c1838",
     "tango/hinshi/同一性・識別形容詞.md": "f6619ae437b8297888b8d30a8822c8b3",
     "tango/hinshi/可算名詞.md": "461596cdf31785b42166520ab5dcad23",
-    "tango/hinshi/句動詞.md": "c59a30ee2270bf7884b8dadc158e1734",
+    "tango/hinshi/句動詞.md": "31d62beecf0cf2d2f9257eb9e153e290",
     "tango/hinshi/句.md": "810a0ea6f18a73fb2a806c4f24ef2de1",
     "tango/hinshi/叙述形容詞.md": "a5f1922a68c76b46bbbd9274a601c1f5",
     "tango/hinshi/原級.md": "b0211d851e423f8476cac7d2c5343a5a",
@@ -250,7 +250,7 @@
     "go-back-to-戻る.md": "663936c7da5c309d4502f193748a16d5",
     "get-back-to-連絡する.md": "6bea418de10b4a5d2dba091a74cd7995",
     "go-behind-someones-back-内緒で行動する.md": "a780690d0d4dfbdf24510805932015c3",
-    "tango/TOEIC対策慣用句句動詞実用文例.md": "50766bd12884f890c3c39c4313625ad4",
+    "tango/TOEIC対策慣用句句動詞実用文例.md": "a387315eb275ff440383c8c43c3c133d",
     "tango/scratch-someones-back-相互に助け合う.md": "9cdb7fe3d4c4eff4e67bb1f1ad729928",
     "turn-in-提出.md": "629ff66a1deac8212ecae23616a980f8",
     "set-up-設置.md": "44e854d4e114801a09b3d764fad63591",
@@ -389,7 +389,18 @@
     "pick-up-購入する買う.md": "3957bfaf7971da6a55db9b7207cdf27d",
     "pick-up-気づく察知する.md": "9e3f6c5d1b7c61d5d812f80893e8e0c8",
     "pick-up-迎えに行く送迎する.md": "e39d05d1c13e408c4e7527217cb9bcdd",
-    "pick-up-拾い上げる取り上げる.md": "2e9c8ca8ed3df1243f8fbf2329502f5d"
+    "pick-up-拾い上げる取り上げる.md": "2e9c8ca8ed3df1243f8fbf2329502f5d",
+    "put-away-片付ける終わらせる.md": "1dc3e92d37cfe2f74329ec3b8a28cfd7",
+    "put-away-収容する入院させる.md": "acbcec2458a1251c723e1a517a2b5fe7",
+    "put-away-貯金する蓄える.md": "7748d09a6f35f8e807453e84bb368813",
+    "put-away-食べ尽くす飲み干す.md": "6ca5af41f0bd183d2370243ac4d072b2",
+    "put-away-しまう収納する.md": "fea24c88c0f63f4d0f3273e67620deae",
+    "run-out-of-使い果たす枯渇する.md": "b0477350c715f352c07bf875b7db2911",
+    "reach-out-援助を求める助けを求める.md": "62052164a26fc1b8fc033a98c0ae8a39",
+    "reach-out-to-手を伸ばす接近する.md": "4c38732660248df8f1a1ab69c628f7fd",
+    "reach-out-to-心を通わせる共感する.md": "b7179e9aa65297d90eed47d81a3c5db5",
+    "reach-out-to-支援する手を差し伸べる.md": "0f55bdeb17d7d24c7a88a51dc2ae3f9d",
+    "reach-out-to-連絡する接触する.md": "94c69c091e27a7dc0deac756637a1755"
   },
   "fields_dict": {
     "Basic": [

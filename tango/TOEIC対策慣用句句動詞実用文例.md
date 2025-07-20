@@ -137,6 +137,21 @@ tags:
 | 43-8 | **pick up** | 逮捕する・拘束する | 逮捕目的用法単一目的語分離句動詞 | "The security team picked up the intruder near the entrance." | セキュリティチームは入口付近で侵入者を拘束しました。 | Part 4: セキュリティ報告 | **35** |
 | 43-9 | **pick up** | 持ち上げる・気分を良くする | 比喩目的用法単一目的語分離句動詞 | "The good news picked up everyone's spirits." | 良いニュースが皆の気分を持ち上げました。 | Part 3: チーム状況説明 | **60** |
 | 43-10 | **pick up** | 回復する・改善する | 物主語用法単一目的語分離句動詞 | "Sales are expected to pick up in the next quarter." | 売上は来四半期に回復すると予想されます。 | Part 4: 業績予測 | **75** |
+| 44-1 | **put away** | しまう・収納する | 収納目的用法単一目的語分離句動詞 | "Please put away the files in the cabinet after the meeting." | 会議後にファイルをキャビネットにしまってください。 | Part 2: 整理整頓指示 | **90** |
+| 44-2 | **put away** | 食べ尽くす・飲み干す | 食物目的用法単一目的語分離句動詞 | "He put away three sandwiches during the lunch break." | 彼は昼休みにサンドイッチを3つ食べ尽くしました。 | Part 3: 食事風景 | **50** |
+| 44-3 | **put away** | 貯金する・蓄える | 貯蓄目的用法単一目的語分離句動詞 | "The company puts away 10% of profits for future investments." | 会社は将来の投資のために利益の10%を蓄えています。 | Part 6: 財務戦略 | **60** |
+| 44-4 | **put away** | 収容する・入院させる | 人目的用法単一目的語分離句動詞 | "The elderly patient was put away in a specialized care facility." | その高齢患者は専門介護施設に収容されました。 | Part 4: 医療・介護 | **40** |
+| 44-5 | **put away** | 片付ける・終わらせる | 決戦目的用法単一目的語分離句動詞 | "The team put away their competitors in the final quarter." | チームは最終四半期に競合他社を片付けました。 | Part 7: 競争・業績報告 | **35** |
+| 45-1 | **reach out to** | 連絡する・接触する | 連絡目的用法三語句動詞 | "Please reach out to our customer service team if you have any questions." | ご質問がございましたら、カスタマーサービスチームまでご連絡ください。 | Part 7: 顧客対応案内 | **95** |
+| 45-2 | **reach out to** | 支援する・手を差し伸べる | 支援目的用法三語句動詞 | "The company reaches out to local communities through volunteer programs." | 会社はボランティアプログラムを通じて地域社会に支援の手を差し伸べています。 | Part 6: 社会貢献活動 | **80** |
+| 45-3 | **reach out to** | 心を通わせる・共感する | 感情目的用法三語句動詞 | "The manager tried to reach out to the frustrated employee." | マネージャーは不満を抱えた従業員に心を通わせようとしました。 | Part 3: 人事管理 | **65** |
+| 45-4 | **reach out to** | 手を伸ばす・接近する | 動作目的用法三語句動詞 | "The marketing team reached out to potential clients in the tech industry." | マーケティングチームはテック業界の潜在顧客にアプローチしました。 | Part 4: マーケティング活動 | **60** |
+| 45-5 | **reach out** | 援助を求める・助けを求める | 文脈依存自的句動詞 | "Don't hesitate to reach out if you need assistance with the project." | プロジェクトで支援が必要でしたら、遠慮なくお声がけください。 | Part 7: プロジェクト支援 | **55** |
+| 46-1 | **run out of** | 使い果たす・枯渇する | 単一用法三語句動詞 | "We've run out of printer paper and need to order more immediately." | プリンター用紙を使い果たしたので、すぐにもっと注文する必要があります。 | Part 3: 在庫管理 | **95** |
+| 46-2 | **run out on** | 見捨てる・見限る | 単一用法三語句動詞 | "He ran out on his team when the project became difficult." | プロジェクトが困難になったとき、彼はチームを見捨てました。 | Part 3: 人事問題 | **45** |
+| 46-3 | **run out into** | 飛び出す・流れ込む | 単一用法三語句動詞 | "The water ran out into the hallway from the broken pipe." | 破裂したパイプから水が廊下に流れ込みました。 | Part 1: 施設管理 | **35** |
+| 46-4 | **run out through** | 通り抜ける・貫通する | 単一用法三語句動詞 | "The cable runs out through the wall to connect the external device." | ケーブルは外部機器に接続するために壁を通り抜けています。 | Part 4: 技術説明 | **35** |
+| 46-5 | **run out from** | 飛び出す・突き出る | 単一用法三語句動詞 | "Smoke ran out from the ventilation system during the inspection." | 点検中に換気システムから煙が出ました。 | Part 1: 設備点検 | **30** |
 
 ---
 
