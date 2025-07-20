@@ -56,6 +56,11 @@ tags:
 | 17-2 | **follow up on** | 応答する・対応する | 応答目的用法三語句動詞 | "Please follow up on the customer's complaint immediately." | お客様の苦情に即座に対応してください。 | Part 2: 顧客対応指示 | **90** |
 | 17-3 | **follow up on** | 追跡する・継続調査する | 行動目的用法三語句動詞 | "The team will follow up on the market research findings." | チームは市場調査結果を追跡調査します。 | Part 4: 調査継続 | **75** |
 | 17-4 | **follow up on** | 継続する・発展させる | 継続目的用法三語句動詞 | "We need to follow up on yesterday's discussion." | 昨日の議論を継続する必要があります。 | Part 3: 会議継続 | **70** |
+| 17-5 | **follow up** | フォローアップする・追跡確認する | 単一用法自的句動詞 | "The manager will follow up after the training session." | マネージャーは研修後にフォローアップします。 | Part 4: 研修管理 | **95** |
+| 17-6 | **follow up with** | 人に連絡する・相談する | 人目的用法三語句動詞 | "I'll follow up with the client regarding their concerns." | お客様の懸念事項について連絡いたします。 | Part 3: 顧客フォロー | **85** |
+| 17-7 | **follow up with** | 連携する・協力する | 連携目的用法三語句動詞 | "We should follow up with the marketing team on this project." | このプロジェクトでマーケティングチームと連携すべきです。 | Part 4: 部門連携 | **75** |
+| 17-8 | **follow up with** | 手段を用いる・方法で継続する | 手段目的用法三語句動詞 | "Please follow up with a written confirmation." | 書面での確認をもって継続してください。 | Part 7: 書面確認 | **70** |
+| 17-9 | **follow up with** | 行動を継続する・措置を取る | 動作目的用法三語句動詞 | "The company will follow up with immediate action." | 会社は即座の措置をもって対応します。 | Part 7: 対応措置 | **65** |
 | 18 | **get in touch with** | ～と連絡を取る | 慣用表現 | "Please get in touch with me if you have questions." | ご質問がございましたら私までご連絡ください。 | Part 7: メール文章 | **90** |
 | 19-1 | **go over** | 超過する | 超過目的前置詞自動詞用法 | "The expenses went over the budget limit." | 経費が予算上限を超過しました。 | Part 4: 財務報告 | **90** |
 | 19-2 | **go over** | 復習する／見直す | 調査目的副詞用法不要補語単一目的語固定句動詞 | "Let's go over the contract details before signing." | 署名前に契約の詳細を見直しましょう。 | Part 3: 会議 | **90** |
@@ -122,6 +127,16 @@ tags:
 | 41-7 | **make up** | 構成される・成り立つ | 物主語用法自他両用単一目的語分離句動詞 | "The team is made up of experts from different fields." | チームは異なる分野の専門家で構成されています。 | Part 4: 組織構成 | **85** |
 | 41-8 | **make up for** | 補償する・埋め合わせる | 慣用表現 | "We need to make up for lost time." | 失った時間を埋め合わせる必要があります。 | Part 3: 遅れ・補償 | **80** |
 | 42-1 | **on behalf of** | ～に代わって・～の代理で | 慣用表現 | "I'm calling on behalf of Mr. Johnson to confirm the appointment." | ジョンソンさんに代わって、アポイントメントの確認のお電話をしています。 | Part 3: 代理連絡 | **85** |
+| 43-1 | **pick up** | 拾い上げる・取り上げる | 物目的用法単一目的語分離句動詞 | "Please pick up the documents from the reception desk." | レセプションデスクから書類を取ってください。 | Part 2: 業務指示 | **90** |
+| 43-2 | **pick up** | 迎えに行く・送迎する | 人目的用法単一目的語分離句動詞 | "I'll pick you up at the hotel lobby at 9 AM." | 午前9時にホテルのロビーまでお迎えに上がります。 | Part 3: 送迎手配 | **95** |
+| 43-3 | **pick up** | 気づく・察知する | 節目的用法単一目的語分離句動詞 | "The manager picked up that the project was behind schedule." | マネージャーはプロジェクトが遅れていることを察知しました。 | Part 3: 管理職の洞察 | **75** |
+| 43-4 | **pick up** | 購入する・買う | 購入目的用法単一目的語分離句動詞 | "Can you pick up some office supplies on your way back?" | 帰りにオフィス用品を買ってきてもらえますか？ | Part 2: 買い物依頼 | **70** |
+| 43-5 | **pick up** | 習得する・身につける | 習得目的用法単一目的語分離句動詞 | "She quickly picked up the new software system." | 彼女は新しいソフトウェアシステムをすぐに習得しました。 | Part 6: スキル習得 | **80** |
+| 43-6 | **pick up** | 受信する・キャッチする | 感知目的用法単一目的語分離句動詞 | "The antenna can pick up signals from 50 miles away." | そのアンテナは50マイル離れた場所からの信号を受信できます。 | Part 4: 技術説明 | **55** |
+| 43-7 | **pick up** | 電話に出る・応答する | 電話目的用法単一目的語分離句動詞 | "Could you pick up the phone while I'm in the meeting?" | 会議中に電話に出てもらえますか？ | Part 3: 電話対応依頼 | **65** |
+| 43-8 | **pick up** | 逮捕する・拘束する | 逮捕目的用法単一目的語分離句動詞 | "The security team picked up the intruder near the entrance." | セキュリティチームは入口付近で侵入者を拘束しました。 | Part 4: セキュリティ報告 | **35** |
+| 43-9 | **pick up** | 持ち上げる・気分を良くする | 比喩目的用法単一目的語分離句動詞 | "The good news picked up everyone's spirits." | 良いニュースが皆の気分を持ち上げました。 | Part 3: チーム状況説明 | **60** |
+| 43-10 | **pick up** | 回復する・改善する | 物主語用法単一目的語分離句動詞 | "Sales are expected to pick up in the next quarter." | 売上は来四半期に回復すると予想されます。 | Part 4: 業績予測 | **75** |
 
 ---
 
