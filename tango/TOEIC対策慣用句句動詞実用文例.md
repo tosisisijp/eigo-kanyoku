@@ -23,7 +23,11 @@ tags:
 | 4 | **fill out** | 記入する | 単一目的語分離句動詞 | "Please fill out the application form." | 申込書にご記入ください。 | Part 2: 受付案内 | **95** |
 | 5 | **in advance** | 事前に | 慣用表現 | "Reserve your seat in advance to secure a spot." | 席を確保するため事前に予約してください。 | Part 4: 予約案内 | **95** |
 | 6 | **look forward to** | ～を楽しみにする | 自的前置詞句動詞 | "We look forward to meeting you next week." | 来週お会いできることを楽しみにしています。 | Part 7: メール結び | **95** |
-| 7 | **make sure** | 確認する | 単一目的語分離句動詞 | "Make sure all devices are turned off before leaving." | 退出前にすべての機器が電源オフになっていることを確認してください。 | Part 3: 指示 | **95** |
+| 7-1 | **make sure** | 確認する・確実にする | 自的用法自他両用単一目的語分離句動詞 | "Make sure to arrive on time for the meeting." | 会議に時間通りに到着するよう確認してください。 | Part 3: 指示確認 | **70** |
+| 7-2 | **make sure** | 確認する・確かめる | 物目的用法自他両用単一目的語分離句動詞 | "Please make sure the report is accurate before submission." | 提出前にレポートが正確であることを確認してください。 | Part 7: 業務品質管理 | **85** |
+| 7-3 | **make sure** | 人に確実にさせる | 人目的用法自他両用単一目的語分離句動詞 | "Make sure your team completes the project on schedule." | チームが予定通りにプロジェクトを完了することを確実にしてください。 | Part 3: チーム管理 | **60** |
+| 7-4 | **make sure** | ～することを確実にする | 節目的用法自他両用単一目的語分離句動詞 | "Make sure that all equipment is turned off before leaving." | 退室前にすべての機器の電源が切れていることを確実にしてください。 | Part 4: 安全指示 | **95** |
+| 7-5 | **make sure** | ～するよう確実にする | 不定詞目的用法自他両用単一目的語分離句動詞 | "Make sure to backup your files regularly." | 定期的にファイルをバックアップするよう確実にしてください。 | Part 6: IT管理指示 | **90** |
 | 8-1 | **put off** | 延期| 予定目的用法単一目的語分離句動詞 | "They decided to put off the meeting until Friday." | 彼らは会議を金曜日まで延期することにしました。 | Part 3: スケジュール調整 | **95** |
 | 8-2 | **put off** | 嫌悪する | 人目的用法単一目的語分離句動詞 | "His attitude really put me off." | 彼の態度には本当にうんざりしました。 | Part 4: 苦情・印象表現 | **80** |
 | 9-1 | **set up** | 組成・起業・準備 | 人目的用法単一目的語分離句動詞 | "She set up a study group for junior employees." | 彼女は新人社員のために勉強会を立ち上げました。 | Part 3: 社内教育・チーム構成 | **85** |
@@ -38,9 +42,20 @@ tags:
 | 14-1 | **check out** | チェックアウトする| 人主語自用自他両用単一目的語分離句動詞 | "Please check out by 11 AM tomorrow." | 明日午前11時までにチェックアウトしてください。 | Part 2: ホテル案内 | **90** |
 | 14-2 | **check out** | 調べる・確認する | 物主語自他両用単一目的語分離句動詞 | "The new system checks out perfectly." | 新しいシステムは完璧に動作します。 | Part 4: システム報告 | **90** |
 | 14-3 | **check out** | 借りる | 借用人主語他用自他両用単一目的語分離句動詞 | "I always check it out from the equipment room before the morning briefing." | 私はいつも朝のブリーフィングの前に、備品室からそれを借ります。 | Part 3: 情報提供 | **90** |
-| 15 | **figure out** | 理解する／解決する | 単一目的語分離句動詞 | "We need to figure out the problem quickly." | 問題を迅速に解決する必要があります。 | Part 3: 問題解決 | **90** |
-| 16 | **find out** | 発見する／知る | 単一目的語分離句動詞 | "I'll find out when the meeting starts." | 会議がいつ始まるか調べます。 | Part 2: 情報確認 | **90** |
-| 17 | **follow up on** | ～をフォローアップする | 自的前置詞句動詞 | "Please follow up on the client's request." | クライアントのリクエストをフォローアップしてください。 | Part 7: 業務指示 | **90** |
+| 15-1 | **figure out** | 解決する・解明する | 解決目的用法単一目的語分離句動詞 | "We need to figure out the technical issue before the deadline." | 期限前に技術的な問題を解決する必要があります。 | Part 3: 技術問題解決 | **90** |
+| 15-2 | **figure out** | 理解する・把握する | 理解目的用法単一目的語分離句動詞 | "Can you figure out the new software system?" | 新しいソフトウェアシステムを理解できますか？ | Part 6: システム理解 | **85** |
+| 15-3 | **figure out** | 判断する・決定する | 判断目的用法単一目的語分離句動詞 | "Let's figure out the best approach for this project." | このプロジェクトに最適なアプローチを判断しましょう。 | Part 4: 戦略決定 | **75** |
+| 15-4 | **figure out** | 調べる・確認する | 節目的用法単一目的語分離句動詞 | "I'll figure out whether the meeting is still on." | 会議がまだ予定通りかどうか調べます。 | Part 2: スケジュール確認 | **70** |
+| 15-5 | **figure out** | 考え出す・見つける | 行動目的用法単一目的語分離句動詞 | "We must figure out a way to reduce costs." | コストを削減する方法を考え出さなければなりません。 | Part 7: 経営改善 | **65** |
+| 15-6 | **figure out** | 計算する・算出する | 計算目的用法単一目的語分離句動詞 | "Please figure out the total expenses for the quarter." | 四半期の総費用を計算してください。 | Part 6: 会計・財務 | **60** |
+| 15-7 | **figure out** | 見抜く・理解する | 人目的用法単一目的語分離句動詞 | "It's hard to figure out what the client really wants." | クライアントが実際に何を望んでいるかを見抜くのは困難です。 | Part 7: 顧客対応 | **40** |
+| 16-1 | **find out** | 発見する・知る | 物目的用法単一目的語分離句動詞 | "Please find out the truth about the budget discrepancy." | 予算の食い違いについて真実を調べてください。 | Part 3: 調査指示 | **95** |
+| 16-2 | **find out** | 突き止める・明らかにする | 人目的用法単一目的語分離句動詞 | "We need to find out who is responsible for this error." | この誤りの責任者が誰なのか突き止める必要があります。 | Part 4: 責任者特定 | **85** |
+| 16-3 | **find out** | 調べる・確認する | 節目的用法単一目的語分離句動詞 | "I'll find out when the meeting starts and let you know." | 会議がいつ始まるか調べてお知らせします。 | Part 2: 情報確認 | **90** |
+| 17-1 | **follow up on** | 確認する・フォローアップする | 確認目的用法三語句動詞 | "I'll follow up on the shipping status tomorrow." | 明日配送状況を確認いたします。 | Part 3: 業務確認 | **95** |
+| 17-2 | **follow up on** | 応答する・対応する | 応答目的用法三語句動詞 | "Please follow up on the customer's complaint immediately." | お客様の苦情に即座に対応してください。 | Part 2: 顧客対応指示 | **90** |
+| 17-3 | **follow up on** | 追跡する・継続調査する | 行動目的用法三語句動詞 | "The team will follow up on the market research findings." | チームは市場調査結果を追跡調査します。 | Part 4: 調査継続 | **75** |
+| 17-4 | **follow up on** | 継続する・発展させる | 継続目的用法三語句動詞 | "We need to follow up on yesterday's discussion." | 昨日の議論を継続する必要があります。 | Part 3: 会議継続 | **70** |
 | 18 | **get in touch with** | ～と連絡を取る | 慣用表現 | "Please get in touch with me if you have questions." | ご質問がございましたら私までご連絡ください。 | Part 7: メール文章 | **90** |
 | 19-1 | **go over** | 超過する | 超過目的前置詞自動詞用法 | "The expenses went over the budget limit." | 経費が予算上限を超過しました。 | Part 4: 財務報告 | **90** |
 | 19-2 | **go over** | 復習する／見直す | 調査目的副詞用法不要補語単一目的語固定句動詞 | "Let's go over the contract details before signing." | 署名前に契約の詳細を見直しましょう。 | Part 3: 会議 | **90** |
@@ -66,7 +81,47 @@ tags:
 | 30-4 | **bring up** | 育てる | 育成目的用法単一目的語分離句動詞 | "The company brings up young talent through mentorship programs." | 会社はメンターシッププログラムを通じて若い人材を育てています。 | Part 7: 人事・教育 | **80** |
 | 30-5 | **bring up** | 出廷させる | 出廷目的用法単一目的語分離句動詞 | "The lawyer brought up the witness to testify." | 弁護士は証人を出廷させて証言させました。 | Part 7: 法務 | **25** |
 | 30-6 | **bring up** | 発生させる | 物主語用法単一目的語分離句動詞 | "The new policy brought up many questions from employees." | 新しい方針は従業員から多くの質問を発生させました。 | Part 4: 社内コミュニケーション | **85** |
-| 31 | **carry out** | 実行する・実施する | 単一目的語分離句動詞 | "The team carried out the plan successfully." | チームは計画を成功裏に実行しました。 | Part 7: プロジェクト報告 | **85** |
+| 31-1 | **carry out** | 実行する・遂行する | 計画目的用法単一目的語固定句動詞 | "The team carried out the marketing plan successfully." | チームはマーケティング計画を成功裏に実行しました。 | Part 7: プロジェクト報告 | **95** |
+| 31-2 | **carry out** | 実施する・行う | 調査目的用法単一目的語固定句動詞 | "We need to carry out a thorough market research before launching." | 発売前に徹底的な市場調査を実施する必要があります。 | Part 6: 市場分析指示 | **90** |
+| 31-3 | **carry out** | 履行する・実行する | 約束目的用法単一目的語固定句動詞 | "The company always carries out its commitments to clients." | 会社は常にクライアントへの約束を履行します。 | Part 7: 企業方針説明 | **85** |
+| 31-4 | **carry out** | 運ぶ・搬出する | 物目的用法単一目的語固定句動詞 | "Please carry out the old equipment from the storage room." | 倉庫から古い機器を運び出してください。 | Part 2: 作業指示 | **80** |
+| 31-5 | **carry out** | 遂行する・実行する | 命令目的用法単一目的語固定句動詞 | "All employees must carry out the safety procedures." | 全従業員は安全手順を遂行しなければなりません。 | Part 4: 安全指示 | **85** |
+| 31-6 | **carry out** | 実行する・行う | 犯罪目的用法単一目的語固定句動詞 | "The security team investigated how the fraud was carried out." | セキュリティチームは詐欺がどのように実行されたかを調査しました。 | Part 7: セキュリティ報告 | **40** |
+| 32 | **catch up** | 追いつく・遅れを取り戻す | 単一用法自的句動詞 | "I need to catch up on the emails from yesterday." | 昨日のメールに追いつく必要があります。 | Part 3: 業務進捗 | **85** |
+| 33 | **check in** | チェックイン・報告・確認 | 単一意味自他両用単一目的語分離句動詞 | "Please check in at the front desk when you arrive." | 到着時にフロントデスクでチェックインしてください。 | Part 2: ホテル・施設案内 | **85** |
+| 34 | **come back** | 戻る・復帰する | 単一用法自的句動詞 | "The manager will come back from vacation next Monday." | マネージャーは来週月曜日に休暇から戻ります。 | Part 3: スケジュール確認 | **85** |
+| 35 | **come up** | 起こる・生じる・話題になる | 単一用法自的句動詞 | "An urgent issue came up during the meeting." | 会議中に緊急の問題が生じました。 | Part 3: 問題報告 | **85** |
+| 36-1 | **drop off** | 送り届ける・降ろす | 人目的用法自他両用単一目的語分離句動詞 | "I'll drop you off at the airport tomorrow morning." | 明日朝、空港まで送り届けます。 | Part 3: 交通・移動 | **90** |
+| 36-2 | **drop off** | 物を落とす・届ける | 物目的用法自他両用単一目的語分離句動詞 | "Please drop off the documents at the reception." | 書類をレセプションに届けてください。 | Part 2: 業務指示 | **80** |
+| 36-3 | **drop off** | 居眠りする・うたた寝する | 人主語自的用法自他両用単一目的語分離句動詞 | "I dropped off during the long presentation." | 長いプレゼンテーション中にうたた寝してしまいました。 | Part 3: 会話・体験談 | **75** |
+| 36-4 | **drop off** | 減少する・落ち込む | 量主語自的用法自他両用単一目的語分離句動詞 | "Sales dropped off significantly last quarter." | 前四半期に売上が大幅に減少しました。 | Part 4: 業績報告 | **85** |
+| 37-1 | **get back** | 戻る・帰る | 自的用法自他両用単一目的語分離句動詞 | "I need to get back to the office by 3 PM." | 午後3時までにオフィスに戻る必要があります。 | Part 3: スケジュール調整 | **90** |
+| 37-2 | **get back** | 再招集する・再結集させる | 人目的用法自他両用単一目的語分離句動詞 | "The manager got his team back together after the reorganization." | マネージャーは組織変更後にチームを再結集させました。 | Part 4: 組織運営 | **90** |
+| 37-3 | **get back** | 取り戻す・回収する| 物目的用法自他両用単一目的語分離句動詞 | "Can you get the report back from the client?" | クライアントからレポートを回収してもらえますか？ | Part 3: 業務依頼 | **90** |
+| 37-4 | **get back** | 回復する・正常に戻る | 物主語用法自他両用単一目的語分離句動詞 | "The system got back to normal after the update." | アップデート後、システムは正常に戻りました。 | Part 4: システム報告 | **90** |
+| 37-5 | **get back together** | 復縁する・再結合する | 単一用法三語句動詞 | "The two departments got back together to work on the project." | 2つの部署がプロジェクトで再び協力することになりました。 | Part 3: 部署間協力 | **80** |
+| 37-6 | **get back at** | 復讐する・仕返しする | 単一用法三語句動詞 | "Don't try to get back at your colleagues; focus on solutions." | 同僚に仕返ししようとせず、解決策に集中してください。 | Part 7: 職場アドバイス | **75** |
+| 37-7 | **get back to** | 連絡する・返事する | 人目的用法三語句動詞 | "I'll get back to you with the updated figures tomorrow." | 明日、更新された数字でご連絡いたします。 | Part 7: メール対応 | **95** |
+| 37-8 | **get back to** | 戻る・再開する | 物目的用法三語句動詞 | "Let's get back to the agenda and discuss the next item." | 議題に戻って、次の項目を議論しましょう。 | Part 3: 会議進行 | **85** |
+| 38-1 | **get off** | 仕事を終える・退勤する | 自的用法自他両用単一目的語分離句動詞 | "What time do you get off work today?" | 今日は何時に仕事が終わりますか？ | Part 3: 勤務時間確認 | **90** |
+| 38-2 | **get off** | 始まる・出発する | 物主語用法自他両用単一目的語分離句動詞 | "The meeting got off to a good start." | 会議は良いスタートを切りました。 | Part 4: 会議報告 | **75** |
+| 38-3 | **get off** | 釈放する・無罪にする | 人目的用法自他両用単一目的語分離句動詞 | "The lawyer got his client off with a light sentence." | 弁護士は依頼人を軽い刑で済ませました。 | Part 7: 法務文脈 | **60** |
+| 38-4 | **get off** | 取り外す・除去する | 物目的用法自他両用単一目的語分離句動詞 | "Please get the sticker off the window." | 窓からステッカーを取り外してください。 | Part 1: 清掃・整理 | **80** |
+| 38-5 | **get off** | 送る・発送する | 手紙目的自他両用単一目的語分離句動詞 | "I need to get this letter off before 5 PM." | 午後5時までにこの手紙を発送する必要があります。 | Part 6: 連絡・通信 | **70** |
+| 38-6 | **get off** | 降りる・下車する | 乗物目的自他両用単一目的語分離句動詞 | "Please get off at the next station." | 次の駅で降りてください。 | Part 1: 交通案内 | **95** |
+| 38-7 | **get off** | 発射する・撃つ | 射撃目的自他両用単一目的語分離句動詞 | "The soldier got off three shots before retreating." | 兵士は退却前に3発撃ちました。 | Part 4: 軍事・スポーツ | **40** |
+| 38-8 | **get off on** | 興奮する・楽しむ | 単一用法三語句動詞 | "He gets off on solving complex problems." | 彼は複雑な問題を解くことに興奮します。 | Part 3: 個人的興味 | **30** |
+| 39-1 | **go back** | 戻る・帰る | 単一用法自的句動詞 | "I need to go back to the office to pick up some files." | ファイルを取りにオフィスに戻る必要があります。 | Part 3: 業務移動 | **85** |
+| 40-1 | **keep track of** | 記録を取る・追跡する | 慣用表現 | "Please keep track of your expenses for the business trip." | 出張の経費を記録してください。 | Part 7: 経費管理 | **85** |
+| 41-1 | **make up** | 構成する・占める | 物目的用法自他両用単一目的語分離句動詞 | "These components make up the entire system." | これらの部品が全システムを構成しています。 | Part 4: 技術説明 | **80** |
+| 41-2 | **make up** | 仲直りする・和解する | 自的用法自他両用単一目的語分離句動詞 | "The two departments made up after the disagreement." | 2つの部署は意見の相違の後に仲直りしました。 | Part 3: 部署間関係 | **90** |
+| 41-3 | **make up** | 割合を占める・構成比 | 割合目的用法自他両用単一目的語分離句動詞 | "Women make up 60% of our staff." | 女性が我々のスタッフの60%を占めています。 | Part 6: 統計・データ | **95** |
+| 41-4 | **make up** | 化粧する・装う | 化粧意味用法自他両用単一目的語分離句動詞 | "She made herself up before the important presentation." | 彼女は重要なプレゼンテーション前に化粧をしました。 | Part 1: 身だしなみ | **75** |
+| 41-5 | **make up** | 作り話をする・でっち上げる | 虚構目的用法自他両用単一目的語分離句動詞 | "Don't make up excuses; just tell the truth." | 言い訳を作り上げないで、真実を話してください。 | Part 3: 職場指導 | **70** |
+| 41-6 | **make up** | 作成する・準備する | 作成目的用法自他両用単一目的語分離句動詞 | "Please make up a schedule for the meeting." | 会議のスケジュールを作成してください。 | Part 3: 会議準備 | **85** |
+| 41-7 | **make up** | 構成される・成り立つ | 物主語用法自他両用単一目的語分離句動詞 | "The team is made up of experts from different fields." | チームは異なる分野の専門家で構成されています。 | Part 4: 組織構成 | **85** |
+| 41-8 | **make up for** | 補償する・埋め合わせる | 慣用表現 | "We need to make up for lost time." | 失った時間を埋め合わせる必要があります。 | Part 3: 遅れ・補償 | **80** |
+| 42-1 | **on behalf of** | ～に代わって・～の代理で | 慣用表現 | "I'm calling on behalf of Mr. Johnson to confirm the appointment." | ジョンソンさんに代わって、アポイントメントの確認のお電話をしています。 | Part 3: 代理連絡 | **85** |
 
 ---
 

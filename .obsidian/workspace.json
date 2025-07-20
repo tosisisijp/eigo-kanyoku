@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hand-in-提出する.md",
+                "file": "bring-under-制御下に置く.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "hand-in-提出する"
+              "title": "bring-under-制御下に置く"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hand-in-提出する.md",
+                "file": "bring-under-制御下に置く.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "hand-in-提出するのアウトライン"
+              "title": "bring-under-制御下に置くのアウトライン"
             }
           }
         ],
@@ -171,32 +171,32 @@
   },
   "active": "1a63c9c66152bc00",
   "lastOpenFiles": [
-    "bring-up-to-育てる.md",
-    "bring-under-制御下に置く.md",
-    "bring-together-まとめる.md",
-    "bring-to-意識を回復させる.md",
-    "bring-through-乗り切らせる.md",
-    "bring-over-連れてくる.md",
-    "bring-out-引き出す.md",
-    "bring-on-引き起こす.md",
-    "bring-off-成功させる.md",
-    "bring-in-導入する.md",
-    "bring-forth-生み出す.md",
-    "bring-down-下げる.md",
-    "bring-around-説得する.md",
-    "bring-along-持ってくる.md",
-    "bring-about-引き起こす.md",
-    "back-out-of-約束を破る.md",
-    "back-down-from-降参する.md",
-    "carry-out-実行する.md",
-    "bring-up-発生させる.md",
-    "bring-up-出廷させる.md",
-    "bring-up-育てる.md",
-    "bring-up-提示する.md",
-    "bring-up-吐く戻す.md",
-    "bring-up-話題にする.md",
-    "be-tied-up-忙しい.md",
-    "back-up-補佐代役.md",
+    "follow-up-on-継続する発展させる.md",
+    "follow-up-on-追跡する継続調査する.md",
+    "follow-up-on-応答する対応する.md",
+    "figure-out-見抜く理解する.md",
+    "figure-out-計算する算出する.md",
+    "figure-out-考え出す見つける.md",
+    "figure-out-調べる確認する.md",
+    "figure-out-判断する決定する.md",
+    "figure-out-理解する把握する.md",
+    "carry-out-実行する行う.md",
+    "carry-out-遂行する実行する.md",
+    "carry-out-運ぶ搬出する.md",
+    "carry-out-履行する実行する.md",
+    "carry-out-実施する行う.md",
+    "make-sure-するよう確実にする.md",
+    "make-sure-人に確実にさせる.md",
+    "make-sure-確認確かめる.md",
+    "make-sure-確認確実にする.md",
+    "find-out-突き止める.md",
+    "find-out-発見する-知る.md",
+    "hand-in-提出する.md",
+    "on-behalf-of-代理で.md",
+    "make-up-for-補償する.md",
+    "make-up-構成される.md",
+    "make-up-作成する.md",
+    "make-up-作り話をする.md",
     "tango/script/ConvertToLf.ps1",
     "test5.txt",
     "test4.txt",

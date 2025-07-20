@@ -1,28 +1,46 @@
 ---
-title: "carry out - 実行する・実施する"
+title: "carry out - 実行する・遂行する"
 tags:
   - TOEIC
-  - 表現
   - 句動詞
-  - 単一目的語分離句動詞
+  - 計画目的用法固定句動詞
+  - TOEIC優先度95
   - Anki対応
-  - 頻出度/85
-  - Part/7
 ---
 
-# carry out - 実行する・実施する
+# carry out (実行する・遂行する)
+
+## 基本情報
+**品詞**: 計画目的用法単一目的語固定句動詞
+**意味**: 実行する・遂行する（計画目的用法）
+**TOEIC重要度**: 95/100
+
+## 文法的特徴
+- **構文**: SVO（固定句動詞）
+- **分離**: 不可（固定句動詞）
+- **目的語**: 計画・戦略・プロジェクト（plan, strategy等）
+
+## 例文
+"The team carried out the marketing plan successfully."
+「チームはマーケティング計画を成功裏に実行しました。」
+
+## 関連表現
+- [[implement-実施する]]
+- [[execute-実行する]]
+- [[conduct-実施する]]
+- [[perform-実行する]]
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 carry out
 
-The team carried out the plan successfully.
+The team carried out the marketing plan successfully.
 Back: 
-チームは計画を成功裏に実行しました。
-Ankiラベル:単一目的語分離句動詞
+チームはマーケティング計画を成功裏に実行しました。
+Ankiラベル:計画目的用法単一目的語固定句動詞
 carry out
-実行する・実施する
+実行する・遂行する
 
 関連表現
 ・implement 実施する
@@ -30,14 +48,14 @@ carry out
 ・conduct 実施する
 ・perform 実行する
 
-TOEIC優先度:85
+TOEIC優先度:95
 Part7:プロジェクト報告
-Speech: The team carried out the plan successfully.
-Yaku: チームは計画を成功裏に実行しました。
+Speech: The team carried out the marketing plan successfully.
+Yaku: チームはマーケティング計画を成功裏に実行しました。
 Hyogen: carry out
-AnkiLabel: 単一目的語分離句動詞
-Imi: 実行する・実施する
-Tags: TOEIC優先度:85 Ankiラベル:単一目的語分離句動詞 Part7:プロジェクト報告
+AnkiLabel: 計画目的用法単一目的語固定句動詞
+Imi: 実行する・遂行する
+Tags: TOEIC優先度:95 Ankiラベル:計画目的用法単一目的語固定句動詞 Part7:プロジェクト報告
 <!--ID: 1752926150184-->
 END
 

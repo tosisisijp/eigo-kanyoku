@@ -20,7 +20,7 @@ bring under
 The firefighters brought the fire under control.
 Back: 
 消防士たちは火事を制御下に置きました。
-Ankiラベル:人主語他動詞用法自他両用単一目的語分離句動詞
+Ankiラベル:単一用法単一目的語準前置詞句動詞
 bring under
 制御下に置く・支配下に置く
 
@@ -29,14 +29,14 @@ bring under
 ・manage
 ・subdue
 
-TOEIC優先度:85
+TOEIC優先度:35
 Part4:制御・管理
 Speech: The firefighters brought the fire under control.
 Yaku: 消防士たちは火事を制御下に置きました。
 Hyogen: bring under
-AnkiLabel: 人主語他動詞用法自他両用単一目的語分離句動詞
+AnkiLabel: 単一用法単一目的語準前置詞句動詞
 Imi: 制御下に置く・支配下に置く
-Tags: TOEIC優先度:85 Ankiラベル:人主語他動詞用法自他両用単一目的語分離句動詞 Part4:制御・管理
+Tags: TOEIC優先度:35 Ankiラベル:単一用法単一目的語準前置詞句動詞 Part4:制御・管理
 <!--ID: 1752926150150-->
 END
 
