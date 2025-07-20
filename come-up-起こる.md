@@ -1,57 +1,60 @@
 ---
-title: "come up - 起こる・生じる・話題になる"
+title: "come up - 起こる・生じる"
 tags:
   - TOEIC
   - 句動詞
-  - 自動詞的句動詞
+  - 事象主語自的句動詞
+  - TOEIC優先度75
   - Anki対応
 ---
 
-# come up (起こる・生じる・話題になる)
+# come up (起こる・生じる)
 
 ## 基本情報
-**品詞**: 句動詞（自動詞的）
-**意味**: 起こる・生じる・話題になる
-**TOEIC重要度**: 85/100
+**品詞**: 事象主語自的句動詞
+**意味**: 起こる・生じる（事象主語自的用法）
+**TOEIC重要度**: 75/100
 
 ## 文法的特徴
-- **構文**: SV（自動詞的句動詞）
-- **分離**: 不可（固定句動詞）
-- **多義性**: 複数の意味を持つが基本的には自動詞的用法
+- **構文**: SV（自動詞用法）
+- **語順**: 固定句動詞、分離不可
+- **主語**: 問題・事象・状況等
 
 ## 例文
-"An urgent issue came up during the meeting."
-「会議中に緊急の問題が生じました。」
+"An unexpected problem came up with the new system."
+「新システムで予期しない問題が起こりました。」
 
 ## 関連表現
 - [[arise-生じる]]
 - [[occur-起こる]]
 - [[happen-起こる]]
+- [[develop-発生する]]
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
 come up
 
-An urgent issue came up during the meeting.
+An unexpected problem came up with the new system.
 Back: 
-会議中に緊急の問題が生じました。
-Ankiラベル:単一用法自的句動詞
+新システムで予期しない問題が起こりました。
+Ankiラベル:事象主語自的句動詞
 come up
-起こる・生じる・話題になる
+起こる・生じる
 
 関連表現
 ・arise 生じる
 ・occur 起こる
 ・happen 起こる
+・develop 発生する
 
-TOEIC優先度:85
-Part3:問題報告
-Speech: An urgent issue came up during the meeting.
-Yaku: 会議中に緊急の問題が生じました。
+TOEIC優先度:75
+Part4:トラブル報告
+Speech: An unexpected problem came up with the new system.
+Yaku: 新システムで予期しない問題が起こりました。
 Hyogen: come up
-AnkiLabel: 単一用法自的句動詞
-Imi: 起こる・生じる・話題になる
-Tags: TOEIC優先度:85 Ankiラベル:単一用法自的句動詞 Part3:問題報告
+AnkiLabel: 事象主語自的句動詞
+Imi: 起こる・生じる
+Tags: TOEIC優先度:75 Ankiラベル:事象主語自的句動詞 Part4:トラブル報告
 <!--ID: 1752935254256-->
 END 

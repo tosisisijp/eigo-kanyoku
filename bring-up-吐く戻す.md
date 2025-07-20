@@ -20,7 +20,7 @@ bring up
 The baby brought up all the milk she drank.
 Back: 
 赤ちゃんは飲んだミルクを吐き戻した。
-Ankiラベル:食物目的用法分離句動詞
+Ankiラベル:食物目的用法単一目的語分離句動詞
 bring up
 吐く・戻す
 
@@ -35,9 +35,9 @@ Part4:医学・健康
 Speech: The baby brought up all the milk she drank.
 Yaku: 赤ちゃんは飲んだミルクを吐き戻した。
 Hyogen: bring up
-AnkiLabel: 食物目的用法分離句動詞
+AnkiLabel: 食物目的用法単一目的語分離句動詞
 Imi: 吐く・戻す
-Tags: TOEIC優先度:25 Ankiラベル:食物目的用法分離句動詞 Part4:医学・健康
+Tags: TOEIC優先度:25 Ankiラベル:食物目的用法単一目的語分離句動詞 Part4:医学・健康
 <!--ID: 1752926150194-->
 END
 

@@ -95,7 +95,12 @@ tags:
 | 32 | **catch up** | 追いつく・遅れを取り戻す | 単一用法自的句動詞 | "I need to catch up on the emails from yesterday." | 昨日のメールに追いつく必要があります。 | Part 3: 業務進捗 | **85** |
 | 33 | **check in** | チェックイン・報告・確認 | 単一意味自他両用単一目的語分離句動詞 | "Please check in at the front desk when you arrive." | 到着時にフロントデスクでチェックインしてください。 | Part 2: ホテル・施設案内 | **85** |
 | 34 | **come back** | 戻る・復帰する | 単一用法自的句動詞 | "The manager will come back from vacation next Monday." | マネージャーは来週月曜日に休暇から戻ります。 | Part 3: スケジュール確認 | **85** |
-| 35 | **come up** | 起こる・生じる・話題になる | 単一用法自的句動詞 | "An urgent issue came up during the meeting." | 会議中に緊急の問題が生じました。 | Part 3: 問題報告 | **85** |
+| 35-1 | **come up** | 近づく・来る | 人主語自的句動詞 | "The new employee came up to introduce herself." | 新しい従業員が自己紹介をするために近づいてきました。 | Part 1: 人物描写 | **90** |
+| 35-2 | **come up** | 話題になる・提起される | 話題主語自的句動詞 | "The budget issue came up in today's meeting." | 予算の問題が今日の会議で話題になりました。 | Part 3: 会議議題 | **85** |
+| 35-3 | **come up** | 起こる・生じる | 事象主語自的句動詞 | "An unexpected problem came up with the new system." | 新システムで予期しない問題が起こりました。 | Part 4: トラブル報告 | **75** |
+| 35-4 | **come up** | 昇る・現れる | 天体主語自的句動詞 | "The sun comes up early in summer." | 夏は太陽が早く昇ります。 | Part 1: 自然描写 | **20** |
+| 35-5 | **come up** | 昇進する・出世する | 昇進者主語自的句動詞 | "She came up through the ranks to become manager." | 彼女は昇進を重ねてマネージャーになりました。 | Part 7: 人事・キャリア | **60** |
+| 35-6 | **come up** | 現れる・発見される | 物主語自的句動詞 | "Your name came up in the search results." | 検索結果にあなたの名前が現れました。 | Part 6: 検索・データ | **70** |
 | 36-1 | **drop off** | 送り届ける・降ろす | 人目的用法自他両用単一目的語分離句動詞 | "I'll drop you off at the airport tomorrow morning." | 明日朝、空港まで送り届けます。 | Part 3: 交通・移動 | **90** |
 | 36-2 | **drop off** | 物を落とす・届ける | 物目的用法自他両用単一目的語分離句動詞 | "Please drop off the documents at the reception." | 書類をレセプションに届けてください。 | Part 2: 業務指示 | **80** |
 | 36-3 | **drop off** | 居眠りする・うたた寝する | 人主語自的用法自他両用単一目的語分離句動詞 | "I dropped off during the long presentation." | 長いプレゼンテーション中にうたた寝してしまいました。 | Part 3: 会話・体験談 | **75** |
