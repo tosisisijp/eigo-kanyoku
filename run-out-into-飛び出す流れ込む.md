@@ -56,4 +56,5 @@ Hyogen: run out into
 AnkiLabel: 単一用法三語句動詞
 Imi: 飛び出す・流れ込む
 Tags: TOEIC優先度:35 Ankiラベル:単一用法三語句動詞 Part1:施設管理
+<!--ID: 1753030707955-->
 END 

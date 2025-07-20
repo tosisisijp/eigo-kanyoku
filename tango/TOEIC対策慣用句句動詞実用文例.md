@@ -152,6 +152,15 @@ tags:
 | 46-3 | **run out into** | 飛び出す・流れ込む | 単一用法三語句動詞 | "The water ran out into the hallway from the broken pipe." | 破裂したパイプから水が廊下に流れ込みました。 | Part 1: 施設管理 | **35** |
 | 46-4 | **run out through** | 通り抜ける・貫通する | 単一用法三語句動詞 | "The cable runs out through the wall to connect the external device." | ケーブルは外部機器に接続するために壁を通り抜けています。 | Part 4: 技術説明 | **35** |
 | 46-5 | **run out from** | 飛び出す・突き出る | 単一用法三語句動詞 | "Smoke ran out from the ventilation system during the inspection." | 点検中に換気システムから煙が出ました。 | Part 1: 設備点検 | **30** |
+| 47-1 | **show up** | 現れる・姿を現す | 自的用法原則自的句動詞 | "The CEO showed up unexpectedly at the meeting today." | CEOが今日のミーティングに予期せず現れました。 | Part 3: 会議 | **90** |
+| 47-2 | **show up** | 表示される・判明する | 物主語用法原則自的句動詞 | "The error showed up during the final quality check." | 最終品質チェック中にエラーが表示されました。 | Part 4: 品質管理 | **60** |
+| 47-3 | **show up** | 恥をかかせる・目立たせる | 人目的限定用法原則自的句動詞 | "Her presentation showed up the lack of preparation in our team." | 彼女のプレゼンテーションが私たちのチームの準備不足を露呈しました。 | Part 6: プレゼンテーション | **20** |
+| 48-1 | **take off** | 離陸する・発進する | 空輸主語自的用法自他両用単一目的語分離句動詞 | "The flight will take off at 3:30 PM from gate 12." | フライトは午後3時30分に12番ゲートから離陸予定です。 | Part 1: 空港アナウンス | **90** |
+| 48-2 | **take off** | 急成長する・成功する | 事業主語自的用法自他両用単一目的語分離句動詞 | "Our new product line really took off in the Asian market." | 我々の新製品ラインはアジア市場で本当に成功しました。 | Part 7: 業績報告 | **75** |
+| 48-3 | **take off** | 脱ぐ・取り外す | 衣類目的用法自他両用単一目的語分離句動詞 | "Please take off your jacket and make yourself comfortable." | ジャケットを脱いでくつろいでください。 | Part 3: 接客・案内 | **80** |
+| 48-4 | **take off** | 休みを取る・休暇する | 期間目的用法自他両用単一目的語分離句動詞 | "I'll take off three days next week for a family vacation." | 来週家族旅行で3日間休みを取ります。 | Part 3: 休暇申請 | **70** |
+| 48-5 | **take off** | 真似る・模倣する | 人目的用法自他両用単一目的語分離句動詞 | "The comedian took off the CEO's speaking style perfectly." | コメディアンはCEOの話し方を完璧に真似しました。 | Part 4: エンターテイメント | **25** |
+| 48-6 | **take off without** | ～なしに出発する・～を置いて行く | 単一用法三語句動詞 | "The meeting took off without waiting for the delayed participants." | 会議は遅れた参加者を待たずに始まりました。 | Part 3: 会議進行 | **60** |
 
 ---
 

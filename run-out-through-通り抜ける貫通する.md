@@ -56,4 +56,5 @@ Hyogen: run out through
 AnkiLabel: 単一用法三語句動詞
 Imi: 通り抜ける・貫通する
 Tags: TOEIC優先度:35 Ankiラベル:単一用法三語句動詞 Part4:技術説明
+<!--ID: 1753030707952-->
 END 

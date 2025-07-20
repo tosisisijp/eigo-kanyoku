@@ -56,4 +56,5 @@ Hyogen: run out on
 AnkiLabel: 単一用法三語句動詞
 Imi: 見捨てる・見限る
 Tags: TOEIC優先度:45 Ankiラベル:単一用法三語句動詞 Part3:人事問題
+<!--ID: 1753030707957-->
 END 

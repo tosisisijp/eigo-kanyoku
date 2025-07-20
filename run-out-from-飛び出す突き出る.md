@@ -56,4 +56,5 @@ Hyogen: run out from
 AnkiLabel: 単一用法三語句動詞
 Imi: 飛び出す・突き出る
 Tags: TOEIC優先度:30 Ankiラベル:単一用法三語句動詞 Part1:設備点検
+<!--ID: 1753030707950-->
 END 
