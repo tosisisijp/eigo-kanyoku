@@ -68,7 +68,10 @@ tags:
 | 21-1 | **hand in** | 提出する（物目的用法） | 物目的用法単一目的語分離句動詞 | "Please hand in your report by Friday." | 金曜日までにレポートを提出してください。 | Part 3: 業務指示 | **95** |
 | 21-2 | **hand in** | 通報する（人目的用法） | 人目的用法単一目的語分離句動詞 | "She handed in her colleague for violating company policy." | 彼女は会社の規則違反で同僚を通報しました。 | Part 7: 企業倫理 | **25** |
 | 21-3 | **hand in** | 自首する（再帰代名詞目的用法） | 再帰代名詞目的用法単一目的語分離句動詞 | "He handed himself in to the police." | 彼は自首しました。 | Part 4: 事件・法務 | **25** |
-| 22 | **look for** | ～を探す | 自的前置詞句動詞 | "We are looking for a qualified candidate." | 適格な候補者を探しています。 | Part 7: 求人広告 | **90** |
+| 22-1 | **look for** | ～を探す（物目的用法） | 物目的用法前置詞句動詞 | "We are looking for the latest software solutions." | 最新のソフトウェアソリューションを探しています。 | Part 7: 技術調達 | **95** |
+| 22-2 | **look for** | ～を探す（人目的用法） | 人目的用法前置詞句動詞 | "We are looking for a qualified candidate." | 適格な候補者を探しています。 | Part 7: 求人広告 | **85** |
+| 22-3 | **look for** | ～を調査する（調査目的用法） | 調査目的用法前置詞句動詞 | "Investors are looking for new opportunities in emerging markets." | 投資家は新興市場での新しい機会を調査しています。 | Part 3: 投資分析 | **75** |
+| 22-4 | **look for** | ～を期待する（期待目的用法） | 期待目的用法前置詞句動詞 | "Customers look for excellent service and competitive prices." | 顧客は優秀なサービスと競争力のある価格を期待しています。 | Part 4: 顧客満足 | **60** |
 | 23 | **look into** | ～を調査する | 自的前置詞句動詞 | "I'll look into the shipping delay issue." | 配送遅延の問題を調査いたします。 | Part 3: 問題対応 | **90** |
 | 24 | **make it** | 成功する／間に合う | 慣用表現 | "Can you make it to the 3 PM meeting?" | 午後3時の会議に間に合いますか？ | Part 2: 予定確認 | **90** |
 | 25 | **pay attention to** | ～に注意を払う | 慣用表現 | "Please pay attention to the safety instructions." | 安全指示に注意を払ってください。 | Part 4: 安全案内 | **90** |
@@ -92,9 +95,14 @@ tags:
 | 31-4 | **carry out** | 運ぶ・搬出する | 物目的用法単一目的語固定句動詞 | "Please carry out the old equipment from the storage room." | 倉庫から古い機器を運び出してください。 | Part 2: 作業指示 | **80** |
 | 31-5 | **carry out** | 遂行する・実行する | 命令目的用法単一目的語固定句動詞 | "All employees must carry out the safety procedures." | 全従業員は安全手順を遂行しなければなりません。 | Part 4: 安全指示 | **85** |
 | 31-6 | **carry out** | 実行する・行う | 犯罪目的用法単一目的語固定句動詞 | "The security team investigated how the fraud was carried out." | セキュリティチームは詐欺がどのように実行されたかを調査しました。 | Part 7: セキュリティ報告 | **40** |
-| 32 | **catch up** | 追いつく・遅れを取り戻す | 単一用法自的句動詞 | "I need to catch up on the emails from yesterday." | 昨日のメールに追いつく必要があります。 | Part 3: 業務進捗 | **85** |
+| 32-1 | **catch up** | 追いつく・遅れを取り戻す | 文脈依存自的句動詞 | "I need to catch up with my colleagues after being sick." | 病気の後、同僚に追いつく必要があります。 | Part 3: 業務復帰 | **90** |
+| 32-2 | **catch up in** | ～に巻き込まれる・～に関わる | 単一用法三語句動詞 | "The department got caught up in the budget review process." | その部署は予算審査プロセスに巻き込まれました。 | Part 4: 組織運営 | **70** |
+| 32-3 | **catch up on** | ～に追いつく・～を補う | 単一用法三語句動詞 | "I need to catch up on the emails from yesterday." | 昨日のメールに追いつく必要があります。 | Part 3: 業務進捗 | **85** |
+| 32-4 | **catch up** | 捕まえる・追いつく | 自他両用単一目的語単動詞 | "The security team caught up the intruder at the exit." | セキュリティチームは出口で侵入者を捕まえました。 | Part 4: セキュリティ | **30** |
 | 33 | **check in** | チェックイン・報告・確認 | 単一意味自他両用単一目的語分離句動詞 | "Please check in at the front desk when you arrive." | 到着時にフロントデスクでチェックインしてください。 | Part 2: ホテル・施設案内 | **85** |
-| 34 | **come back** | 戻る・復帰する | 単一用法自的句動詞 | "The manager will come back from vacation next Monday." | マネージャーは来週月曜日に休暇から戻ります。 | Part 3: スケジュール確認 | **85** |
+| 34-1 | **come back** | 戻る・復帰する | 単一用法自的句動詞 | "The manager will come back from vacation next Monday." | マネージャーは来週月曜日に休暇から戻ります。 | Part 3: スケジュール確認 | **85** |
+| 34-2 | **come back with** | ～と一緒に戻る・～を持って戻る | 単一用法三語句動詞 | "She came back with the revised proposal from the client meeting." | 彼女はクライアントとの会議から修正版の提案書を持って戻ってきました。 | Part 3: 会議報告 | **50** |
+| 34-3 | **come back from** | ～から戻る・～から復帰する | 単一用法三語句動詞 | "The team came back from the conference with new ideas." | チームは会議から新しいアイデアを持って戻ってきました。 | Part 4: 出張報告 | **65** |
 | 35-1 | **come up** | 近づく・来る | 人主語自的句動詞 | "The new employee came up to introduce herself." | 新しい従業員が自己紹介をするために近づいてきました。 | Part 1: 人物描写 | **90** |
 | 35-2 | **come up** | 話題になる・提起される | 話題主語自的句動詞 | "The budget issue came up in today's meeting." | 予算の問題が今日の会議で話題になりました。 | Part 3: 会議議題 | **85** |
 | 35-3 | **come up** | 起こる・生じる | 事象主語自的句動詞 | "An unexpected problem came up with the new system." | 新システムで予期しない問題が起こりました。 | Part 4: トラブル報告 | **75** |
@@ -166,6 +174,39 @@ tags:
 | 48-4 | **take off** | 休みを取る・休暇する | 期間目的用法自他両用単一目的語分離句動詞 | "I'll take off three days next week for a family vacation." | 来週家族旅行で3日間休みを取ります。 | Part 3: 休暇申請 | **70** |
 | 48-5 | **take off** | 真似る・模倣する | 人目的用法自他両用単一目的語分離句動詞 | "The comedian took off the CEO's speaking style perfectly." | コメディアンはCEOの話し方を完璧に真似しました。 | Part 4: エンターテイメント | **25** |
 | 48-6 | **take off without** | ～なしに出発する・～を置いて行く | 単一用法三語句動詞 | "The meeting took off without waiting for the delayed participants." | 会議は遅れた参加者を待たずに始まりました。 | Part 3: 会議進行 | **60** |
+| 49-1 | **take on** | 引き受ける・担当する（物目的用法） | 物目的用法単一目的語分離句動詞 | "The company decided to take on this challenging project." | 会社はこの困難なプロジェクトを引き受けることに決めました。 | Part 7: プロジェクト発表 | **90** |
+| 49-2 | **take on** | 雇用する・採用する（人目的用法） | 人目的用法単一目的語分離句動詞 | "We plan to take on five new employees next quarter." | 来四半期に5名の新入社員を雇用する予定です。 | Part 3: 人事計画 | **65** |
+| 49-3 | **take on** | 対戦する・挑戦する（対戦目的用法） | 対戦目的用法単一目的語分離句動詞 | "Our sales team will take on the competitor's best performers." | 我々の営業チームは競合他社の最優秀者に挑戦します。 | Part 4: 競争戦略 | **50** |
+| 49-4 | **take on** | 身につける・帯びる（属性目的用法） | 属性目的用法単一目的語分離句動詞 | "The project took on greater importance after the CEO's announcement." | CEOの発表後、そのプロジェクトはより大きな重要性を帯びました。 | Part 7: 組織変更 | **70** |
+| 49-5 | **take on** | 搭載する・積み込む（搭載目的用法） | 搭載目的用法単一目的語分離句動詞 | "The ship will take on additional cargo at the next port." | 船は次の港で追加の貨物を積み込みます。 | Part 1: 輸送業務 | **40** |
+| 49-6 | **take on** | 形を成す・様相を呈する（物主語限定自的用法） | 物主語限定自的用法単一目的語分離句動詞 | "The negotiations took on a more serious tone after the deadline approach." | 期限が迫った後、交渉はより深刻な様相を呈しました。 | Part 6: 交渉進展 | **35** |
+| 49-7 | **take on** | 引き受ける・受け入れる（節目的用法） | 節目的用法単一目的語分離句動詞 | "The manager took on that the team would finish by Friday." | マネージャーはチームが金曜日までに終わらせることを引き受けました。 | Part 3: 責任受諾 | **75** |
+| 49-8 | **take on** | 感情を表す・見せる（感情目的用法） | 感情目的用法単一目的語分離句動詞 | "His face took on a worried expression when he heard the news." | そのニュースを聞いた時、彼の顔は心配そうな表情を見せました。 | Part 4: 状況描写 | **25** |
+| 50 | **think over** | 考慮する・検討する（単一用法） | 単一用法単一目的語分離句動詞 | "Please think over the proposal and let me know your decision tomorrow." | 提案を検討して、明日お返事をお聞かせください。 | Part 7: 提案検討 | **85** |
+| 51-1 | **throw away** | 物を捨てる（物目的用法） | 物目的用法単一目的語分離句動詞 | "Please throw away these old documents in the shredder." | これらの古い書類をシュレッダーで処分してください。 | Part 7: 廃棄指示 | **80** |
+| 51-2 | **throw away** | 機会・資源を無駄にする（資源目的用法） | 資源目的用法単一目的語分離句動詞 | "Don't throw away this valuable opportunity to expand your career." | あなたのキャリアを拡大するこの貴重な機会を無駄にしないでください。 | Part 7: アドバイス | **65** |
+| 51-3 | **throw away** | 感情・表情を捨てる（感情目的用法） | 感情目的用法単一目的語分離句動詞 | "She threw away her pride and asked for help from her colleagues." | 彼女はプライドを捨てて同僚に助けを求めました。 | Part 4: 行動描写 | **40** |
+| 51-4 | **throw away** | 人生・将来を台無しにする（人生目的用法） | 人生目的用法単一目的語分離句動詞 | "He threw away his promising future by making poor decisions." | 彼は悪い判断をして有望な将来を台無しにしました。 | Part 6: 人物評価 | **30** |
+| 52-1 | **turn down** | 音量・温度を下げる（調節目的用法） | 調節目的用法単一目的語分離句動詞 | "Please turn down the air conditioning because it's too cold in here." | エアコンが寒すぎるので温度を上げてください。 | Part 3: 室内環境 | **60** |
+| 52-2 | **turn down** | 申し出・提案を断る（拒否目的用法） | 拒否目的用法単一目的語分離句動詞 | "I had to turn down the job offer because of the long commute." | 通勤時間が長いため、その求人を断らなければなりませんでした。 | Part 7: 転職検討 | **80** |
+| 52-3 | **turn down** | 人を断る・拒絶する（人目的用法） | 人目的用法単一目的語分離句動詞 | "She turned down his invitation to the company party." | 彼女は彼の会社パーティーへの招待を断りました。 | Part 4: 社内関係 | **65** |
+| 53-1 | **turn off** | 電源・機器を消す（物目的用法） | 物目的用法自他両用単一目的語分離句動詞 | "Please turn off all electronic devices before the meeting starts." | 会議開始前に、すべての電子機器の電源をお切りください。 | Part 2: 会議指示 | **95** |
+| 53-2 | **turn off** | 人を不快にさせる（人目的用法） | 人目的用法自他両用単一目的語分離句動詞 | "His rude behavior turned off potential clients during the presentation." | プレゼンテーション中の彼の失礼な態度が見込み客を不快にさせました。 | Part 5: 語彙問題 | **65** |
+| 53-3 | **turn off** | 道を逸れる・脇道に入る（自的用法） | 自的用法自他両用単一目的語分離句動詞 | "We need to turn off at the next exit to reach the conference center." | 会議センターに着くには次の出口で降りる必要があります。 | Part 1: 交通移動 | **45** |
+| 54-1 | **turn on** | 電源・機器を入れる（物目的用法） | 物目的用法単一目的語分離句動詞 | "Please turn on the lights before the meeting begins." | 会議開始前に電気をつけてください。 | Part 2: 会議指示 | **85** |
+| 54-2 | **turn on** | 人を魅力的にする・興奮させる（人目的用法） | 人目的用法単一目的語分離句動詞 | "His confident presentation really turned on the potential investors." | 彼の自信に満ちたプレゼンテーションが見込み投資家を本当に魅了しました。 | Part 5: 語彙問題 | **85** |
+| 54-3 | **turn on** | 攻撃する・敵対する（攻撃目的限定固定用法） | 攻撃目的限定固定用法単一目的語分離句動詞 | "The board members suddenly turned on the CEO after the scandal was revealed." | スキャンダルが発覚した後、取締役会メンバーは突然CEOに敵対しました。 | Part 6: 文脈理解 | **85** |
+| 54-4 | **turn on** | 感情を刺激する・引き起こす（感情目的限定固定用法） | 感情目的限定固定用法単一目的語分離句動詞 | "The inspiring speech turned on a wave of enthusiasm among the employees." | 感動的なスピーチが従業員の間に熱意の波を引き起こしました。 | Part 4: 講演・説明 | **85** |
+| 55-1 | **work out** | 問題・解決策を解決する・作成する（物目的用法） | 物目的用法自他両用単一目的語分離句動詞 | "The team worked out a solution to the technical problem." | チームは技術的問題の解決策を作成しました。 | Part 3: 問題解決 | **85** |
+| 55-2 | **work out** | 運動する・トレーニングする（自的用法） | 自的用法自他両用単一目的語分離句動詞 | "I work out at the company gym every Tuesday and Thursday." | 毎週火曜日と木曜日に会社のジムで運動しています。 | Part 1: 日常活動 | **70** |
+| 55-3 | **work out** | うまくいく・成功する（物主語自的用法） | 物主語自的用法自他両用単一目的語分離句動詞 | "I hope the new marketing strategy works out well." | 新しいマーケティング戦略がうまくいくことを願っています。 | Part 5: ビジネス戦略 | **80** |
+| 55-4 | **work out** | 計算する・算出する（計算目的用法） | 計算目的用法自他両用単一目的語分離句動詞 | "Please work out the total cost of the project." | プロジェクトの総費用を計算してください。 | Part 6: 財務計算 | **65** |
+| 55-5 | **work out** | 理解する・把握する（節目的用法） | 節目的用法自他両用単一目的語分離句動詞 | "I can't work out why the system keeps crashing." | システムがクラッシュし続ける理由がわかりません。 | Part 2: システム問題 | **55** |
+| 55-6 | **work out** | 人と協力する・対処する（人目的用法） | 人目的用法自他両用単一目的語分離句動詞 | "She works out well with new team members." | 彼女は新しいチームメンバーとうまく協力しています。 | Part 4: チームワーク | **35** |
+| 56-1 | **wrap up** | 事柄を完了させる・終わらせる（事目的用法） | 事目的用法自他両用単一目的語分離句動詞 | "We need to wrap up this project by the end of the month." | 今月末までにこのプロジェクトを完了させる必要があります。 | Part 3: 会議・計画 | **85** |
+| 56-2 | **wrap up** | 物を包む・梱包する（現物目的用法） | 現物目的用法慣用表現 | "Please wrap up the documents and send them to the client." | 書類を包んでクライアントに送ってください。 | Part 1: 物の取り扱い | **60** |
+| 56-3 | **wrap up** | 終了する・完了する（自的用法） | 自的用法慣用表現 | "The meeting is expected to wrap up by 5 PM." | 会議は午後5時までに終了する予定です。 | Part 2: 時間・スケジュール | **30** |
+| 56-4 | **wrap up** | 話をまとめる・要約する（節目的用法） | 節目的用法慣用表現 | "Let me wrap up what we discussed in today's meeting." | 今日の会議で話し合ったことをまとめさせてください。 | Part 6: 要約・結論 | **70** |
 
 ---
 
