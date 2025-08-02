@@ -21,7 +21,7 @@ tags:
 - **目的語**: 人・組織等（限定的な使用）
 
 ## 例文
-"Her presentation showed up the lack of preparation in our team."
+"She showed up her manager in front of the whole team."
 「彼女のプレゼンテーションが私たちのチームの準備不足を露呈しました。」
 
 ## 関連表現
@@ -35,9 +35,10 @@ START
 eigo-kanyoku
 show up
 
-Her presentation showed up the lack of preparation in our team.
+She showed up her manager in front of the whole team.
 Back: 
-彼女のプレゼンテーションが私たちのチームの準備不足を露呈しました。
+彼女はチーム全体の前でマネージャーに恥をかかせた。
+
 Ankiラベル:人目的限定用法原則自的句動詞
 show up
 恥をかかせる・目立たせる
@@ -50,8 +51,8 @@ show up
 
 TOEIC優先度:20
 Part6:プレゼンテーション
-Speech: Her presentation showed up the lack of preparation in our team.
-Yaku: 彼女のプレゼンテーションが私たちのチームの準備不足を露呈しました。
+Speech: She showed up her manager in front of the whole team.
+Yaku: 彼女はチーム全体の前でマネージャーに恥をかかせた。
 Hyogen: show up
 AnkiLabel: 人目的限定用法原則自的句動詞
 Imi: 恥をかかせる・目立たせる

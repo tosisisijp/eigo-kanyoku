@@ -1,5 +1,5 @@
 ---
-title: "back away from - 距離を置く"
+title: "back away - 距離を置く"
 tags:
   - TOEIC
   - 句動詞
@@ -10,18 +10,18 @@ tags:
   - anki/deck/TOEIC句動詞
 ---
 
-# back away from (距離を置く)
+# back away (距離を置く)
 
 # Obsidian_to_Anki
 START
 eigo-kanyoku
-back away from
+back away
 
 He backed away from the aggressive dog.
 Back:
 彼は攻撃的な犬から後ずさった。
-Ankiラベル:自的前置詞句動詞
-back away from
+Ankiラベル:単一用法用法自的句動詞
+back away
 距離を置く・後ずさる
 
 関連表現
@@ -33,10 +33,10 @@ TOEIC優先度:70
 Part1:状況描写
 Speech: He backed away from the aggressive dog.
 Yaku: 彼は攻撃的な犬から後ずさった。
-Hyogen: back away from
-AnkiLabel: 自的前置詞句動詞
+Hyogen: back away
+AnkiLabel: 単一用法用法自的句動詞
 Imi: 距離を置く・後ずさる
-Tags: TOEIC優先度:70 Ankiラベル:自的前置詞句動詞 Part1:状況描写
+Tags: TOEIC優先度:70 Ankiラベル:単一用法用法自的句動詞 Part1:状況描写
 <!--ID: 1751241922030-->
 END
 

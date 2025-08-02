@@ -50,7 +50,7 @@ put away
 
 TOEIC優先度:60
 Part6:財務戦略
-Speech: The company puts away 10% of profits for future investments.
+Speech: The+company+puts+away+10%25+of+profits+for+future+investments.
 Yaku: 会社は将来の投資のために利益の10%を蓄えています。
 Hyogen: put away
 AnkiLabel: 貯蓄目的用法単一目的語分離句動詞

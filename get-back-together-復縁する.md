@@ -3,7 +3,7 @@ title: "get back together - 復縁する・再結合する"
 tags:
   - TOEIC
   - 句動詞
-  - 三語句動詞
+  - 単一意味自他両用分離可能副詞連結句動詞
   - 人間関係
   - Anki対応
 ---
@@ -11,7 +11,7 @@ tags:
 # get back together (復縁する・再結合する)
 
 ## 基本情報
-**品詞**: 三語句動詞
+**品詞**: 単一意味自他両用分離可能副詞連結句動詞
 **意味**: 復縁する・再結合する
 **TOEIC重要度**: 80/100
 
@@ -37,7 +37,7 @@ get back together
 The two departments got back together to work on the project.
 Back: 
 2つの部署がプロジェクトで再び協力することになりました。
-Ankiラベル:単一用法三語句動詞
+Ankiラベル:単一意味自他両用分離可能副詞連結句動詞
 get back together
 復縁する・再結合する
 
@@ -51,8 +51,8 @@ Part3:部署間協力
 Speech: The two departments got back together to work on the project.
 Yaku: 2つの部署がプロジェクトで再び協力することになりました。
 Hyogen: get back together
-AnkiLabel: 単一用法三語句動詞
+AnkiLabel: 単一意味自他両用分離可能副詞連結句動詞
 Imi: 復縁する・再結合する
-Tags: TOEIC優先度:80 Ankiラベル:単一用法三語句動詞 Part3:部署間協力
+Tags: TOEIC優先度:80 Ankiラベル:単一意味自他両用分離可能副詞連結句動詞 Part3:部署間協力
 <!--ID: 1752938098623-->
 END 

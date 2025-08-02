@@ -34,6 +34,7 @@ Hyogen: check out
 AnkiLabel: 人主語自用自他両用単一目的語分離句動詞
 Imi: チェックアウトする
 Tags: TOEIC優先度:90 Ankiラベル:人主語自用自他両用単一目的語分離句動詞 Part2:ホテル案内
+<!--ID: 1753362402230-->
 END
 
 # 関連表現

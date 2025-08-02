@@ -11,7 +11,7 @@ tags:
 # pick up (回復する・改善する)
 
 ## 基本情報
-**品詞**: 物主語用法単一目的語分離句動詞
+**品詞**: 物主語限定自的用法単一目的語分離句動詞
 **意味**: 回復する・改善する（物主語用法）
 **TOEIC重要度**: 75/100
 
@@ -38,7 +38,7 @@ pick up
 Sales are expected to pick up in the next quarter.
 Back: 
 売上は来四半期に回復すると予想されます。
-Ankiラベル:物主語用法単一目的語分離句動詞
+Ankiラベル:物主語限定自的用法単一目的語分離句動詞
 pick up
 回復する・改善する
 
@@ -53,8 +53,8 @@ Part4:業績予測
 Speech: Sales are expected to pick up in the next quarter.
 Yaku: 売上は来四半期に回復すると予想されます。
 Hyogen: pick up
-AnkiLabel: 物主語用法単一目的語分離句動詞
+AnkiLabel: 物主語限定自的用法単一目的語分離句動詞
 Imi: 回復する・改善する
-Tags: TOEIC優先度:75 Ankiラベル:物主語用法単一目的語分離句動詞 Part4:業績予測
+Tags: TOEIC優先度:75 Ankiラベル:物主語限定自的用法単一目的語分離句動詞 Part4:業績予測
 <!--ID: 1753022730226-->
 END 

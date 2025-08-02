@@ -34,6 +34,7 @@ Hyogen: put off
 AnkiLabel: 予定目的用法単一目的語分離句動詞
 Imi: 延期する
 Tags: TOEIC優先度:95 Ankiラベル:予定目的用法単一目的語分離句動詞 Part3:スケジュール調整
+<!--ID: 1753136713844-->
 END
 
 # 関連表現

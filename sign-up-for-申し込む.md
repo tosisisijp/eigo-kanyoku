@@ -3,7 +3,7 @@ title: "sign up for - ～に申し込む"
 tags:
   - TOEIC
   - 句動詞
-  - 自的前置詞句動詞
+  - 単一用法三語句動詞
   - TOEIC優先度90
 ---
 
@@ -17,7 +17,7 @@ sign up for
 You can sign up for the workshop online.
 Back: 
 ワークショップにはオンラインで申し込めます。
-Ankiラベル:自的前置詞句動詞
+Ankiラベル:単一用法三語句動詞
 sign up for
 ～に申し込む
 
@@ -31,9 +31,9 @@ Part4:案内
 Speech: You can sign up for the workshop online.
 Yaku: ワークショップにはオンラインで申し込めます。
 Hyogen: sign up for
-AnkiLabel: 自的前置詞句動詞
+AnkiLabel: 単一用法三語句動詞
 Imi: ～に申し込む
-Tags: TOEIC優先度:90 Ankiラベル:自的前置詞句動詞 Part4:案内
+Tags: TOEIC優先度:90 Ankiラベル:単一用法三語句動詞 Part4:案内
 <!--ID: 1752099912582-->
 END
 

@@ -48,7 +48,7 @@ get back at
 
 TOEIC優先度:75
 Part7:職場アドバイス
-Speech: Don't try to get back at your colleagues; focus on solutions.
+Speech: Don%27t+try+to+get+back+at+your+colleagues%3B+focus+on+solutions.
 Yaku: 同僚に仕返ししようとせず、解決策に集中してください。
 Hyogen: get back at
 AnkiLabel: 単一用法三語句動詞

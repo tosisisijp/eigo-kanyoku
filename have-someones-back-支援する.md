@@ -19,7 +19,7 @@ have someone's back
 Don't worry, I have your back.
 Back:
 心配しないで、私がついているから。
-Ankiラベル:慣用句
+Ankiラベル:構文的慣用句
 have someone's back
 支援する
 
@@ -33,9 +33,9 @@ Part3:職場支援
 Speech: Don't worry, I have your back.
 Yaku: 心配しないで、私がついているから。
 Hyogen: have someone's back
-AnkiLabel: 慣用句
+AnkiLabel: 構文的慣用句
 Imi: 支援する
-Tags: TOEIC優先度:95 Ankiラベル:慣用句 Part3:職場支援
+Tags: TOEIC優先度:95 Ankiラベル:構文的慣用句 Part3:職場支援
 <!--ID: 1751241922008-->
 END
 

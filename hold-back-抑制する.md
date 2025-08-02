@@ -20,7 +20,7 @@ hold back
 He held back his anger and remained calm.
 Back:
 彼は怒りを抑えて冷静を保った。
-Ankiラベル:単一目的語汎用分離句動詞
+Ankiラベル:感情目的用法単一目的語分離句動詞
 hold back
 抑制する
 
@@ -33,9 +33,9 @@ Part3:職場指導
 Speech: He held back his anger and remained calm.
 Yaku: 彼は怒りを抑えて冷静を保った。
 Hyogen: hold back
-AnkiLabel: 単一目的語汎用分離句動詞
+AnkiLabel: 感情目的用法単一目的語分離句動詞
 Imi: 抑制する
-Tags: TOEIC優先度:85 Ankiラベル:単一目的語汎用分離句動詞 Part3:職場指導
+Tags: TOEIC優先度:85 Ankiラベル:感情目的用法単一目的語分離句動詞 Part3:職場指導
 <!--ID: 1751241922006-->
 END
 

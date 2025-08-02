@@ -19,7 +19,7 @@ back down
 The company had to back down from its initial demands.
 Back:
 その会社は当初の要求を撤回せざるを得ませんでした。
-Ankiラベル:自的句動詞
+Ankiラベル:単一用法自的句動詞
 back down
 撤退する・要求を取り下げる
 
@@ -33,9 +33,9 @@ Part4:企業戦略発表
 Speech: The company had to back down from its initial demands.
 Yaku: その会社は当初の要求を撤回せざるを得ませんでした。
 Hyogen: back down
-AnkiLabel: 自的句動詞
+AnkiLabel: 単一用法自的句動詞
 Imi: 撤退する・要求を取り下げる
-Tags: TOEIC優先度:100 Ankiラベル:自的句動詞 Part4:企業戦略発表
+Tags: TOEIC優先度:100 Ankiラベル:単一用法自的句動詞 Part4:企業戦略発表
 <!--ID: 1751241922024-->
 END
 

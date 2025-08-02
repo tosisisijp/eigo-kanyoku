@@ -48,7 +48,7 @@ make up
 
 TOEIC優先度:95
 Part6:統計・データ
-Speech: Women make up 60% of our staff.
+Speech: Women+make+up+60%25+of+our+staff.
 Yaku: 女性が我々のスタッフの60%を占めています。
 Hyogen: make up
 AnkiLabel: 割合目的用法自他両用単一目的語分離句動詞

@@ -21,8 +21,8 @@ tags:
 - **目的語**: toの後に顧客・対象（potential clients等）
 
 ## 例文
-"The marketing team reached out to potential clients in the tech industry."
-「マーケティングチームはテック業界の潜在顧客にアプローチしました。」
+"She reached out to pick up the glass from the table."
+「彼女はテーブルの上のグラスを取ろうと手を伸ばした。」
 
 ## 関連表現
 - [[approach-接近する]]
@@ -35,9 +35,9 @@ START
 eigo-kanyoku
 reach out to
 
-The marketing team reached out to potential clients in the tech industry.
+She reached out to pick up the glass from the table.
 Back: 
-マーケティングチームはテック業界の潜在顧客にアプローチしました。
+彼女はテーブルの上のグラスを取ろうと手を伸ばした。
 Ankiラベル:動作目的用法三語句動詞
 reach out to
 手を伸ばす・接近する
@@ -49,12 +49,12 @@ reach out to
 ・engage 関与する
 
 TOEIC優先度:60
-Part4:マーケティング活動
-Speech: The marketing team reached out to potential clients in the tech industry.
-Yaku: マーケティングチームはテック業界の潜在顧客にアプローチしました。
+Part4:写真描写
+Speech: She reached out to pick up the glass from the table.
+Yaku: 彼女はテーブルの上のグラスを取ろうと手を伸ばした。
 Hyogen: reach out to
 AnkiLabel: 動作目的用法三語句動詞
 Imi: 手を伸ばす・接近する
-Tags: TOEIC優先度:60 Ankiラベル:動作目的用法三語句動詞 Part4:マーケティング活動
+Tags: TOEIC優先度:60 Ankiラベル:動作目的用法三語句動詞 Part1:写真描写
 <!--ID: 1753025159012-->
 END 

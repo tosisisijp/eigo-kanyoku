@@ -21,8 +21,8 @@ tags:
 - **目的語**: 人の性格・意図・感情（client, person等）
 
 ## 例文
-"It's hard to figure out what the client really wants."
-「クライアントが実際に何を望んでいるかを見抜くのは困難です。」
+"It's still difficult to figure the client out."
+「その顧客のことは、いまだに掴みきれません。」
 
 ## 関連表現
 - [[understand-理解する]]
@@ -35,9 +35,9 @@ START
 eigo-kanyoku
 figure out
 
-It's hard to figure out what the client really wants.
+It's still difficult to figure the client out.
 Back: 
-クライアントが実際に何を望んでいるかを見抜くのは困難です。
+その顧客のことは、いまだに掴みきれません。
 Ankiラベル:人目的用法単一目的語分離句動詞
 figure out
 見抜く・理解する
@@ -50,8 +50,8 @@ figure out
 
 TOEIC優先度:40
 Part7:顧客対応
-Speech: It's hard to figure out what the client really wants.
-Yaku: クライアントが実際に何を望んでいるかを見抜くのは困難です。
+Speech: It's still difficult to figure the client out.
+Yaku: その顧客のことは、いまだに掴みきれません。
 Hyogen: figure out
 AnkiLabel: 人目的用法単一目的語分離句動詞
 Imi: 見抜く・理解する

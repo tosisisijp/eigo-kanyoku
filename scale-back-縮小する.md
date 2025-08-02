@@ -19,7 +19,7 @@ scale back
 The company decided to scale back its operations.
 Back:
 会社は事業を縮小することを決定しました。
-Ankiラベル:単一目的語分離句動詞
+Ankiラベル:単一用法単一目的語分離句動詞
 scale back
 縮小する
 
@@ -32,9 +32,9 @@ Part4:プロジェクト報告
 Speech: The company decided to scale back its operations.
 Yaku: 会社は事業を縮小することを決定しました。
 Hyogen: scale back
-AnkiLabel: 単一目的語分離句動詞
+AnkiLabel: 単一用法単一目的語分離句動詞
 Imi: 縮小する
-Tags: TOEIC優先度:80 Ankiラベル:単一目的語分離句動詞 Part4:プロジェクト報告
+Tags: TOEIC優先度:80 Ankiラベル:単一用法単一目的語分離句動詞 Part4:プロジェクト報告
 <!--ID: 1751241922002-->
 END
 

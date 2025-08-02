@@ -48,7 +48,7 @@ make up
 
 TOEIC優先度:70
 Part3:職場指導
-Speech: Don't make up excuses; just tell the truth.
+Speech: Don%27t+make+up+excuses%3B+just+tell+the+truth.
 Yaku: 言い訳を作り上げないで、真実を話してください。
 Hyogen: make up
 AnkiLabel: 虚構目的用法自他両用単一目的語分離句動詞

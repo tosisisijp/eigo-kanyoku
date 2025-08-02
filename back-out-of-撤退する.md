@@ -20,7 +20,7 @@ back out of
 He tried to back out of the deal at the last minute.
 Back:
 彼は土壇場でその取引から手を引こうとしました。
-Ankiラベル:前置詞句動詞
+Ankiラベル:単一用法三語句動詞
 back out of
 撤退する・手を引く
 
@@ -34,9 +34,9 @@ Part7:契約関連の文書
 Speech: He tried to back out of the deal at the last minute.
 Yaku: 彼は土壇場でその取引から手を引こうとしました。
 Hyogen: back out of
-AnkiLabel: 前置詞句動詞
+AnkiLabel: 単一用法三語句動詞
 Imi: 撤退する・手を引く
-Tags: TOEIC優先度:100 Ankiラベル:前置詞句動詞 Part7:契約関連の文書
+Tags: TOEIC優先度:100 Ankiラベル:単一用法三語句動詞 Part7:契約関連の文書
 <!--ID: 1751386450999-->
 END
 

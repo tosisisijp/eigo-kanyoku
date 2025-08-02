@@ -20,7 +20,9 @@ tags:
 | 1 | **as soon as possible** | できるだけ早く | 慣用表現 | "Please reply to the client as soon as possible." | クライアントにできるだけ早くご返信ください。 | Part 2: 業務依頼 | **95** |
 | 2 | **be supposed to** | ～することになっている | 慣用表現 | "Employees are supposed to wear ID badges at all times." | 従業員は常に ID バッジを着用することになっています。 | Part 3: 社内規則説明 | **95** |
 | 3 | **due to** | ～のために | 慣用表現 | "The flight was delayed due to bad weather." | 悪天候のためフライトが遅れました。 | Part 4: アナウンス | **95** |
-| 4 | **fill out** | 記入する | 単一目的語分離句動詞 | "Please fill out the application form." | 申込書にご記入ください。 | Part 2: 受付案内 | **95** |
+| 4-1 | **fill out** | 書類・フォームに記入する（物目的用法） | 物目的用法自他両用単一目的語分離句動詞 | "Please fill out the application form completely." | 申込書に漏れなくご記入ください。 | Part 2: 受付・手続き | **90** |
+| 4-2 | **fill out** | 人が成長する・太る（人主語用法） | 人主語用法自他両用単一目的語分離句動詞 | "He has filled out since I last saw him." | 最後に会った時から彼は体格が良くなりました。 | Part 1: 人物描写 | **15** |
+| 4-3 | **fill out** | 物事が完全になる・膨らむ（物主語用用） | 物主語用用自他両用単一目的語分離句動詞 | "The team roster filled out with new members." | チーム名簿が新メンバーで充実しました。 | Part 3: 組織変更 | **20** |
 | 5 | **in advance** | 事前に | 慣用表現 | "Reserve your seat in advance to secure a spot." | 席を確保するため事前に予約してください。 | Part 4: 予約案内 | **95** |
 | 6 | **look forward to** | ～を楽しみにする | 自的前置詞句動詞 | "We look forward to meeting you next week." | 来週お会いできることを楽しみにしています。 | Part 7: メール結び | **95** |
 | 7-1 | **make sure** | 確認する・確実にする | 自的用法自他両用単一目的語分離句動詞 | "Make sure to arrive on time for the meeting." | 会議に時間通りに到着するよう確認してください。 | Part 3: 指示確認 | **70** |
@@ -121,6 +123,9 @@ tags:
 | 37-6 | **get back at** | 復讐する・仕返しする | 単一用法三語句動詞 | "Don't try to get back at your colleagues; focus on solutions." | 同僚に仕返ししようとせず、解決策に集中してください。 | Part 7: 職場アドバイス | **75** |
 | 37-7 | **get back to** | 連絡する・返事する | 人目的用法三語句動詞 | "I'll get back to you with the updated figures tomorrow." | 明日、更新された数字でご連絡いたします。 | Part 7: メール対応 | **95** |
 | 37-8 | **get back to** | 戻る・再開する | 物目的用法三語句動詞 | "Let's get back to the agenda and discuss the next item." | 議題に戻って、次の項目を議論しましょう。 | Part 3: 会議進行 | **85** |
+| 37-9 | **get back** | 報復する・やり返す | 攻撃目的用法自他両用単一目的語分離句動詞 | "I'll get him back for what he did to me." | あいつにされたこと、絶対に仕返ししてやる。 | Part 7: 競争戦略 | **35** |
+| 37-10 | **get back** | 救出する・取り戻す | 救出目的用法自他両用単一目的語分離句動詞 | "We have to get her back before it’s too late." | 手遅れになる前に、彼女を取り戻さなければ。 | Part 4: 緊急事態対応 | **35** |
+| 37-11 | **get back** | 復縁する・関係を修復する | 復縁目的用法自他両用単一目的語分離句動詞 | "Do you really think you can get her back after everything?" | あんなことがあった後で、本当に彼女とヨリを戻せると思うの？ | Part 3: 組織関係 | **35** |
 | 38-1 | **get off** | 仕事を終える・退勤する | 自的用法自他両用単一目的語分離句動詞 | "What time do you get off work today?" | 今日は何時に仕事が終わりますか？ | Part 3: 勤務時間確認 | **90** |
 | 38-2 | **get off** | 始まる・出発する | 物主語用法自他両用単一目的語分離句動詞 | "The meeting got off to a good start." | 会議は良いスタートを切りました。 | Part 4: 会議報告 | **75** |
 | 38-3 | **get off** | 釈放する・無罪にする | 人目的用法自他両用単一目的語分離句動詞 | "The lawyer got his client off with a light sentence." | 弁護士は依頼人を軽い刑で済ませました。 | Part 7: 法務文脈 | **60** |

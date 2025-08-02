@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "bring-under-制御下に置く.md",
+                "file": "look-into-調査する.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bring-under-制御下に置く"
+              "title": "look-into-調査する"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "bring-under-制御下に置く.md",
+                "file": "look-into-調査する.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "bring-under-制御下に置くのアウトライン"
+              "title": "look-into-調査するのアウトライン"
             }
           }
         ],
@@ -171,6 +171,16 @@
   },
   "active": "1a63c9c66152bc00",
   "lastOpenFiles": [
+    "fill-out-完全になる.md",
+    "fill-out-成長する.md",
+    "fill-out-記入する.md",
+    "get-off-work-仕事を終える.md",
+    "get-back-復縁する.md",
+    "get-back-救出する.md",
+    "get-back-報復する.md",
+    "turn-ones-back-on-見捨てる.md",
+    "put-off-延期.md",
+    "bring-under-制御下に置く.md",
     "work-out-協力する.md",
     "work-out-理解する.md",
     "work-out-計算する.md",
@@ -187,16 +197,6 @@
     "turn-on-電源を入れる.md",
     "turn-off-道を逸れる.md",
     "turn-off-不快にさせる.md",
-    "turn-off-電源を切る.md",
-    "turn-down-人を断る.md",
-    "turn-down-申し出を断る.md",
-    "turn-down-音量温度を下げる.md",
-    "throw-away-人生を台無しにする.md",
-    "throw-away-感情を捨てる.md",
-    "throw-away-機会を無駄にする.md",
-    "throw-away-物を捨てる.md",
-    "think-over-考慮する検討する単一用法.md",
-    "take-on-感情を表す見せる感情目的用法.md",
     "tango/script/ConvertToLf.ps1",
     "test5.txt",
     "test4.txt",
