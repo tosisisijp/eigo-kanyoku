@@ -20,7 +20,7 @@ back off
 The protesters were told to back off from the police line.
 Back:
 抗議者たちは警察の非常線から退くように言われました。
-Ankiラベル:不要補語自的句動詞
+Ankiラベル:単純自的句動詞
 back off
 手を引く・身を引く
 
@@ -34,9 +34,9 @@ Part3:職場での対立
 Speech: The protesters were told to back off from the police line.
 Yaku: 抗議者たちは警察の非常線から退くように言われました。
 Hyogen: back off
-AnkiLabel: 不要補語自的句動詞
+AnkiLabel: 単純自的句動詞
 Imi: 手を引く・身を引く
-Tags: TOEIC優先度:70 Ankiラベル:不要補語自的句動詞 Part3:職場での対立
+Tags: TOEIC優先度:70 Ankiラベル:単純自的句動詞 Part3:職場での対立
 <!--ID: 1751241922028-->
 END
 

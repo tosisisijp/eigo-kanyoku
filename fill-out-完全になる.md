@@ -11,7 +11,7 @@ tags:
 # fill out (物事が完全になる・膨らむ)
 
 ## 基本情報
-**品詞**: 物主語用用自他両用単一目的語分離句動詞
+**品詞**: 物主語用法自他両用単一目的語分離句動詞
 **意味**: 物事が完全になる・膨らむ・充実する
 **TOEIC重要度**: 20/100
 
@@ -38,7 +38,7 @@ fill out
 The team roster filled out with new members.
 Back: 
 チーム名簿が新メンバーで充実しました。
-Ankiラベル:物主語用用自他両用単一目的語分離句動詞
+Ankiラベル:物主語用法自他両用単一目的語分離句動詞
 fill out
 物事が完全になる・膨らむ
 
@@ -52,8 +52,8 @@ Part3:組織変更
 Speech: The team roster filled out with new members.
 Yaku: チーム名簿が新メンバーで充実しました。
 Hyogen: fill out
-AnkiLabel: 物主語用用自他両用単一目的語分離句動詞
+AnkiLabel: 物主語用法自他両用単一目的語分離句動詞
 Imi: 物事が完全になる・膨らむ
-Tags: TOEIC優先度:20 Ankiラベル:物主語用用自他両用単一目的語分離句動詞 Part3:組織変更
+Tags: TOEIC優先度:20 Ankiラベル:物主語用法自他両用単一目的語分離句動詞 Part3:組織変更
 <!--ID: 1753361576553-->
 END 

@@ -14,12 +14,12 @@ tags:
 # Obsidian_to_Anki
 START
 eigo-kanyoku
-cut back
+cut back on
 
 We need to cut back on unnecessary expenses.
 Back:
 私たちは不要な経費を削減する必要があります。
-Ankiラベル:単一目的語分離句動詞
+Ankiラベル:単一用法三語句動詞
 cut back
 削減する
 
@@ -32,10 +32,10 @@ TOEIC優先度:95
 Part4:予算管理発表
 Speech: We need to cut back on unnecessary expenses.
 Yaku: 私たちは不要な経費を削減する必要があります。
-Hyogen: cut back
-AnkiLabel: 単一目的語分離句動詞
+Hyogen: cut back on
+AnkiLabel: 単一用法三語句動詞
 Imi: 削減する
-Tags: TOEIC優先度:95 Ankiラベル:単一目的語分離句動詞 Part4:予算管理発表
+Tags: TOEIC優先度:95 Ankiラベル:単一用法三語句動詞 Part4:予算管理発表
 <!--ID: 1751927540399-->
 END
 

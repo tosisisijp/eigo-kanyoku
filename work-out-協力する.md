@@ -47,13 +47,13 @@ work out
 ・cooperate 協力する
 ・get along 仲良くする
 
-TOEIC優先度:35
+TOEIC優先度:55
 Part4:チームワーク
 Speech: She works out well with new team members.
 Yaku: 彼女は新しいチームメンバーとうまく協力しています。
 Hyogen: work out
-AnkiLabel: 人目的用法自他両用単一目的語分離句動詞
+AnkiLabel: 協力文脈用法自他両用単一目的語分離句動詞
 Imi: 人と協力する・対処する
-Tags: TOEIC優先度:35 Ankiラベル:人目的用法自他両用単一目的語分離句動詞 Part4:チームワーク
+Tags: TOEIC優先度:55 Ankiラベル:協力文脈用法自他両用単一目的語分離句動詞 Part4:チームワーク
 <!--ID: 1753084193250-->
 END 

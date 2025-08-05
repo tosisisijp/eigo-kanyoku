@@ -34,7 +34,7 @@ tags:
 | 8-2 | **put off** | 嫌悪する | 人目的用法単一目的語分離句動詞 | "His attitude really put me off." | 彼の態度には本当にうんざりしました。 | Part 4: 苦情・印象表現 | **80** |
 | 9-1 | **set up** | 組成・起業・準備 | 人目的用法単一目的語分離句動詞 | "She set up a study group for junior employees." | 彼女は新人社員のために勉強会を立ち上げました。 | Part 3: 社内教育・チーム構成 | **85** |
 | 9-2 | **set up** | 設置・設定・準備 | 物目的用法単一目的語分離句動詞 | "The team set up the system to handle large volumes of data." | チームは大量のデータを処理するためにシステムをセットアップしました。 | Part 4: IT運用・業務設計 | **95** |
-| 10-1 | **turn in** | 寝る | 自的用法自他両用単一目的語分離句動詞 | "I’m tired. I think I’ll turn in early tonight." | 疲れたよ。今夜は早く寝ようと思う。 | Part 3: 会話 | **60  ** |
+| 10-1 | **turn in** | 寝る | 自的用法自他両用単一目的語分離句動詞 | "I'm tired. I think I'll turn in early tonight." | 疲れたよ。今夜は早く寝ようと思う。 | Part 3: 会話 | **60  ** |
 | 10-2 | **turn in** | 提出 | 物目的用法自他両用単一目的語分離句動詞 | "The manager turned in the team's results to the director." | マネージャーはチームの成果を部長に提出しました。 | Part 3: 報告 | **95** |
 | 10-3 | **turn oneself in** | 自首する | 再帰代名詞目的用法自他両用単一目的語分離句動詞 | "He turned himself in to the police." | 彼は自首しました。 | Part 4: 事件・法務 | **80** |
 | 10-4 | **turn in** | 通報 | 人目的用法自他両用単一目的語分離句動詞 | "She turned in her supervisor for workplace harassment." | 彼女は職場でのハラスメント行為について上司を通報した。 | Part 7: 人事・企業倫理 | **65** |
@@ -124,7 +124,7 @@ tags:
 | 37-7 | **get back to** | 連絡する・返事する | 人目的用法三語句動詞 | "I'll get back to you with the updated figures tomorrow." | 明日、更新された数字でご連絡いたします。 | Part 7: メール対応 | **95** |
 | 37-8 | **get back to** | 戻る・再開する | 物目的用法三語句動詞 | "Let's get back to the agenda and discuss the next item." | 議題に戻って、次の項目を議論しましょう。 | Part 3: 会議進行 | **85** |
 | 37-9 | **get back** | 報復する・やり返す | 攻撃目的用法自他両用単一目的語分離句動詞 | "I'll get him back for what he did to me." | あいつにされたこと、絶対に仕返ししてやる。 | Part 7: 競争戦略 | **35** |
-| 37-10 | **get back** | 救出する・取り戻す | 救出目的用法自他両用単一目的語分離句動詞 | "We have to get her back before it’s too late." | 手遅れになる前に、彼女を取り戻さなければ。 | Part 4: 緊急事態対応 | **35** |
+| 37-10 | **get back** | 救出する・取り戻す | 救出目的用法自他両用単一目的語分離句動詞 | "We have to get her back before it's too late." | 手遅れになる前に、彼女を取り戻さなければ。 | Part 4: 緊急事態対応 | **35** |
 | 37-11 | **get back** | 復縁する・関係を修復する | 復縁目的用法自他両用単一目的語分離句動詞 | "Do you really think you can get her back after everything?" | あんなことがあった後で、本当に彼女とヨリを戻せると思うの？ | Part 3: 組織関係 | **35** |
 | 38-1 | **get off** | 仕事を終える・退勤する | 自的用法自他両用単一目的語分離句動詞 | "What time do you get off work today?" | 今日は何時に仕事が終わりますか？ | Part 3: 勤務時間確認 | **90** |
 | 38-2 | **get off** | 始まる・出発する | 物主語用法自他両用単一目的語分離句動詞 | "The meeting got off to a good start." | 会議は良いスタートを切りました。 | Part 4: 会議報告 | **75** |
@@ -209,9 +209,27 @@ tags:
 | 55-5 | **work out** | 理解する・把握する（節目的用法） | 節目的用法自他両用単一目的語分離句動詞 | "I can't work out why the system keeps crashing." | システムがクラッシュし続ける理由がわかりません。 | Part 2: システム問題 | **55** |
 | 55-6 | **work out** | 人と協力する・対処する（人目的用法） | 人目的用法自他両用単一目的語分離句動詞 | "She works out well with new team members." | 彼女は新しいチームメンバーとうまく協力しています。 | Part 4: チームワーク | **35** |
 | 56-1 | **wrap up** | 事柄を完了させる・終わらせる（事目的用法） | 事目的用法自他両用単一目的語分離句動詞 | "We need to wrap up this project by the end of the month." | 今月末までにこのプロジェクトを完了させる必要があります。 | Part 3: 会議・計画 | **85** |
-| 56-2 | **wrap up** | 物を包む・梱包する（現物目的用法） | 現物目的用法慣用表現 | "Please wrap up the documents and send them to the client." | 書類を包んでクライアントに送ってください。 | Part 1: 物の取り扱い | **60** |
-| 56-3 | **wrap up** | 終了する・完了する（自的用法） | 自的用法慣用表現 | "The meeting is expected to wrap up by 5 PM." | 会議は午後5時までに終了する予定です。 | Part 2: 時間・スケジュール | **30** |
-| 56-4 | **wrap up** | 話をまとめる・要約する（節目的用法） | 節目的用法慣用表現 | "Let me wrap up what we discussed in today's meeting." | 今日の会議で話し合ったことをまとめさせてください。 | Part 6: 要約・結論 | **70** |
+| 56-2 | **wrap up** | 物を包む・梱包する（現物目的用法） | 現物目的用法自他両用単一目的語分離句動詞 | "Please wrap up the documents and send them to the client." | 書類を包んでクライアントに送ってください。 | Part 1: 物の取り扱い | **60** |
+| 56-3 | **wrap up** | 終了する・完了する（自的用法） | 自的用法自他両用単一目的語分離句動詞 | "The meeting is expected to wrap up by 5 PM." | 会議は午後5時までに終了する予定です。 | Part 2: 時間・スケジュール | **30** |
+| 56-4 | **wrap up** | 話をまとめる・要約する（節目的用法） | 節目的用法自他両用単一目的語分離句動詞 | "Let me wrap up what we discussed in today's meeting." | 今日の会議で話し合ったことをまとめさせてください。 | Part 6: 要約・結論 | **70** |
+| 57-1 | **write down** | 文字にして記録する・書き留める（物目的用法） | 物目的用法単一目的語分離句動詞 | "Please write down the important points from today's presentation." | 今日のプレゼンテーションの重要なポイントを書き留めてください。 | Part 3: 会議・記録 | **90** |
+| 57-2 | **write down** | 価値を減価する・帳簿価額を下げる（資産目的用法） | 資産目的用法単一目的語分離句動詞 | "The company had to write down the value of its equipment." | 会社は設備の価値を減価しなければなりませんでした。 | Part 7: 財務・会計 | **80** |
+| 58-1 | **bring back** | 物を持参・返却する（物理目的用法） | 物理目的用法単一目的語分離句動詞 | "Please bring back the borrowed equipment by Friday." | 金曜日までに借りた機器を返却してください。 | Part 2: 業務指示 | **80** |
+| 58-2 | **bring back** | 制度・慣習を復活させる（事目的用法） | 事目的用法単一目的語分離句動詞 | "The company decided to bring back the flexible working hours policy." | 会社はフレックスタイム制度を復活させることを決定しました。 | Part 7: 企業方針 | **50** |
+| 59-1 | **call back** | 折り返し電話する・1対1で連絡する（1on1用法） | 1on1用法単一目的語分離句動詞 | "I'll call you back as soon as I finish this meeting." | この会議が終わったらすぐに折り返しお電話いたします。 | Part 3: 電話対応 | **95** |
+| 59-2 | **call back** | 呼び戻す・召集する（呼戻文脈用法） | 呼戻文脈用法単一目的語分離句動詞 | "The manager called back all employees for an emergency meeting." | マネージャーは緊急会議のため全従業員を召集しました。 | Part 4: 緊急対応 | **30** |
+| 60 | **check over** | 詳しく調べる・点検する（単純） | 単純単一目的語分離句動詞 | "Please check over the documents before submitting them." | 提出前に書類を詳しく確認してください。 | Part 7: 文書確認 | **80** |
+| 61-1 | **come across** | 偶然見つける・遭遇する（単純固定句動詞） | 単純単一目的語固定句動詞 | "I came across an interesting article about market trends." | 市場動向に関する興味深い記事を偶然見つけました。 | Part 6: 情報発見 | **75** |
+| 61-2 | **come across** | 印象を与える・～のように見える（単純三語句動詞） | 単純三語句動詞 | "She comes across as very professional in meetings." | 彼女は会議では非常にプロフェッショナルな印象を与えます。 | Part 3: 人物評価 | **35** |
+| 62-1 | **come by** | 訪問する・立ち寄る（物目的用法） | 物目的用法前置詞句動詞 | "Could you come by my office later to discuss the project?" | プロジェクトについて話し合うため、後で私のオフィスに立ち寄ってもらえますか？ | Part 3: 業務連絡 | **55** |
+| 62-2 | **come by** | 偶然得る・手に入れる（場面目的用法） | 場面目的用法前置詞句動詞 | "How did you come by this rare document?" | この珍しい書類をどのようにして手に入れたのですか？ | Part 6: 情報取得 | **45** |
+| 63-1 | **deal with** | 問題・事柄を処理する（事目的用法） | 事目的用法前置詞句動詞 | "We need to deal with this customer complaint immediately." | このお客様からの苦情をすぐに処理する必要があります。 | Part 3: 問題対応 | **100** |
+| 63-2 | **deal with** | 人と対応する・関わる（人目的用法） | 人目的用法前置詞句動詞 | "Our team regularly deals with international clients." | 私たちのチームは定期的に国際的なクライアントと対応しています。 | Part 4: 業務連絡 | **85** |
+| 63-3 | **deal with** | 感情・ストレスに対処する（感情目的用法） | 感情目的用法前置詞句動詞 | "Employees need training on how to deal with workplace stress." | 従業員は職場のストレスに対処する方法についてトレーニングが必要です。 | Part 7: 人事・研修 | **60** |
+| 64 | **drop by** | 立ち寄る・気軽に訪問する（単純） | 単純前置詞句動詞 | "Feel free to drop by my office anytime if you have questions." | ご質問がございましたら、いつでもお気軽に私のオフィスにお立ち寄りください。 | Part 3: 業務連絡 | **80** |
+| 65-1 | **fall down** | 転倒する・倒れる（人主語用法自動詞） | 人主語用法自動詞前置詞句動詞 | "He fell down while running to catch the bus." | バスに乗ろうと走っているときに彼は転倒しました。 | Part 3: 事故・安全 | **55** |
+| 65-2 | **fall down** | 落下する・崩れる（物理主語用法自的句動詞） | 物理主語用法自的句動詞前置詞句動詞 | "The old building fell down during the earthquake." | 古い建物が地震の時に倒壊しました。 | Part 4: 災害・建設 | **45** |
+| 65-3 | **fall down** | 失敗する・破綻する（事主語用法自的句動詞） | 事主語用法自的句動詞前置詞句動詞 | "The project fell down due to lack of funding." | 資金不足によりプロジェクトは破綻しました。 | Part 7: プロジェクト管理 | **25** |
 
 ---
 
