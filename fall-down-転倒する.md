@@ -11,7 +11,7 @@ tags:
 ## 基本情報
 - **品詞**: 句動詞（前置詞句動詞）
 - **意味**: 転倒する・倒れる（人主語）
-- **TOEIC優先度**: 55
+- **TOEIC優先度**: 35
 - **使用頻度**: 中（事故・安全場面）
 
 ## 語法・文法
@@ -45,7 +45,7 @@ fall down
 He fell down while running to catch the bus.
 Back: 
 バスに乗ろうと走っているときに彼は転倒しました。
-Ankiラベル:人主語用法自動詞前置詞句動詞
+Ankiラベル:人主語用法自的句動詞
 fall down
 転倒する・倒れる
 
@@ -54,14 +54,14 @@ fall down
 ・stumble
 ・collapse
 
-TOEIC優先度:55
+TOEIC優先度:35
 Part3:事故・安全
 Speech: He fell down while running to catch the bus.
 Yaku: バスに乗ろうと走っているときに彼は転倒しました。
 Hyogen: fall down
-AnkiLabel: 人主語用法自動詞前置詞句動詞
+AnkiLabel: 人主語用法自的句動詞
 Imi: 転倒する・倒れる
-Tags: TOEIC優先度:55 Ankiラベル:人主語用法自動詞前置詞句動詞 Part3:事故・安全
+Tags: TOEIC優先度:35 Ankiラベル:人主語用法自的句動詞 Part3:事故・安全
 <!--ID: 1754246255392-->
 END
 

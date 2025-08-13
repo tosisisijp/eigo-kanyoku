@@ -9,13 +9,13 @@ tags:
 # come by (訪問する)
 
 ## 基本情報
-- **品詞**: 句動詞（前置詞句動詞）
+- **品詞**: 句動詞（場面目的用法前置詞句動詞）
 - **意味**: 訪問する・立ち寄る
 - **TOEIC優先度**: 55
 - **使用頻度**: 中（ビジネス・日常場面）
 
 ## 語法・文法
-- **構文**: SV（前置詞句動詞）
+- **構文**: SV（場面目的用法前置詞句動詞）
 - **分離可能性**: 分離不可能
   - come by my office (○)
   - come my office by (×)
@@ -45,7 +45,7 @@ come by
 Could you come by my office later to discuss the project?
 Back: 
 プロジェクトについて話し合うため、後で私のオフィスに立ち寄ってもらえますか？
-Ankiラベル:物目的用法前置詞句動詞
+Ankiラベル:場面目的用法前置詞句動詞
 come by
 訪問する・立ち寄る
 
@@ -59,9 +59,9 @@ Part3:業務連絡
 Speech: Could you come by my office later to discuss the project?
 Yaku: プロジェクトについて話し合うため、後で私のオフィスに立ち寄ってもらえますか？
 Hyogen: come by
-AnkiLabel: 物目的用法前置詞句動詞
+AnkiLabel: 場面目的用法前置詞句動詞
 Imi: 訪問する・立ち寄る
-Tags: TOEIC優先度:55 Ankiラベル:物目的用法前置詞句動詞 Part3:業務連絡
+Tags: TOEIC優先度:55 Ankiラベル:場面目的用法前置詞句動詞 Part3:業務連絡
 <!--ID: 1754245387233-->
 END
 

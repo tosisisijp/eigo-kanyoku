@@ -37,7 +37,7 @@ get off
 Please get off at the next station.
 Back: 
 次の駅で降りてください。
-Ankiラベル:乗物目的自他両用単一目的語分離句動詞
+Ankiラベル:乗物文脈自的用法自他両用単一目的語分離句動詞
 get off
 降りる・下車する
 
@@ -51,9 +51,9 @@ Part1:交通案内
 Speech: Please get off at the next station.
 Yaku: 次の駅で降りてください。
 Hyogen: get off
-AnkiLabel: 乗物目的自他両用単一目的語分離句動詞
+AnkiLabel: 乗物文脈自的用法自他両用単一目的語分離句動詞
 Imi: 降りる・下車する
-Tags: TOEIC優先度:95 Ankiラベル:乗物目的自他両用単一目的語分離句動詞 Part1:交通案内
+Tags: TOEIC優先度:95 Ankiラベル:乗物文脈自的用法自他両用単一目的語分離句動詞 Part1:交通案内
 <!--ID: 1752942088191-->
 END
 

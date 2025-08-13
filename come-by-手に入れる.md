@@ -15,7 +15,7 @@ tags:
 - **使用頻度**: 中（情報・物の取得場面）
 
 ## 語法・文法
-- **構文**: SVO（前置詞句動詞）
+- **構文**: SVO（物目的用法前置詞句動詞）
 - **分離可能性**: 分離不可能
   - come by this document (○)
   - come this document by (×)
@@ -45,7 +45,7 @@ come by
 How did you come by this rare document?
 Back: 
 この珍しい書類をどのようにして手に入れたのですか？
-Ankiラベル:場面目的用法前置詞句動詞
+Ankiラベル:物目的用法前置詞句動詞
 come by
 偶然得る・手に入れる
 
@@ -59,9 +59,9 @@ Part6:情報取得
 Speech: How did you come by this rare document?
 Yaku: この珍しい書類をどのようにして手に入れたのですか？
 Hyogen: come by
-AnkiLabel: 場面目的用法前置詞句動詞
+AnkiLabel: 物目的用法前置詞句動詞
 Imi: 偶然得る・手に入れる
-Tags: TOEIC優先度:45 Ankiラベル:場面目的用法前置詞句動詞 Part6:情報取得
+Tags: TOEIC優先度:45 Ankiラベル:物目的用法前置詞句動詞 Part6:情報取得
 <!--ID: 1754245387231-->
 END
 

@@ -11,7 +11,7 @@ tags:
 ## 基本情報
 - **品詞**: 句動詞（前置詞句動詞）
 - **意味**: 失敗する・破綻する（事主語）
-- **TOEIC優先度**: 25
+- **TOEIC優先度**: 10
 - **使用頻度**: 低（ビジネス・プロジェクト場面）
 
 ## 語法・文法
@@ -45,7 +45,7 @@ fall down
 The project fell down due to lack of funding.
 Back: 
 資金不足によりプロジェクトは破綻しました。
-Ankiラベル:事主語用法自的句動詞前置詞句動詞
+Ankiラベル:事主語用法自的句動詞
 fall down
 失敗する・破綻する
 
@@ -54,14 +54,14 @@ fall down
 ・break down
 ・collapse
 
-TOEIC優先度:25
+TOEIC優先度:10
 Part7:プロジェクト管理
 Speech: The project fell down due to lack of funding.
 Yaku: 資金不足によりプロジェクトは破綻しました。
 Hyogen: fall down
-AnkiLabel: 事主語用法自的句動詞前置詞句動詞
+AnkiLabel: 事主語用法自的句動詞
 Imi: 失敗する・破綻する
-Tags: TOEIC優先度:25 Ankiラベル:事主語用法自的句動詞前置詞句動詞 Part7:プロジェクト管理
+Tags: TOEIC優先度:10 Ankiラベル:事主語用法自的句動詞 Part7:プロジェクト管理
 <!--ID: 1754246255387-->
 END
 

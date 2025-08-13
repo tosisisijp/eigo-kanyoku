@@ -11,7 +11,7 @@ tags:
 ## 基本情報
 - **品詞**: 句動詞（前置詞句動詞）
 - **意味**: 落下する・崩れる（物理主語）
-- **TOEIC優先度**: 45
+- **TOEIC優先度**: 25
 - **使用頻度**: 中（建設・災害場面）
 
 ## 語法・文法
@@ -45,7 +45,7 @@ fall down
 The old building fell down during the earthquake.
 Back: 
 古い建物が地震の時に倒壊しました。
-Ankiラベル:物理主語用法自的句動詞前置詞句動詞
+Ankiラベル:物主語用法自的句動詞
 fall down
 落下する・崩れる
 
@@ -54,14 +54,14 @@ fall down
 ・crumble
 ・demolish
 
-TOEIC優先度:45
+TOEIC優先度:25
 Part4:災害・建設
 Speech: The old building fell down during the earthquake.
 Yaku: 古い建物が地震の時に倒壊しました。
 Hyogen: fall down
-AnkiLabel: 物理主語用法自的句動詞前置詞句動詞
+AnkiLabel: 物主語用法自的句動詞
 Imi: 落下する・崩れる
-Tags: TOEIC優先度:45 Ankiラベル:物理主語用法自的句動詞前置詞句動詞 Part4:災害・建設
+Tags: TOEIC優先度:25 Ankiラベル:物主語用法自的句動詞 Part4:災害・建設
 <!--ID: 1754246255390-->
 END
 

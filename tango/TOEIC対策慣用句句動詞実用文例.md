@@ -74,7 +74,9 @@ tags:
 | 22-2 | **look for** | ～を探す（人目的用法） | 人目的用法前置詞句動詞 | "We are looking for a qualified candidate." | 適格な候補者を探しています。 | Part 7: 求人広告 | **85** |
 | 22-3 | **look for** | ～を調査する（調査目的用法） | 調査目的用法前置詞句動詞 | "Investors are looking for new opportunities in emerging markets." | 投資家は新興市場での新しい機会を調査しています。 | Part 3: 投資分析 | **75** |
 | 22-4 | **look for** | ～を期待する（期待目的用法） | 期待目的用法前置詞句動詞 | "Customers look for excellent service and competitive prices." | 顧客は優秀なサービスと競争力のある価格を期待しています。 | Part 4: 顧客満足 | **60** |
-| 23 | **look into** | ～を調査する | 自的前置詞句動詞 | "I'll look into the shipping delay issue." | 配送遅延の問題を調査いたします。 | Part 3: 問題対応 | **90** |
+| 23-1 | **look into** | ～を調査する（調査文脈） | 調査文脈前置詞句動詞 | "I'll look into the shipping delay issue immediately." | 配送遅延の問題をすぐに調査いたします。 | Part 3: 問題対応 | **95** |
+| 23-2 | **look into** | ～を検討する（検討文脈） | 検討文脈前置詞句動詞 | "The board will look into the proposal for budget expansion." | 取締役会は予算拡大の提案を検討します。 | Part 7: 企業戦略 | **90** |
+| 23-3 | **look into** | ～の中を覗く（物理文脈） | 物理文脈前置詞句動詞 | "Please look into the storage room to find the missing files." | 行方不明のファイルを見つけるために倉庫の中を覗いてください。 | Part 2: 業務指示 | **35** |
 | 24 | **make it** | 成功する／間に合う | 慣用表現 | "Can you make it to the 3 PM meeting?" | 午後3時の会議に間に合いますか？ | Part 2: 予定確認 | **90** |
 | 25 | **pay attention to** | ～に注意を払う | 慣用表現 | "Please pay attention to the safety instructions." | 安全指示に注意を払ってください。 | Part 4: 安全案内 | **90** |
 | 26 | **sign up for** | ～に申し込む | 自的前置詞句動詞 | "You can sign up for the workshop online." | ワークショップにはオンラインで申し込めます。 | Part 4: 案内 | **90** |
@@ -227,9 +229,78 @@ tags:
 | 63-2 | **deal with** | 人と対応する・関わる（人目的用法） | 人目的用法前置詞句動詞 | "Our team regularly deals with international clients." | 私たちのチームは定期的に国際的なクライアントと対応しています。 | Part 4: 業務連絡 | **85** |
 | 63-3 | **deal with** | 感情・ストレスに対処する（感情目的用法） | 感情目的用法前置詞句動詞 | "Employees need training on how to deal with workplace stress." | 従業員は職場のストレスに対処する方法についてトレーニングが必要です。 | Part 7: 人事・研修 | **60** |
 | 64 | **drop by** | 立ち寄る・気軽に訪問する（単純） | 単純前置詞句動詞 | "Feel free to drop by my office anytime if you have questions." | ご質問がございましたら、いつでもお気軽に私のオフィスにお立ち寄りください。 | Part 3: 業務連絡 | **80** |
-| 65-1 | **fall down** | 転倒する・倒れる（人主語用法自動詞） | 人主語用法自動詞前置詞句動詞 | "He fell down while running to catch the bus." | バスに乗ろうと走っているときに彼は転倒しました。 | Part 3: 事故・安全 | **55** |
-| 65-2 | **fall down** | 落下する・崩れる（物理主語用法自的句動詞） | 物理主語用法自的句動詞前置詞句動詞 | "The old building fell down during the earthquake." | 古い建物が地震の時に倒壊しました。 | Part 4: 災害・建設 | **45** |
-| 65-3 | **fall down** | 失敗する・破綻する（事主語用法自的句動詞） | 事主語用法自的句動詞前置詞句動詞 | "The project fell down due to lack of funding." | 資金不足によりプロジェクトは破綻しました。 | Part 7: プロジェクト管理 | **25** |
+| 65-1 | **fall down** | 転倒する・倒れる（人主語用法） | 人主語用法自的句動詞 | "He fell down while running to catch the bus." | バスに乗ろうと走っているときに彼は転倒しました。 | Part 3: 事故・安全 | **35** |
+| 65-2 | **fall down** | 落下する・崩れる（物主語用法） | 物主語用法自的句動詞 | "The old building fell down during the earthquake." | 古い建物が地震の時に倒壊しました。 | Part 4: 災害・建設 | **25** |
+| 65-3 | **fall down** | 失敗する・破綻する（事主語用法） | 事主語用法自的句動詞 | "The project fell down due to lack of funding." | 資金不足によりプロジェクトは破綻しました。 | Part 7: プロジェクト管理 | **10** |
+| 66-1 | **follow through** | 最後までやり遂げる・継続する（自的用法） | 自的用法自他両用単一目的語分離句動詞 | "It's important to follow through on your commitments." | 約束は最後までやり遂げることが重要です。 | Part 7: 責任・約束 | **60** |
+| 66-2 | **follow through** | ～を完遂する・実行する（他的用法） | 他的用法自他両用単一目的語分離句動詞 | "We need to follow through these plans carefully." | この計画を注意深く実行する必要があります。 | Part 4: 計画実行 | **40** |
+| 66-3 | **follow through with** | ～を完遂する・～と一貫する（単純三語句動詞） | 単純三語句動詞 | "The company will follow through with the restructuring plan." | 会社は再編計画を完遂します。 | Part 7: 企業戦略 | **80** |
+| 66-4 | **follow through on** | ～について最後まで実行する・～を実現する（単純三語句動詞） | 単純三語句動詞 | "Management promised to follow through on employee feedback." | 経営陣は従業員のフィードバックを最後まで実行することを約束しました。 | Part 4: 人事・管理 | **85** |
+| 67-1 | **get in** | 乗り込む・入る（乗物主語自的用法） | 乗物主語自的用法自他両用単一目的語分離句動詞 | "The train got in at platform 3 right on schedule." | 電車は予定通りに3番線に到着しました。 | Part 1: 交通・移動 | **85** |
+| 67-2 | **get in** | 提出する・送る（提出文脈他的用法） | 提出文脈他的用法自他両用単一目的語分離句動詞 | "Please get in your reports by the end of the week." | 今週末までにレポートを提出してください。 | Part 2: 業務指示 | **75** |
+| 67-3 | **get in** | 到着する・帰宅する（到着文脈自的用法） | 到着文脈自的用法自他両用単一目的語分離句動詞 | "I usually get in around 8 AM and start checking emails." | 通常午前8時頃に出社してメールチェックを始めます。 | Part 3: 勤務時間 | **70** |
+| 67-4 | **get in** | 時間を確保する・調整する（調整文脈他的用法） | 調整文脈他的用法自他両用単一目的語分離句動詞 | "Can we get in a quick meeting before lunch?" | 昼食前に短い会議の時間を確保できますか？ | Part 3: スケジュール調整 | **60** |
+| 67-5 | **get in** | 合格する・採用される（合格文脈自的用法） | 合格文脈自的用法自他両用単一目的語分離句動詞 | "She got in to the management training program after three interviews." | 彼女は3回の面接を経て管理職研修プログラムに合格しました。 | Part 7: 人事・採用 | **50** |
+| 67-6 | **get in** | 参加する・関与する（取込文脈他的用法） | 取込文脈他的用法自他両用単一目的語分離句動詞 | "Let me get in on this discussion about the new marketing strategy." | 新しいマーケティング戦略についてのこの議論に参加させてください。 | Part 3: 会議・議論 | **45** |
+| 67-7 | **get in on** | 参加する・関与する（単純三語句動詞） | 単純三語句動詞 | "Investors want to get in on the emerging technology market." | 投資家は新興技術市場に参加したがっています。 | Part 7: 投資・市場 | **40** |
+| 67-8 | **get in** | 当選する・選出される（当選文脈自的用法） | 当選文脈自的用法自他両用単一目的語分離句動詞 | "The candidate got in with a narrow margin in the board election." | その候補者は取締役選挙で僅差で当選しました。 | Part 7: 組織運営 | **35** |
+| 67-9 | **get in** | 収穫する・取り入れる（物主語自的用法） | 物主語自的用法自他両用単一目的語分離句動詞 | "The team got in all the quarterly data before the deadline." | チームは期限前に四半期のデータをすべて取り入れました。 | Part 6: データ管理 | **30** |
+| 67-10 | **get in** | 攻撃する・一撃を加える（攻撃文脈他的用法） | 攻撃文脈他的用法自他両用単一目的語分離句動詞 | "The negotiator got in a strong point about cost reduction." | 交渉担当者はコスト削減について強力な論点を提示しました。 | Part 4: 交渉・議論 | **20** |
+| 68-1 | **give up** | 諦める・断念する（節目的用法） | 節目的用法単一目的語分離句動詞 | "Don't give up hope that the project will succeed." | プロジェクトが成功するという希望を諦めないでください。 | Part 4: プロジェクト管理 | **95** |
+| 68-2 | **give up** | 譲渡する・手放す（譲渡文脈用法） | 譲渡文脈用法単一目的語分離句動詞 | "The company had to give up its stake in the subsidiary." | 会社は子会社の株式を手放さなければなりませんでした。 | Part 7: 企業戦略 | **60** |
+| 68-3 | **give up** | 放棄する・見限る（人目的用法） | 人目的用法単一目的語分離句動詞 | "The manager refused to give up on any team member." | マネージャーはどのチームメンバーも見限ることを拒否しました。 | Part 3: 人事管理 | **40** |
+| 68-4 | **give up** | 捧げる・献身する（献身文脈用法） | 献身文脈用法単一目的語分離句動詞 | "She gave up her weekend to complete the urgent report." | 彼女は緊急レポートを完成させるために週末を捧げました。 | Part 6: 業務優先 | **70** |
+| 68-5 | **give up the ghost** | 死亡する・終了する（慣用表現） | 慣用表現 | "The old printing system finally gave up the ghost last month." | 古い印刷システムは先月ついに寿命を迎えました。 | Part 6: 設備・機器 | **20** |
+| 69-1 | **come down from** | 高所から降りる | 高所目的用法三語句動詞 | "The technician came down from the ladder to answer the call." | 技術者は電話に出るために梯子から降りた。 | Part 3: 現場・安全指示 | **50** |
+| 69-2 | **come down** | 数値が下がる | 数値主語自的句動詞 | "Prices have come down significantly over the past year." | 過去1年で価格は大幅に下がりました。 | Part 6: レポート・分析 | **80** |
+| 69-3 | **come down from** | ～から降りる | 場所目的用法三語句動詞 | "She came down from the stage to talk to the audience." | 彼女は聴衆に話しかけるためにステージから降りました。 | Part 3: イベント運営 | **30** |
+| 69-4 | **come down** | （雨・雪などが）激しく降る | 天候主語自的句動詞 | "It's really coming down outside, so the event may be postponed." | 外は本降りになっているので、イベントは延期になるかもしれません。 | Part 4: アナウンス | **45** |
+| 69-5 | **come down** | 決定が下る | 決定主語三語句動詞 | "The final decision came down from headquarters this morning." | 最終決定が今朝、本社から下りました。 | Part 7: 社内通知 | **60** |
+| 69-6 | **come down through** | 通って下りる | 単純三語句動詞 | "The cable comes down through the ceiling to the main router." | ケーブルは天井を通って下り、メインルーターに接続されています。 | Part 4: 設備・配線説明 | **25** |
+| 70-1 | **go through** | 経験する | 経験目的用法単一目的語分離句動詞 | "She went through a tough training program last month." | 彼女は先月、厳しい研修プログラムを経験しました。 | Part 7: 体験・報告 | **85** |
+| 70-2 | **go through** | 検討する・精査する | 検討目的用法単一目的語分離句動詞 | "The board will go through the budget proposal in detail." | 取締役会は予算案を詳細に検討します。 | Part 7: 企業戦略 | **90** |
+| 70-3 | **go through** | 承認を経る | 承認目的用法単一目的語分離句動詞 | "The contract must go through legal approval before signing." | 契約書は署名前に法務承認を経なければなりません。 | Part 7: 法務・承認 | **65** |
+| 70-4 | **go through** | 調査する・見直す | 調査目的用法単一目的語分離句動詞 | "The team is going through customer feedback to find trends." | チームは傾向を見つけるために顧客フィードバックを調査しています。 | Part 6: 分析・レビュー | **70** |
+| 70-5 | **go through** | （決済が）通る | 物主語限定自的用法単一目的語分離句動詞 | "The payment went through successfully this morning." | 決済は今朝、問題なく通りました。 | Part 6: 決済・システム | **80** |
+| 70-6 | **go through** | 物理的に通る・貫通する | 物理目的用法単一目的語分離句動詞 | "The pipe goes through the floor to the basement." | パイプは床を通って地下室へ伸びています。 | Part 4: 設備・配管説明 | **50** |
+| 70-7 | **go through with** | （困難でも）やり遂げる・実行する | 三語句動詞 | "She decided to go through with the plan despite the risks." | 彼女はリスクにもかかわらず、その計画をやり遂げることにしました。 | Part 7: 意思決定・実行 | **90** |
+| 71-1 | **put up** | 設置する | 設置目的用法単一目的語分離句動詞 | "The team put up new signs around the building." | チームは建物の周りに新しい看板を設置しました。 | Part 3: 現場作業 | **75** |
+| 71-2 | **put up** | 宿泊させる・泊める | 宿泊目的用法単一目的語分離句動詞 | "We can put you up at a nearby hotel during the conference." | 会議期間中は近くのホテルにあなたを泊めることができます。 | Part 7: 出張手配 | **60** |
+| 71-3 | **put up** | 推薦する・候補に立てる | 推薦目的用法単一目的語分離句動詞 | "They put her up for the employee of the month award." | 彼らは彼女を月間優秀社員賞に推薦しました。 | Part 7: 人事・評価 | **40** |
+| 71-4 | **put up** | 抵抗する・反論する | 抵抗目的用法単一目的語分離句動詞 | "The union put up strong resistance to the new policy." | 組合は新方針に強く抵抗しました。 | Part 7: 労使交渉 | **45** |
+| 71-5 | **put up** | 値上げする・価格を上げる | 価格目的用法単一目的語分離句動詞 | "Several suppliers put up their prices this quarter." | 今四半期、複数のサプライヤーが価格を引き上げました。 | Part 6: 価格・経済 | **55** |
+| 71-6 | **put up with** | 我慢する・耐える | 単純三語句動詞 | "We had to put up with construction noise all week." | 私たちは一週間ずっと工事の騒音に耐えなければなりませんでした。 | Part 3: 職場環境 | **65** |
+| 72-1 | **look up** | 調べる | 物目的用法単一目的語分離句動詞 | "Please look up the tracking number on the carrier's website." | 配送業者のサイトで追跡番号を調べてください。 | Part 6: 参照・手順 | **90** |
+| 72-2 | **look up** | 人を探す | 人目的用法単一目的語分離句動詞 | "I'll look him up in the company directory." | 社内名簿で彼を探します。 | Part 7: 連絡先管理 | **40** |
+| 72-3 | **look up** | （状況が）上向く | 物主語限定自的用法単一目的語分離句動詞 | "Sales are looking up this quarter." | 今四半期は売上が上向いています。 | Part 6: レポート・分析 | **65** |
+| 72-4 | **look up to** | 尊敬する | 単純三語句動詞 | "Many employees look up to her for leadership." | 多くの社員が彼女をリーダーとして尊敬しています。 | Part 7: 組織文化 | **55** |
+| 73-1 | **keep up with** | 追いつく・ついていく | 追随目的用法三語句動詞 | "It's difficult to keep up with rapid market changes." | 急速な市場変化についていくのは困難です。 | Part 6: 市場・競争 | **85** |
+| 73-2 | **keep up with** | 連絡を取り続ける | 連絡目的用法三語句動詞 | "Please keep up with clients during the transition period." | 移行期間中はクライアントとの連絡を継続してください。 | Part 3: 顧客対応 | **75** |
+| 73-3 | **keep up with** | 支払いを続ける | 支払目的用法三語句動詞 | "We need to keep up with monthly installments." | 月々の分割払いを続ける必要があります。 | Part 6: 支払・財務 | **70** |
+| 73-4 | **keep up with** | 競争に遅れない | 競争目的用法三語句動詞 | "Our company must keep up with industry competitors." | 私たちの会社は業界の競合他社に遅れをとってはならない。 | Part 6: 競争戦略 | **80** |
+| 73-5 | **keep up** | （継続・維持する） | 物主語限定自的用法単一目的語分離句動詞 | "Sales figures keep up despite market downturns." | 市場低迷にもかかわらず売上高は維持されている。 | Part 6: 業績維持 | **80** |
+| 73-6 | **keep up** | 状態を保つ | 状態目的用法単一目的語分離句動詞 | "Please keep up the excellent work performance." | 優秀な仕事ぶりを維持してください。 | Part 3: 評価・励まし | **75** |
+| 73-7 | **keep up** | 維持する・続ける | 維持目的用法単一目的語分離句動詞 | "We must keep up regular maintenance schedules." | 定期的なメンテナンススケジュールを維持する必要があります。 | Part 7: 手順・管理 | **65** |
+| 74-1 | **face up to** | 直面する・向き合う | 物目的用法三語句動詞 | "The company must face up to the challenges ahead." | 会社は今後の課題に立ち向かわなければならない。 | Part 6: 業績・課題 | **80** |
+| 74-2 | **face up to** | （人と）直接向き合う | 人目的用法三語句動詞 | "She had to face up to her manager about the error." | 彼女はエラーについて上司と直接向き合う必要があった。 | Part 3: 人事・対話 | **75** |
+| 74-3 | **face up** | （物が）表向きになる | 物主語用法自的句動詞 | "Make sure all cards face up during the presentation." | プレゼン中はすべてのカードが表向きになるようにしてください。 | Part 7: 手順説明 | **70** |
+| 74-4 | **face up** | （人が）立ち向かう | 人主語用法自的句動詞 | "He needs to face up and take responsibility." | 彼は立ち向かって責任を取る必要がある。 | Part 3: 責任・対応 | **65** |
+| 75-1 | **live up to** | 期待に応える | 人目的用法三語句動詞 | "She always lives up to her manager's expectations." | 彼女は常に上司の期待に応えています。 | Part 3: 評価・期待 | **85** |
+| 75-2 | **live up to** | 基準を満たす | 物目的用法三語句動詞 | "Our product lives up to industry standards." | 私たちの製品は業界基準を満たしています。 | Part 6: 品質・基準 | **80** |
+| 75-3 | **live up to** | 約束を守る | 事目的用法三語句動詞 | "The company must live up to its commitments." | 会社は約束を守らなければならない。 | Part 6: 契約・約束 | **80** |
+| 75-4 | **live up** | 楽しく過ごす | 単純自的句動詞 | "Let's live it up at the company party!" | 会社のパーティーで楽しく過ごそう！ | Part 3: 社交・イベント | **55** |
+| 76-1 | **break in on** | 会話に割り込む | 人主語用法三語句動詞 | "I'm sorry to break in on your conversation." | お話の途中失礼いたします。 | Part 3: 会話・割り込み | **65** |
+| 76-2 | **break in on** | 活動を中断する | 物主語用法三語句動詞 | "The phone call broke in on our meeting." | 電話が会議を中断しました。 | Part 3: 中断・妨害 | **60** |
+| 76-3 | **break in with** | 口を挟む | 単純三語句動詞 | "He broke in with an important announcement." | 彼は重要な発表で話に割り込んだ。 | Part 3: 発言・割り込み | **60** |
+| 76-4 | **break in** | 侵入する・押し入る | 自的用法自他両用単一目的語分離句動詞 | "Someone broke in through the back door." | 誰かが裏口から侵入した。 | Part 7: セキュリティ | **80** |
+| 76-5 | **break in** | 慣らす・使い慣らす | 物目的用法自他両用単一目的語分離句動詞 | "You need to break in new shoes gradually." | 新しい靴は徐々に慣らす必要があります。 | Part 7: 製品使用 | **55** |
+| 76-6 | **break in** | 訓練する・教育する | 人目的用法自他両用単一目的語分離句動詞 | "We'll break in the new employee next week." | 来週新入社員を訓練します。 | Part 3: 人事・研修 | **55** |
+| 77-1 | **cut back on** | 削減する・節約する | 節約目的用法三語句動詞 | "We need to cut back on unnecessary expenses." | 不要な支出を削減する必要があります。 | Part 6: 予算・経費 | **85** |
+| 77-2 | **cut back on** | 減らす・控える | 行動目的用法三語句動詞 | "The doctor advised her to cut back on caffeine." | 医師は彼女にカフェインを控えるように助言した。 | Part 7: 健康・指示 | **80** |
+| 77-3 | **cut back** | 生産を減らす | 物主語自的用法自他両用単一目的語分離句動詞 | "The factory had to cut back due to decreased demand." | 需要減少により工場は生産を減らさざるを得なかった。 | Part 6: 経済・生産 | **80** |
+| 77-4 | **cut back** | 支出を削減する | 物目的用法自他両用単一目的語分離句動詞 | "The company decided to cut back operating costs." | 会社は運営費を削減することに決めた。 | Part 6: 経営・削減 | **80** |
+| 77-5 | **cut back** | 計画を縮小する | 事目的用法自他両用単一目的語分離句動詞 | "They had to cut back the expansion plan." | 彼らは拡張計画を縮小せざるを得なかった。 | Part 6: 計画・変更 | **75** |
+| 77-6 | **cut back** | 勤務時間を短縮する | 人主語自的用法自他両用単一目的語分離句動詞 | "Many employees had to cut back their working hours." | 多くの従業員が勤務時間を短縮せざるを得なかった。 | Part 3: 勤務・時間 | **80** |
 
 ---
 

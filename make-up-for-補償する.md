@@ -11,7 +11,7 @@ tags:
 # make up for (補償する・埋め合わせる)
 
 ## 基本情報
-**品詞**: 三語慣用表現
+**品詞**: 単純三語句動詞
 **意味**: 補償する・埋め合わせる（慣用表現）
 **TOEIC重要度**: 80/100
 
@@ -37,7 +37,7 @@ make up for
 We need to make up for lost time.
 Back: 
 失った時間を埋め合わせる必要があります。
-Ankiラベル:慣用表現
+Ankiラベル:単純三語句動詞
 make up for
 補償する・埋め合わせる
 
@@ -51,9 +51,9 @@ Part3:遅れ・補償
 Speech: We need to make up for lost time.
 Yaku: 失った時間を埋め合わせる必要があります。
 Hyogen: make up for
-AnkiLabel: 慣用表現
+AnkiLabel: 単純三語句動詞
 Imi: 補償する・埋め合わせる
-Tags: TOEIC優先度:80 Ankiラベル:慣用表現 Part3:遅れ・補償
+Tags: TOEIC優先度:80 Ankiラベル:単純三語句動詞 Part3:遅れ・補償
 <!--ID: 1752942088157-->
 END
 
